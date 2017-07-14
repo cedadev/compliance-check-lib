@@ -23,6 +23,7 @@ Available attributes of Dataset object are:
 """
 
 import re
+import numpy as np
 
 
 def is_there_only_one_main_variable(ds):
@@ -42,6 +43,7 @@ def is_there_only_one_main_variable(ds):
 
     return True
 
+
 def check_global_attr_against_regex(ds, attr, regex):
     """
     Returns 0 if attribute `attr` not found, 1 if found but doesn't match
@@ -58,3 +60,25 @@ def check_global_attr_against_regex(ds, attr, regex):
         return 1
     # Success
     return 2
+
+
+def check_main_variable_type(ds, v_type):
+    """
+    Checks variables in a NetCDF Dataset and returns boolean regarding
+    whether the main variable is of the give type. It believes the main
+    variable has the biggest shape/size.
+
+    :param ds: netCDF4 Dataset object
+    :paran v_type the type of the variable, this should be a numpy type: string
+    :return: boolean
+    """
+    dsv = ds.variables
+    size = 0
+    for ncvar in dsv:
+        if dsv[ncvar].size > size:
+            main_var = ncvar
+            size = dsv[ncvar].size
+    if dsv[main_var].dtype != np.dtype(v_type):
+        return False
+
+    return True

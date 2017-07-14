@@ -110,10 +110,41 @@ class OneMainVariablePerFileCheck(NCFileCheckBase):
                       self.get_short_name(), messages)
 
 
+class MainVariableTypeCheck(NCFileCheckBase):
+    """
+    The main variable must be type: {dtype}.
+    """
+    short_name = "Main variable type"
+    defaults = {}
+    message_templates = ["Main variable was not the required type: {dtype}"]
+    level = "HIGH"
+
+    def _setup(self):
+        "Checks that required args are provided"
+        if "dtype" not in self.kwargs:
+            raise Exception("Keyword arguments for Main Variable Type Check must include ('dtype').")
+
+    def _get_result(self, primary_arg):
+        ds = primary_arg
+
+        success = nc_util.check_main_variable_type(ds, self.kwargs["dtype"])
+        messages = []
+
+        if success:
+            score = self.out_of
+        else:
+            score = 0
+            messages.append(self.get_messages()[score])
+
+        return Result(self.level, (score, self.out_of),
+                      self.get_short_name(), messages)
+
+
 class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
     """
-    All components in the file name must be set as global attributes in the NetCDF file and must be valid
-    terms in the relevant controlled vocabulary.
+    All components in the file name must either be set as global attributes in
+    the NetCDF file and must be valid terms in the relevant controlled
+    vocabulary or be match the given regular expression(s)
     """
     short_name = "Global attributes match file name/vocab"
     defaults = {"delimiter": "_", "extension": ".nc"}
@@ -123,8 +154,16 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
 
     def _setup(self):
         """
-        Uses the instructions given about the order of the file name components to work out
-        the 'out of' value for the result.
+        Uses the instructions given about the order of the file name components
+        to work out the 'out of' value for the result.
+
+        The delimiter is used to split up the file name.
+
+        The extension is the extension of the file name.
+
+        The order should include the list of facets or regex to check the
+        components of the file name against. Regex should start with
+        'regex:' followed by the regex.
         """
         not_found = []
         for key in ("delimiter", "extension", "order"):
@@ -132,10 +171,11 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
                 not_found.append(key)
 
         if not_found:
-            raise Exception("Keyword arguments for Global Attribute Regex Check must include: {}.".format(not_found))
+            raise Exception("Keyword arguments for Global Attrs Match File "
+                            "Name Check must include: {}.".format(not_found))
 
-        self.kwargs["order"] = self.kwargs["order"].split(",")
-        self.out_of = len(self.kwargs["order"]) * 2 + 1
+        self.kwargs["order"] = self.kwargs["order"].split("~")
+        self.out_of = len(self.kwargs["order"]) * 3
 
     def _get_result(self, primary_arg):
         ds = primary_arg
@@ -145,24 +185,29 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
 
         vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
         fname = os.path.basename(ds.filepath())
-        cv_match = vocabs.check_file_name(fname, keys=self.kwargs["order"],
-                                          delimiter=self.kwargs["delimiter"],
-                                          extension=self.kwargs["extension"])
-
-        if cv_match:
-            score += 1
-        else:
-            messages.append(self.get_messages()[0])
+        fn_score, msg = vocabs.check_file_name(fname, keys=self.kwargs["order"],
+                                               delimiter=self.kwargs["delimiter"],
+                                               extension=self.kwargs["extension"])
+        score += fn_score
+        if fn_score < self.out_of / 3:
+            # a third of the marks are for the file name check
+            messages.extend(msg)
 
         # Check global attributes one-by-one
-        for attr in self.kwargs["order"]:
-            res = vocabs.check_global_attribute(ds, attr, property="canonical_name")
+        items = os.path.splitext(fname)[0].split(self.kwargs["delimiter"])
+
+        for i, attr in enumerate(self.kwargs["order"]):
+            if attr.startswith('regex:'):
+                # we do not have the attribute name, so cannot look for it in
+                # the file
+                self.out_of -= 2
+                continue
+            res, msg = vocabs.check_global_attribute_value(ds, attr, items[i],
+                                                           property="canonical_name")
             score += res
 
-            if res == 0:
-                messages.append("Required '{}' global attribute is not present.".format(attr))
-            elif res == 1:
-                messages.append("Required '{}' global attribute value is invalid.".format(attr))
+            if res < 2:
+                messages.extend(msg)
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)

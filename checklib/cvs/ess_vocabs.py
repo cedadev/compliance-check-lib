@@ -12,7 +12,7 @@ using a local file-system cache of the files.
 
 """
 
-import os
+import os, re
 from netCDF4 import Dataset
 
 # Import library to interact with Controlled Vocabularies
@@ -120,11 +120,48 @@ class ESSVocabs(object):
             
         return 2
 
+    def check_global_attribute_value(self, ds, attr, value, property="label"):
+        """
+        Checks that global attribute `attr` is in allowed values (from CV) and
+        the global attributes value equals the given value.
+
+        :param ds: NetCDF4 Dataset object
+        :param attr: string - name of attribute to check
+        :param value: string - the expected value of the attribute
+        :param property: string property of CV term to check (defaults to 'label')
+        :return: Integer (0: not found; 1: found (not recognised); 2: found and recognised.
+        """
+        messages = []
+        score = 2
+        if attr not in ds.ncattrs():
+            messages.append("Required '{}' global attribute is not present.".
+                            format(attr))
+            return 0, messages
+
+        nc_attr = ds.getncattr(attr)
+        if nc_attr != value:
+            messages.append("Required '{attr}' global attribute value "
+                            "'{nc_attr}' not equal value from file name "
+                            "'{value}'.".
+                            format(attr=attr, nc_attr=nc_attr, value=value))
+            score = 1
+
+        allowed_values = [self.get_value(term, property) for term in self._cvs[self._get_lookup_id(attr)]]
+
+        if nc_attr not in allowed_values:
+            print nc_attr
+            print allowed_values
+            messages.append("Required '{attr}' global attribute value "
+                            "'{nc_attr}' is invalid.".
+                            format(attr=attr, nc_attr=nc_attr))
+            score = 1
+
+        return score, messages
 
     def check_file_name(self, filename, keys=None, delimiter="_", extension=".nc"):
         """
         Checks that components in the file name match CV-allowed values.
-        
+
         E.g.:
         <variable_id>   tas
         <table_id>      Amon
@@ -134,7 +171,7 @@ class ESSVocabs(object):
         <grid_label>    gn
         [<time_range>]  201601-210012
         .nc
-        
+
         :param filename: string
         :keys  sequence of attribute keys to look-up values from in CVs.
         :delimiter  string used as delimiter in file name: string.
@@ -144,17 +181,74 @@ class ESSVocabs(object):
         if not keys or type(keys) not in (type([]), type(())):
             raise Exception("File name checks require an input of attribute keys to check against. "
                             "None given.")
-                            
-        items = os.path.splitext(filename)[0].split(delimiter)
-        
-        # Now check
-        template = delimiter.join(['{}' for item in items]) + extension
-        collections = tuple([self._get_lookup_id(key, full=True) for key in keys])
 
+        items = os.path.splitext(filename)[0].split(delimiter)
+        score = 0
+        messages = []
+
+        # Now check
+        template, regexs = _get_templates(keys, delimiter, items, extension)
+        collections = self._get_collections(keys)
+        print template
+        print collections
         try:
             parser = pyessv.create_template_parser(template, collections)
             parser.parse(filename)
-        except pyessv.TemplateParsingError:
-            return False
+        except AssertionError as ex:
+            messages.append(ex.message)
+        except pyessv.TemplateParsingError as ex:
+            messages.append('File name does not match global attributes.')
+        else:
+            score += len(collections)
 
-        return True
+        # test any regexs that were found
+        for i, regex in regexs:
+            regex_c = re.compile(regex)
+            if regex_c.match(items[i]):
+                score += 1
+            else:
+                messages.append('File name fragment {item} does not match '
+                                'regex {regex}.'.format(item=items[i],
+                                                        regex=regex))
+        return score, messages
+
+    def _get_collections(self, keys):
+        """
+        Get a list of collections from the keys.
+        If a key starts with 'regex:' then it is ignored.
+
+        :keys    sequence of attribute keys to look-up values from in CVs.
+        :return a tuple of collections
+        """
+        collections = []
+        for key in keys:
+            if not key.startswith('regex:'):
+                collections.append(self._get_lookup_id(key, full=True))
+        return tuple(collections)
+
+
+def _get_templates(keys, delimiter, items, extension):
+    """
+    Get the template and list of regex constructed from the items.
+
+    :keys  sequence of attribute keys to look-up values from in CVs.
+    :delimiter  string used as delimiter in file name: string.
+    :items a list of the components from the file name
+    :extension  the file extension: string.
+    :return: the template and a list of regex
+    """
+    regex_list = []
+    for i, key in enumerate(keys):
+        if key.startswith("regex:"):
+            regex_list.append((i, key.split('regex:')[1]))
+            if i == 0:
+                template = items[i]
+            else:
+                template = delimiter.join([template, items[i]])
+        else:
+            if i == 0:
+                template = '{}'
+            else:
+                template = delimiter.join([template, '{}'])
+
+    return template + extension, regex_list
