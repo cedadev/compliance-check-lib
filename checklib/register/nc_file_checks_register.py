@@ -144,7 +144,7 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
     """
     All components in the file name must either be set as global attributes in
     the NetCDF file and must be valid terms in the relevant controlled
-    vocabulary or be match the given regular expression(s)
+    vocabulary, or match the given regular expression(s)
     """
     short_name = "Global attributes match file name/vocab"
     defaults = {"delimiter": "_", "extension": ".nc"}
