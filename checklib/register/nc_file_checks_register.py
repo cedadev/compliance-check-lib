@@ -14,6 +14,7 @@ from compliance_checker.base import Result
 from .callable_check_base import CallableCheckBase
 from checklib.code import nc_util
 from checklib.cvs.ess_vocabs import ESSVocabs
+from checklib.code.errors import FileError, ParameterError
 
 
 class NCFileCheckBase(CallableCheckBase):
@@ -21,7 +22,7 @@ class NCFileCheckBase(CallableCheckBase):
 
     def _check_primary_arg(self, primary_arg):
         if not isinstance(primary_arg, Dataset):
-            raise Exception("Object for testing is not a netCDF4 Dataset: {}".format(str(primary_arg)))
+            raise FileError("Object for testing is not a netCDF4 Dataset: {}".format(str(primary_arg)))
 
 
 class GlobalAttrRegexCheck(NCFileCheckBase):
@@ -37,7 +38,7 @@ class GlobalAttrRegexCheck(NCFileCheckBase):
     def _setup(self):
         "Checks that both args are provided and fixes double-escape in regex string"
         if "attribute" not in self.kwargs or "regex" not in self.kwargs:
-            raise Exception("Keyword arguments for Global Attribute Regex Check must include ('attribute', 'regex').")
+            raise ParameterError("Keyword arguments for Global Attribute Regex Check must include ('attribute', 'regex').")
 
         self.kwargs["regex"] = self.kwargs["regex"].replace("\\\\", "\\")
 
@@ -67,7 +68,7 @@ class GlobalAttrVocabCheck(NCFileCheckBase):
     def _setup(self):
         "Checks that required args are provided"
         if "attribute" not in self.kwargs:
-            raise Exception("Keyword arguments for Global Attribute Vocab Check must include ('attribute').")
+            raise ParameterError("Keyword arguments for Global Attribute Vocab Check must include ('attribute').")
 
 
     def _get_result(self, primary_arg):
@@ -122,7 +123,7 @@ class MainVariableTypeCheck(NCFileCheckBase):
     def _setup(self):
         "Checks that required args are provided"
         if "dtype" not in self.kwargs:
-            raise Exception("Keyword arguments for Main Variable Type Check must include ('dtype').")
+            raise ParameterError("Keyword arguments for Main Variable Type Check must include ('dtype').")
 
     def _get_result(self, primary_arg):
         ds = primary_arg
@@ -171,11 +172,16 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
                 not_found.append(key)
 
         if not_found:
-            raise Exception("Keyword arguments for Global Attrs Match File "
+            raise ParameterError("Keyword arguments for Global Attrs Match File "
                             "Name Check must include: {}.".format(not_found))
 
         self.kwargs["order"] = self.kwargs["order"].split("~")
-        self.out_of = len(self.kwargs["order"]) * 3
+        self.out_of = 0
+        for order in self.kwargs["order"]:
+            if order.startswith('regex:'):
+                self.out_of += 1
+            else:
+                self.out_of += 3
 
     def _get_result(self, primary_arg):
         ds = primary_arg
@@ -200,7 +206,6 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
             if attr.startswith('regex:'):
                 # we do not have the attribute name, so cannot look for it in
                 # the file
-                self.out_of -= 2
                 continue
             res, msg = vocabs.check_global_attribute_value(ds, attr, items[i],
                                                            property="canonical_name")

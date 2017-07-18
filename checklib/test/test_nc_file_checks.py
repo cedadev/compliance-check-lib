@@ -6,9 +6,9 @@ Unit tests for the contents of the checklib.register.nc_file_checks module.
 
 """
 
-from netCDF4 import Dataset
-
+from checklib.code.errors import ParameterError
 from checklib.register.nc_file_checks_register import *
+from netCDF4 import Dataset
 
 
 def test_GlobalAttrRegexCheck_success_1():
@@ -249,6 +249,28 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_7():
     assert(resp.value == (15, 16)), resp.msgs
 
 
+# Object for testing is not a netCDF4 Dataset: missing.nc
+def test_ValidGlobalAttrsMatchFileNameCheck_fail_8():
+    x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
+                                                   "extension": ".nc",
+                                                   "order": "regex:^(?:\d{2}){2,3}(?:$|-(?:\d{2}){2,6}$)"},
+                                           vocabulary_ref="ukcp:ukcp18")
+    resp = x("missing.nc")
+    assert(resp.value == (0, 1)), resp.msgs
+
+
+def test_ValidGlobalAttrsMatchFileNameCheck_fail_9():
+    try:
+        ValidGlobalAttrsMatchFileNameCheck(kwargs={"x": "_",
+                                                   "xx": ".nc",
+                                                   "xxx": "regex:^(?:\d{2}){2,3}(?:$|-(?:\d{2}){2,6}$)"},
+                                           vocabulary_ref="ukcp:ukcp18")
+    except Exception as ex:
+        assert(type(ex) == ParameterError), 'Expecting ParameterError, but got {}'.format(type(ex))
+    else:
+        assert(False), "Expecting ParameterError, but no exception raised"
+
+
 # MainVariableTypeCheck - SUCCESS
 def test_MainVariableTypeCheck_success_1():
     x = MainVariableTypeCheck(kwargs={"dtype": "float32"})
@@ -266,6 +288,10 @@ def test_MainVariableTypeCheck_fail_1():
 
 
 def test_MainVariableTypeCheck_fail_2():
-    x = MainVariableTypeCheck(kwargs={"dtypeXXXX": "float64"})
-    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
-    assert(resp.value == (0, 1))
+    try:
+        MainVariableTypeCheck(kwargs={"dtypeXXXX": "float64"})
+    except Exception as ex:
+        assert(type(ex) == ParameterError), 'Expecting ParameterError, but got {}'.format(type(ex))
+    else:
+        assert(False), "Expecting ParameterError, but no exception raised"
+
