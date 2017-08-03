@@ -47,5 +47,20 @@ variables:
     :institution_id = "MOHC";
     :institution = "Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK";
     :creation_date = "2020-01-20T20:20:20";
-}
 
+data:
+
+ time = 100, 101 ;
+
+ lat = 20 ;
+
+ lon = 40 ;
+
+ z = 1 ;
+
+ temperature =
+  21, 23,
+  12, 34,
+  8, 16,
+  18, 19 ;
+}

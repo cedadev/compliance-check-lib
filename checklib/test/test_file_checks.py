@@ -2,7 +2,7 @@
 test_file_checks.py
 ===================
 
-Unit tests for the contents of the checklib.register.file_checks module.
+Unit tests for the contents of the checklib.register.file_checks_register module.
 
 """
 

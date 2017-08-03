@@ -2,7 +2,7 @@
 test_nc_file_checks.py
 ======================
 
-Unit tests for the contents of the checklib.register.nc_file_checks module.
+Unit tests for the contents of the checklib.register.nc_file_checks_register module.
 
 """
 
