@@ -6,9 +6,9 @@ Unit tests for the contents of the checklib.register.nc_file_checks_register mod
 
 """
 
-from netCDF4 import Dataset
-
+from checklib.code.errors import ParameterError
 from checklib.register.nc_file_checks_register import *
+from netCDF4 import Dataset
 
 
 def test_GlobalAttrRegexCheck_success_1():
@@ -146,6 +146,17 @@ def test_ValidGlobalAttrsMatchFileNameCheck_success_4():
 def test_ValidGlobalAttrsMatchFileNameCheck_success_5():
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
+                                                   "order": "regex:^(?:\d{2}){2,6}(?:$|-(?:\d{2}){2,6}$)"},
+                                           vocabulary_ref="ukcp:ukcp18")
+    ds = Dataset(
+        'checklib/test/example_data/nc_file_checks_data/19981201-19991131.nc')
+    resp = x(ds)
+    assert(resp.value == (1, 1)), resp.msgs
+
+
+def test_ValidGlobalAttrsMatchFileNameCheck_success_6():
+    x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
+                                                   "extension": ".nc",
                                                    "order": "variable_id~scenario~dataset_id~prob_type~frequency~regex:^(?:\d{2}){2,6}(?:$|-(?:\d{2}){2,6}$)"},
                                            vocabulary_ref="ukcp:ukcp18")
     ds = Dataset(
@@ -215,7 +226,50 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_5():
     resp = x(ds)
     assert(resp.value == (2, 4)), resp.msgs
 
-# TODO reg ex checks
+# File name fragment 19981201-19991131 does not match regex ^(?:\\d{2}){2,3}(?:$|-(?:\\d{2}){2,6}$).
+def test_ValidGlobalAttrsMatchFileNameCheck_fail_6():
+    x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
+                                                   "extension": ".nc",
+                                                   "order": "regex:^(?:\d{2}){2,3}(?:$|-(?:\d{2}){2,6}$)"},
+                                           vocabulary_ref="ukcp:ukcp18")
+    ds = Dataset(
+        'checklib/test/example_data/nc_file_checks_data/19981201-19991131.nc')
+    resp = x(ds)
+    assert(resp.value == (0, 1)), resp.msgs
+
+
+# File name fragment 19981201-19991131 does not match regex ^(?:\\d{2}){2,3}(?:$|-(?:\\d{2}){2,6}$).
+def test_ValidGlobalAttrsMatchFileNameCheck_fail_7():
+    x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
+                                                   "extension": ".nc",
+                                                   "order": "variable_id~scenario~dataset_id~prob_type~frequency~regex:^(?:\d{2}){2,6}(?:$|-(?:\d{2}){2,3}$)"},
+                                           vocabulary_ref="ukcp:ukcp18")
+    ds = Dataset(
+        'checklib/test/example_data/nc_file_checks_data/temp-max_sres-a1b_ukcp18-land-prob-25km_sample_day_19981201-19991130.nc')
+    resp = x(ds)
+    assert(resp.value == (15, 16)), resp.msgs
+
+
+# Object for testing is not a netCDF4 Dataset: missing.nc
+def test_ValidGlobalAttrsMatchFileNameCheck_fail_8():
+    x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
+                                                   "extension": ".nc",
+                                                   "order": "regex:^(?:\d{2}){2,3}(?:$|-(?:\d{2}){2,6}$)"},
+                                           vocabulary_ref="ukcp:ukcp18")
+    resp = x("missing.nc")
+    assert(resp.value == (0, 1)), resp.msgs
+
+
+def test_ValidGlobalAttrsMatchFileNameCheck_fail_9():
+    try:
+        ValidGlobalAttrsMatchFileNameCheck(kwargs={"x": "_",
+                                                   "xx": ".nc",
+                                                   "xxx": "regex:^(?:\d{2}){2,3}(?:$|-(?:\d{2}){2,6}$)"},
+                                           vocabulary_ref="ukcp:ukcp18")
+    except Exception as ex:
+        assert(type(ex) == ParameterError), 'Expecting ParameterError, but got {}'.format(type(ex))
+    else:
+        assert(False), "Expecting ParameterError, but no exception raised"
 
 
 # MainVariableTypeCheck - SUCCESS

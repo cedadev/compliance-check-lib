@@ -149,8 +149,6 @@ class ESSVocabs(object):
         allowed_values = [self.get_value(term, property) for term in self._cvs[self._get_lookup_id(attr)]]
 
         if nc_attr not in allowed_values:
-            print nc_attr
-            print allowed_values
             messages.append("Required '{attr}' global attribute value "
                             "'{nc_attr}' is invalid.".
                             format(attr=attr, nc_attr=nc_attr))
@@ -189,17 +187,15 @@ class ESSVocabs(object):
         # Now check
         template, regexs = _get_templates(keys, delimiter, items, extension)
         collections = self._get_collections(keys)
-        print template
-        print collections
-        try:
-            parser = pyessv.create_template_parser(template, collections)
-            parser.parse(filename)
-        except AssertionError as ex:
-            messages.append(ex.message)
-        except pyessv.TemplateParsingError as ex:
-            messages.append('File name does not match global attributes.')
-        else:
-            score += len(collections)
+        if '{}' in template:
+            try:
+                parser = pyessv.create_template_parser(template, collections)
+                parser.parse(filename)
+                score += len(collections)
+            except AssertionError as ex:
+                messages.append(ex.message)
+            except pyessv.TemplateParsingError as ex:
+                messages.append('File name does not match global attributes.')
 
         # test any regexs that were found
         for i, regex in regexs:

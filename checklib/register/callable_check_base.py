@@ -1,4 +1,6 @@
 from compliance_checker.base import BaseCheck
+from compliance_checker.base import Result
+from checklib.code.errors import FileError, ParameterError
 
 
 class CallableCheckBase(object):
@@ -28,7 +30,16 @@ class CallableCheckBase(object):
         if messages:
             self.messages = messages
         else:
-            self.messages = [tmpl.format(**self.kwargs) for tmpl in self.message_templates]
+            self.messages = []
+            for tmpl in self.message_templates:
+                try:
+                    self.messages.append(tmpl.format(**self.kwargs))
+                except KeyError as ex:
+                    self.messages = []
+                    raise ParameterError("Keyword arguments for {short_name} "
+                                         "check must include {keywrd}".
+                                         format(short_name=self.short_name,
+                                                keywrd=ex))
 
     def get_description(self):
         """
@@ -56,7 +67,11 @@ class CallableCheckBase(object):
         :param primary_arg: main argument (object to check)
         :return: Result object (from compliance checker)
         """
-        self._check_primary_arg(primary_arg)
+        try:
+            self._check_primary_arg(primary_arg)
+        except FileError as ex:
+            return Result(self.level, (0, self.out_of),
+                          self.get_short_name(), ex.message)
         return self._get_result(primary_arg)
 
     def _get_result(self, primary_arg):
