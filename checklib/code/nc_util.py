@@ -5,21 +5,6 @@ nc_util.py
 Utilities to support compliance checker classes - working with
 netCDF4 Dataset objects.
 
-Available attributes of Dataset object are:
-
-[u'_FillValue', '__class__', '__delattr__', '__delitem__', '__doc__', '__format__',
- '__getattr__', '__getattribute__', '__getitem__', '__hash__', '__init__', '__len__',
-  '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__',
-  '__sizeof__', '__str__', '__subclasshook__', '__unicode__', '_assign_vlen',
-  '_cmptype', '_get', '_getdims', '_grp', '_grpid', '_iscompound', '_isprimitive',
-  '_isvlen', '_name', '_nunlimdim', '_put', '_toma', '_varid', '_vltype',
-  'assignValue', 'chunking', 'datatype', u'date', 'delncattr', 'dimensions',
-  'dtype', 'endian', 'filters', 'getValue', 'get_var_chunk_cache', 'getncattr',
-  'group', u'long_name', 'maskandscale', u'missing_value', u'name', 'ncattrs',
-  'ndim', 'renameAttribute', 'set_auto_maskandscale', 'set_var_chunk_cache',
-  'setncattr', 'setncatts', 'shape', 'size', u'source', u'standard_name', u'time',
-  u'title', u'units', u'valid_max', u'valid_min']
-
 """
 
 import re

@@ -75,10 +75,11 @@ def test_GlobalAttrVocabCheck_success_2():
 
 
 def test_GlobalAttrVocabCheck_success_3():
-    x = GlobalAttrVocabCheck(kwargs={"attribute": "institution", "vocab_lookup": "data.postalAddress"},
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "institution_id", "vocab_lookup": "data.postal_address"},
                              vocabulary_ref="eustace-team:eustace:institution_id")
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
-    assert (resp.value == (2, 2))
+    raise Exception("Error is that institution_id contains the postal_address for institution - there is a mismatch in the attr name.")
+    assert (resp.value == (1, 2))
 
 
 def test_GlobalAttrVocabCheck_fail_1():
@@ -232,8 +233,3 @@ def test_MainVariableTypeCheck_fail_1():
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (0, 1)), resp.msgs
 
-
-def test_MainVariableTypeCheck_fail_2():
-    x = MainVariableTypeCheck(kwargs={"dtypeXXXX": "float64"})
-    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
-    assert(resp.value == (0, 1))
