@@ -29,7 +29,7 @@ def test_FileSizeCheck_hard_success():
     resp = x('README.md')
     assert(resp.value == (1, 1))
     
-def test_FileNameStuctureCheck_success():
+def test_FileNameStructureCheck_success():
     good = [
         ("checklib/test/example_data/file_checks_data/good_file.nc", {}),
         ("checklib/test/example_data/file_checks_data/good_file_as_text.txt", {"delimiter": "_",
@@ -41,7 +41,7 @@ def test_FileNameStuctureCheck_success():
         resp = x(fpath)
         assert(resp.value == (1, 1))
 
-def test_FileNameStuctureCheck_fail():
+def test_FileNameStructureCheck_fail():
     bad = [
         ("checklib/test/example_data/file_checks_data/_bad_file1.nc", {}),
         ("checklib/test/example_data/file_checks_data/bad--file2.nc", {"delimiter": "-",
