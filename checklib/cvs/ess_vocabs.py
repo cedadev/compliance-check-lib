@@ -17,6 +17,7 @@ from netCDF4 import Dataset
 
 # Import library to interact with Controlled Vocabularies
 import pyessv
+import pyessv._model.term
 
 
 def validate_daterange(frequency):
@@ -78,7 +79,7 @@ class ESSVocabs(object):
         Makes the lookup for a given term and matches against the property given.
         Copes with nested dictionary lookups that are expressed by the "." convention in the value of `attr`.
 
-        :param term: term to lookup.
+        :param term: term to lookup (either string as '<collection>:<term>' or pyessv Term instance).
         :param property: property of term to match against (even including sub-dictionary lookups).
         :return: value or None if not found.
         """
@@ -88,6 +89,16 @@ class ESSVocabs(object):
             key_chain = key_chain.split(".")
         else:
             key_chain = []
+
+        # Fix term type: must be instance of pyessv._model.term.Term
+        if not isinstance(term, pyessv._model.term.Term):
+              
+            try:
+                # Use only the last 2 values (collection, item) to do the lookup
+                colln, item = term.split(":")[-2:]
+                term = [v for v in self._cvs[colln] if item in (v.canonical_name, v.label)][0]
+            except:
+                raise Exception("Could not get value of term based on lookup: '{}'.".format(term))
 
         # Do vocabulary look-up
         value = getattr(term, property, None)
@@ -248,3 +259,4 @@ def _get_templates(keys, delimiter, items, extension):
                 template = delimiter.join([template, '{}'])
 
     return template + extension, regex_list
+
