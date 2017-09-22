@@ -35,7 +35,7 @@ class FileSizeCheck(FileCheckBase):
         fpath = primary_arg
         threshold = float(self.kwargs["threshold"])
 
-        success = file_util._is_file_size_less_than(fpath, threshold * (1.**20))
+        success = file_util._is_file_size_less_than(fpath, threshold * (2.**30))
         messages = []
 
         if success:
