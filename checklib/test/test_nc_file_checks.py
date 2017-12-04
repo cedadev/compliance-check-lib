@@ -287,3 +287,39 @@ def test_MainVariableTypeCheck_fail_1():
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (0, 1)), resp.msgs
 
+
+# Check variable exists in NetCDF file - SUCCESS
+def test_VariableExistsInFileCheck_success():
+    x = VariableExistsInFileCheck(kwargs={"var_id": "lon"})
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
+    assert(resp.value == (1, 1)), resp.msgs
+
+
+# Check variable exists in NetCDF file - FAIL
+def test_VariableExistsInFileCheck_fail():
+    x = VariableExistsInFileCheck(kwargs={"var_id": "lonGITUDEIO"})
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
+    assert(resp.value == (0, 1)), resp.msgs
+
+     
+# Check variable is within valid bounds - SUCCESS
+def test_VariableRangeCheck_success():
+    x = VariableRangeCheck(kwargs={"var_id": "tas", "minimum": 200, "maximum": 330.})
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/cmip5_example_1.nc'))
+    assert(resp.value == (2, 2)), resp.msgs
+
+
+# Check variable is within valid bounds - FAIL (out of bounds)
+def test_VariableRangeCheck_fail_1():
+    x = VariableRangeCheck(kwargs={"var_id": "tas", "minimum": 250, "maximum": 250.})
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/cmip5_example_1.nc'))
+    assert(resp.value == (1, 2)), resp.msgs
+
+
+# Check variable is within valid bounds - FAIL (no variable in file)
+def test_VariableRangeCheck_fail_2():
+    x = VariableRangeCheck(kwargs={"var_id": "tasTADOS", "minimum": 250, "maximum": 250.})
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/cmip5_example_1.nc'))
+    assert(resp.value == (0, 2)), resp.msgs
+
+

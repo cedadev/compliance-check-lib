@@ -216,3 +216,63 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
+                      
+
+class VariableExistsInFileCheck(NCFileCheckBase):
+    """
+    Variable {var_id} exists in NetCDF file.
+    """
+    short_name = "Variable exists: {var_id}"
+    defaults = {}
+    message_templates = ["Required variable {var_id} is not present."]
+    level = "HIGH"
+
+
+    def _get_result(self, primary_arg):
+        ds = primary_arg
+
+        score = 0
+        if nc_util.is_variable_in_dataset(ds, self.kwargs["var_id"]):
+            score = 1
+            
+        messages = []
+
+        if score < self.out_of:
+            messages.append(self.get_messages()[score])
+
+        return Result(self.level, (score, self.out_of),
+                      self.get_short_name(), messages)
+                      
+                      
+class VariableRangeCheck(NCFileCheckBase):
+    """
+    The variable {var_id} must have values in the range {minimum}
+    to {maximum}.
+    """
+    short_name = "Variable range {var_id}: {minimum} to {maximum}"
+    defaults = {}
+    message_templates = ["Variable {var_id} does not exist.",
+                         "Variable {var_id} has values beyond permitted range: "
+                         "{minimum} to {maximum}"]
+    level = "HIGH"
+
+
+    def _get_result(self, primary_arg):
+        ds = primary_arg
+        var_id = self.kwargs["var_id"]
+        mn, mx = self.kwargs["minimum"], self.kwargs["maximum"]
+
+        score = 0
+        if nc_util.is_variable_in_dataset(ds, var_id):
+            score = 1
+
+        if nc_util.variable_is_within_valid_bounds(ds, var_id, mn, mx):
+            score += 1      
+            
+        messages = []
+
+        if score < self.out_of:
+            messages.append(self.get_messages()[score])
+
+        return Result(self.level, (score, self.out_of),
+                      self.get_short_name(), messages)

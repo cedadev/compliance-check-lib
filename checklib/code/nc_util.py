@@ -54,7 +54,7 @@ def check_main_variable_type(ds, v_type):
     variable has the biggest shape/size.
 
     :param ds: netCDF4 Dataset object
-    :paran v_type the type of the variable, this should be a numpy type: string
+    :paran v_type: the type of the variable, this should be a numpy type: string
     :return: boolean
     """
     dsv = ds.variables
@@ -67,3 +67,37 @@ def check_main_variable_type(ds, v_type):
         return False
 
     return True
+
+
+def is_variable_in_dataset(ds, var_id):
+    """
+    Checks that variable with name `var_id` exists in the file.
+    Returns True if variable is in the dataset.
+
+    :param ds: netCDF4 Dataset object
+    :paran var_id: the variable ID. 
+    :return: boolean
+    """
+    return var_id in ds.variables
+
+
+def variable_is_within_valid_bounds(ds, var_id, minimum, maximum):
+    """
+    Checks whether variable `var_id` is out of bounds set by arguments
+    `minimum` and `maximum`.
+
+    :param ds: netCDF4 Dataset object
+    :paran var_id: the variable ID.
+    :param minimum: the minimum allowed value (a number)
+    :param maximum: the maximum allowed value (a number)
+    :return: boolean
+    """
+    if var_id not in ds.variables: return False
+
+    data = ds.variables[var_id][:]
+    mn, mx = data.min(), data.max()
+
+    if mn < minimum or mx > maximum:
+        return False
+
+    return True 
