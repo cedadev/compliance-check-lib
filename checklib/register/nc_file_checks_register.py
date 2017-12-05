@@ -252,7 +252,7 @@ class VariableRangeCheck(NCFileCheckBase):
     short_name = "Variable range {var_id}: {minimum} to {maximum}"
     defaults = {}
     message_templates = ["Variable {var_id} does not exist.",
-                         "Variable {var_id} has values beyond permitted range: "
+                         "Variable {var_id} has values outside the permitted range: "
                          "{minimum} to {maximum}"]
     level = "HIGH"
 
