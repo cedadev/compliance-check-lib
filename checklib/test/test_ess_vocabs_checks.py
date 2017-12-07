@@ -12,11 +12,11 @@ from netCDF4 import Dataset
 
 def test_get_value_string_lookup_success_1():
     x = ESSVocabs('ncas', 'amf')
-    resp = x.get_value('variables:day-of-year') 
+    resp = x.get_value('variable:day-of-year')
     assert(resp == 'day_of_year')
 
     # Check full term path works
-    resp = x.get_value('ncas:amf:variables:day-of-year')
+    resp = x.get_value('ncas:amf:variable:day-of-year')
     assert(resp == 'day_of_year')
 
 
@@ -31,6 +31,6 @@ def test_get_value_string_lookup_failure_1():
 
 def test_get_value_string_lookup_data_success_2():
     x = ESSVocabs('ncas', 'amf')
-    resp = x.get_value('variables:time', property='data')
+    resp = x.get_value('variable:time', property='data')
     assert(resp['units'] == 'seconds since 1970-01-01 00:00:00 UTC')
 

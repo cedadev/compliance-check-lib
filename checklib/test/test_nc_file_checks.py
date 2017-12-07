@@ -361,4 +361,4 @@ def test_NCVariableMetadataCheck_fail_2():
     try:
         resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     except Exception, err:
-        assert(str(err) == "Could not get value of term based on lookup: 'variables:a-dog?'.")
+        assert(str(err) == "Could not get value of term based on lookup: 'variable:a-dog?'.")

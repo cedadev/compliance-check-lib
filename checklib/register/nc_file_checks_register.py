@@ -358,7 +358,7 @@ class NCVariableMetadataCheck(NCFileCheckBase):
 
         # First, work out the overall 'out of' value based on number of attributes
         vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
-        lookup = "variables:{}".format(var_id)
+        lookup = "variable:{}".format(var_id)
         expected_attr_dict = vocabs.get_value(lookup, "data")
 
         self.out_of = 1 + len(expected_attr_dict) * 2
