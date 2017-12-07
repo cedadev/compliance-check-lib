@@ -47,14 +47,14 @@ def check_global_attr_against_regex(ds, attr, regex):
     return 2
 
 
-def check_main_variable_type(ds, v_type):
+def check_main_variable_type(ds, datatype):
     """
     Checks variables in a NetCDF Dataset and returns boolean regarding
-    whether the main variable is of the give type. It believes the main
-    variable has the biggest shape/size.
+    whether the main variable is of the required type. The main
+    variable is determined as that which has the biggest shape/size.
 
     :param ds: netCDF4 Dataset object
-    :paran v_type: the type of the variable, this should be a numpy type: string
+    :paran datatype: the type of the variable, this should be a numpy type: string
     :return: boolean
     """
     dsv = ds.variables
@@ -63,10 +63,22 @@ def check_main_variable_type(ds, v_type):
         if dsv[ncvar].size > size:
             main_var = ncvar
             size = dsv[ncvar].size
-    if dsv[main_var].dtype != np.dtype(v_type):
-        return False
 
-    return True
+    return dsv[main_var].dtype == np.dtype(datatype)
+
+
+def check_variable_type(ds, var_id, datatype):
+    """
+    Checks variables in a NetCDF Dataset and returns boolean regarding
+    whether the variable `var_id` is of the required type.
+
+    :param ds: netCDF4 Dataset object
+    :param var_id: Variable ID.
+    :paran datatype: the type of the variable, this should be a numpy type: string
+    :return: boolean
+    """
+    variable = ds.variables[var_id]
+    return variable.dtype == np.dtype(datatype)
 
 
 def is_variable_in_dataset(ds, var_id):

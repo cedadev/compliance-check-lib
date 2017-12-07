@@ -281,15 +281,24 @@ def test_MainVariableTypeCheck_success_1():
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (1, 1)), resp.msgs
 
-
-# MainVariableTypeCheck - FAIL
-
-# 'Main variable was not the required type: float64
+# Main variable is not the required type: float64
 def test_MainVariableTypeCheck_fail_1():
     x = MainVariableTypeCheck(kwargs={"dtype": "float64"})
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (0, 1)), resp.msgs
 
+
+# Variable Type check: success
+def test_VariableTypeCheck_success():
+    x = VariableTypeCheck(kwargs={"var_id": "time", "dtype": "float64"})
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
+    assert(resp.value == (1, 1)), resp.msgs
+
+# Variable Type check: failure
+def test_VariableTypeCheck_failure():
+    x = VariableTypeCheck(kwargs={"var_id": "time", "dtype": "int"})
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
+    assert(resp.value == (0, 1)), resp.msgs
 
 # Check variable exists in NetCDF file - SUCCESS
 def test_VariableExistsInFileCheck_success():
@@ -326,3 +335,30 @@ def test_VariableRangeCheck_fail_2():
     assert(resp.value == (0, 2)), resp.msgs
 
 
+
+def test_NCVariableMetadataCheck_partial_success_1():
+    x = NCVariableMetadataCheck(kwargs={"var_id": "time"}, vocabulary_ref="ncas:amf")
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
+    assert(resp.value == (7, 21)), resp.msgs
+
+
+def test_NCVariableMetadataCheck_success_1():
+    x = NCVariableMetadataCheck(kwargs={"var_id": "time"}, vocabulary_ref="ncas:amf")
+    fpath = 'checklib/test/example_data/nc_file_checks_data/ncas-amf/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'
+    resp = x(Dataset(fpath))
+    assert (resp.value == (15, 21)), resp.msgs
+
+
+def test_NCVariableMetadataCheck_fail_1():
+    x = NCVariableMetadataCheck(kwargs={"var_id": "day"}, vocabulary_ref="ncas:amf")
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
+    assert(resp.value == (0, 15)), resp.msgs
+    assert(resp.msgs == ["Variable 'day' not found in the file so cannot perform other checks."])
+
+
+def test_NCVariableMetadataCheck_fail_2():
+    x = NCVariableMetadataCheck(kwargs={"var_id": "a-dog?"}, vocabulary_ref="ncas:amf")
+    try:
+        resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
+    except Exception, err:
+        assert(str(err) == "Could not get value of term based on lookup: 'variables:a-dog?'.")

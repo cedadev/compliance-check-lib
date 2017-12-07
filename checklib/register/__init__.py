@@ -1,6 +1,8 @@
-from checklib.register.callable_check_base import CallableCheckBase
-from checklib.register.file_checks_register import FileCheckBase
-from checklib.register.nc_file_checks_register import NCFileCheckBase
+import inspect
+
+from checklib.register.callable_check_base import *
+from checklib.register.file_checks_register import *
+from checklib.register.nc_file_checks_register import *
 
 
 def get_check_class(id):
@@ -10,11 +12,9 @@ def get_check_class(id):
     :param id: identifier for check (matches class name) [string]
     :return: class
     """
-    for parent in (FileCheckBase, NCFileCheckBase):
-        for cls in parent.__subclasses__():
-            if cls.__name__ == id:
-                return cls
-
-    raise Exception("Cannot identify Check with identifier: {}".format(id))
-
+    try:
+        assert id.endswith("Check")
+        return eval(id)
+    except:
+        raise Exception("Cannot identify Check with identifier: {}".format(id))
 
