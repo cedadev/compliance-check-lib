@@ -1,0 +1,38 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "piclim-2xfire",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "AerChemMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "CHEM"
+        ],
+        "description": "1850 control with doubled emissions of fires",
+        "endYear": "",
+        "experiment": "pre-industrial climatological SSTs and forcing, but with doubled emissions from fires",
+        "experimentID": "piClim-2xfire",
+        "minNumberYrsPerSim": "30",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "piControl"
+        ],
+        "requiredModelComponents": [
+            "AGCM",
+            "AER"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "idx": 161,
+    "label": "piClim-2xfire",
+    "rawName": "piClim-2xfire",
+    "status": "pending",
+    "uid": "12992924-f31a-400e-9736-2c7a6d21f93a"
+}

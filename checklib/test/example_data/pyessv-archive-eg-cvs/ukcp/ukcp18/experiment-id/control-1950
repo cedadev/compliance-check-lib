@@ -1,0 +1,37 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "control-1950",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "HighResMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER"
+        ],
+        "description": "Coupled integrations with constant 1950\"s forcing",
+        "endYear": "",
+        "experiment": "coupled control with fixed 1950's forcing (HighResMIP equivalent of pre-industrial control)",
+        "experimentID": "control-1950",
+        "minNumberYrsPerSim": "100",
+        "parentActivityID": [
+            "HighResMIP"
+        ],
+        "parentExperimentID": [
+            "spinup-1950"
+        ],
+        "requiredModelComponents": [
+            "AOGCM"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 41,
+    "label": "control-1950",
+    "rawName": "control-1950",
+    "status": "pending",
+    "uid": "4bf8e7e4-2db3-4200-8bff-4cd5c68b1d85"
+}

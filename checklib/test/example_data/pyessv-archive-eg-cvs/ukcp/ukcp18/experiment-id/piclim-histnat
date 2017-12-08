@@ -1,0 +1,38 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "piclim-histnat",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "RFMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM"
+        ],
+        "description": "Time-varying forcing from volcanos, solar variability, etc. SST and sea ice fixed at preindustrial control. Interactive vegetation",
+        "endYear": "2100",
+        "experiment": "transient effective radiative forcing by natural perturbations",
+        "experimentID": "piClim-histnat",
+        "minNumberYrsPerSim": "251",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "piControl"
+        ],
+        "requiredModelComponents": [
+            "AGCM"
+        ],
+        "startYear": "1850",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 62,
+    "label": "piClim-histnat",
+    "rawName": "piClim-histnat",
+    "status": "pending",
+    "uid": "2610135e-9e47-493b-8a5b-769b44c0abf6"
+}

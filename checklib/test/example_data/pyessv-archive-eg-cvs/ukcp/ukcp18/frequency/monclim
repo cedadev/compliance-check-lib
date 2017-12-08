@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "monclim",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "idx": 3,
+    "label": "monClim",
+    "rawName": "monClim",
+    "status": "pending",
+    "uid": "b0be9ae6-0fc9-4bb6-a87d-ad983858f5a5"
+}

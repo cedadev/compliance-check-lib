@@ -6,6 +6,11 @@ Unit tests for the contents of the checklib.cvs.ess_vocabs module.
 
 """
 
+# Set local directory as store for `pyessv-archive` controlled vocabs
+# MUST DO THIS BEFORE other imports
+import os
+os.environ['PYESSV_ARCHIVE_DIR'] = 'checklib/test/example_data/pyessv-archive-eg-cvs'
+
 from checklib.cvs.ess_vocabs import *
 from netCDF4 import Dataset
 

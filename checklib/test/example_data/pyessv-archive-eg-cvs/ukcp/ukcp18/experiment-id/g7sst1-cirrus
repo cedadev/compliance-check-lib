@@ -1,0 +1,38 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "g7sst1-cirrus",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "GeoMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM"
+        ],
+        "description": "Time slice at 2020 (ScenarioMIP Tier 1 high forcing scenario and cirrus thinning according to G7cirrus)",
+        "endYear": "",
+        "experiment": "SSTs from year 2020 of SSP5-8.5; forcings and other prescribed conditions from year 2020 of SSP5-8.5 and cirrus thinning",
+        "experimentID": "G7SST1-cirrus",
+        "minNumberYrsPerSim": "10",
+        "parentActivityID": [
+            "ScenarioMIP"
+        ],
+        "parentExperimentID": [
+            "ssp585"
+        ],
+        "requiredModelComponents": [
+            "AGCM"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 241,
+    "label": "G7SST1-cirrus",
+    "rawName": "G7SST1-cirrus",
+    "status": "pending",
+    "uid": "fd6897e6-6200-4450-a351-788a610f3d62"
+}

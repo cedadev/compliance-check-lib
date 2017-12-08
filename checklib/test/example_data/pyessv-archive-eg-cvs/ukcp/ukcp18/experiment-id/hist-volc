@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "hist-volc",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "DAMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Historical volcanic-only run",
+        "endYear": "2020",
+        "experiment": "historical volcanic-only run",
+        "experimentID": "hist-volc",
+        "minNumberYrsPerSim": "171",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "piControl"
+        ],
+        "requiredModelComponents": [
+            "AOGCM"
+        ],
+        "startYear": "1850",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "idx": 183,
+    "label": "hist-volc",
+    "rawName": "hist-volc",
+    "status": "pending",
+    "uid": "53c3520b-059e-42c3-a804-68d4c4a3c74e"
+}

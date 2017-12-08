@@ -1,0 +1,35 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "land-crop-grass",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "LUMIP"
+        ],
+        "additionalAllowedModelComponents": "",
+        "description": "Same as land-hist but with all new crop and pastureland treated as unmanaged grassland",
+        "endYear": "2014",
+        "experiment": "historical land-only with cropland as natural grassland",
+        "experimentID": "land-crop-grass",
+        "minNumberYrsPerSim": "165",
+        "parentActivityID": [
+            "no parent"
+        ],
+        "parentExperimentID": [
+            "no parent"
+        ],
+        "requiredModelComponents": [
+            "LAND"
+        ],
+        "startYear": "1850 or 1700",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 26,
+    "label": "land-crop-grass",
+    "rawName": "land-crop-grass",
+    "status": "pending",
+    "uid": "e8163cfa-1e75-43d2-9ed9-4f68b8878691"
+}

@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "past1000",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "PMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "main forcings: trace gases, volcanoes, solar variability, land use",
+        "endYear": "1849",
+        "experiment": "last millennium",
+        "experimentID": "past1000",
+        "minNumberYrsPerSim": "1000",
+        "parentActivityID": [
+            "no parent"
+        ],
+        "parentExperimentID": [
+            "no parent"
+        ],
+        "requiredModelComponents": [
+            "AOGCM"
+        ],
+        "startYear": "850",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "idx": 88,
+    "label": "past1000",
+    "rawName": "past1000",
+    "status": "pending",
+    "uid": "c35b4620-3765-4956-bc0c-22e528cd9620"
+}

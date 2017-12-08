@@ -1,0 +1,59 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "cams-csm1-0",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityParticipation": [
+            "CMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institutionID": [
+            "CAMS"
+        ],
+        "label": "CAMS_CSM 1.0",
+        "labelExtended": "CAMS_CSM 1.0",
+        "modelComponent": {
+            "aerosol": {
+                "description": "none",
+                "nominalResolution": "none"
+            },
+            "atmos": {
+                "description": "ECHAM5_CAMS (T106; 320 x 160 longitude/latitude; 31 levels; top level 10 mb)",
+                "nominalResolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "nominalResolution": "none"
+            },
+            "land": {
+                "description": "CoLM 1.0",
+                "nominalResolution": ""
+            },
+            "landIce": {
+                "description": "none",
+                "nominalResolution": "none"
+            },
+            "ocean": {
+                "description": "MOM4 (tripolar; 360 x 200 longitude/latitude, primarily 1deg latitude/longitude, down to 1/3deg within 30deg of the equatorial tropics; 50 levels; top grid cell 0-10 m)",
+                "nominalResolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "nominalResolution": "none"
+            },
+            "seaIce": {
+                "description": "SIS 1.0",
+                "nominalResolution": ""
+            }
+        },
+        "releaseYear": "2016",
+        "sourceID": "CAMS_CSM1-0"
+    },
+    "idx": 1,
+    "label": "CAMS_CSM1-0",
+    "rawName": "CAMS_CSM1-0",
+    "status": "pending",
+    "uid": "fe035424-20e5-45c0-bb61-64580b275245"
+}

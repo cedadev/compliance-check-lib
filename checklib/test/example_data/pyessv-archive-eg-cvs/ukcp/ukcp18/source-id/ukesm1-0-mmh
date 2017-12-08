@@ -1,0 +1,60 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "ukesm1-0-mmh",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityParticipation": [
+            ""
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institutionID": [
+            "MOHC",
+            "NERC"
+        ],
+        "label": "UKESM1.0-MMh",
+        "labelExtended": "UKESM1.0-N216ORCA025hybrid",
+        "modelComponent": {
+            "aerosol": {
+                "description": "UKCA-GLOMAP-mode (horizontal resolution degraded relative to that used for atmosphere physics)",
+                "nominalResolution": ""
+            },
+            "atmos": {
+                "description": "MetUM-HadGEM3-GA7.1 (432 x 324 N216; 85 levels; top level 85km)",
+                "nominalResolution": ""
+            },
+            "atmosChem": {
+                "description": "UKCA-StratTrop (horizontal resolution degraded relative to that used for atmosphere physics)",
+                "nominalResolution": ""
+            },
+            "land": {
+                "description": "JULES-HadGEM3-GL7.1",
+                "nominalResolution": ""
+            },
+            "landIce": {
+                "description": "BISICLES (only active in ISMIP experiments)",
+                "nominalResolution": ""
+            },
+            "ocean": {
+                "description": "NEMO-HadGEM3-GO6.0 (ORCA025 tripolar primarily 0.25 deg latitude/longitude; 75 levels; top grid cell 0-1m)",
+                "nominalResolution": ""
+            },
+            "ocnBgchem": {
+                "description": "MEDUSA2 (horizontal resolution degraded relative to that used for ocean physics)",
+                "nominalResolution": ""
+            },
+            "seaIce": {
+                "description": "CICE-HadGEM3-GSI8 (ORCA025 tripolar primarily 0.25 deg latitude/longitude)",
+                "nominalResolution": ""
+            }
+        },
+        "releaseYear": "2018",
+        "sourceID": "UKESM1-0-MMh"
+    },
+    "idx": 49,
+    "label": "UKESM1-0-MMh",
+    "rawName": "UKESM1-0-MMh",
+    "status": "pending",
+    "uid": "fae98cde-a248-4d5f-8321-0de7031b744d"
+}

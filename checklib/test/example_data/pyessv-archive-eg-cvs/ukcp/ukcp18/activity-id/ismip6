@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "ismip6",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "idx": 12,
+    "label": "ISMIP6",
+    "rawName": "ISMIP6",
+    "status": "pending",
+    "uid": "6b1f52c9-e51f-4d83-a8fe-3a59637ffb9c"
+}

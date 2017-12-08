@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "temp-mean",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "idx": 1,
+    "label": "temp-mean",
+    "rawName": "temp-mean",
+    "status": "pending",
+    "uid": "699519ed-3351-428b-bde1-dfe4164e7392"
+}

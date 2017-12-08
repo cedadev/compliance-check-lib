@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "agcm",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "idx": 1,
+    "label": "AGCM",
+    "rawName": "AGCM",
+    "status": "pending",
+    "uid": "b202a049-29e2-4f79-899c-3bf8f6fa9cca"
+}

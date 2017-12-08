@@ -1,0 +1,38 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "piclim-bc",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "AerChemMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "CHEM"
+        ],
+        "description": "Perturbation from 1850 control using 2014 BC emissions",
+        "endYear": "",
+        "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 black carbon emissions",
+        "experimentID": "piClim-BC",
+        "minNumberYrsPerSim": "30",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "piControl"
+        ],
+        "requiredModelComponents": [
+            "AGCM",
+            "AER"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 203,
+    "label": "piClim-BC",
+    "rawName": "piClim-BC",
+    "status": "pending",
+    "uid": "ea08a603-d05b-454d-94cb-975ba0ebdcb1"
+}

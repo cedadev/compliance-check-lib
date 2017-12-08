@@ -1,0 +1,35 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "land-hist-wfdei",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "LS3MIP"
+        ],
+        "additionalAllowedModelComponents": "",
+        "description": "Land only simulations",
+        "endYear": "2014",
+        "experiment": "as land-hist with WFDEI forcings",
+        "experimentID": "land-hist-wfdei",
+        "minNumberYrsPerSim": "165",
+        "parentActivityID": [
+            "no parent"
+        ],
+        "parentExperimentID": [
+            "no parent"
+        ],
+        "requiredModelComponents": [
+            "LAND"
+        ],
+        "startYear": "1850",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 240,
+    "label": "land-hist-wfdei",
+    "rawName": "land-hist-wfdei",
+    "status": "pending",
+    "uid": "355f0fe8-cd7e-48a2-8afc-a0b6ba1ed9ee"
+}

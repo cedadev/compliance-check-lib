@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "abrupt-0p5xco2",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "CFMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Identical to the DECK abrupt-4xCO2, but at 0.5xCO2",
+        "endYear": "",
+        "experiment": "abrupt halving of CO2",
+        "experimentID": "abrupt-0p5xCO2",
+        "minNumberYrsPerSim": "150",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "piControl"
+        ],
+        "requiredModelComponents": [
+            "AOGCM"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 67,
+    "label": "abrupt-0p5xCO2",
+    "rawName": "abrupt-0p5xCO2",
+    "status": "pending",
+    "uid": "df5a7092-053f-4ff8-b012-d429fe3aa3b7"
+}

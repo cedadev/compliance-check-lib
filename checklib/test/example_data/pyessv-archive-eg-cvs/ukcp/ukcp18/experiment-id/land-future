@@ -1,0 +1,35 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "land-future",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "LS3MIP"
+        ],
+        "additionalAllowedModelComponents": "",
+        "description": "Land only simulations",
+        "endYear": "2100",
+        "experiment": "future land-only",
+        "experimentID": "land-future",
+        "minNumberYrsPerSim": "86",
+        "parentActivityID": [
+            "no parent"
+        ],
+        "parentExperimentID": [
+            "no parent"
+        ],
+        "requiredModelComponents": [
+            "LAND"
+        ],
+        "startYear": "2015",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 192,
+    "label": "land-future",
+    "rawName": "land-future",
+    "status": "pending",
+    "uid": "497a2243-ee56-4100-bbd8-4a62e178ac27"
+}

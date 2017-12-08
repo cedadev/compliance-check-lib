@@ -1,0 +1,40 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "control-slab",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "VolMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "slab control run for volc-pinatubo-slab",
+        "endYear": "",
+        "experiment": "control with slab ocean",
+        "experimentID": "control-slab",
+        "minNumberYrsPerSim": "30",
+        "parentActivityID": [
+            "no parent"
+        ],
+        "parentExperimentID": [
+            "no parent"
+        ],
+        "requiredModelComponents": [
+            "AGCM",
+            "SLAB"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "idx": 56,
+    "label": "control-slab",
+    "rawName": "control-slab",
+    "status": "pending",
+    "uid": "c75de2a1-0f01-4477-ad28-7c1aa4fd10e7"
+}

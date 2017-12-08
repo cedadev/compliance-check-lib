@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "60km",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "idx": 6,
+    "label": "60km",
+    "rawName": "60km",
+    "status": "pending",
+    "uid": "7841857b-a4d5-413b-8465-2945ae23ffe3"
+}

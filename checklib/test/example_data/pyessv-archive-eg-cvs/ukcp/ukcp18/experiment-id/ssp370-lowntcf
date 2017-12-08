@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "ssp370-lowntcf",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "AerChemMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Future SSP3-7.0 with reduced NTCF emissions",
+        "endYear": "2055",
+        "experiment": "SSP3-7.0, with low NTCF emissions",
+        "experimentID": "ssp370-lowNTCF",
+        "minNumberYrsPerSim": "41",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "historical"
+        ],
+        "requiredModelComponents": [
+            "AOGCM",
+            "AER"
+        ],
+        "startYear": "2015",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "idx": 42,
+    "label": "ssp370-lowNTCF",
+    "rawName": "ssp370-lowNTCF",
+    "status": "pending",
+    "uid": "b961b2c1-5e07-4fa5-82a4-269cbd6b627f"
+}

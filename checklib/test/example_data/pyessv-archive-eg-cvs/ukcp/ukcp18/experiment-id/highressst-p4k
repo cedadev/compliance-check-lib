@@ -1,0 +1,37 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "highressst-p4k",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "HighResMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER"
+        ],
+        "description": "Similar to CFMIP amip-p4K, add a uniform warming of 4K to highresSST-present SSTs and run the experiment parallel to highresSST-present",
+        "endYear": "2014",
+        "experiment": "uniform 4K warming of highresSST-present SST",
+        "experimentID": "highresSST-p4K",
+        "minNumberYrsPerSim": "36",
+        "parentActivityID": [
+            "HighResMIP"
+        ],
+        "parentExperimentID": [
+            "highresSST-present"
+        ],
+        "requiredModelComponents": [
+            "AGCM"
+        ],
+        "startYear": "1979",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "idx": 201,
+    "label": "highresSST-p4K",
+    "rawName": "highresSST-p4K",
+    "status": "pending",
+    "uid": "42cbe6a4-af2e-42b0-a27b-4b16ca564691"
+}

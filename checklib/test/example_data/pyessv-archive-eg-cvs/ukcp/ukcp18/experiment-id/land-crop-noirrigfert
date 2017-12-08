@@ -1,0 +1,35 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "land-crop-noirrigfert",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "LUMIP"
+        ],
+        "additionalAllowedModelComponents": "",
+        "description": "Same as land-hist except with plants in cropland area utilizing at least some form of crop management (e.g., planting and harvesting) rather than simulating cropland vegetation as a natural grassland. Irrigated area and fertilizer area/use should be held constant",
+        "endYear": "2014",
+        "experiment": "historical land-only with managed crops but with irrigation and fertilization held constant",
+        "experimentID": "land-crop-noIrrigFert",
+        "minNumberYrsPerSim": "165",
+        "parentActivityID": [
+            "no parent"
+        ],
+        "parentExperimentID": [
+            "no parent"
+        ],
+        "requiredModelComponents": [
+            "LAND"
+        ],
+        "startYear": "1850 or 1700",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 158,
+    "label": "land-crop-noIrrigFert",
+    "rawName": "land-crop-noIrrigFert",
+    "status": "pending",
+    "uid": "fc3940cf-1292-474b-846d-edc241643e9c"
+}

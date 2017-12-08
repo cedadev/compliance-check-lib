@@ -1,0 +1,38 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "aqua-4xco2",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "CFMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM"
+        ],
+        "description": "Extended version of CMIP5/CFMIP-2 aqua4xCO2 experiment. Aquaplanet experiment where SSTs are held at control values and the CO2 seen by the radiation scheme is quadrupled",
+        "endYear": "",
+        "experiment": "aquaplanet with control SST and 4xCO2",
+        "experimentID": "aqua-4xCO2",
+        "minNumberYrsPerSim": "10",
+        "parentActivityID": [
+            "no parent"
+        ],
+        "parentExperimentID": [
+            "no parent"
+        ],
+        "requiredModelComponents": [
+            "AGCM"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "idx": 133,
+    "label": "aqua-4xCO2",
+    "rawName": "aqua-4xCO2",
+    "status": "pending",
+    "uid": "cb79dd72-015e-492d-b0e4-99242bfa756c"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "physics-index",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "idx": 17,
+    "label": "physics_index",
+    "rawName": "physics_index",
+    "status": "pending",
+    "uid": "010c618f-dbbf-4e7b-8de1-19729597910d"
+}

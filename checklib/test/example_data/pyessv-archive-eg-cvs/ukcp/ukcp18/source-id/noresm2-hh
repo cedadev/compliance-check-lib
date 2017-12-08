@@ -1,0 +1,59 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "noresm2-hh",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityParticipation": [
+            "HighResMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institutionID": [
+            "NCC"
+        ],
+        "label": "NorESM2-HH",
+        "labelExtended": "NorESM2-HH (high atmosphere-high ocean resolution, GHG concentration driven)",
+        "modelComponent": {
+            "aerosol": {
+                "description": "OsloAero",
+                "nominalResolution": ""
+            },
+            "atmos": {
+                "description": "CAM-OSLO (0.25 degree resolution; 1152 x 768; 32 levels; top level 3 mb)",
+                "nominalResolution": "25 km"
+            },
+            "atmosChem": {
+                "description": "OsloChemSimp",
+                "nominalResolution": ""
+            },
+            "land": {
+                "description": "CLM",
+                "nominalResolution": ""
+            },
+            "landIce": {
+                "description": "CISM",
+                "nominalResolution": "25 km"
+            },
+            "ocean": {
+                "description": "MICOM (0.25 degree resolution; 1440 x 1152; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])",
+                "nominalResolution": "25 km"
+            },
+            "ocnBgchem": {
+                "description": "HAMOCC",
+                "nominalResolution": ""
+            },
+            "seaIce": {
+                "description": "CICE",
+                "nominalResolution": ""
+            }
+        },
+        "releaseYear": "2018",
+        "sourceID": "NorESM2-HH"
+    },
+    "idx": 12,
+    "label": "NorESM2-HH",
+    "rawName": "NorESM2-HH",
+    "status": "pending",
+    "uid": "9dce9d44-37ca-4a3f-9b38-d44523a24b57"
+}

@@ -1,0 +1,69 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "gfdl-esm4",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityParticipation": [
+            "AerChemMIP",
+            "C4MIP",
+            "CFMIP",
+            "CMIP",
+            "DAMIP",
+            "DynVarMIP",
+            "GMMIP",
+            "LUMIP",
+            "OMIP",
+            "RFMIP",
+            "ScenarioMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institutionID": [
+            "NOAA-GFDL"
+        ],
+        "label": "GFDL-ESM4",
+        "labelExtended": "GFDL-ESM4",
+        "modelComponent": {
+            "aerosol": {
+                "description": "interactive",
+                "nominalResolution": "100 km"
+            },
+            "atmos": {
+                "description": "GFDL-AM4.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 49 levels; top level 1 Pa)",
+                "nominalResolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "GFDL-ATMCHEM4.1 (full atmospheric chemistry)",
+                "nominalResolution": "100 km"
+            },
+            "land": {
+                "description": "GFDL-LM4.1",
+                "nominalResolution": "100 km"
+            },
+            "landIce": {
+                "description": "GFDL-LM4.1",
+                "nominalResolution": "100 km"
+            },
+            "ocean": {
+                "description": "GFDL-MOM6 (tripolar - nominal 0.5 deg; 720 x 360 longitude/latitude; 75 levels; top grid cell 0-2 m)",
+                "nominalResolution": "50 km"
+            },
+            "ocnBgchem": {
+                "description": "COBALT 2.0",
+                "nominalResolution": "50 km"
+            },
+            "seaIce": {
+                "description": "SIS2",
+                "nominalResolution": "50 km"
+            }
+        },
+        "releaseYear": "2017",
+        "sourceID": "GFDL-ESM4"
+    },
+    "idx": 55,
+    "label": "GFDL-ESM4",
+    "rawName": "GFDL-ESM4",
+    "status": "pending",
+    "uid": "79e9dc13-306e-4ac3-acfa-e765e090cefc"
+}

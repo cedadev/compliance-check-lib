@@ -1,0 +1,59 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "cnrm-esm2-1",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityParticipation": [
+            ""
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institutionID": [
+            "CNRM-CERFACS"
+        ],
+        "label": "CNRM-ESM2-1",
+        "labelExtended": "CNRM-ESM2-1",
+        "modelComponent": {
+            "aerosol": {
+                "description": "TACTIC (v2.0)",
+                "nominalResolution": ""
+            },
+            "atmos": {
+                "description": "Arpege 6.2 (Tl127; 91 levels; top level 78.4 km)",
+                "nominalResolution": ""
+            },
+            "atmosChem": {
+                "description": "REPROBUS-C (v2.0)",
+                "nominalResolution": ""
+            },
+            "land": {
+                "description": "Surfex 8.0c",
+                "nominalResolution": ""
+            },
+            "landIce": {
+                "description": "none",
+                "nominalResolution": "none"
+            },
+            "ocean": {
+                "description": "Nemo 3.6 (eORCA1; tripolar primarily 1deg latitude/longitude; 75 levels; top grid cell 0-1 m)",
+                "nominalResolution": ""
+            },
+            "ocnBgchem": {
+                "description": "Pisces 2.s",
+                "nominalResolution": ""
+            },
+            "seaIce": {
+                "description": "Gelato 6.1",
+                "nominalResolution": ""
+            }
+        },
+        "releaseYear": "2016",
+        "sourceID": "CNRM-ESM2-1"
+    },
+    "idx": 31,
+    "label": "CNRM-ESM2-1",
+    "rawName": "CNRM-ESM2-1",
+    "status": "pending",
+    "uid": "ca6cac77-fc3a-4ec1-8b7c-4b014219beb7"
+}

@@ -1,0 +1,38 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "a4sst",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "CFMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM"
+        ],
+        "description": "As piSST, but with monthly-varying SSTs taken from years 111-140 of each model's own abrupt4xCO2 experiment instead of from piControl. Sea-ice is unchanged from piSST",
+        "endYear": "",
+        "experiment": "as piSST but with SSTs from abrupt4xCO2",
+        "experimentID": "a4SST",
+        "minNumberYrsPerSim": "30",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "abrupt4xCO2"
+        ],
+        "requiredModelComponents": [
+            "AGCM"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 206,
+    "label": "a4SST",
+    "rawName": "a4SST",
+    "status": "pending",
+    "uid": "1e9d6511-0e19-4eb2-ad7c-3878be835d39"
+}

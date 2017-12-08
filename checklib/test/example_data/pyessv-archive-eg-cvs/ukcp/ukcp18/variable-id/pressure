@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "pressure",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "idx": 3,
+    "label": "pressure",
+    "rawName": "pressure",
+    "status": "pending",
+    "uid": "8a5d145a-6ec3-49e8-852d-83ba3f30ea75"
+}

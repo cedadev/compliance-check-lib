@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "river-basins",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "idx": 5,
+    "label": "river_basins",
+    "rawName": "river_basins",
+    "status": "pending",
+    "uid": "a31804b4-861d-4463-a844-f00c5990d048"
+}

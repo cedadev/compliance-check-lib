@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "dcppc-amv-pos",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "DCPP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "C1.2 Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs",
+        "endYear": "",
+        "experiment": "Idealized climate impact of positive AMV anomaly pattern",
+        "experimentID": "dcppC-amv-pos",
+        "minNumberYrsPerSim": "10",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "piControl"
+        ],
+        "requiredModelComponents": [
+            "AOGCM"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "idx": 24,
+    "label": "dcppC-amv-pos",
+    "rawName": "dcppC-amv-pos",
+    "status": "pending",
+    "uid": "64ffb6b1-67c0-4cd0-bf1f-8c293d9f73d2"
+}

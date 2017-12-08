@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "faf-stress",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "FAFMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "1xCO2 experiment, parallel to piControl, forced over the ocean by surface windstress anomalies obtained from the CMIP5 ensemble mean of 1pctCO2 experiments at the time of 2xCO2",
+        "endYear": "",
+        "experiment": "control plus perturbative surface flux of momentum into ocean",
+        "experimentID": "faf-stress",
+        "minNumberYrsPerSim": "70",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "piControl"
+        ],
+        "requiredModelComponents": [
+            "AOGCM"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "idx": 98,
+    "label": "faf-stress",
+    "rawName": "faf-stress",
+    "status": "pending",
+    "uid": "5c538252-3dee-46ce-b3d7-04694e54293b"
+}

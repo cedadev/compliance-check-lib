@@ -1,0 +1,38 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "futuresst-4xco2-solar",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "GeoMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM"
+        ],
+        "description": "Time slice at year 100 of G1ext to examine radiative forcing of abrupt4xCO2 and G1",
+        "endYear": "",
+        "experiment": "year 100 SSTs from abrupt4xCO2 with quadrupled CO2 and solar reduction",
+        "experimentID": "futureSST-4xCO2-solar",
+        "minNumberYrsPerSim": "10",
+        "parentActivityID": [
+            "GeoMIP"
+        ],
+        "parentExperimentID": [
+            "G1"
+        ],
+        "requiredModelComponents": [
+            "AGCM"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 132,
+    "label": "futureSST-4xCO2-solar",
+    "rawName": "futureSST-4xCO2-solar",
+    "status": "pending",
+    "uid": "3a0cded5-dd7e-44b0-b783-d8905094c965"
+}

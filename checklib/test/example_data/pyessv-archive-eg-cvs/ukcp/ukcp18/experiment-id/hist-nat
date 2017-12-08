@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "hist-nat",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "DAMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Historical natural-only run",
+        "endYear": "2020",
+        "experiment": "historical natural-only run",
+        "experimentID": "hist-nat",
+        "minNumberYrsPerSim": "171",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "piControl"
+        ],
+        "requiredModelComponents": [
+            "AOGCM"
+        ],
+        "startYear": "1850",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "idx": 217,
+    "label": "hist-nat",
+    "rawName": "hist-nat",
+    "status": "pending",
+    "uid": "1dc4ff6f-6ddb-47a1-b494-5635657f2065"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "ukcp18-land-prob-25km",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "idx": 0,
+    "label": "ukcp18-land-prob-25km",
+    "rawName": "ukcp18-land-prob-25km",
+    "status": "pending",
+    "uid": "bba04ecb-9b62-4e6e-9d9b-22d0e868747b"
+}

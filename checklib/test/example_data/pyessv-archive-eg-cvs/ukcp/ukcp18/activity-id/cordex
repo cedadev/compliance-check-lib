@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "cordex",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "idx": 4,
+    "label": "CORDEX",
+    "rawName": "CORDEX",
+    "status": "pending",
+    "uid": "11c59af9-0f99-434b-b05a-6d66dd99e96d"
+}

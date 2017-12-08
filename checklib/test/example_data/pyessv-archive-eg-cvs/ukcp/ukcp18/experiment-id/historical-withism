@@ -1,0 +1,40 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "historical-withism",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "ISMIP6"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Historical simulation that includes interactive ice sheets. Set up follows the historical experiment",
+        "endYear": "2014",
+        "experiment": "historical with interactive ice sheet",
+        "experimentID": "historical-withism",
+        "minNumberYrsPerSim": "165",
+        "parentActivityID": [
+            "ISMIP6"
+        ],
+        "parentExperimentID": [
+            "piControl-withism"
+        ],
+        "requiredModelComponents": [
+            "AOGCM",
+            "ISM"
+        ],
+        "startYear": "1850",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 174,
+    "label": "historical-withism",
+    "rawName": "historical-withism",
+    "status": "pending",
+    "uid": "2662d296-883e-4269-b707-a101b57a31e3"
+}

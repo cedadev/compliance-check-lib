@@ -1,0 +1,41 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "dcppc-hindcast-noelchichon",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "DCPP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "C3.2 Effects of volcanoes on decadal prediction and predictability of forced and internal variability components. First full hindcast year is 1982",
+        "endYear": "5 - 10 years after start year",
+        "experiment": "hindcast but with only background volcanic forcing to be the same as that used in the 2015 forecast",
+        "experimentID": "dcppC-hindcast-noElChichon",
+        "minNumberYrsPerSim": "5",
+        "parentActivityID": [
+            "no parent",
+            "DCPP"
+        ],
+        "parentExperimentID": [
+            "no parent",
+            "dcppA-assim"
+        ],
+        "requiredModelComponents": [
+            "AOGCM"
+        ],
+        "startYear": "1981",
+        "subExperimentID": [
+            "s1981"
+        ],
+        "tier": "2"
+    },
+    "idx": 69,
+    "label": "dcppC-hindcast-noElChichon",
+    "rawName": "dcppC-hindcast-noElChichon",
+    "status": "pending",
+    "uid": "74e24a3d-859d-467f-8d57-eca39bf3d8a1"
+}

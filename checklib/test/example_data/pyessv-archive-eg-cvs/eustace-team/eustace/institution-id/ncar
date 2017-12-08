@@ -1,0 +1,14 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "ncar",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "postalAddress": "National Center for Atmospheric Research, Boulder, CO 80307, USA"
+    },
+    "description": "NCAR",
+    "idx": 0,
+    "label": "NCAR",
+    "rawName": "NCAR",
+    "status": "pending",
+    "uid": "46a44699-939d-4ec6-a33e-d936bb7cd4b1"
+}

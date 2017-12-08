@@ -1,0 +1,59 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "nicam16-8s",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityParticipation": [
+            ""
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institutionID": [
+            "MIROC"
+        ],
+        "label": "NICAM16-8S",
+        "labelExtended": "NICAM.16 gl08-L38 with NSW6",
+        "modelComponent": {
+            "aerosol": {
+                "description": "Prescribed MACv2-SP",
+                "nominalResolution": ""
+            },
+            "atmos": {
+                "description": "NICAM.16 (28km icosahedral grid; 655,362 grid cells (=10*4^8+2); 38 levels; top level 40 km)",
+                "nominalResolution": ""
+            },
+            "atmosChem": {
+                "description": "none",
+                "nominalResolution": "none"
+            },
+            "land": {
+                "description": "MATSIRO6 (w/o MOSAIC)",
+                "nominalResolution": ""
+            },
+            "landIce": {
+                "description": "none",
+                "nominalResolution": "none"
+            },
+            "ocean": {
+                "description": "none",
+                "nominalResolution": "none"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "nominalResolution": "none"
+            },
+            "seaIce": {
+                "description": "Fixed",
+                "nominalResolution": ""
+            }
+        },
+        "releaseYear": "2017",
+        "sourceID": "NICAM16-8S"
+    },
+    "idx": 51,
+    "label": "NICAM16-8S",
+    "rawName": "NICAM16-8S",
+    "status": "pending",
+    "uid": "239abd86-e6a4-4644-8e2b-7af15b817c11"
+}

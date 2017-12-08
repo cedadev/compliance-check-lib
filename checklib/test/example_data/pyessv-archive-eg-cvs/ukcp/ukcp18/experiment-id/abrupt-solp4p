@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "abrupt-solp4p",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "CFMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Conceptually similar to abrupt 4xCO2 DECK experiment, except that the solar constant rather than CO2 is abruptly increased by 4%",
+        "endYear": "",
+        "experiment": "abrupt 4% increase in solar constant",
+        "experimentID": "abrupt-solp4p",
+        "minNumberYrsPerSim": "150",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "piControl"
+        ],
+        "requiredModelComponents": [
+            "AOGCM"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 65,
+    "label": "abrupt-solp4p",
+    "rawName": "abrupt-solp4p",
+    "status": "pending",
+    "uid": "56bc94a5-26b8-40a5-a91d-5c70a0fc4ca7"
+}

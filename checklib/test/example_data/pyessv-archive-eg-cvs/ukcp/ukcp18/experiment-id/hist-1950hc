@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "hist-1950hc",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "AerChemMIP"
+        ],
+        "additionalAllowedModelComponents": [
+            "BGC"
+        ],
+        "description": "Historical WMGHG concentrations and NTCF emissions, 1950 halocarbon concentrations, start 1950",
+        "endYear": "2014",
+        "experiment": "historical forcing, but with1950s halocarbon concentrations; initialized in 1950",
+        "experimentID": "hist-1950HC",
+        "minNumberYrsPerSim": "65",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "historical"
+        ],
+        "requiredModelComponents": [
+            "AOGCM",
+            "AER",
+            "CHEM"
+        ],
+        "startYear": "1950",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "idx": 244,
+    "label": "hist-1950HC",
+    "rawName": "hist-1950HC",
+    "status": "pending",
+    "uid": "30ce118e-5901-45e6-8451-e5de3f098a8a"
+}

@@ -1,0 +1,35 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "land-nolu",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "LUMIP"
+        ],
+        "additionalAllowedModelComponents": "",
+        "description": "Same as land-hist except no land-use change",
+        "endYear": "2014",
+        "experiment": "historical land-only with no land-use change",
+        "experimentID": "land-noLu",
+        "minNumberYrsPerSim": "165",
+        "parentActivityID": [
+            "no parent"
+        ],
+        "parentExperimentID": [
+            "no parent"
+        ],
+        "requiredModelComponents": [
+            "LAND"
+        ],
+        "startYear": "1850 or 1700",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "idx": 239,
+    "label": "land-noLu",
+    "rawName": "land-noLu",
+    "status": "pending",
+    "uid": "6c31d925-5de7-4d92-8ad7-26a8162ea5c9"
+}

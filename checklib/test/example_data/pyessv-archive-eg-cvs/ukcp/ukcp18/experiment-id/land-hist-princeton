@@ -1,0 +1,35 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "land-hist-princeton",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "LS3MIP"
+        ],
+        "additionalAllowedModelComponents": "",
+        "description": "Land only simulations",
+        "endYear": "2014",
+        "experiment": "as land-hist with Princeton forcings",
+        "experimentID": "land-hist-princeton",
+        "minNumberYrsPerSim": "165",
+        "parentActivityID": [
+            "no parent"
+        ],
+        "parentExperimentID": [
+            "no parent"
+        ],
+        "requiredModelComponents": [
+            "LAND"
+        ],
+        "startYear": "1850",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 134,
+    "label": "land-hist-princeton",
+    "rawName": "land-hist-princeton",
+    "status": "pending",
+    "uid": "439709dd-5738-4964-8306-68c14c489fb0"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "further-info-url",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "idx": 8,
+    "label": "further_info_url",
+    "rawName": "further_info_url",
+    "status": "pending",
+    "uid": "414dfccf-b0cc-4ee3-ab2b-90b1921d0f3a"
+}

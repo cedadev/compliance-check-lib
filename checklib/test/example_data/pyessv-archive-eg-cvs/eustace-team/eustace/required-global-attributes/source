@@ -1,0 +1,12 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "source",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {},
+    "description": "source",
+    "idx": 6,
+    "label": "source",
+    "rawName": "source",
+    "status": "pending",
+    "uid": "d42f6789-e41e-4251-a9b1-d41b8fe33bc4"
+}

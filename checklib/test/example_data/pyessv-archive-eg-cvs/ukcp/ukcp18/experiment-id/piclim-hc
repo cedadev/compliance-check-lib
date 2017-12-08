@@ -1,0 +1,37 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "piclim-hc",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "AerChemMIP"
+        ],
+        "additionalAllowedModelComponents": "",
+        "description": "Perturbation from 1850 control using 2014 halocarbon concentrations",
+        "endYear": "",
+        "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 halocarbon concentrations (including chemistry)",
+        "experimentID": "piClim-HC",
+        "minNumberYrsPerSim": "30",
+        "parentActivityID": [
+            "CMIP"
+        ],
+        "parentExperimentID": [
+            "piControl"
+        ],
+        "requiredModelComponents": [
+            "AGCM",
+            "AER",
+            "CHEM"
+        ],
+        "startYear": "",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "idx": 100,
+    "label": "piClim-HC",
+    "rawName": "piClim-HC",
+    "status": "pending",
+    "uid": "ae4a61f7-9c9a-4e34-a68a-05fac9a58329"
+}

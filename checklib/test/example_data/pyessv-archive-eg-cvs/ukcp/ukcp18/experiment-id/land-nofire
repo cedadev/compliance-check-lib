@@ -1,0 +1,35 @@
+{
+    "_type": "pyessv._model.term",
+    "canonicalName": "land-nofire",
+    "createDate": "2017-05-31 00:00:00+00:00",
+    "data": {
+        "activityID": [
+            "LUMIP"
+        ],
+        "additionalAllowedModelComponents": "",
+        "description": "Same as land-hist but with anthropogenic ignition and suppression held to 1850 levels",
+        "endYear": "2014",
+        "experiment": "historical land-only with no human fire management",
+        "experimentID": "land-noFire",
+        "minNumberYrsPerSim": "165",
+        "parentActivityID": [
+            "no parent"
+        ],
+        "parentExperimentID": [
+            "no parent"
+        ],
+        "requiredModelComponents": [
+            "LAND"
+        ],
+        "startYear": "1850 or 1700",
+        "subExperimentID": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "idx": 229,
+    "label": "land-noFire",
+    "rawName": "land-noFire",
+    "status": "pending",
+    "uid": "311bc923-0f8f-4a48-b283-9cb47af06e3b"
+}
