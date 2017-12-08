@@ -1,0 +1,55 @@
+{
+    "_type": "pyessv._model.authority",
+    "canonicalName": "ncas",
+    "createDate": "2017-11-30 00:00:00+00:00",
+    "description": "NCAS Atmospheric Measurement Facility CVs",
+    "label": "NCAS",
+    "rawName": "NCAS",
+    "scopes": [
+        {
+            "_type": "pyessv._model.scope",
+            "canonicalName": "amf",
+            "collections": [
+                {
+                    "_type": "pyessv._model.collection",
+                    "canonicalName": "variable",
+                    "createDate": "2017-11-30 00:00:00+00:00",
+                    "description": "NCAS AMF CV collection:",
+                    "label": "variable",
+                    "rawName": "variable",
+                    "termRegex": null,
+                    "terms": [
+                        "hour:184ec0e0-240c-4d0e-bc94-def12a899bbc",
+                        "time:c015e5c1-166f-4b68-9d6b-a874e886f7dc",
+                        "day-of-year:8de1c6e8-6ef0-46c3-98f1-db00b33993d5",
+                        "month:c36250f7-9aad-4078-8c76-229637efc838",
+                        "second:3244549e-8e26-4e49-8593-912e89318d98",
+                        "year:5abb88e8-692f-42d8-a040-ea83298926e1",
+                        "day:04bc5b56-7b3c-490d-951f-d932139f1e63",
+                        "minute:cc686c95-fce5-4fe3-ab94-42eccdaa1536"
+                    ],
+                    "uid": "1aaffde3-9d10-472b-8df1-c70354b716b2"
+                }
+            ],
+            "createDate": "2017-11-30 00:00:00+00:00",
+            "description": "Controlled Vocabularies (CVs) for use in AMF",
+            "label": "AMF",
+            "rawName": "AMF",
+            "uid": "f58cf216-d861-444d-bbe1-42213c696b8b",
+            "url": "https://github.com/agstephens/AMF_CVs"
+        },
+        {
+            "_type": "pyessv._model.scope",
+            "canonicalName": "global",
+            "collections": [],
+            "createDate": "2017-11-30 00:00:00+00:00",
+            "description": "Global controlled Vocabularies (CVs)",
+            "label": "GLOBAL",
+            "rawName": "GLOBAL",
+            "uid": "61862532-b240-465d-93f9-f22130ca97f9",
+            "url": "https://github.com/agstephens/AMF_CVs"
+        }
+    ],
+    "uid": "3d48c14b-f130-4718-ad37-a24449c75446",
+    "url": "https://tba.tba.com/tba"
+}
