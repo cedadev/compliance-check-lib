@@ -359,6 +359,20 @@ def test_NCVariableMetadataCheck_fail_1():
 def test_NCVariableMetadataCheck_fail_2():
     x = NCVariableMetadataCheck(kwargs={"var_id": "a-dog?"}, vocabulary_ref="ncas:amf")
     try:
-        resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
+        x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     except Exception, err:
         assert(str(err) == "Could not get value of term based on lookup: 'variable:a-dog?'.")
+
+
+def test_NetCDFFormatCheck_success():
+    x = NetCDFFormatCheck(kwargs={"format": "NETCDF3_CLASSIC"})
+    fpath = 'checklib/test/example_data/nc_file_checks_data/simple_nc.nc'
+    resp = x(Dataset(fpath))
+    assert (resp.value == (1, 1)), resp.msgs
+
+
+def test_NetCDFFormatCheck_fail():
+    x = NetCDFFormatCheck(kwargs={"format": "NOTcdf"})
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
+    assert (resp.value == (0, 1))
+    assert (resp.msgs[0] == "The NetCDF sub-format must be: NOTcdf.")

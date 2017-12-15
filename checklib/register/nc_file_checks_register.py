@@ -393,3 +393,38 @@ class NCVariableMetadataCheck(NCFileCheckBase):
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
+
+
+class NetCDFFormatCheck(NCFileCheckBase):
+    """
+    The NetCDF sub-format must be: {format}.
+    """
+    short_name = "NetCDF sub-format: {format}"
+    defaults = {}
+    message_templates = ["The NetCDF sub-format must be: {format}."]
+
+    level = "HIGH"
+
+    def _setup(self):
+        "Checks that the `format` argument has been provided."
+        if "format" not in self.kwargs:
+            raise ParameterError("Keyword argument 'format' is required for NetCDF Format Check.")
+
+
+    def _get_result(self, primary_arg):
+        ds = primary_arg
+        file_format = getattr(ds, "file_format", None)
+
+        score = 0
+        if file_format == self.kwargs["format"]:
+            score = 1
+
+        messages = []
+
+        if score < self.out_of:
+            messages.append(self.get_messages()[score])
+
+        return Result(self.level, (score, self.out_of),
+                      self.get_short_name(), messages)
+
+
