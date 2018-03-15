@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "sfcwindanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 22, 
+    "label": "sfcWindAnom", 
+    "rawName": "sfcWindAnom", 
+    "status": "pending", 
+    "uid": "404bc7c2-de66-4bfe-bc9e-4457261fcb94"
+}

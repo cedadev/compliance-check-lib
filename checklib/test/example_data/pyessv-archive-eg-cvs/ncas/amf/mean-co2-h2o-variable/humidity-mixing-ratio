@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "humidity-mixing-ratio", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Humidity Mixing Ratio", 
+        "name": "humidity_mixing_ratio", 
+        "standardName": "humidity_mixing_ratio", 
+        "type": "float64", 
+        "units": "1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 0, 
+    "label": "humidity_mixing_ratio", 
+    "rawName": "humidity_mixing_ratio", 
+    "status": "pending", 
+    "uid": "bf19e39f-2943-442d-ac4f-5154200afafb"
+}

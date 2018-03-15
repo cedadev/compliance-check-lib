@@ -1,0 +1,19 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "frequency", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-9999", 
+        "dimensions": "frequency", 
+        "longName": "transmission_frequency", 
+        "metaGroup": "radar_parameters", 
+        "name": "radar_rx_bandwidth", 
+        "type": "float", 
+        "units": "s-1"
+    }, 
+    "idx": 22, 
+    "label": "frequency", 
+    "rawName": "frequency", 
+    "status": "pending", 
+    "uid": "d4a78dae-c369-4a11-94a2-ed95af495af7"
+}

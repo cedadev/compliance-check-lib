@@ -1,0 +1,18 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "altitude-agl", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-9999", 
+        "longName": "altitude_above_ground_level", 
+        "name": "altitude_agl", 
+        "positive": "up", 
+        "type": "double", 
+        "units": "m"
+    }, 
+    "idx": 11, 
+    "label": "altitude_agl", 
+    "rawName": "altitude_agl", 
+    "status": "pending", 
+    "uid": "05678ad4-a59d-4562-a60e-9f7e35b85e09"
+}

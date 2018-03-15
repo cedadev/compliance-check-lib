@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "brightness-temperature", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, radiation_frequency", 
+        "longName": "Brightness Temperature", 
+        "name": "brightness_temperature", 
+        "standardName": "brightness_temperature", 
+        "type": "float64", 
+        "units": "K", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 9, 
+    "label": "brightness_temperature", 
+    "rawName": "brightness_temperature", 
+    "status": "pending", 
+    "uid": "c4248e47-a515-4868-9007-47190abce114"
+}

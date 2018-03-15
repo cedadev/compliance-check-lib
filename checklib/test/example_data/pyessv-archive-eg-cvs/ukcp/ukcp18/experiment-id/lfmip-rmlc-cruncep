@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "lfmip-rmlc-cruncep", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "LS3MIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "AER", 
+            "CHEM", 
+            "BGC"
+        ], 
+        "description": "Prescribed land conditions 30yr running mean with Land-Hist-cruNcep", 
+        "endYear": "2100", 
+        "experiment": "as LFMIP-rmLC with Land-Hist-cruNcep", 
+        "experimentID": "lfmip-rmLC-cruNcep", 
+        "minNumberYrsPerSim": "121", 
+        "parentActivityID": [
+            "CMIP"
+        ], 
+        "parentExperimentID": [
+            "historical"
+        ], 
+        "requiredModelComponents": [
+            "AOGCM"
+        ], 
+        "startYear": "1980", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "2"
+    }, 
+    "idx": 224, 
+    "label": "lfmip-rmLC-cruNcep", 
+    "rawName": "lfmip-rmLC-cruNcep", 
+    "status": "pending", 
+    "uid": "1da34d55-9c64-4c9e-9adb-42787574b1c8"
+}

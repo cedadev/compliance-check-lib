@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "time", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "axis": "T", 
+        "calendar": "standard", 
+        "dimension": "time", 
+        "longName": "Time (seconds since 1970-01-01)", 
+        "name": "time", 
+        "standardName": "time", 
+        "type": "float64", 
+        "units": "seconds since 1970-01-01 00:00:00", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 13, 
+    "label": "time", 
+    "rawName": "time", 
+    "status": "pending", 
+    "uid": "2a7eb3d9-bfd8-4c3d-aebb-1d6e77e9a9e1"
+}

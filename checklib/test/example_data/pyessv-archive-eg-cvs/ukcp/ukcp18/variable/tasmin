@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "tasmin", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 70, 
+    "label": "tasmin", 
+    "rawName": "tasmin", 
+    "status": "pending", 
+    "uid": "5508d584-e1c9-41a3-97e9-9f451e80f9ec"
+}

@@ -1,0 +1,17 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "platform-type", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "string_length_32", 
+        "longName": "platform_type", 
+        "name": "platform_type", 
+        "options": "fixed, vehicle, ship, aircraft_fore, aircraft_aft, aircraft_tail, aircraft_belly, aircraft_roof, aircraft_nose, satellite_orbit, satellite_geostat", 
+        "type": "char"
+    }, 
+    "idx": 21, 
+    "label": "platform_type", 
+    "rawName": "platform_type", 
+    "status": "pending", 
+    "uid": "fb5c6a3e-cc4c-448e-8e78-1914e7feb168"
+}

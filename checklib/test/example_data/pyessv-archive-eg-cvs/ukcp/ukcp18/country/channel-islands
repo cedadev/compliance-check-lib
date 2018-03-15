@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "channel-islands", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 7, 
+    "label": "channel_islands", 
+    "rawName": "channel_islands", 
+    "status": "pending", 
+    "uid": "0ef82e9a-663a-4866-97f6-3692a92a3e4c"
+}

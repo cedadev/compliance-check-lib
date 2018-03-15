@@ -1,0 +1,17 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "sweep-mode", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimensions": "sweep, string_length_32", 
+        "longName": "scan_mode_for_sweep", 
+        "name": "sweep_mode", 
+        "options": "sector, coplane, rhi, vertical_pointing, idle, azimuth_surveillance, elevation_surveillance, sunscan, pointing, calibration, manual_ppi, manual_rhi, sunscan_rhi", 
+        "type": "char"
+    }, 
+    "idx": 9, 
+    "label": "sweep_mode", 
+    "rawName": "sweep_mode", 
+    "status": "pending", 
+    "uid": "637b1205-54a4-42f7-b44d-cfdda091e9a6"
+}

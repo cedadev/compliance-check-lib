@@ -1,0 +1,18 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "altitude", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-9999", 
+        "longName": "altitude", 
+        "name": "altitude", 
+        "positive": "up", 
+        "type": "double", 
+        "units": "m"
+    }, 
+    "idx": 4, 
+    "label": "altitude", 
+    "rawName": "altitude", 
+    "status": "pending", 
+    "uid": "b53bb1d2-7084-47fb-bfac-6d197c54cd87"
+}

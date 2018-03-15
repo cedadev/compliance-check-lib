@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "wind-speed", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "longName": "Wind Speed", 
+        "name": "wind_speed", 
+        "standardName": "wind_speed", 
+        "type": "float64", 
+        "units": "m s-1", 
+        "validMax": "<derived form file>", 
+        "validMin": "<derived form file>"
+    }, 
+    "idx": 0, 
+    "label": "wind_speed", 
+    "rawName": "wind_speed", 
+    "status": "pending", 
+    "uid": "6b9ee57e-93ce-4cbf-bec7-96449f72263f"
+}

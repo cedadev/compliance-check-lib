@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "rainfall-rate", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "longName": "Rainfall Rate", 
+        "name": "rainfall_rate", 
+        "standardName": "rainfall_rate", 
+        "type": "float64", 
+        "units": "mm hr-1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 4, 
+    "label": "rainfall_rate", 
+    "rawName": "rainfall_rate", 
+    "status": "pending", 
+    "uid": "1254b688-77d9-4232-aeb7-5e75842bf460"
+}

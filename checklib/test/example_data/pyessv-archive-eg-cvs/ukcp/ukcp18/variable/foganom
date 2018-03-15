@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "foganom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 40, 
+    "label": "fogAnom", 
+    "rawName": "fogAnom", 
+    "status": "pending", 
+    "uid": "27fdda59-479d-479d-a7f2-4a7d02aeac16"
+}

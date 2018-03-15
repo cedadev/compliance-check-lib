@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "rcp60", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 0, 
+    "label": "rcp60", 
+    "rawName": "rcp60", 
+    "status": "pending", 
+    "uid": "3995669c-35d6-4778-b2ca-2d4a72e7da8b"
+}

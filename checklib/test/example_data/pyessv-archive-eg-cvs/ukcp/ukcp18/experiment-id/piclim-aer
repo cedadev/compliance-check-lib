@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "piclim-aer", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "RFMIP", 
+            "AerChemMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "AER", 
+            "CHEM"
+        ], 
+        "description": "As in RFMIP-ERF-PI-Cntrl but with with present-day aerosols. Note that this experiment is considered to be tier 1 by RFMIP but tier 2 by AerChemMIP", 
+        "endYear": "", 
+        "experiment": "effective radiative forcing by present-day aerosols", 
+        "experimentID": "piClim-aer", 
+        "minNumberYrsPerSim": "30", 
+        "parentActivityID": [
+            "CMIP"
+        ], 
+        "parentExperimentID": [
+            "piControl"
+        ], 
+        "requiredModelComponents": [
+            "AGCM"
+        ], 
+        "startYear": "", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "1"
+    }, 
+    "idx": 52, 
+    "label": "piClim-aer", 
+    "rawName": "piClim-aer", 
+    "status": "pending", 
+    "uid": "13909bbb-74c5-451b-8792-9cade61a8f7f"
+}

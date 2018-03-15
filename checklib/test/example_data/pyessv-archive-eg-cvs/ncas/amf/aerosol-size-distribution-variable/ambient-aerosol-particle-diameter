@@ -1,0 +1,21 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "ambient-aerosol-particle-diameter", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "longName": "Ambient Aerosol Particle Diameter", 
+        "name": "ambient_aerosol_particle_diameter", 
+        "standardName": "ambient_aerosol_particle_diameter", 
+        "type": "float64", 
+        "units": "um", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 2, 
+    "label": "ambient_aerosol_particle_diameter", 
+    "rawName": "ambient_aerosol_particle_diameter", 
+    "status": "pending", 
+    "uid": "375e0314-9da3-4645-b117-a63386657ad9"
+}

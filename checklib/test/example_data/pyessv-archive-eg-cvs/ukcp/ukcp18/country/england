@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "england", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 0, 
+    "label": "england", 
+    "rawName": "england", 
+    "status": "pending", 
+    "uid": "8f6fab2d-267c-458a-a0c1-d705668af298"
+}

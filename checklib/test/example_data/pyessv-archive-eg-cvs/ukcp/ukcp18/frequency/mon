@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "mon", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 10, 
+    "label": "mon", 
+    "rawName": "mon", 
+    "status": "pending", 
+    "uid": "f1f6362c-c38d-47e6-834e-5ca2218dfc35"
+}

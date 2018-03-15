@@ -1,0 +1,38 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "piclim-2xss", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "AerChemMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "CHEM"
+        ], 
+        "description": "1850 control with doubled sea salt emissions", 
+        "endYear": "", 
+        "experiment": "pre-industrial climatological SSTs and forcing, but with doubled emissions of sea salt", 
+        "experimentID": "piClim-2xss", 
+        "minNumberYrsPerSim": "30", 
+        "parentActivityID": [
+            "CMIP"
+        ], 
+        "parentExperimentID": [
+            "piControl"
+        ], 
+        "requiredModelComponents": [
+            "AGCM", 
+            "AER"
+        ], 
+        "startYear": "", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "2"
+    }, 
+    "idx": 137, 
+    "label": "piClim-2xss", 
+    "rawName": "piClim-2xss", 
+    "status": "pending", 
+    "uid": "270b4fdb-2b30-4790-bfed-a758d05bba4f"
+}

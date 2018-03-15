@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "rsdsanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 48, 
+    "label": "rsdsAnom", 
+    "rawName": "rsdsAnom", 
+    "status": "pending", 
+    "uid": "2b08b0c7-a1e1-4cbb-91a8-9de7651f1d09"
+}

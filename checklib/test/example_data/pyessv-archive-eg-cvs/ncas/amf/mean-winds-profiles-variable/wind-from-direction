@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "wind-from-direction", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "longName": "Wind Direction", 
+        "name": "wind_from_direction", 
+        "standardName": "wind_from_direction", 
+        "type": "float64", 
+        "units": "degree", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 1, 
+    "label": "wind_from_direction", 
+    "rawName": "wind_from_direction", 
+    "status": "pending", 
+    "uid": "aa140e49-e988-4c20-a4ef-8271527a42ca"
+}

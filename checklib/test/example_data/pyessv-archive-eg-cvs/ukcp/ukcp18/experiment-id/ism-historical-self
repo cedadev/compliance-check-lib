@@ -1,0 +1,35 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "ism-historical-self", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "ISMIP6"
+        ], 
+        "additionalAllowedModelComponents": "", 
+        "description": "Historical simulation using \"offline\" ice sheet models. Forcing for ice sheet model is from its own AOGCM", 
+        "endYear": "2014", 
+        "experiment": "offline ice sheet forced by ISM's own AOGCM historical output", 
+        "experimentID": "ism-historical-self", 
+        "minNumberYrsPerSim": "165", 
+        "parentActivityID": [
+            "ISMIP6"
+        ], 
+        "parentExperimentID": [
+            "ism-piControl-self"
+        ], 
+        "requiredModelComponents": [
+            "ISM"
+        ], 
+        "startYear": "1850", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "2"
+    }, 
+    "idx": 108, 
+    "label": "ism-historical-self", 
+    "rawName": "ism-historical-self", 
+    "status": "pending", 
+    "uid": "b59ab39b-4c40-452c-930a-d1747ca48bc3"
+}

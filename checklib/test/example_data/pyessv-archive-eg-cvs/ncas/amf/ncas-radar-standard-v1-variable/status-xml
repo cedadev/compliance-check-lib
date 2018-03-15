@@ -1,0 +1,18 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "status-xml", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "status_xml_length)", 
+        "longName": "type_of_instrument", 
+        "metaGroup": "instrument_parameters", 
+        "name": "status_xml", 
+        "options": "radar, lidar", 
+        "type": "char"
+    }, 
+    "idx": 6, 
+    "label": "status_xml", 
+    "rawName": "status_xml", 
+    "status": "pending", 
+    "uid": "b1fa3c10-644e-4a00-a216-621a62ed6272"
+}

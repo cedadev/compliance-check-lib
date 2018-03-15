@@ -1,0 +1,19 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "qc-flag-sonic-temperature", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "time", 
+        "flagMeanings": "not_used good_data bad_data_value_outside_operational_range_(-30C_to_50C) suspect_data_timw_stamp_error", 
+        "flagValues": "0b,1b, 2b, 3b", 
+        "longName": "Data Quality flag: Sonic Temperature", 
+        "name": "qc_flag_sonic_temperature", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "idx": 15, 
+    "label": "qc_flag_sonic_temperature", 
+    "rawName": "qc_flag_sonic_temperature", 
+    "status": "pending", 
+    "uid": "78a344ca-392a-4630-b9ee-08448341e1ad"
+}

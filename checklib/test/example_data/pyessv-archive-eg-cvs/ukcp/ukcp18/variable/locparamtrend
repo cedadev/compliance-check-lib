@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "locparamtrend", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 58, 
+    "label": "locParamTrend", 
+    "rawName": "locParamTrend", 
+    "status": "pending", 
+    "uid": "37f0c523-b4d9-40a1-bdf7-2fd5194dded3"
+}

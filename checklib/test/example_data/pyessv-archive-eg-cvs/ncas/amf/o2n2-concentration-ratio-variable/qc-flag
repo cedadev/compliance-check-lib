@@ -1,0 +1,19 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "qc-flag", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "time", 
+        "flagMeanings": "not_used good_data  suspect_data_gas_concentration_outside_instrument_operational_range suspect_data_time_stamp_error", 
+        "flagValues": "0b,1b, 2b, 3b", 
+        "longName": "Data Quality flag", 
+        "name": "qc_flag", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "idx": 0, 
+    "label": "qc_flag", 
+    "rawName": "qc_flag", 
+    "status": "pending", 
+    "uid": "216d5a29-1f84-4161-8b82-2607b9d0e582"
+}

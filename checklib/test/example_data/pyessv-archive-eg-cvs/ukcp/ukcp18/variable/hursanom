@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "hursanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 44, 
+    "label": "hursAnom", 
+    "rawName": "hursAnom", 
+    "status": "pending", 
+    "uid": "b816fc7a-801e-4755-9630-3398cc783fd5"
+}

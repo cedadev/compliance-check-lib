@@ -1,0 +1,65 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "ciesm", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityParticipation": [
+            "CFMIP", 
+            "CMIP", 
+            "CORDEX", 
+            "GMMIP", 
+            "OMIP", 
+            "SIMIP", 
+            "ScenarioMIP"
+        ], 
+        "cohort": [
+            "Registered"
+        ], 
+        "institutionID": [
+            "THU"
+        ], 
+        "label": "CIESM", 
+        "labelExtended": "Community Integrated Earth System Model", 
+        "modelComponent": {
+            "aerosol": {
+                "description": "MAM4", 
+                "nominalResolution": "100 km"
+            }, 
+            "atmos": {
+                "description": "CIESM-AM (FV/FD; 288 x 192 longitude/latitude; 30 levels; top level 2.255 hPa)", 
+                "nominalResolution": "100 km"
+            }, 
+            "atmosChem": {
+                "description": "trop_mam4", 
+                "nominalResolution": "100 km"
+            }, 
+            "land": {
+                "description": "CIESM-LM (modified CLM4.5)", 
+                "nominalResolution": "100 km"
+            }, 
+            "landIce": {
+                "description": "none", 
+                "nominalResolution": "none"
+            }, 
+            "ocean": {
+                "description": "CIESM-OM (FD, SCCGrid Displaced Pole; 720 x 560 longitude/latitude; 46 levels; top grid cell 0-6 m)", 
+                "nominalResolution": "50 km"
+            }, 
+            "ocnBgchem": {
+                "description": "none", 
+                "nominalResolution": "none"
+            }, 
+            "seaIce": {
+                "description": "CICE4", 
+                "nominalResolution": "50 km"
+            }
+        }, 
+        "releaseYear": "2017", 
+        "sourceID": "CIESM"
+    }, 
+    "idx": 18, 
+    "label": "CIESM", 
+    "rawName": "CIESM", 
+    "status": "pending", 
+    "uid": "1290ffd4-eb93-4f4c-8da7-f3e747b9186d"
+}

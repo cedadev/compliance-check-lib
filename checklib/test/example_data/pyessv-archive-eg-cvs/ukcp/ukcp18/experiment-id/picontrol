@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "picontrol", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "CMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "AER", 
+            "CHEM", 
+            "BGC"
+        ], 
+        "description": "DECK: control", 
+        "endYear": "", 
+        "experiment": "pre-industrial control", 
+        "experimentID": "piControl", 
+        "minNumberYrsPerSim": "500", 
+        "parentActivityID": [
+            "CMIP"
+        ], 
+        "parentExperimentID": [
+            "piControl-spinup"
+        ], 
+        "requiredModelComponents": [
+            "AOGCM"
+        ], 
+        "startYear": "", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "1"
+    }, 
+    "idx": 116, 
+    "label": "piControl", 
+    "rawName": "piControl", 
+    "status": "pending", 
+    "uid": "af4a5942-8cb3-4dda-8fa5-6eb9012d8598"
+}

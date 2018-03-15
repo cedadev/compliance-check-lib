@@ -1,0 +1,19 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "qc-flag", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "time", 
+        "flagMeanings": "not_used good_data  suspect_data_data_not_quality_controlled bad_data_do_not_use", 
+        "flagValues": "0b,1b, 2b, 3b", 
+        "longName": "Data Quality flag", 
+        "name": "qc_flag", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "idx": 0, 
+    "label": "qc_flag", 
+    "rawName": "qc_flag", 
+    "status": "pending", 
+    "uid": "2062ed5f-abd6-42fd-af8a-72e1b4d708f3"
+}

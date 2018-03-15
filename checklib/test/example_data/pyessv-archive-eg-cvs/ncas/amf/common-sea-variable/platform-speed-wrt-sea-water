@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "platform-speed-wrt-sea-water", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Platform speed with respect to sea water", 
+        "name": "platform_speed_wrt_sea_water", 
+        "standardName": "platform_speed_wrt_sea_water", 
+        "type": "float64", 
+        "units": "m s-1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 11, 
+    "label": "platform_speed_wrt_sea_water", 
+    "rawName": "platform_speed_wrt_sea_water", 
+    "status": "pending", 
+    "uid": "2c1d2e0e-af63-42ed-9c3f-62e1f68b08b5"
+}

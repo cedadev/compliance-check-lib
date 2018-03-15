@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "divergence-sonic-air-temperature", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: standard_deviation", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Divergence of Air Temperature Retrieved from Sonic Anemometry", 
+        "name": "divergence_sonic_air_temperature", 
+        "type": "float64", 
+        "units": "K", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 11, 
+    "label": "divergence_sonic_air_temperature", 
+    "rawName": "divergence_sonic_air_temperature", 
+    "status": "pending", 
+    "uid": "5311dbb1-4939-4666-bab6-3dba83ce9b8d"
+}

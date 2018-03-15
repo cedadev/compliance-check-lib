@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "photolysis-frquencies", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: ????", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Photolysis Frquencies (j(NO2))", 
+        "name": "photolysis_frquencies", 
+        "type": "float64", 
+        "units": "s-1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 0, 
+    "label": "photolysis_frquencies", 
+    "rawName": "photolysis_frquencies", 
+    "status": "pending", 
+    "uid": "e5895a79-e8ca-4bab-9250-9613a0e64a6d"
+}

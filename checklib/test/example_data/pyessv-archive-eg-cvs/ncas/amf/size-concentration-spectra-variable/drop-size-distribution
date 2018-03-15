@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "drop-size-distribution", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index_range, index_bin", 
+        "longName": "Rain Size Distribution", 
+        "name": "drop_size_distribution", 
+        "type": "float64", 
+        "units": "m-3 mm-1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 0, 
+    "label": "drop_size_distribution", 
+    "rawName": "drop_size_distribution", 
+    "status": "pending", 
+    "uid": "d361e529-20f1-40a2-8619-e8f2c9cd6dfd"
+}

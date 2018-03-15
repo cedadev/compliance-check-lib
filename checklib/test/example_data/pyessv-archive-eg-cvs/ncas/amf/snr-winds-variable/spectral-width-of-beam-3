@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "spectral-width-of-beam-3", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "longName": "Spectral Width of beam 3 (vertical beam from centre panel)", 
+        "name": "spectral_width of beam_3", 
+        "type": "float64", 
+        "units": "dB", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 7, 
+    "label": "spectral_width of beam_3", 
+    "rawName": "spectral_width of beam_3", 
+    "status": "pending", 
+    "uid": "904658cd-ba47-4e6d-8f49-ed9844781808"
+}

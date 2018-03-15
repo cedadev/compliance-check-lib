@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "kinematic-humidity-flux", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Kinematic Humidity Flux (<w'Q'>)", 
+        "name": "kinematic_humidity_flux", 
+        "type": "float64", 
+        "units": "kg kg-1 m s-1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 15, 
+    "label": "kinematic_humidity_flux", 
+    "rawName": "kinematic_humidity_flux", 
+    "status": "pending", 
+    "uid": "0386d380-f114-4f10-8afc-0ee40278ff67"
+}

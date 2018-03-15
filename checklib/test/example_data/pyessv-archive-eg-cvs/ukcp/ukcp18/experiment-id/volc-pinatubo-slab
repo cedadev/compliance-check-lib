@@ -1,0 +1,40 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "volc-pinatubo-slab", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "VolMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "AER", 
+            "CHEM", 
+            "BGC"
+        ], 
+        "description": "As volc-pinatubo-full, but with a slab ocean", 
+        "endYear": "", 
+        "experiment": "Pinatubo experiment with slab ocean", 
+        "experimentID": "volc-pinatubo-slab", 
+        "minNumberYrsPerSim": "3", 
+        "parentActivityID": [
+            "VolMIP"
+        ], 
+        "parentExperimentID": [
+            "control-slab"
+        ], 
+        "requiredModelComponents": [
+            "AGCM", 
+            "SLAB"
+        ], 
+        "startYear": "", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "3"
+    }, 
+    "idx": 77, 
+    "label": "volc-pinatubo-slab", 
+    "rawName": "volc-pinatubo-slab", 
+    "status": "pending", 
+    "uid": "9a0e23a3-616c-438f-b462-0f7824bef007"
+}

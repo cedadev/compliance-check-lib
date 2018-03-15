@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "3hrmean", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 7, 
+    "label": "3hrMean", 
+    "rawName": "3hrMean", 
+    "status": "pending", 
+    "uid": "5fe5462e-a6e5-43bf-a6f8-20947ac2d1b7"
+}

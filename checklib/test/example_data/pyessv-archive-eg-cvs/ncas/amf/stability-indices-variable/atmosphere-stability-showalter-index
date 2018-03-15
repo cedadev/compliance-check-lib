@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "atmosphere-stability-showalter-index", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Atmosphere Stability Showalter Index (SI)", 
+        "name": "atmosphere_stability_showalter_index", 
+        "standardName": "atmosphere_stability_showalter_index", 
+        "type": "float64", 
+        "units": "K", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 6, 
+    "label": "atmosphere_stability_showalter_index", 
+    "rawName": "atmosphere_stability_showalter_index", 
+    "status": "pending", 
+    "uid": "64e28ba6-34f5-4855-acfc-f80edb289bda"
+}

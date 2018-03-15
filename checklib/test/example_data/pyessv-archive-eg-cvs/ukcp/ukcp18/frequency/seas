@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "seas", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 9, 
+    "label": "seas", 
+    "rawName": "seas", 
+    "status": "pending", 
+    "uid": "e1c0235f-1e14-4c0f-b417-bb3f9b27fd9b"
+}

@@ -1,0 +1,35 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "land-crop-nofert", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "LUMIP"
+        ], 
+        "additionalAllowedModelComponents": "", 
+        "description": "Same as land-hist but with fertilization rates and area held at 1850 levels/distribution", 
+        "endYear": "2014", 
+        "experiment": "historical land-only with no fertilizer", 
+        "experimentID": "land-crop-noFert", 
+        "minNumberYrsPerSim": "165", 
+        "parentActivityID": [
+            "no parent"
+        ], 
+        "parentExperimentID": [
+            "no parent"
+        ], 
+        "requiredModelComponents": [
+            "LAND"
+        ], 
+        "startYear": "1850 or 1700", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "2"
+    }, 
+    "idx": 236, 
+    "label": "land-crop-noFert", 
+    "rawName": "land-crop-noFert", 
+    "status": "pending", 
+    "uid": "f9f0396d-aefc-4b07-b356-00f372d34e4b"
+}

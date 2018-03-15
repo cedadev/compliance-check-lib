@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "tplanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 46, 
+    "label": "tplAnom", 
+    "rawName": "tplAnom", 
+    "status": "pending", 
+    "uid": "699d50c6-e53f-493f-8c43-264569cc3914"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "sun", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 24, 
+    "label": "sun", 
+    "rawName": "sun", 
+    "status": "pending", 
+    "uid": "c84579e4-cd70-4d57-99fa-21d3fecefee9"
+}

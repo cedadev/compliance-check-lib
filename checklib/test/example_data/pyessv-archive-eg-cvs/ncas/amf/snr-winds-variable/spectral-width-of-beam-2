@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "spectral-width-of-beam-2", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "longName": "Spectral Width of beam 2 (side panel)", 
+        "name": "spectral_width of beam_2", 
+        "type": "float64", 
+        "units": "dB", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 15, 
+    "label": "spectral_width of beam_2", 
+    "rawName": "spectral_width of beam_2", 
+    "status": "pending", 
+    "uid": "3a1add13-d7d6-4b8d-945f-4a08e1b93cff"
+}

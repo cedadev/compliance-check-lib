@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "momentum-flux-v", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Momentum flux (-rho.<w'v'>)", 
+        "name": "momentum_flux_v", 
+        "type": "float64", 
+        "units": "kg m-1 s-2", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 1, 
+    "label": "momentum_flux_v", 
+    "rawName": "momentum_flux_v", 
+    "status": "pending", 
+    "uid": "8c646ce1-8c3f-460f-9eef-04e226dea474"
+}

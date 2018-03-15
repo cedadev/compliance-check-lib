@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "rssanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 73, 
+    "label": "rssAnom", 
+    "rawName": "rssAnom", 
+    "status": "pending", 
+    "uid": "829ff940-eb47-495b-8222-4ca42fde16a7"
+}

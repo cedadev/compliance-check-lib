@@ -1,0 +1,18 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "radar-beam-width-h", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-9999", 
+        "longName": "half_power_radar_beam_width_h_channel", 
+        "metaGroup": "radar_parameters", 
+        "name": "radar_beam_width_h", 
+        "type": "float", 
+        "units": "degrees"
+    }, 
+    "idx": 14, 
+    "label": "radar_beam_width_h", 
+    "rawName": "radar_beam_width_h", 
+    "status": "pending", 
+    "uid": "c95e1697-51cd-4af5-80eb-8a0f701dea89"
+}

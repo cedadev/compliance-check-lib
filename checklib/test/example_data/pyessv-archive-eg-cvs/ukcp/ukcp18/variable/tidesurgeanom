@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "tidesurgeanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 27, 
+    "label": "tideSurgeAnom", 
+    "rawName": "tideSurgeAnom", 
+    "status": "pending", 
+    "uid": "f1a609e2-5e43-4e80-a6d9-fd0e6c5e8d1e"
+}

@@ -1,0 +1,37 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "highressst-present", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "HighResMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "AER"
+        ], 
+        "description": "Forced global atmosphere-land simulations using daily 1/4 degree SST and sea-ice forcings, and aerosol optical properties (not emissions) to constrain model spread", 
+        "endYear": "2014", 
+        "experiment": "forced atmosphere experiment for 1950-2014", 
+        "experimentID": "highresSST-present", 
+        "minNumberYrsPerSim": "65", 
+        "parentActivityID": [
+            "no parent"
+        ], 
+        "parentExperimentID": [
+            "no parent"
+        ], 
+        "requiredModelComponents": [
+            "AGCM"
+        ], 
+        "startYear": "1950", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "1"
+    }, 
+    "idx": 209, 
+    "label": "highresSST-present", 
+    "rawName": "highresSST-present", 
+    "status": "pending", 
+    "uid": "a7f1f514-edc3-4e30-8e06-508378cfdcfb"
+}

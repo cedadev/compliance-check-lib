@@ -1,0 +1,14 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "longitude", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "length": 1, 
+        "units": "degrees_east"
+    }, 
+    "idx": 2, 
+    "label": "longitude", 
+    "rawName": "longitude", 
+    "status": "pending", 
+    "uid": "d1a8b2fc-acbb-403f-855a-08b62a60b649"
+}

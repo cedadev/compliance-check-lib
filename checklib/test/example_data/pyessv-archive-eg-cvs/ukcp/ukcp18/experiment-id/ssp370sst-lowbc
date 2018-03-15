@@ -1,0 +1,38 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "ssp370sst-lowbc", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "AerChemMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "CHEM"
+        ], 
+        "description": "Future SSP3-7.0 with reduced black carbon emissions, prescribed SSTs", 
+        "endYear": "2055", 
+        "experiment": "SSP3-7.0, prescribed SSTs, with low black carbon emissions", 
+        "experimentID": "ssp370SST-lowBC", 
+        "minNumberYrsPerSim": "41", 
+        "parentActivityID": [
+            "ScenarioMIP"
+        ], 
+        "parentExperimentID": [
+            "ssp370"
+        ], 
+        "requiredModelComponents": [
+            "AGCM", 
+            "AER"
+        ], 
+        "startYear": "2015", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "2"
+    }, 
+    "idx": 86, 
+    "label": "ssp370SST-lowBC", 
+    "rawName": "ssp370SST-lowBC", 
+    "status": "pending", 
+    "uid": "cc8516f3-d5e4-41fe-91ed-d65cb4c39e5e"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "ism", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 6, 
+    "label": "ISM", 
+    "rawName": "ISM", 
+    "status": "pending", 
+    "uid": "ffb9a399-7b0f-4721-8885-079a9aefb71c"
+}

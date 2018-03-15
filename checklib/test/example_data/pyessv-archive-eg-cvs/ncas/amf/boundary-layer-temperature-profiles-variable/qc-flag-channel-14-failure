@@ -1,0 +1,14 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "qc-flag-channel-14-failure", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "name": "qc_flag_channel_14_failure", 
+        "type": "byte"
+    }, 
+    "idx": 12, 
+    "label": "qc_flag_channel_14_failure", 
+    "rawName": "qc_flag_channel_14_failure", 
+    "status": "pending", 
+    "uid": "3d85fce4-026e-4fd5-a167-3f29c39e06f4"
+}

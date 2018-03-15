@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "divergence-of-northward-wind", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: standard_deviation", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Divergence of Northward Wind Component (Sigma V)", 
+        "name": "divergence_of_northward_wind", 
+        "type": "float64", 
+        "units": "m s-1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 4, 
+    "label": "divergence_of_northward_wind", 
+    "rawName": "divergence_of_northward_wind", 
+    "status": "pending", 
+    "uid": "8c66327e-8ab4-4106-8a32-158d7c7540ed"
+}

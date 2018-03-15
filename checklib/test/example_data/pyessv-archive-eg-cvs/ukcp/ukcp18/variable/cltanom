@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "cltanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 14, 
+    "label": "cltAnom", 
+    "rawName": "cltAnom", 
+    "status": "pending", 
+    "uid": "af05d5e0-f429-4705-8605-ebf930af1a12"
+}

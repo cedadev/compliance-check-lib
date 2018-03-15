@@ -1,0 +1,21 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "run-length", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Length of run", 
+        "name": "run_length", 
+        "type": "float64", 
+        "units": "s", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 9, 
+    "label": "run_length", 
+    "rawName": "run_length", 
+    "status": "pending", 
+    "uid": "74db0e7b-d73b-40c1-9c0c-cda2fb220163"
+}

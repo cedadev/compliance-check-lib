@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "pranom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 50, 
+    "label": "prAnom", 
+    "rawName": "prAnom", 
+    "status": "pending", 
+    "uid": "6455cd22-a01e-4046-8c4f-8e660114f1d6"
+}

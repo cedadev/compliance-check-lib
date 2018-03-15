@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "flashrate", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 19, 
+    "label": "flashrate", 
+    "rawName": "flashrate", 
+    "status": "pending", 
+    "uid": "d33e8d1c-d7b3-4e81-aaa6-5f624db8e3ce"
+}

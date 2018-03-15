@@ -1,0 +1,12 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "license", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "description": "license", 
+    "idx": 5, 
+    "label": "license", 
+    "rawName": "license", 
+    "status": "pending", 
+    "uid": "4947240b-3546-4cd2-b849-c83e36b897e8"
+}

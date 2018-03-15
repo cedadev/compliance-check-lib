@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "eastward-wind", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Eastward Wind Component (U)", 
+        "name": "eastward_wind", 
+        "standardName": "eastward_wind", 
+        "type": "float64", 
+        "units": "m s-1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 13, 
+    "label": "eastward_wind", 
+    "rawName": "eastward_wind", 
+    "status": "pending", 
+    "uid": "6bd6685e-85a6-4a93-8f87-07948eca192a"
+}

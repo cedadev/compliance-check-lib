@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "attenuated-aerosol-backscatter-coefficient-cr", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index_ranges, index_angles", 
+        "longName": "Attenuated backscatter coefficient (Cross Polarised)", 
+        "name": "attenuated_aerosol_backscatter_coefficient_cr", 
+        "type": "float64", 
+        "units": "m-1 sr-1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 1, 
+    "label": "attenuated_aerosol_backscatter_coefficient_cr", 
+    "rawName": "attenuated_aerosol_backscatter_coefficient_cr", 
+    "status": "pending", 
+    "uid": "e392ca36-1e28-431d-b729-266dc624cdfa"
+}

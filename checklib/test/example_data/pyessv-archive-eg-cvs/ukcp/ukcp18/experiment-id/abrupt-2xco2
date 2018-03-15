@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "abrupt-2xco2", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "CFMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "AER", 
+            "CHEM", 
+            "BGC"
+        ], 
+        "description": "Identical to the DECK abrupt-4xCO2, but at 2xCO2", 
+        "endYear": "", 
+        "experiment": "abrupt doubling of CO2", 
+        "experimentID": "abrupt-2xCO2", 
+        "minNumberYrsPerSim": "150", 
+        "parentActivityID": [
+            "CMIP"
+        ], 
+        "parentExperimentID": [
+            "piControl"
+        ], 
+        "requiredModelComponents": [
+            "AOGCM"
+        ], 
+        "startYear": "", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "2"
+    }, 
+    "idx": 68, 
+    "label": "abrupt-2xCO2", 
+    "rawName": "abrupt-2xCO2", 
+    "status": "pending", 
+    "uid": "f2c10b79-f413-4d2c-ac22-f719957966b3"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "12km", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 2, 
+    "label": "12km", 
+    "rawName": "12km", 
+    "status": "pending", 
+    "uid": "c8a7fbb1-f9b1-4ce7-8180-5b3168ca7680"
+}

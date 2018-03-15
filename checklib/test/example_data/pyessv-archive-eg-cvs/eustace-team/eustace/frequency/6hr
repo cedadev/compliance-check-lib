@@ -1,0 +1,12 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "6hr", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "description": "6hr", 
+    "idx": 6, 
+    "label": "6hr", 
+    "rawName": "6hr", 
+    "status": "pending", 
+    "uid": "0721d0b4-90b1-4b3e-a5be-8db1d9a0623f"
+}

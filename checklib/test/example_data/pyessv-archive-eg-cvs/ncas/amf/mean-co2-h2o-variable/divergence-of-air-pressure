@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "divergence-of-air-pressure", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: standard_deviation", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Divergence of Air Pressure", 
+        "name": "divergence_of_air_pressure", 
+        "type": "float64", 
+        "units": "hPa", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 8, 
+    "label": "divergence_of_air_pressure", 
+    "rawName": "divergence_of_air_pressure", 
+    "status": "pending", 
+    "uid": "04d6064a-671a-4f8e-a4ba-eb9e18914053"
+}

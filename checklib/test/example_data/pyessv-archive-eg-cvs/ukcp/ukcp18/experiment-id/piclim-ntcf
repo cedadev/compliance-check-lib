@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "piclim-ntcf", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "AerChemMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "CHEM", 
+            "BGC"
+        ], 
+        "description": "Perturbation from 1850 control using 2014 aerosol and ozone precursor emissions", 
+        "endYear": "", 
+        "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 NTCF emissions", 
+        "experimentID": "piClim-NTCF", 
+        "minNumberYrsPerSim": "30", 
+        "parentActivityID": [
+            "CMIP"
+        ], 
+        "parentExperimentID": [
+            "piControl"
+        ], 
+        "requiredModelComponents": [
+            "AGCM", 
+            "AER"
+        ], 
+        "startYear": "", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "1"
+    }, 
+    "idx": 204, 
+    "label": "piClim-NTCF", 
+    "rawName": "piClim-NTCF", 
+    "status": "pending", 
+    "uid": "f0cd4e09-19b6-4c94-98a7-70af51932de1"
+}

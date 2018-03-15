@@ -1,0 +1,18 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "follow-mode", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimensions": "sweep, string_length_32", 
+        "longName": "follow_mode_for_scan_strategy", 
+        "metaGroup": "radar_parameters", 
+        "name": "follow_mode", 
+        "options": "none, sun, vehicle, aircraft, target, manual", 
+        "type": "char"
+    }, 
+    "idx": 3, 
+    "label": "follow_mode", 
+    "rawName": "follow_mode", 
+    "status": "pending", 
+    "uid": "1adbc918-9a10-486d-ab10-60a6ca032b82"
+}

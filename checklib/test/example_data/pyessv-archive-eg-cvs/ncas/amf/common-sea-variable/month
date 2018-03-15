@@ -1,0 +1,19 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "month", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "time", 
+        "longName": "Month", 
+        "name": "month", 
+        "type": "int32", 
+        "units": "1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 14, 
+    "label": "month", 
+    "rawName": "month", 
+    "status": "pending", 
+    "uid": "f5f17605-94ee-46ff-9762-955a106f9f5b"
+}

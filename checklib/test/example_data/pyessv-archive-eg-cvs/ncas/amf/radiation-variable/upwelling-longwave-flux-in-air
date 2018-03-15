@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "upwelling-longwave-flux-in-air", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Upwelling Longwave Radiation in air", 
+        "name": "upwelling_longwave_flux_in_air", 
+        "standardName": "upwelling_longwave_flux_in_air", 
+        "type": "float64", 
+        "units": "W m-2", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 2, 
+    "label": "upwelling_longwave_flux_in_air", 
+    "rawName": "upwelling_longwave_flux_in_air", 
+    "status": "pending", 
+    "uid": "4c43a10a-f77a-4718-a095-2391226bbae8"
+}

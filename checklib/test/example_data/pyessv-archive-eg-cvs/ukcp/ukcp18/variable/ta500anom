@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "ta500anom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 47, 
+    "label": "ta500Anom", 
+    "rawName": "ta500Anom", 
+    "status": "pending", 
+    "uid": "b8c1a63a-d0aa-4a94-a3f3-91611ed09188"
+}

@@ -1,0 +1,19 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "qc-flag-skew-u", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "time", 
+        "flagMeanings": "bad_data good_data  suspect_data", 
+        "flagValues": "0b,1b, 2b", 
+        "longName": "Quality flag: Skew U", 
+        "name": "qc_flag_skew_u", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "idx": 6, 
+    "label": "qc_flag_skew_u", 
+    "rawName": "qc_flag_skew_u", 
+    "status": "pending", 
+    "uid": "14cefe74-517c-497d-834d-32d1c50695b4"
+}

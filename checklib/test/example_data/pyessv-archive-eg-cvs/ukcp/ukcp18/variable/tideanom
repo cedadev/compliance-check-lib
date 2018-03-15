@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "tideanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 4, 
+    "label": "tideAnom", 
+    "rawName": "tideAnom", 
+    "status": "pending", 
+    "uid": "11ba95d2-6559-457c-8f69-5e162ec89dc1"
+}

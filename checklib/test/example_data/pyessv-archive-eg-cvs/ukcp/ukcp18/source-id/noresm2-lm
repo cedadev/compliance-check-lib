@@ -1,0 +1,69 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "noresm2-lm", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityParticipation": [
+            "AerChemMIP", 
+            "CFMIP", 
+            "CMIP", 
+            "DAMIP", 
+            "DCPP", 
+            "LUMIP", 
+            "OMIP", 
+            "PMIP", 
+            "RFMIP", 
+            "ScenarioMIP", 
+            "VolMIP"
+        ], 
+        "cohort": [
+            "Registered"
+        ], 
+        "institutionID": [
+            "NCC"
+        ], 
+        "label": "NorESM2-LM", 
+        "labelExtended": "NorESM2-LM (low atmosphere-medium ocean resolution, GHG concentration driven)", 
+        "modelComponent": {
+            "aerosol": {
+                "description": "OsloAero", 
+                "nominalResolution": ""
+            }, 
+            "atmos": {
+                "description": "CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)", 
+                "nominalResolution": "250 km"
+            }, 
+            "atmosChem": {
+                "description": "OsloChemSimp", 
+                "nominalResolution": ""
+            }, 
+            "land": {
+                "description": "CLM", 
+                "nominalResolution": ""
+            }, 
+            "landIce": {
+                "description": "CISM", 
+                "nominalResolution": "250 km"
+            }, 
+            "ocean": {
+                "description": "MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])", 
+                "nominalResolution": "100 km"
+            }, 
+            "ocnBgchem": {
+                "description": "HAMOCC", 
+                "nominalResolution": ""
+            }, 
+            "seaIce": {
+                "description": "CICE", 
+                "nominalResolution": ""
+            }
+        }, 
+        "releaseYear": "2017", 
+        "sourceID": "NorESM2-LM"
+    }, 
+    "idx": 33, 
+    "label": "NorESM2-LM", 
+    "rawName": "NorESM2-LM", 
+    "status": "pending", 
+    "uid": "e0433402-ab2d-4a33-8b96-ede1b19e034a"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "twbanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 63, 
+    "label": "twbAnom", 
+    "rawName": "twbAnom", 
+    "status": "pending", 
+    "uid": "f4a77da4-8397-48b5-a156-a32a51a65cbb"
+}

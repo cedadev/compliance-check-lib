@@ -1,0 +1,59 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "hadgem3-gc31-hm", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityParticipation": [
+            ""
+        ], 
+        "cohort": [
+            "Registered"
+        ], 
+        "institutionID": [
+            "MOHC"
+        ], 
+        "label": "HadGEM3-GC31-HM", 
+        "labelExtended": "HadGEM3-GC3.1-N512ORCA025", 
+        "modelComponent": {
+            "aerosol": {
+                "description": "UKCA-GLOMAP-mode", 
+                "nominalResolution": ""
+            }, 
+            "atmos": {
+                "description": "MetUM-HadGEM3-GA7.1 (1024 x 768 N512; 85 levels; top level 85km)", 
+                "nominalResolution": ""
+            }, 
+            "atmosChem": {
+                "description": "none", 
+                "nominalResolution": "none"
+            }, 
+            "land": {
+                "description": "JULES-HadGEM3-GL7.1", 
+                "nominalResolution": ""
+            }, 
+            "landIce": {
+                "description": "none", 
+                "nominalResolution": "none"
+            }, 
+            "ocean": {
+                "description": "NEMO-HadGEM3-GO6.0 (ORCA025 tripolar primarily 0.25 deg latitude/longitude; 75 levels; top grid cell 0-1m)", 
+                "nominalResolution": ""
+            }, 
+            "ocnBgchem": {
+                "description": "none", 
+                "nominalResolution": "none"
+            }, 
+            "seaIce": {
+                "description": "CICE-HadGEM3-GSI8 (ORCA025 tripolar primarily 0.25 deg latitude/longitude)", 
+                "nominalResolution": ""
+            }
+        }, 
+        "releaseYear": "2016", 
+        "sourceID": "HadGEM3-GC31-HM"
+    }, 
+    "idx": 0, 
+    "label": "HadGEM3-GC31-HM", 
+    "rawName": "HadGEM3-GC31-HM", 
+    "status": "pending", 
+    "uid": "78fc8c0e-45dc-4fed-b27f-e416f9f0fd1a"
+}

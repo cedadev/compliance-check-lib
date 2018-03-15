@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "sres-a1b", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 2, 
+    "label": "sres-a1b", 
+    "rawName": "sres-a1b", 
+    "status": "pending", 
+    "uid": "33de548e-cf33-46d0-b1fb-940526d23e6c"
+}

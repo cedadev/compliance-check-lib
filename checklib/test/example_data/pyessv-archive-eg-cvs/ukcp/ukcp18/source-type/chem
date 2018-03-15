@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "chem", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 4, 
+    "label": "CHEM", 
+    "rawName": "CHEM", 
+    "status": "pending", 
+    "uid": "06051464-db85-4052-99c8-2e47bc0ae656"
+}

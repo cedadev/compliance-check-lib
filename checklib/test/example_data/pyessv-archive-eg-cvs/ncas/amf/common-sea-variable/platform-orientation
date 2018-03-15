@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "platform-orientation", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Direction in which the platform is pointing", 
+        "name": "platform_orientation", 
+        "standardName": "platform_orientation", 
+        "type": "float64", 
+        "units": "degree", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 2, 
+    "label": "platform_orientation", 
+    "rawName": "platform_orientation", 
+    "status": "pending", 
+    "uid": "6e434d35-e319-498d-8f28-5a8dbbbc719b"
+}

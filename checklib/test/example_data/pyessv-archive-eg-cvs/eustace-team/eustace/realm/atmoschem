@@ -1,0 +1,12 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "atmoschem", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "description": "atmosChem", 
+    "idx": 3, 
+    "label": "atmosChem", 
+    "rawName": "atmosChem", 
+    "status": "pending", 
+    "uid": "feed0940-c289-4544-9a44-fa14402ea4b7"
+}

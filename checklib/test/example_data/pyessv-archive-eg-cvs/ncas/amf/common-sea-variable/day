@@ -1,0 +1,19 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "day", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "time", 
+        "longName": "Day", 
+        "name": "day", 
+        "type": "int32", 
+        "units": "1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 16, 
+    "label": "day", 
+    "rawName": "day", 
+    "status": "pending", 
+    "uid": "143c242e-b284-4c3a-8a62-8134db8318fc"
+}

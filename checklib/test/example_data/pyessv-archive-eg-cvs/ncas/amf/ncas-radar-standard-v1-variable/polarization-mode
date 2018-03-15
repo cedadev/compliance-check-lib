@@ -1,0 +1,18 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "polarization-mode", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimensions": "sweep, string_length_32", 
+        "longName": "polarization_mode_for_sweep", 
+        "metaGroup": "radar_parameters", 
+        "name": "polarization_mode", 
+        "options": "horizontal, vertical, hv_alt, hv_sim, circular", 
+        "type": "char"
+    }, 
+    "idx": 15, 
+    "label": "polarization_mode", 
+    "rawName": "polarization_mode", 
+    "status": "pending", 
+    "uid": "c3ab3677-9b61-4b51-b8cf-f07a6aa15b53"
+}

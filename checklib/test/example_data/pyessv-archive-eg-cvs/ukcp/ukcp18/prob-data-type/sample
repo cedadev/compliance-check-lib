@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "sample", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 0, 
+    "label": "sample", 
+    "rawName": "sample", 
+    "status": "pending", 
+    "uid": "8e3e6ae4-81fd-4b9e-a612-a872d5805ccc"
+}

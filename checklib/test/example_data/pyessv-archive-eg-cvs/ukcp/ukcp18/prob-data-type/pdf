@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "pdf", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 1, 
+    "label": "pdf", 
+    "rawName": "pdf", 
+    "status": "pending", 
+    "uid": "ea78a0a3-9eee-4e6e-9bfa-fe8f86174f93"
+}

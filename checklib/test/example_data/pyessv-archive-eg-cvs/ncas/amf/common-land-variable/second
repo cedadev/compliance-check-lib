@@ -1,0 +1,19 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "second", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "time", 
+        "longName": "Second", 
+        "name": "second", 
+        "type": "float64", 
+        "units": "1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 5, 
+    "label": "second", 
+    "rawName": "second", 
+    "status": "pending", 
+    "uid": "f2091863-8335-4189-a0e4-7c0b2146f0c3"
+}

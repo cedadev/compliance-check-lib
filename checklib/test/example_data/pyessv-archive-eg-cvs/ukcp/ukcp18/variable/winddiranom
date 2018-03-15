@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "winddiranom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 67, 
+    "label": "windDirAnom", 
+    "rawName": "windDirAnom", 
+    "status": "pending", 
+    "uid": "75da8755-92a7-49ac-bb94-3bfc65beb1c2"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "snowlying", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 59, 
+    "label": "snowLying", 
+    "rawName": "snowLying", 
+    "status": "pending", 
+    "uid": "9beb7739-b1ef-4a30-88c1-1f2f384e5b99"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "winddir", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 12, 
+    "label": "windDir", 
+    "rawName": "windDir", 
+    "status": "pending", 
+    "uid": "25ec9f9c-a602-4d33-be33-d9e656269e99"
+}

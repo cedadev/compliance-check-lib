@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "integrated-water-vapour", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Integrated Water Vapour", 
+        "name": "integrated_water_vapour", 
+        "type": "float64", 
+        "units": "kg m-2", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 13, 
+    "label": "integrated_water_vapour", 
+    "rawName": "integrated_water_vapour", 
+    "status": "pending", 
+    "uid": "dbbf3e93-f8b2-4ac5-93d0-0fe8b3d95f7a"
+}

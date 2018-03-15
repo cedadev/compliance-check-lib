@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "relative-humidity", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Relative Humidity", 
+        "name": "relative_humidity", 
+        "standardName": "relative_humidity", 
+        "type": "float64", 
+        "units": "%", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 8, 
+    "label": "relative_humidity", 
+    "rawName": "relative_humidity", 
+    "status": "pending", 
+    "uid": "bd2b2c93-02cf-4b41-b7cb-8a1dcbe151f1"
+}

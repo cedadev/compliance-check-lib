@@ -1,0 +1,19 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "qc-flag-wind-component-northward", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "time, index", 
+        "flagMeanings": "not_used good_data suspect_data_value_outside_operational_range_(-20_m_s-1_to_20_m_s-1) bad_data_signal_consensus_poor bad_data_gate_index_exceeds_number_of_measurement_gates_in_use suspect_data_time_stamp_error", 
+        "flagValues": "0b,1b, 2b, 3b, 4b, 5b", 
+        "longName": "Data Quality flag: Northward Wind Component", 
+        "name": "qc_flag_wind_component_northward", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "idx": 14, 
+    "label": "qc_flag_wind_component_northward", 
+    "rawName": "qc_flag_wind_component_northward", 
+    "status": "pending", 
+    "uid": "7661e595-683d-4c7c-896b-285aee04fedf"
+}

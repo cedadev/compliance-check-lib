@@ -1,0 +1,18 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "prt-mode", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimensions": "sweep, string_length_32", 
+        "longName": "transmit_pulse_mode", 
+        "metaGroup": "radar_parameters", 
+        "name": "prt_mode", 
+        "options": "fixed, staggered, dual", 
+        "type": "char"
+    }, 
+    "idx": 10, 
+    "label": "prt_mode", 
+    "rawName": "prt_mode", 
+    "status": "pending", 
+    "uid": "dc3e1d94-dd67-4e57-bdf2-c9d8b2787ebd"
+}

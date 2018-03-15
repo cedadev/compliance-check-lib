@@ -1,0 +1,13 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "ceda", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "postalAddress": "Centre for Environmental Data Analysis, Rutherford Appleton Laboratory, Harwell Campus, Didcot OX11 0QX"
+    }, 
+    "idx": 1, 
+    "label": "CEDA", 
+    "rawName": "CEDA", 
+    "status": "pending", 
+    "uid": "4dda94d5-3753-40ae-9c80-3f66cfb2c5b1"
+}

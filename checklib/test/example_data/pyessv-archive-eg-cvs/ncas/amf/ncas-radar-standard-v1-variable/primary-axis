@@ -1,0 +1,17 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "primary-axis", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "string_length_32", 
+        "longName": "primary_axis_of_rotation", 
+        "name": "primary_axis", 
+        "options": "axis_z, axis_y, axis_x, axis_z_prime, axis_y_prime, axis_x_prime", 
+        "type": "char"
+    }, 
+    "idx": 16, 
+    "label": "primary_axis", 
+    "rawName": "primary_axis", 
+    "status": "pending", 
+    "uid": "f26d454b-adbc-46ba-8b08-c0f4c1f7a567"
+}

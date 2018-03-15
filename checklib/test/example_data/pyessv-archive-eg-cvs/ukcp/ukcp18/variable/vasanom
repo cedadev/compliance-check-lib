@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "vasanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 10, 
+    "label": "vasAnom", 
+    "rawName": "vasAnom", 
+    "status": "pending", 
+    "uid": "2a31eeff-923a-4815-8955-86885b55590b"
+}

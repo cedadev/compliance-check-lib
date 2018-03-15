@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "volc-cluster-21c", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "VolMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "AER", 
+            "CHEM", 
+            "BGC"
+        ], 
+        "description": "Parallel experiment to volc-cluster-ctrl, using restart files from the end of the historical simulation instead of from piControl, and boundary conditions from the 21st century SSP2-4.5 scenario experiment of ScenarioMIP", 
+        "endYear": "2100", 
+        "experiment": "volcanic cluster experiment under 21st century SSP2-4.5 scenario", 
+        "experimentID": "volc-cluster-21C", 
+        "minNumberYrsPerSim": "85", 
+        "parentActivityID": [
+            "CMIP"
+        ], 
+        "parentExperimentID": [
+            "historical"
+        ], 
+        "requiredModelComponents": [
+            "AOGCM"
+        ], 
+        "startYear": "2015", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "3"
+    }, 
+    "idx": 46, 
+    "label": "volc-cluster-21C", 
+    "rawName": "volc-cluster-21C", 
+    "status": "pending", 
+    "uid": "e49860b5-0f20-4c1f-8f63-68795f5b8df6"
+}

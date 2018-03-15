@@ -1,0 +1,19 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "minute", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "time", 
+        "longName": "Minute", 
+        "name": "minute", 
+        "type": "int32", 
+        "units": "1", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 9, 
+    "label": "minute", 
+    "rawName": "minute", 
+    "status": "pending", 
+    "uid": "91481448-bc44-4f1a-a9a1-76ef9ed4c5e0"
+}

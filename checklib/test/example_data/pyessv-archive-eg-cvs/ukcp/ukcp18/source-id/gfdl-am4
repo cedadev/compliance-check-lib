@@ -1,0 +1,59 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "gfdl-am4", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityParticipation": [
+            "CMIP"
+        ], 
+        "cohort": [
+            "Registered"
+        ], 
+        "institutionID": [
+            "NOAA-GFDL"
+        ], 
+        "label": "GFDL-AM4", 
+        "labelExtended": "GFDL-AM4", 
+        "modelComponent": {
+            "aerosol": {
+                "description": "interactive", 
+                "nominalResolution": "100 km"
+            }, 
+            "atmos": {
+                "description": "GFDL-AM4.0 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 33 levels; top level 1 hPa)", 
+                "nominalResolution": "100 km"
+            }, 
+            "atmosChem": {
+                "description": "fast chemistry, aerosol only", 
+                "nominalResolution": "100 km"
+            }, 
+            "land": {
+                "description": "GFDL-LM4.0", 
+                "nominalResolution": "100 km"
+            }, 
+            "landIce": {
+                "description": "GFDL-LM4.0", 
+                "nominalResolution": "100 km"
+            }, 
+            "ocean": {
+                "description": "none", 
+                "nominalResolution": "none"
+            }, 
+            "ocnBgchem": {
+                "description": "none", 
+                "nominalResolution": "none"
+            }, 
+            "seaIce": {
+                "description": "none", 
+                "nominalResolution": "none"
+            }
+        }, 
+        "releaseYear": "2017", 
+        "sourceID": "GFDL-AM4"
+    }, 
+    "idx": 25, 
+    "label": "GFDL-AM4", 
+    "rawName": "GFDL-AM4", 
+    "status": "pending", 
+    "uid": "00bb06c2-4e74-4b83-8735-df42a8a34d27"
+}

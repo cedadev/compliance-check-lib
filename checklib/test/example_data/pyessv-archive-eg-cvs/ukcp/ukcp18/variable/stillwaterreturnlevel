@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "stillwaterreturnlevel", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 65, 
+    "label": "stillWaterReturnLevel", 
+    "rawName": "stillWaterReturnLevel", 
+    "status": "pending", 
+    "uid": "bd265b92-8a93-444b-9b82-287aba1bc7cf"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "ta250", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 20, 
+    "label": "ta250", 
+    "rawName": "ta250", 
+    "status": "pending", 
+    "uid": "e42b1d7e-9745-401f-8736-4e44222476de"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "tasminanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 9, 
+    "label": "tasminAnom", 
+    "rawName": "tasminAnom", 
+    "status": "pending", 
+    "uid": "4d9e5c8a-2d6f-4021-a049-d24a16a2cb87"
+}

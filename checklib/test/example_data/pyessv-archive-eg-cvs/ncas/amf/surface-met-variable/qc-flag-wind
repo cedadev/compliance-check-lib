@@ -1,0 +1,19 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "qc-flag-wind", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "dimension": "time", 
+        "flagMeanings": "not_used good_data  suspect_data_measured_wind_speed_==_0_m_s-1 bad_data_wind_speed_outside_sensor_operational_range bad_data_wind_direction_outside_sensor_operational_range suspect_data_time_stamp_error", 
+        "flagValues": "0b,1b, 2b, 3b, 4b, 5b", 
+        "longName": "Data Quality flag: Winds", 
+        "name": "qc_flag_wind", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "idx": 10, 
+    "label": "qc_flag_wind", 
+    "rawName": "qc_flag_wind", 
+    "status": "pending", 
+    "uid": "27073432-1c8f-4a15-92db-e896ac0adac6"
+}

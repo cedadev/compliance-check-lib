@@ -1,0 +1,24 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "mole-fraction-of-ozone-in-air", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: ????", 
+        "chemicalSpecies": "O3", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Mole Fraction of Ozone in air", 
+        "name": "mole_concentration_of_ozone_in_air", 
+        "standardName": "mole_fraction_of_ozone_in_air", 
+        "type": "float64", 
+        "units": "?", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 2, 
+    "label": "mole_fraction_of_ozone_in_air", 
+    "rawName": "mole_fraction_of_ozone_in_air", 
+    "status": "pending", 
+    "uid": "525194c5-b5a3-4aa8-979d-6346747a5510"
+}

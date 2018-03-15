@@ -1,0 +1,12 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "day", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "description": "day", 
+    "idx": 10, 
+    "label": "day", 
+    "rawName": "day", 
+    "status": "pending", 
+    "uid": "1584644c-8862-44e7-8e18-6846939d9200"
+}

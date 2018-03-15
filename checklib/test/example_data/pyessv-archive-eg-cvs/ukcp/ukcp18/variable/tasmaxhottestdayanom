@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "tasmaxhottestdayanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 61, 
+    "label": "tasmaxHottestDayAnom", 
+    "rawName": "tasmaxHottestDayAnom", 
+    "status": "pending", 
+    "uid": "b380c49d-92be-4068-8fbd-4f08a4a4bef2"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "rss", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 36, 
+    "label": "rss", 
+    "rawName": "rss", 
+    "status": "pending", 
+    "uid": "9b444e9b-a0e1-44a5-8b24-ff88d73435be"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "hail", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 8, 
+    "label": "hail", 
+    "rawName": "hail", 
+    "status": "pending", 
+    "uid": "56c29857-6607-43cd-99ec-c990b59f3847"
+}

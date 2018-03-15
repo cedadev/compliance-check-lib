@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "historical-ext", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "CMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "AER", 
+            "CHEM", 
+            "BGC"
+        ], 
+        "description": "Extension beyond 2014 of the CMIP6 historical", 
+        "endYear": "present", 
+        "experiment": "post-2014 all-forcing simulation", 
+        "experimentID": "historical-ext", 
+        "minNumberYrsPerSim": "1", 
+        "parentActivityID": [
+            "CMIP"
+        ], 
+        "parentExperimentID": [
+            "historical"
+        ], 
+        "requiredModelComponents": [
+            "AOGCM"
+        ], 
+        "startYear": "2015", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "2"
+    }, 
+    "idx": 210, 
+    "label": "historical-ext", 
+    "rawName": "historical-ext", 
+    "status": "pending", 
+    "uid": "c4dd0561-5e3f-4c50-a9fd-0960859c8418"
+}

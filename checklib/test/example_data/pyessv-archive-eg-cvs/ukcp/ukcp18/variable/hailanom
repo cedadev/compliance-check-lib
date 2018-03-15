@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "hailanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 26, 
+    "label": "hailAnom", 
+    "rawName": "hailAnom", 
+    "status": "pending", 
+    "uid": "8a8cb737-4ad9-4d66-af80-0cb811f1ed05"
+}

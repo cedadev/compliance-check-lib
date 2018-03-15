@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "divergence-of-air-temperature", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: standard_deviation", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Divergence of Air Temperature", 
+        "name": "divergence_of_air_temperature", 
+        "type": "float64", 
+        "units": "K", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 15, 
+    "label": "divergence_of_air_temperature", 
+    "rawName": "divergence_of_air_temperature", 
+    "status": "pending", 
+    "uid": "f73c24c5-572e-4812-9ffb-b5df895955b8"
+}

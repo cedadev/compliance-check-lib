@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "sunanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 66, 
+    "label": "sunAnom", 
+    "rawName": "sunAnom", 
+    "status": "pending", 
+    "uid": "7f968a4e-50ef-47a1-8373-d7c107348623"
+}

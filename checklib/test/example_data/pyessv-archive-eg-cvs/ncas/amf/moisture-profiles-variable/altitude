@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "altitude", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "axis": "Z", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "longName": "Geometric height above geoid (WGS84).", 
+        "name": "altitude", 
+        "standardName": "altitude", 
+        "type": "float64", 
+        "units": "m", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 5, 
+    "label": "altitude", 
+    "rawName": "altitude", 
+    "status": "pending", 
+    "uid": "95306b98-f151-492c-bb83-f6ceb7f79a47"
+}

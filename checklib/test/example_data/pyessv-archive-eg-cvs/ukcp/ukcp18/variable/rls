@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "rls", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 57, 
+    "label": "rls", 
+    "rawName": "rls", 
+    "status": "pending", 
+    "uid": "a2ec2624-6ff4-468b-98c5-c7f0681bcfb1"
+}

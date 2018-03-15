@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "rain-drop-diameter", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index_range, index_bin", 
+        "longName": "Rain Drop Diameter", 
+        "name": "rain_drop_diameter", 
+        "type": "float64", 
+        "units": "mm", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 4, 
+    "label": "rain_drop_diameter", 
+    "rawName": "rain_drop_diameter", 
+    "status": "pending", 
+    "uid": "8677bcaf-6b56-4941-beb0-267f9a5a2176"
+}

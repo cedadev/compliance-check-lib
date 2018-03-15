@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "psl", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 43, 
+    "label": "psl", 
+    "rawName": "psl", 
+    "status": "pending", 
+    "uid": "dc85f517-933d-43f2-8a93-c874448d58e0"
+}

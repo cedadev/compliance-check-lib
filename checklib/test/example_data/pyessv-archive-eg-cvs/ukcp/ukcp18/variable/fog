@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "fog", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 31, 
+    "label": "fog", 
+    "rawName": "fog", 
+    "status": "pending", 
+    "uid": "f80d494f-77b0-4360-9cc6-079a2492a9fc"
+}

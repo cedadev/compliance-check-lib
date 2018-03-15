@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "atmosphere-mass-content-of-cloud-liquid-water", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: ????", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Atmosphere Mass Content of Cloud Liquid Water", 
+        "name": "atmosphere_mass_content_of_cloud_liquid_water", 
+        "standardName": "atmosphere_mass_content_of_cloud_liquid_water", 
+        "type": "float64", 
+        "units": "kg m-2", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 0, 
+    "label": "atmosphere_mass_content_of_cloud_liquid_water", 
+    "rawName": "atmosphere_mass_content_of_cloud_liquid_water", 
+    "status": "pending", 
+    "uid": "02d77e8e-4a62-4833-bffd-af5ad5815f75"
+}

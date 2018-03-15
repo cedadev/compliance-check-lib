@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "uasanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 32, 
+    "label": "uasAnom", 
+    "rawName": "uasAnom", 
+    "status": "pending", 
+    "uid": "1b1b868a-9744-4dbe-976e-5589561e02c4"
+}

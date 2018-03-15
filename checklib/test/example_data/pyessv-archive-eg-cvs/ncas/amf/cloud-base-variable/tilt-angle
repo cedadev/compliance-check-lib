@@ -1,0 +1,22 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "tilt-angle", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "longName": "Tilt angle (from vertical)", 
+        "name": "tilt_angle", 
+        "type": "float64", 
+        "units": "degree", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 1, 
+    "label": "tilt_angle", 
+    "rawName": "tilt_angle", 
+    "status": "pending", 
+    "uid": "d430b570-cc22-4b9b-a7fe-fa07295a3cc4"
+}

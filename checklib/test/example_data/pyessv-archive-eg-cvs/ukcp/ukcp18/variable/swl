@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "swl", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 53, 
+    "label": "swl", 
+    "rawName": "swl", 
+    "status": "pending", 
+    "uid": "e61c72bb-fa45-407a-84c5-de157ab6a2e2"
+}

@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "lig127k", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "PMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "AER", 
+            "CHEM", 
+            "BGC"
+        ], 
+        "description": "main forcings: astronomical parameters, trace gases, dust (forcing, or feedback if dust cycle represented in model)", 
+        "endYear": "", 
+        "experiment": "last interglacial (127k)", 
+        "experimentID": "lig127k", 
+        "minNumberYrsPerSim": "100", 
+        "parentActivityID": [
+            "no parent"
+        ], 
+        "parentExperimentID": [
+            "no parent"
+        ], 
+        "requiredModelComponents": [
+            "AOGCM"
+        ], 
+        "startYear": "", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "1"
+    }, 
+    "idx": 92, 
+    "label": "lig127k", 
+    "rawName": "lig127k", 
+    "status": "pending", 
+    "uid": "60ceebdb-326f-4051-ad27-733f8783a6de"
+}

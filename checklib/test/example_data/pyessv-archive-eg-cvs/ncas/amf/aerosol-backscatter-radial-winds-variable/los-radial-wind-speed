@@ -1,0 +1,23 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "los-radial-wind-speed", 
+    "createDate": "2018-03-09 00:00:00+00:00", 
+    "data": {
+        "_fillValue": "-1.00E+20", 
+        "cellMethods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index_ranges, index_angles", 
+        "longName": "Line of sight radial wind speed", 
+        "name": "los_radial_wind_speed", 
+        "standardName": "los_radial_wind_speed", 
+        "type": "float64", 
+        "units": "degree", 
+        "validMax": "<derived from file>", 
+        "validMin": "<derived from file>"
+    }, 
+    "idx": 4, 
+    "label": "los_radial_wind_speed", 
+    "rawName": "los_radial_wind_speed", 
+    "status": "pending", 
+    "uid": "d0973dab-add8-4dc7-a365-8c99ca39e00f"
+}

@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "rain5dayaccummaxanom", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 38, 
+    "label": "rain5DayAccumMaxAnom", 
+    "rawName": "rain5DayAccumMaxAnom", 
+    "status": "pending", 
+    "uid": "0d1f1006-6149-467b-9a36-fe82a74cfccd"
+}

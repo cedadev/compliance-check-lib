@@ -1,0 +1,11 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "fx", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {}, 
+    "idx": 4, 
+    "label": "fx", 
+    "rawName": "fx", 
+    "status": "pending", 
+    "uid": "42fbeee9-cd0d-490f-b252-01cd727c18b4"
+}

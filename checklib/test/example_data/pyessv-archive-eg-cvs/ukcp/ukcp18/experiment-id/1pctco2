@@ -1,0 +1,39 @@
+{
+    "_type": "pyessv._model.term", 
+    "canonicalName": "1pctco2", 
+    "createDate": "2017-05-31 00:00:00+00:00", 
+    "data": {
+        "activityID": [
+            "CMIP"
+        ], 
+        "additionalAllowedModelComponents": [
+            "AER", 
+            "CHEM", 
+            "BGC"
+        ], 
+        "description": "DECK: 1pctCO2", 
+        "endYear": "", 
+        "experiment": "1 percent per year increase in CO2", 
+        "experimentID": "1pctCO2", 
+        "minNumberYrsPerSim": "150", 
+        "parentActivityID": [
+            "CMIP"
+        ], 
+        "parentExperimentID": [
+            "piControl"
+        ], 
+        "requiredModelComponents": [
+            "AOGCM"
+        ], 
+        "startYear": "", 
+        "subExperimentID": [
+            "none"
+        ], 
+        "tier": "1"
+    }, 
+    "idx": 82, 
+    "label": "1pctCO2", 
+    "rawName": "1pctCO2", 
+    "status": "pending", 
+    "uid": "bc297437-1a2b-47e7-a183-ae6f94ef537e"
+}
