@@ -160,12 +160,11 @@ def test_ValidGlobalAttrsMatchFileNameCheck_success_5():
 def test_ValidGlobalAttrsMatchFileNameCheck_success_6():
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
-                                                   "order": "variable_id~scenario~dataset_id~prob_type~frequency~regex:^(?:\d{2}){2,6}(?:$|-(?:\d{2}){2,6}$)"},
+                                                   "order": "scenario~dataset_id~prob_data_type~frequency~regex:^(?:\d{2}){2,6}(?:$|-(?:\d{2}){2,6}$)"},
                                            vocabulary_ref="ukcp:ukcp18")
-    ds = Dataset(
-        'checklib/test/example_data/nc_file_checks_data/temp-max_sres-a1b_ukcp18-land-prob-25km_sample_day_19981201-19991130.nc')
+    ds = Dataset('checklib/test/example_data/nc_file_checks_data/sres-a1b_ukcp18-land-prob-25km_sample_day_19981201-19991130.nc')
     resp = x(ds)
-    assert(resp.value == (16, 16)), resp.msgs
+    assert(resp.value == (13, 13)), resp.msgs
 
 
 # ValidGlobalAttrsMatchFileNameCheck - FAIL
@@ -245,10 +244,10 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_6():
 def test_ValidGlobalAttrsMatchFileNameCheck_fail_7():
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
-                                                   "order": "variable_id~scenario~dataset_id~prob_type~frequency~regex:^(?:\d{2}){2,6}(?:$|-(?:\d{2}){2,3}$)"},
+                                                   "order": "variable~scenario~dataset_id~prob_data_type~frequency~regex:^(?:\d{2}){2,6}(?:$|-(?:\d{2}){2,3}$)"},
                                            vocabulary_ref="ukcp:ukcp18")
     ds = Dataset(
-        'checklib/test/example_data/nc_file_checks_data/temp-max_sres-a1b_ukcp18-land-prob-25km_sample_day_19981201-19991130.nc')
+        'checklib/test/example_data/nc_file_checks_data/tas_sres-a1b_ukcp18-land-prob-25km_sample_day_19981201-19991130.nc')
     resp = x(ds)
     assert(resp.value == (15, 16)), resp.msgs
 
@@ -337,31 +336,35 @@ def test_VariableRangeCheck_fail_2():
 
 
 def test_NCVariableMetadataCheck_partial_success_1():
-    x = NCVariableMetadataCheck(kwargs={"var_id": "time"}, vocabulary_ref="ncas:amf")
+    x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "common-land-variable"},
+                                vocabulary_ref="ncas:amf")
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (7, 21)), resp.msgs
 
 
 def test_NCVariableMetadataCheck_success_1():
-    x = NCVariableMetadataCheck(kwargs={"var_id": "time"}, vocabulary_ref="ncas:amf")
+    x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "common-land-variable"},
+                                vocabulary_ref="ncas:amf")
     fpath = 'checklib/test/example_data/nc_file_checks_data/ncas-amf/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'
     resp = x(Dataset(fpath))
-    assert (resp.value == (15, 21)), resp.msgs
+    assert (resp.value == (13, 21)), resp.msgs
 
 
 def test_NCVariableMetadataCheck_fail_1():
-    x = NCVariableMetadataCheck(kwargs={"var_id": "day"}, vocabulary_ref="ncas:amf")
+    x = NCVariableMetadataCheck(kwargs={"var_id": "day", "pyessv_namespace": "common-land-variable"},
+                                vocabulary_ref="ncas:amf")
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (0, 15)), resp.msgs
     assert(resp.msgs == ["Variable 'day' not found in the file so cannot perform other checks."])
 
 
 def test_NCVariableMetadataCheck_fail_2():
-    x = NCVariableMetadataCheck(kwargs={"var_id": "a-dog?"}, vocabulary_ref="ncas:amf")
+    x = NCVariableMetadataCheck(kwargs={"var_id": "a-dog?", "pyessv_namespace": "common-land-dimension"},
+                             vocabulary_ref="ncas:amf")
     try:
         x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     except Exception, err:
-        assert(str(err) == "Could not get value of term based on lookup: 'variable:a-dog?'.")
+        assert(str(err) == "Could not get value of term based on lookup: 'common-land-dimension:a-dog?'.")
 
 
 def test_NetCDFFormatCheck_success():
