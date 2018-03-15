@@ -39,3 +39,11 @@ def test_get_value_string_lookup_data_success_2():
     resp = x.get_value('variable:time', property='data')
     assert(resp['units'] == 'seconds since 1970-01-01 00:00:00 UTC')
 
+
+def test_get_value_string_lookup_amf_complex_success():
+    x = ESSVocabs('ncas', 'amf')
+    resp = x.get_value('common-land-variable:time', 'data')
+    assert("units" in resp)
+
+    resp = x.get_value('common-land-dimension:time', 'data')
+    assert("units" in resp)

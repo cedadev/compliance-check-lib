@@ -77,8 +77,8 @@ def check_variable_type(ds, var_id, datatype):
     :paran datatype: the type of the variable, this should be a numpy type: string
     :return: boolean
     """
-    variable = ds.variables[var_id]
-    return variable.dtype == np.dtype(datatype)
+    return (is_variable_in_dataset(ds, var_id) and
+            ds.variables[var_id].dtype == np.dtype(datatype))
 
 
 def is_variable_in_dataset(ds, var_id):
@@ -113,3 +113,25 @@ def variable_is_within_valid_bounds(ds, var_id, minimum, maximum):
         return False
 
     return True 
+
+
+def check_nc_attribute(variable, attr, expected_value):
+    """
+    Checks that attribute ``attr`` is in the netCDF4 Variable and the value
+    matches the expected value. Returns True for success and False for failure.
+
+    :param variable: netCDF4 Variable instance.
+    :param attr: attribute name (string).
+    :param expected_value: value that we expect to find (varied type).
+    :return: boolean.
+    """
+    value = getattr(variable, attr)
+    KNOWN_IGNORES = ("<derived from file>",)
+
+    if expected_value in KNOWN_IGNORES:
+        return True
+
+    if value == expected_value:
+        return True
+
+    return False

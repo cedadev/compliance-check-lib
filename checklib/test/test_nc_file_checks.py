@@ -374,5 +374,41 @@ def test_NetCDFFormatCheck_success():
 def test_NetCDFFormatCheck_fail():
     x = NetCDFFormatCheck(kwargs={"format": "NOTcdf"})
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
-    assert (resp.value == (0, 1))
-    assert (resp.msgs[0] == "The NetCDF sub-format must be: NOTcdf.")
+    assert(resp.value == (0, 1))
+    assert(resp.msgs[0] == "The NetCDF sub-format must be: NOTcdf.")
+
+
+def test_NetCDFDimensionCheck_success_1():
+    ncfile = "checklib/test/example_data/nc_file_checks_data/amf_eg_data_1.nc"
+    x = NetCDFDimensionCheck(kwargs={"dim_id": "latitude", "pyessv_namespace": "common-land-dimension"},
+                             vocabulary_ref="ncas:amf")
+    resp = x(Dataset(ncfile))
+    assert(resp.value == (5, 5))
+
+
+def test_NetCDFDimensionCheck_fail():
+    # Test for no dimension
+    ncfile = "checklib/test/example_data/nc_file_checks_data/simple_nc.nc"
+    x = NetCDFDimensionCheck(kwargs={"dim_id": "NO WAY", "pyessv_namespace": "common_land_dimension"},
+                             vocabulary_ref="ncas:amf")
+    resp = x(Dataset(ncfile))
+    assert(resp.value == (0, 3))
+    assert(resp.msgs[0] == "Dimension not found: NO WAY.")
+
+    # Test for dimension is wrong length
+    ncfile = "checklib/test/example_data/nc_file_checks_data/amf_eg_data_bad.nc"
+    x = NetCDFDimensionCheck(kwargs={"dim_id": "latitude", "pyessv_namespace": "common-land-dimension"},
+                             vocabulary_ref="ncas:amf")
+    resp = x(Dataset(ncfile))
+
+    assert(resp.value == (3, 5))
+    assert(resp.msgs[0] == "Dimension 'latitude' does not have required length: 1.")
+
+    # Test for dimension has wrong properties
+    ncfile = "checklib/test/example_data/nc_file_checks_data/amf_eg_data_bad.nc"
+    x = NetCDFDimensionCheck(kwargs={"dim_id": "longitude", "pyessv_namespace": "common-land-dimension"},
+                             vocabulary_ref="ncas:amf")
+    resp = x(Dataset(ncfile))
+    assert(resp.value == (4, 5))
+    assert(resp.msgs[0] == "Required variable attribute 'units' has incorrect value ('degree_east') "
+           "for variable: 'longitude'. Value should be: 'degrees_east'.")

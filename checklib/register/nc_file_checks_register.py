@@ -326,30 +326,12 @@ class NCVariableMetadataCheck(NCFileCheckBase):
     level = "HIGH"
 
     def _setup(self):
-        "Checks that the variable ID (var_id) argument has been provided."
-        if "var_id" not in self.kwargs:
-            raise ParameterError("Keyword argument for NC Variable Metadata Check must be: 'var_id'.")
-
-    def _check_nc_attribute(self, variable, attr, expected_value):
-        """
-        Checks that attribute ``attr`` is in the netCDF4 Variable and the value
-        matches the expected value. Returns True for success and False for failure.
-
-        :param variable: netCDF4 Variable instance.
-        :param attr: attribute name (string).
-        :param expected_value: value that we expect to find (varied type).
-        :return: boolean.
-        """
-        value = getattr(variable, attr)
-        KNOWN_IGNORES = ("<derived from file>",)
-
-        if expected_value in KNOWN_IGNORES:
-            return True
-
-        if value == expected_value:
-            return True
-
-        return False
+        "Checks that required arguments have been provided."
+        required_args = ("var_id", "pyessv_namespace")
+        for arg in required_args:
+            if arg not in self.kwargs:
+                raise ParameterError("Keyword arguments for NC Variable Metadata Check must "
+                                     "contain: '{}'.".format(arg))
 
 
     def _get_result(self, primary_arg):
@@ -358,7 +340,7 @@ class NCVariableMetadataCheck(NCFileCheckBase):
 
         # First, work out the overall 'out of' value based on number of attributes
         vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
-        lookup = "variable:{}".format(var_id)
+        lookup = ":".join([self.kwargs["pyessv_namespace"], var_id])
         expected_attr_dict = vocabs.get_value(lookup, "data")
 
         self.out_of = 1 + len(expected_attr_dict) * 2
@@ -382,7 +364,7 @@ class NCVariableMetadataCheck(NCFileCheckBase):
             else:
                 score += 1
                 # Check the value of attribute
-                check = self._check_nc_attribute(variable, attr, expected_value)
+                check = nc_util.check_nc_attribute(variable, attr, expected_value)
                 if check:
                     score += 1
                 else:
@@ -428,3 +410,95 @@ class NetCDFFormatCheck(NCFileCheckBase):
                       self.get_short_name(), messages)
 
 
+class NetCDFDimensionCheck(NCFileCheckBase):
+    """
+    The file must contain dimension and coordinate variable: {}.
+    """
+    short_name = "NetCDF dimension: {dim_id}"
+    defaults = {}
+    message_templates = ["Dimension not found: {dim_id}.",
+                         "Dimension '{dim_id}' does not have required length",
+                         "Coordinate variable for dimension not found: {dim_id}.",
+                         "Coordinate variable for dimension '{dim_id}' does not have expected properties."]
+
+    level = "HIGH"
+
+    def _setup(self):
+        "Checks that the required arguments have been provided."
+        if "dim_id" not in self.kwargs:
+            raise ParameterError("Keyword argument 'dim_id' is required for NetCDF Dimension Check.")
+
+        if "pyessv_namespace" not in self.kwargs:
+            raise ParameterError("Keyword argument 'pyessv_namespace' is required for NetCDF Dimension Check.")
+
+
+    def _get_result(self, primary_arg):
+        ds = primary_arg
+        dim_id = self.kwargs["dim_id"]
+
+        score = 0
+        messages = []
+
+        if dim_id in ds.dimensions:
+            score += 1
+            self.out_of = 1
+        else:
+            messages = [self.get_messages()[score],
+                        "Cannot look up coordinate variable because dimension does not exist.",
+                        "Cannot assess coordinate variable properties because dimension does not exist."]
+            self.out_of = len(messages)
+
+            # Now return because all other checks are irrelevant
+            return Result(self.level, (score, self.out_of), self.get_short_name(), messages)
+
+        # Now test coordinate variable using look-up in vocabularies
+        # First, work out the overall 'out of' value based on number of attributes
+        vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
+        lookup = ":".join([self.kwargs["pyessv_namespace"], dim_id])
+        expected_attr_dict = vocabs.get_value(lookup, "data")
+
+        # Check length if needed
+        if "length" in expected_attr_dict:
+            req_length = expected_attr_dict["length"]
+
+            if req_length == ds.dimensions[dim_id].size:
+                score += 1
+            else:
+                messages.append("Dimension '{}' does not have required length: {}.".format(dim_id, req_length))
+
+            self.out_of += 1
+
+        # Check coordinate variable exists for dimension
+        if dim_id in ds.variables:
+            score += 1
+            self.out_of += 1
+
+            variable = ds.variables[dim_id]
+
+            # Check the coordinate variable attributes one-by-one
+            for attr, expected_value in expected_attr_dict.items():
+                # Length has already been checked - so ignore here
+                if attr == "length": continue
+
+                self.out_of += 1
+
+                if attr not in variable.ncattrs():
+                    messages.append("Required variable attribute '{}' is not present for "
+                                    "coorinate variable: '{}'.".format(attr, dim_id))
+                else:
+                    score += 1
+                    self.out_of += 1
+
+                    # Check the value of attribute
+                    check = nc_util.check_nc_attribute(variable, attr, expected_value)
+                    if check:
+                        score += 1
+                    else:
+                        messages.append("Required variable attribute '{}' has incorrect value ('{}') "
+                                        "for variable: '{}'. Value should be: '{}'.".format(attr,
+                                        getattr(variable, attr), dim_id, expected_value))
+        else:
+            messages.append("Coordinate variable for dimension not found: {}.".format(dim_id))
+            self.out_of += 1
+
+        return Result(self.level, (score, self.out_of), self.get_short_name(), messages)
