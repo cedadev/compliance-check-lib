@@ -415,3 +415,26 @@ def test_NetCDFDimensionCheck_fail():
     assert(resp.value == (4, 5))
     assert(resp.msgs[0] == "Required variable attribute 'units' has incorrect value ('degree_east') "
            "for variable: 'longitude'. Value should be: 'degrees_east'.")
+
+def test_MainVariableAttributeCheck_success_1():
+    ncfile = "checklib/test/example_data/nc_file_checks_data/simple_nc.nc"
+    x = MainVariableAttributeCheck(kwargs={"attr_name": "long_name", "attr_value": "Seawater Temperature"})
+    resp = x(Dataset(ncfile))
+    assert(resp.value == (3, 3))
+
+
+def test_MainVariableAttributeCheck_fail_1():
+    ncfile = "checklib/test/example_data/nc_file_checks_data/two_vars_nc.nc"
+    x = MainVariableAttributeCheck(kwargs={"attr_name": "long_name", "attr_value": "Seawater Temperature"})
+    resp = x(Dataset(ncfile))
+    assert (resp.value == (0, 3))
+
+    ncfile = "checklib/test/example_data/nc_file_checks_data/simple_nc.nc"
+    x = MainVariableAttributeCheck(kwargs={"attr_name": "RUBBISH", "attr_value": "NONSENSE"})
+    resp = x(Dataset(ncfile))
+    assert (resp.value == (1, 3))
+
+    ncfile = "checklib/test/example_data/nc_file_checks_data/simple_nc.nc"
+    x = MainVariableAttributeCheck(kwargs={"attr_name": "long_name", "attr_value": "NONSENSE"})
+    resp = x(Dataset(ncfile))
+    assert (resp.value == (2, 3))

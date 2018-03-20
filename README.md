@@ -8,3 +8,16 @@ Each check is defined within a class that knows about:
  - unit tests for each test
  - hooks to talk to any vocabularies that can be interpreted by the [pyessv](https://github.com/es-doc/pyessv).
 
+## Testing
+
+To run the tests:
+
+```
+# Set up the directory required for working with the ESSV controlled vocabularies
+mkdir -p ~/.esdoc
+
+# Copy the example vocabularies into place
+cp -r checklib/test/example_data/pyessv-archive-eg-cvs ~/.esdoc/pyessv-archive
+
+pytest
+```

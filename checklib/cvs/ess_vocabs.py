@@ -15,6 +15,14 @@ using a local file-system cache of the files.
 import os, re
 from netCDF4 import Dataset
 
+# Check that ESSV directory exists, or give warning
+import warnings
+VOCABS_DIR = os.path.expanduser('~/.esdoc/pyessv-archive')
+if not os.path.isdir(VOCABS_DIR):
+    warnings.warn('Could not find PYESSV vocabularies directory. Vocabulary checks '
+                  'will not work. Directory should exist at: {}'.format(VOCABS_DIR))
+
+
 # Import library to interact with Controlled Vocabularies
 import pyessv
 import pyessv._model.term

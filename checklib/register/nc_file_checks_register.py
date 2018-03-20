@@ -111,6 +111,65 @@ class OneMainVariablePerFileCheck(NCFileCheckBase):
                       self.get_short_name(), messages)
 
 
+class MainVariableAttributeCheck(NCFileCheckBase):
+    """
+    Finds main variable and checks attribute '{attr_name}' has required value: '{attr_value}'.
+    """
+    short_name = "Main variable attribute"
+    defaults = {}
+    message_templates = ["Cannot identify main variable to examine attributes",
+                         "Required variable attribute '{attr_name}' is not present for variable: '{attr_value}'.",
+                         "Required variable attribute '{attr_name}' has incorrect value '{attr_value}' for main "
+                         "variable."
+                         ]
+    level = "HIGH"
+
+
+    def _setup(self):
+        "Checks that required arguments have been provided."
+        required_args = ("attr_name", "attr_value")
+        for arg in required_args:
+            if arg not in self.kwargs:
+                raise ParameterError("Keyword arguments for NC Variable Metadata Check must "
+                                     "contain: '{}'.".format(arg))
+
+
+    def _get_result(self, primary_arg):
+        ds = primary_arg
+
+        score = 0
+        messages = []
+
+        # Check main variable is identifiable first
+        try:
+            variable = nc_util.get_main_variable(ds)
+            score += 1
+        except:
+            messages = [self.get_messages()[score]]
+            return Result(self.level, (score, self.out_of),
+                          self.get_short_name(), messages)
+
+        # Now check attribute
+        attr_name = self.kwargs["attr_name"]
+
+        if attr_name not in variable.ncattrs():
+            messages = [self.get_messages()[score]]
+
+        else:
+            score += 1
+            # Check the value of attribute
+
+            expected_value = self.kwargs["attr_value"]
+            check = nc_util.check_nc_attribute(variable, attr_name, expected_value)
+            if check:
+                score += 1
+            else:
+                messages.append(self.get_messages()[score])
+
+        return Result(self.level, (score, self.out_of),
+                      self.get_short_name(), messages)
+
+
 
 class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
     """

@@ -11,6 +11,44 @@ import re
 import numpy as np
 
 
+
+def get_main_variable(ds):
+    """
+    Gets the main variable from a NetCDF4 Dataset. The main
+    variable is determined as that which has the biggest shape/size.
+    If there is more than one variable of the biggest size it raises
+    an Exception.
+
+    :param ds: netCDF4 Dataset object
+    :return: netCDF4 Variable object
+    """
+    dsv = ds.variables
+    sizes = {}
+
+    for ncvar in dsv:
+        sizes[ncvar] = dsv[ncvar].size
+
+    mx_size = max(sizes.values())
+    if sizes.values().count(mx_size) > 1:
+        raise Exception("More than one 'main' variable found in netCDF4 file.")
+
+    return [dsv[ncvar] for ncvar, size in sizes.items() if dsv[ncvar].size == mx_size][0]
+
+
+def check_main_variable_type(ds, datatype):
+    """
+    Checks variables in a NetCDF Dataset and returns boolean regarding
+    whether the main variable is of the required type. The main
+    variable is determined as that which has the biggest shape/size.
+
+    :param ds: netCDF4 Dataset object
+    :paran datatype: the type of the variable, this should be a numpy type: string
+    :return: boolean
+    """
+    main_var = get_main_variable(ds)
+    return main_var.dtype == np.dtype(datatype)
+
+
 def is_there_only_one_main_variable(ds):
     """
     Checks variables in a NetCDF Dataset and returns boolean regarding
@@ -20,13 +58,11 @@ def is_there_only_one_main_variable(ds):
     :param ds: netCDF4 Dataset object
     :return: boolean
     """
-    dsv = ds.variables
-    sizes = [dsv[ncvar].size for ncvar in dsv]
-
-    if sizes.count(max(sizes)) > 1:
+    try:
+        get_main_variable(ds)
+        return True
+    except:
         return False
-
-    return True
 
 
 def check_global_attr_against_regex(ds, attr, regex):
@@ -45,26 +81,6 @@ def check_global_attr_against_regex(ds, attr, regex):
         return 1
     # Success
     return 2
-
-
-def check_main_variable_type(ds, datatype):
-    """
-    Checks variables in a NetCDF Dataset and returns boolean regarding
-    whether the main variable is of the required type. The main
-    variable is determined as that which has the biggest shape/size.
-
-    :param ds: netCDF4 Dataset object
-    :paran datatype: the type of the variable, this should be a numpy type: string
-    :return: boolean
-    """
-    dsv = ds.variables
-    size = 0
-    for ncvar in dsv:
-        if dsv[ncvar].size > size:
-            main_var = ncvar
-            size = dsv[ncvar].size
-
-    return dsv[main_var].dtype == np.dtype(datatype)
 
 
 def check_variable_type(ds, var_id, datatype):
