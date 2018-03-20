@@ -27,3 +27,16 @@ def test_NCCoordVarHasBoundsCheck_fail_1():
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/cmip5_example_1.nc'))
     assert(resp.value == (1, 2))
 
+
+def test_NCCoordVarHasValuesInVocabCheck_success_1():
+    x = NCCoordVarHasValuesInVocabCheck(kwargs={"var_id": "percentile"},
+                                 vocabulary_ref="ukcp:ukcp18")
+    resp = x(Dataset('checklib/test/example_data/tasAnom_rcp85_land-prob_uk_25km_percentile_mon_20001201-20011130_good_pcs.nc'))
+    assert(resp.value == (2, 2))
+
+def test_NCCoordVarHasValuesInVocabCheck_fail_1():
+    x = NCCoordVarHasValuesInVocabCheck(kwargs={"var_id": "percentile"},
+                                 vocabulary_ref="ukcp:ukcp18")
+    resp = x(Dataset('checklib/test/example_data/tasAnom_rcp85_land-prob_uk_25km_percentile_mon_20001201-20011130_bad_pcs.nc'))
+    assert(resp.value == (1, 2))
+
