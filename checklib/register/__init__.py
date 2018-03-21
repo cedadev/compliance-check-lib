@@ -3,6 +3,7 @@ import inspect
 from checklib.register.callable_check_base import *
 from checklib.register.file_checks_register import *
 from checklib.register.nc_file_checks_register import *
+from checklib.register.nc_coords_checks_register import *
 
 
 def get_check_class(id):
