@@ -16,9 +16,10 @@ import os, re
 from netCDF4 import Dataset
 
 # Check that ESSV directory exists, or give warning
-import warnings
-VOCABS_DIR = os.path.expanduser('~/.esdoc/pyessv-archive')
+VOCABS_DIR = os.environ.get('PYESSV_ARCHIVE_HOME', os.path.expanduser('~/.esdoc/pyessv-archive')) 
+
 if not os.path.isdir(VOCABS_DIR):
+    import warnings
     warnings.warn('Could not find PYESSV vocabularies directory. Vocabulary checks '
                   'will not work. Directory should exist at: {}'.format(VOCABS_DIR))
 
