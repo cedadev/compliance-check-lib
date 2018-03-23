@@ -1,37 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ssp370sst-lowo3", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ssp370sst-lowo3", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "AerChemMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Future SSP3-7.0 with reduced ozone precursor emissions (from ssp370-lowNTCF), prescribed SSTs", 
-        "endYear": "2055", 
+        "additional_allowed_model_components": "", 
+        "end_year": "2055", 
         "experiment": "SSP3-7.0, prescribed SSTs, with low ozone precursor emissions", 
-        "experimentID": "ssp370SST-lowO3", 
-        "minNumberYrsPerSim": "41", 
-        "parentActivityID": [
+        "experiment_id": "ssp370SST-lowO3", 
+        "min_number_yrs_per_sim": "41", 
+        "parent_activity_id": [
             "ScenarioMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "ssp370"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM", 
             "AER", 
             "CHEM"
         ], 
-        "startYear": "2015", 
-        "subExperimentID": [
+        "start_year": "2015", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 242, 
+    "description": "Future SSP3-7.0 with reduced ozone precursor emissions (from ssp370-lowNTCF), prescribed SSTs", 
     "label": "ssp370SST-lowO3", 
-    "rawName": "ssp370SST-lowO3", 
+    "namespace": "ukcp:ukcp18:experiment-id:ssp370sst-lowo3", 
+    "raw_name": "ssp370SST-lowO3", 
     "status": "pending", 
-    "uid": "42ddab2a-de9d-4cf2-8398-ea0370f7fda9"
+    "uid": "59a18570-ea35-4fa1-9166-79e88b5ef2aa"
 }

@@ -1,11 +1,40 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "rls", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 57, 
-    "label": "rls", 
-    "rawName": "rls", 
+    "_type": "term", 
+    "canonical_name": "rls", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "cmip6_cmor_tables_row_id": [
+            "1317", 
+            "1318", 
+            "?"
+        ], 
+        "cmip6_name": "rls", 
+        "cmip6_standard_name": "surface_net_downward_longwave_flux", 
+        "label_units": "W m-2", 
+        "long_name": "Net Surface long wave flux", 
+        "plot_label": "Net Surface long wave flux (W m-2)", 
+        "standard_name": "surface_net_downward_longwave_flux", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "mean"
+        ], 
+        "time_step": [
+            "3hr", 
+            "day", 
+            "mon"
+        ], 
+        "um_stash": "02201", 
+        "units": "W m-2"
+    }, 
+    "description": "Net Surface long wave flux", 
+    "namespace": "ukcp:ukcp18:variable:rls", 
     "status": "pending", 
-    "uid": "a2ec2624-6ff4-468b-98c5-c7f0681bcfb1"
+    "uid": "38ea2b33-8ec8-4e51-a497-62f4987252c2"
 }

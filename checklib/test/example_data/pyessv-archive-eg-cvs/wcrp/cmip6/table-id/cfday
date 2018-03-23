@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "cfday", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "CFday", 
+    "namespace": "wcrp:cmip6:table-id:cfday", 
+    "raw_name": "CFday", 
+    "status": "pending", 
+    "uid": "c4721fcb-35a8-45f4-9651-08503e9ce913"
+}

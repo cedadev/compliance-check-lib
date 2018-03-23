@@ -1,60 +1,59 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ukesm1-0-ll", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ukesm1-0-ll", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             ""
         ], 
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "MOHC", 
             "NERC"
         ], 
-        "label": "UKESM1.0-LL", 
-        "labelExtended": "UKESM1.0-N96ORCA1", 
-        "modelComponent": {
+        "label_extended": "UKESM1.0-N96ORCA1", 
+        "model_component": {
             "aerosol": {
                 "description": "UKCA-GLOMAP-mode", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmos": {
                 "description": "MetUM-HadGEM3-GA7.1 (192 x 144 N96; 85 levels; top level 85km)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmosChem": {
                 "description": "UKCA-StratTrop", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "land": {
                 "description": "JULES-HadGEM3-GL7.1", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "landIce": {
                 "description": "BISICLES (only active in ISMIP experiments)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "ocean": {
                 "description": "NEMO-HadGEM3-GO6.0 (ORCA1 tripolar primarily 1 deg latitude/longitude with meridional refinement down to 1/3 degree in the tropics; 75 levels; top grid cell 0-1m)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "ocnBgchem": {
                 "description": "MEDUSA2", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "seaIce": {
                 "description": "CICE-HadGEM3-GSI8 (ORCA1 tripolar primarily 1 deg latitude/longitude)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }
         }, 
-        "releaseYear": "2017", 
-        "sourceID": "UKESM1-0-LL"
+        "release_year": "2017", 
+        "source_id": "UKESM1-0-LL"
     }, 
-    "idx": 5, 
-    "label": "UKESM1-0-LL", 
-    "rawName": "UKESM1-0-LL", 
+    "label": "UKESM1.0-LL", 
+    "namespace": "ukcp:ukcp18:source-id:ukesm1-0-ll", 
+    "raw_name": "UKESM1-0-LL", 
     "status": "pending", 
-    "uid": "75fbeeba-7221-4523-aa8e-aa045a6c4b52"
+    "uid": "c6ce096e-de89-46dc-9199-cfa65ca78d0e"
 }

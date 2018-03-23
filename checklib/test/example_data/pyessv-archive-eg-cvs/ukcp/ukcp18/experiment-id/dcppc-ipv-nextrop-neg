@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "dcppc-ipv-nextrop-neg", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "dcppc-ipv-nextrop-neg", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "DCPP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "C1.9 and predictability of the hiatus and of similar long timescale variations of both signs", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "idealized negative northern extratropical IPV anomaly pattern", 
-        "experimentID": "dcppC-ipv-NexTrop-neg", 
-        "minNumberYrsPerSim": "10", 
-        "parentActivityID": [
+        "experiment_id": "dcppC-ipv-NexTrop-neg", 
+        "min_number_yrs_per_sim": "10", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 152, 
+    "description": "C1.9 and predictability of the hiatus and of similar long timescale variations of both signs", 
     "label": "dcppC-ipv-NexTrop-neg", 
-    "rawName": "dcppC-ipv-NexTrop-neg", 
+    "namespace": "ukcp:ukcp18:experiment-id:dcppc-ipv-nextrop-neg", 
+    "raw_name": "dcppC-ipv-NexTrop-neg", 
     "status": "pending", 
-    "uid": "5620b00d-449b-4391-aad0-5571a362bc99"
+    "uid": "012c5062-3477-49ab-a534-77b275cf2163"
 }

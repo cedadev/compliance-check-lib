@@ -60,9 +60,8 @@ class ESSVocabs(object):
         """
         Loads controlled vocabularies once and caches them.
         """
-        self._cvs = pyessv.load(self.authority, self.scope)
+        self._cvs = pyessv.load("{}:{}".format(self.authority, self.scope))
         self._authority_info = pyessv.load(self.authority)
-        self._scope_info = pyessv.load(self.authority, self.scope)
 
 
     def _get_lookup_id(self, attr, full=False):
@@ -178,6 +177,10 @@ class ESSVocabs(object):
     def check_file_name(self, filename, keys=None, delimiter="_", extension=".nc"):
         """
         Checks that components in the file name match CV-allowed values.
+        Scoring works as follows:
+         - 1 for correct extension
+         - 1 for each component of the file-name that is valid
+         - 1 for each regex component that is valid
 
         E.g.:
         <variable_id>   tas
@@ -199,17 +202,29 @@ class ESSVocabs(object):
             raise Exception("File name checks require an input of attribute keys to check against. "
                             "None given.")
 
-        items = os.path.splitext(filename)[0].split(delimiter)
         score = 0
         messages = []
 
+        filebase, ext = os.path.splitext(filename)
+        items = filebase.split(delimiter)
+
+        # Check extension
+        if ext == extension:
+            score += 1
+
         # Now check
-        template, regexs = _get_templates(keys, delimiter, items, extension)
+        template, regexs = _get_templates(keys, delimiter, items)
         collections = self._get_collections(keys)
+
+        # Set strictness of check
+        strictness_level = 1  # Uses raw-name - which matches case
+
         if '{}' in template:
             try:
-                parser = pyessv.create_template_parser(template, collections)
-                parser.parse(filename)
+                parser = pyessv.create_template_parser(template, collections,
+                                                       seperator=delimiter,
+                                                       strictness=strictness_level)
+                parser.parse(filebase)
                 score += len(collections)
             except AssertionError as ex:
                 messages.append(ex.message)
@@ -242,14 +257,13 @@ class ESSVocabs(object):
         return tuple(collections)
 
 
-def _get_templates(keys, delimiter, items, extension):
+def _get_templates(keys, delimiter, items):
     """
     Get the template and list of regex constructed from the items.
 
     :keys  sequence of attribute keys to look-up values from in CVs.
     :delimiter  string used as delimiter in file name: string.
     :items a list of the components from the file name
-    :extension  the file extension: string.
     :return: the template and a list of regex
     """
     regex_list = []
@@ -266,5 +280,5 @@ def _get_templates(keys, delimiter, items, extension):
             else:
                 template = delimiter.join([template, '{}'])
 
-    return template + extension, regex_list
+    return template, regex_list
 

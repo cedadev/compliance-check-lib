@@ -1,37 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ssp370sst-lowch4", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ssp370sst-lowch4", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "AerChemMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Future SSP3-7.0 with reduced CH4 concentrations, prescribed SSTs", 
-        "endYear": "2055", 
+        "additional_allowed_model_components": "", 
+        "end_year": "2055", 
         "experiment": "SSP3-7.0, prescribed SSTs, with low methane concentrations", 
-        "experimentID": "ssp370SST-lowCH4", 
-        "minNumberYrsPerSim": "41", 
-        "parentActivityID": [
+        "experiment_id": "ssp370SST-lowCH4", 
+        "min_number_yrs_per_sim": "41", 
+        "parent_activity_id": [
             "ScenarioMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "ssp370"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM", 
             "AER", 
             "CHEM"
         ], 
-        "startYear": "2015", 
-        "subExperimentID": [
+        "start_year": "2015", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 78, 
+    "description": "Future SSP3-7.0 with reduced CH4 concentrations, prescribed SSTs", 
     "label": "ssp370SST-lowCH4", 
-    "rawName": "ssp370SST-lowCH4", 
+    "namespace": "ukcp:ukcp18:experiment-id:ssp370sst-lowch4", 
+    "raw_name": "ssp370SST-lowCH4", 
     "status": "pending", 
-    "uid": "a6b550c5-f9cd-4769-9bc5-020cd86f346c"
+    "uid": "865de3e5-535c-4638-aa35-c210f43d962f"
 }

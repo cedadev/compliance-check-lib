@@ -1,12 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "land", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "description": "land", 
-    "idx": 1, 
-    "label": "land", 
-    "rawName": "land", 
+    "_type": "term", 
+    "canonical_name": "land", 
+    "create_date": "2018-03-22 15:50:19.328077+00:00", 
+    "namespace": "eustace-team:eustace:realm:land", 
     "status": "pending", 
-    "uid": "e957f1e8-bb6d-4c3b-9eda-89a366a075cc"
+    "uid": "beba9633-2499-4d09-8206-203c765f5a1b"
 }

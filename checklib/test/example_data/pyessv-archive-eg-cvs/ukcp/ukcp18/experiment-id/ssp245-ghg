@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ssp245-ghg", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ssp245-ghg", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "DAMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Extension of well-mixed GHG-only run under SSP2-4.5. Models with interactive chemistry schemes should either turn off the chemistry or use a preindustrial climatology of stratospheric and tropospheric ozone in their radiation schemes", 
-        "endYear": "2100", 
+        "end_year": "2100", 
         "experiment": "well-mixed GHG-only SSP2-4.5 run", 
-        "experimentID": "ssp245-GHG", 
-        "minNumberYrsPerSim": "80", 
-        "parentActivityID": [
+        "experiment_id": "ssp245-GHG", 
+        "min_number_yrs_per_sim": "80", 
+        "parent_activity_id": [
             "DAMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "hist-GHG"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "2021", 
-        "subExperimentID": [
+        "start_year": "2021", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 0, 
+    "description": "Extension of well-mixed GHG-only run under SSP2-4.5. Models with interactive chemistry schemes should either turn off the chemistry or use a preindustrial climatology of stratospheric and tropospheric ozone in their radiation schemes", 
     "label": "ssp245-GHG", 
-    "rawName": "ssp245-GHG", 
+    "namespace": "ukcp:ukcp18:experiment-id:ssp245-ghg", 
+    "raw_name": "ssp245-GHG", 
     "status": "pending", 
-    "uid": "58219660-0aa5-46a8-a4de-c525126ab3f9"
+    "uid": "e4e373e2-5080-421c-8f5f-617ee185f926"
 }

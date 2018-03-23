@@ -1,18 +1,18 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "radar-antenna-gain-h", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "radar-antenna-gain-h",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "_fillValue": "-9999", 
-        "longName": "nominal_radar_antenna_gain_h_channel", 
-        "metaGroup": "radar_parameters", 
-        "name": "radar_antenna_gain_h", 
-        "type": "float", 
+        "_fillValue": "-9999",
+        "long_name": "nominal_radar_antenna_gain_h_channel",
+        "metaGroup": "radar_parameters",
+        "name": "radar_antenna_gain_h",
+        "type": "float",
         "units": "dB"
-    }, 
-    "idx": 1, 
-    "label": "radar_antenna_gain_h", 
-    "rawName": "radar_antenna_gain_h", 
-    "status": "pending", 
+    },
+    "idx": 1,
+    "label": "radar_antenna_gain_h",
+    "raw_name": "radar_antenna_gain_h",
+    "status": "pending",
     "uid": "8f1c1915-dd05-4cfc-9c64-3e40b58af8a4"
 }

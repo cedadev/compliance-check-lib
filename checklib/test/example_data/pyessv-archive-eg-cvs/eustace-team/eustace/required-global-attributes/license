@@ -1,12 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "license", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "description": "license", 
-    "idx": 5, 
-    "label": "license", 
-    "rawName": "license", 
+    "_type": "term", 
+    "canonical_name": "license", 
+    "create_date": "2018-03-22 15:50:19.328077+00:00", 
+    "namespace": "eustace-team:eustace:required-global-attributes:license", 
     "status": "pending", 
-    "uid": "4947240b-3546-4cd2-b849-c83e36b897e8"
+    "uid": "b8042a44-8daf-44c3-ab42-0fc748a58445"
 }

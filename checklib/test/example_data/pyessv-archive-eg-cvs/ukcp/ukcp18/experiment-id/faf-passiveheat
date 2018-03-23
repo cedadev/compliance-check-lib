@@ -1,39 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "faf-passiveheat", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "faf-passiveheat", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "FAFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "1xCO2 experiment, parallel to piControl, with a flux of passive tracer added at the ocean surface at the same rate as the surface net heat flux anomaly applied in the FAFMIP heat experiment", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "control plus surface flux of passive heat tracer into ocean", 
-        "experimentID": "faf-passiveheat", 
-        "minNumberYrsPerSim": "70", 
-        "parentActivityID": [
+        "experiment_id": "faf-passiveheat", 
+        "min_number_yrs_per_sim": "70", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 28, 
-    "label": "faf-passiveheat", 
-    "rawName": "faf-passiveheat", 
+    "description": "1xCO2 experiment, parallel to piControl, with a flux of passive tracer added at the ocean surface at the same rate as the surface net heat flux anomaly applied in the FAFMIP heat experiment", 
+    "namespace": "ukcp:ukcp18:experiment-id:faf-passiveheat", 
     "status": "pending", 
-    "uid": "b880caac-2a54-4c25-af01-9d4ec1a0c460"
+    "uid": "e0128d4e-fa16-4687-9b50-24075f7316e2"
 }

@@ -1,59 +1,58 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "mpiesm-2-lr", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "mpiesm-2-lr", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             ""
         ], 
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "MPI-M"
         ], 
-        "label": "MPIESM2", 
-        "labelExtended": "MPIESM2", 
-        "modelComponent": {
+        "label_extended": "MPIESM2", 
+        "model_component": {
             "aerosol": {
                 "description": "none, prescribed MACv2-SP", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmos": {
                 "description": "ICON-AES (icosahedral/triangles; 160 km; 47 levels; top level 80 km)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmosChem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "land": {
                 "description": "JSBACH4.2", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "landIce": {
                 "description": "none/prescribed", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "ocean": {
                 "description": "ICON-OES (icosahedral/triangles; 40 km; 40 levels; top grid cell 0-12 m)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "ocnBgchem": {
                 "description": "HAMOCC", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "seaIce": {
                 "description": "thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }
         }, 
-        "releaseYear": "2017", 
-        "sourceID": "MPIESM-2-LR"
+        "release_year": "2017", 
+        "source_id": "MPIESM-2-LR"
     }, 
-    "idx": 53, 
-    "label": "MPIESM-2-LR", 
-    "rawName": "MPIESM-2-LR", 
+    "label": "MPIESM2", 
+    "namespace": "ukcp:ukcp18:source-id:mpiesm-2-lr", 
+    "raw_name": "MPIESM-2-LR", 
     "status": "pending", 
-    "uid": "64b25f29-8523-4c43-8f3e-5cd7742197d2"
+    "uid": "7938cdbe-1510-4e58-a7e8-6d0f783aac7a"
 }

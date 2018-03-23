@@ -1,12 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ocnbgchem", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "description": "ocnBgchem", 
-    "idx": 7, 
+    "_type": "term", 
+    "canonical_name": "ocnbgchem", 
+    "create_date": "2018-03-22 15:50:19.328077+00:00", 
     "label": "ocnBgchem", 
-    "rawName": "ocnBgchem", 
+    "namespace": "eustace-team:eustace:realm:ocnbgchem", 
+    "raw_name": "ocnBgchem", 
     "status": "pending", 
-    "uid": "a4f917b9-75fa-4975-91f6-0442141b26a6"
+    "uid": "3d71bb94-50a5-49e8-b384-b496fb39ebab"
 }

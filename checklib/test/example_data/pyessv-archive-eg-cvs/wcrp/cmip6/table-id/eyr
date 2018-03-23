@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "eyr", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "Eyr", 
+    "namespace": "wcrp:cmip6:table-id:eyr", 
+    "raw_name": "Eyr", 
+    "status": "pending", 
+    "uid": "c1fb6832-f935-4704-bb58-1e852131e605"
+}

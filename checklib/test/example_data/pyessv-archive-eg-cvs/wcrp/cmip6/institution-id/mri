@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "mri", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "data": {
+        "postal_address": "Meteorological Research Institute, Tsukuba, Ibaraki 305-0052, Japan"
+    }, 
+    "label": "MRI", 
+    "namespace": "wcrp:cmip6:institution-id:mri", 
+    "raw_name": "MRI", 
+    "status": "pending", 
+    "uid": "e6657f3b-c114-449b-82a1-d9867452ce67"
+}

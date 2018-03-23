@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ssp370sst", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ssp370sst", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "AerChemMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "CHEM"
         ], 
-        "description": "Future SSP3-7.0, with SSTs prescribed from ssp370", 
-        "endYear": "2055", 
+        "end_year": "2055", 
         "experiment": "SSP3-7.0, with SSTs prescribed from ssp370", 
-        "experimentID": "ssp370SST", 
-        "minNumberYrsPerSim": "41", 
-        "parentActivityID": [
+        "experiment_id": "ssp370SST", 
+        "min_number_yrs_per_sim": "41", 
+        "parent_activity_id": [
             "ScenarioMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "ssp370"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM", 
             "AER"
         ], 
-        "startYear": "2015", 
-        "subExperimentID": [
+        "start_year": "2015", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 153, 
+    "description": "Future SSP3-7.0, with SSTs prescribed from ssp370", 
     "label": "ssp370SST", 
-    "rawName": "ssp370SST", 
+    "namespace": "ukcp:ukcp18:experiment-id:ssp370sst", 
+    "raw_name": "ssp370SST", 
     "status": "pending", 
-    "uid": "11f45599-5b08-4844-bff8-ca4e9c4f8428"
+    "uid": "3b2a6135-11cc-4468-84af-38af15c1e5ec"
 }

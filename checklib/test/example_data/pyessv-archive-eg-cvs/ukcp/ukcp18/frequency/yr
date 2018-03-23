@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "yr", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 2, 
-    "label": "yr", 
-    "rawName": "yr", 
+    "_type": "term", 
+    "canonical_name": "yr", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:frequency:yr", 
     "status": "pending", 
-    "uid": "c713e1a4-68e5-4c18-8af0-dba694075dff"
+    "uid": "ab14f4eb-f866-48e5-8c87-55c86cea131b"
 }

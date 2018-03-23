@@ -1,38 +1,36 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "aqua-control-lwoff", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "aqua-control-lwoff", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "As aqua-control experiment, but with cloud-radiative effects switched off in the LW radiation code", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "aquaplanet control with longwave cloud radiative effects off", 
-        "experimentID": "aqua-control-lwoff", 
-        "minNumberYrsPerSim": "10", 
-        "parentActivityID": [
+        "experiment_id": "aqua-control-lwoff", 
+        "min_number_yrs_per_sim": "10", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 181, 
-    "label": "aqua-control-lwoff", 
-    "rawName": "aqua-control-lwoff", 
+    "description": "As aqua-control experiment, but with cloud-radiative effects switched off in the LW radiation code", 
+    "namespace": "ukcp:ukcp18:experiment-id:aqua-control-lwoff", 
     "status": "pending", 
-    "uid": "20605e2f-a78b-4f9b-b344-0e48bfd7fedf"
+    "uid": "5e5051ef-f945-4bdf-840e-20918d10c19c"
 }

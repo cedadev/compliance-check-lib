@@ -1,11 +1,40 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "rss", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 36, 
-    "label": "rss", 
-    "rawName": "rss", 
+    "_type": "term", 
+    "canonical_name": "rss", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "cmip6_cmor_tables_row_id": [
+            "1399", 
+            "1400", 
+            "?"
+        ], 
+        "cmip6_name": "rss", 
+        "cmip6_standard_name": "surface_net_downward_shortwave_flux", 
+        "label_units": "W m-2", 
+        "long_name": "Net Surface short wave flux", 
+        "plot_label": "Net Surface short wave flux (W m-2)", 
+        "standard_name": "surface_net_downward_shortwave_flux", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "mean"
+        ], 
+        "time_step": [
+            "3hr", 
+            "day", 
+            "mon"
+        ], 
+        "um_stash": "01201", 
+        "units": "W m-2"
+    }, 
+    "description": "Net Surface short wave flux", 
+    "namespace": "ukcp:ukcp18:variable:rss", 
     "status": "pending", 
-    "uid": "9b444e9b-a0e1-44a5-8b24-ff88d73435be"
+    "uid": "5981c48f-035b-4841-9a6e-896c886ecbac"
 }

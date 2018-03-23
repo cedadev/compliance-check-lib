@@ -1,11 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "pet", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 23, 
-    "label": "pet", 
-    "rawName": "pet", 
+    "_type": "term", 
+    "canonical_name": "pet", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "cmip6_cmor_tables_row_id": [
+            "??"
+        ], 
+        "cmip6_name": "??", 
+        "cmip6_standard_name": "??", 
+        "label_units": "mm/day", 
+        "long_name": "Potential evapotranspiration rate", 
+        "notes": [
+            "To be post-processed"
+        ], 
+        "plot_label": "Potential evapotranspiration rate (mm/day)", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "mean"
+        ], 
+        "time_step": [
+            "??"
+        ], 
+        "um_stash": "None", 
+        "units": "mm/day"
+    }, 
+    "description": "Potential evapotranspiration rate", 
+    "namespace": "ukcp:ukcp18:variable:pet", 
     "status": "pending", 
-    "uid": "3d6f8b09-36bb-479f-b2be-69645b80bdff"
+    "uid": "303b0ed4-7c4f-4de9-abeb-8cb7dca10c5f"
 }

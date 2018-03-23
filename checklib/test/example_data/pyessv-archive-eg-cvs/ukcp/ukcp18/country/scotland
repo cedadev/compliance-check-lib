@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "scotland", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 3, 
-    "label": "scotland", 
-    "rawName": "scotland", 
+    "_type": "term", 
+    "canonical_name": "scotland", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:country:scotland", 
     "status": "pending", 
-    "uid": "094e0bcb-1a11-4690-948b-c1f7166113ea"
+    "uid": "12fa28b7-b400-4774-b8de-98ba2701ee0f"
 }

@@ -1,18 +1,18 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "longitude", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "longitude",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "_fillValue": "-9999", 
-        "longName": "longitude", 
-        "name": "longitude", 
-        "standardName": "longitude", 
-        "type": "double", 
+        "_fillValue": "-9999",
+        "long_name": "longitude",
+        "name": "longitude",
+        "standard_name": "longitude",
+        "type": "double",
         "units": "degree_east"
-    }, 
-    "idx": 19, 
-    "label": "longitude", 
-    "rawName": "longitude", 
-    "status": "pending", 
+    },
+    "idx": 19,
+    "label": "longitude",
+    "raw_name": "longitude",
+    "status": "pending",
     "uid": "e800b191-59f3-460b-8f56-9064ffc9ef63"
 }

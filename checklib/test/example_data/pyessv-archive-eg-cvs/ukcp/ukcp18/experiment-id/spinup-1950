@@ -1,37 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "spinup-1950", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "spinup-1950", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "HighResMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER"
         ], 
-        "description": "Coupled integration from ocean rest state using recommended HighResMIP protocol spinup, starting from 1950 ocean temperature and salinity analysis EN4, using constant 1950s forcing. At least 30 years to satisfy near surface quasi-equilibrium", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "coupled spinup with fixed 1950s forcings from 1950 initial conditions (with ocean at rest) to provide initial condition for control-1950 and hist-1950", 
-        "experimentID": "spinup-1950", 
-        "minNumberYrsPerSim": "30", 
-        "parentActivityID": [
+        "experiment_id": "spinup-1950", 
+        "min_number_yrs_per_sim": "30", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 10, 
-    "label": "spinup-1950", 
-    "rawName": "spinup-1950", 
+    "description": "Coupled integration from ocean rest state using recommended HighResMIP protocol spinup, starting from 1950 ocean temperature and salinity analysis EN4, using constant 1950s forcing. At least 30 years to satisfy near surface quasi-equilibrium", 
+    "namespace": "ukcp:ukcp18:experiment-id:spinup-1950", 
     "status": "pending", 
-    "uid": "3525f103-3db0-4bcf-ae5c-3939b7ca4f3f"
+    "uid": "0be00e8b-d0e4-4d18-a5d6-20e81c915402"
 }

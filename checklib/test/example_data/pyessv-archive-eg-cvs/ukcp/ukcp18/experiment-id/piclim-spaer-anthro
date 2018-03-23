@@ -1,35 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "piclim-spaer-anthro", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "piclim-spaer-anthro", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "RFMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Prescribed anthropogenic aerosol optical properties. Anthropogenic forcings", 
-        "endYear": "", 
+        "additional_allowed_model_components": "", 
+        "end_year": "", 
         "experiment": "effective radiative forcing at present day with specified anthropogenic aerosol optical properties, anthropogenic forcings", 
-        "experimentID": "piClim-spAer-anthro", 
-        "minNumberYrsPerSim": "", 
-        "parentActivityID": [
+        "experiment_id": "piClim-spAer-anthro", 
+        "min_number_yrs_per_sim": "", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 151, 
+    "description": "Prescribed anthropogenic aerosol optical properties. Anthropogenic forcings", 
     "label": "piClim-spAer-anthro", 
-    "rawName": "piClim-spAer-anthro", 
+    "namespace": "ukcp:ukcp18:experiment-id:piclim-spaer-anthro", 
+    "raw_name": "piClim-spAer-anthro", 
     "status": "pending", 
-    "uid": "60d3dad2-9812-4893-a2cb-53d75b59aee7"
+    "uid": "6270341c-ed4c-492e-8d72-740a2127fba1"
 }

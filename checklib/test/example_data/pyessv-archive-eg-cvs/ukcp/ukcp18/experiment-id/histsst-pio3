@@ -1,37 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "histsst-pio3", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "histsst-pio3", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "AerChemMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Historical WMGHG, halocarbon concentrations and aerosol precursor emissions, 1850 tropospheric ozone precursors emissions, prescribed SSTs", 
-        "endYear": "2014", 
+        "additional_allowed_model_components": "", 
+        "end_year": "2014", 
         "experiment": "historical SSTs and historical forcing, but with pre-industrial ozone precursor emissions", 
-        "experimentID": "histSST-piO3", 
-        "minNumberYrsPerSim": "165", 
-        "parentActivityID": [
+        "experiment_id": "histSST-piO3", 
+        "min_number_yrs_per_sim": "165", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM", 
             "AER", 
             "CHEM"
         ], 
-        "startYear": "1850", 
-        "subExperimentID": [
+        "start_year": "1850", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 138, 
+    "description": "Historical WMGHG, halocarbon concentrations and aerosol precursor emissions, 1850 tropospheric ozone precursors emissions, prescribed SSTs", 
     "label": "histSST-piO3", 
-    "rawName": "histSST-piO3", 
+    "namespace": "ukcp:ukcp18:experiment-id:histsst-pio3", 
+    "raw_name": "histSST-piO3", 
     "status": "pending", 
-    "uid": "84481f24-f5d1-4427-828d-45aee194ffa6"
+    "uid": "1c80e0ad-f86b-4c24-9ae8-acdb76110e0e"
 }

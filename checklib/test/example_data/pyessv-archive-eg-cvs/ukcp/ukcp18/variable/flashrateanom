@@ -1,11 +1,42 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "flashrateanom", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 0, 
+    "_type": "term", 
+    "canonical_name": "flashrateanom", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "anomaly_type": "absolute_change", 
+        "cmip6_cmor_tables_row_id": [
+            "535"
+        ], 
+        "cmip6_name": "flashrate", 
+        "cmip6_standard_name": "lightning_flash_rate", 
+        "label_units": "1", 
+        "long_name": "Lightning flash rate??", 
+        "notes": [
+            "Intended we'll still do these, but as LS3 they're not a priority at present"
+        ], 
+        "plot_label": "Lightning anomaly (1)", 
+        "standard_name": "lightning_flash_rate", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "accumulated"
+        ], 
+        "time_step": [
+            "day"
+        ], 
+        "um_stash": "21104", 
+        "units": "1"
+    }, 
+    "description": "Lightning", 
     "label": "flashrateAnom", 
-    "rawName": "flashrateAnom", 
+    "namespace": "ukcp:ukcp18:variable:flashrateanom", 
+    "raw_name": "flashrateAnom", 
     "status": "pending", 
-    "uid": "22a64eeb-dba9-428a-a0ba-71bbeff8dbe8"
+    "uid": "c15e1821-52bd-44a9-b4f8-96a03cfd6990"
 }

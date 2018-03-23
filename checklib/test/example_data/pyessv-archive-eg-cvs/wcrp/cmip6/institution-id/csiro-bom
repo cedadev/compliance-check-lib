@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "csiro-bom", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "data": {
+        "postal_address": "Commonwealth Scientific and Industrial Research Organisation and Bureau of Meteorology, Melbourne, Victoria 3208, Australia"
+    }, 
+    "label": "CSIRO-BOM", 
+    "namespace": "wcrp:cmip6:institution-id:csiro-bom", 
+    "raw_name": "CSIRO-BOM", 
+    "status": "pending", 
+    "uid": "acf0734b-edb9-4d65-a7aa-caa81ee8fbb9"
+}

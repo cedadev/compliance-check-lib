@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "amip-lfmip-pdlc", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "amip-lfmip-pdlc", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "LS3MIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Prescribed land conditions 1980-2014 climate; AMIP SSTs", 
-        "endYear": "2014", 
+        "end_year": "2014", 
         "experiment": "prescribed land (from current climatology) and AMIP SSTs", 
-        "experimentID": "amip-lfmip-pdLC", 
-        "minNumberYrsPerSim": "36", 
-        "parentActivityID": [
+        "experiment_id": "amip-lfmip-pdLC", 
+        "min_number_yrs_per_sim": "36", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "1979", 
-        "subExperimentID": [
+        "start_year": "1979", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 25, 
+    "description": "Prescribed land conditions 1980-2014 climate; AMIP SSTs", 
     "label": "amip-lfmip-pdLC", 
-    "rawName": "amip-lfmip-pdLC", 
+    "namespace": "ukcp:ukcp18:experiment-id:amip-lfmip-pdlc", 
+    "raw_name": "amip-lfmip-pdLC", 
     "status": "pending", 
-    "uid": "728a9f7c-c955-49d5-aea3-bea2f609c418"
+    "uid": "866d233e-49b5-453c-88b1-03e8f73893d2"
 }

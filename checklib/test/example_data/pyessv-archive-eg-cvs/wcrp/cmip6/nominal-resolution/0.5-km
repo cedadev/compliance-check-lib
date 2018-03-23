@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "0.5-km", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "0.5 km", 
+    "namespace": "wcrp:cmip6:nominal-resolution:0.5-km", 
+    "raw_name": "0.5 km", 
+    "status": "pending", 
+    "uid": "400c32e3-24c5-4ca7-a34d-186ac9fd0d5f"
+}

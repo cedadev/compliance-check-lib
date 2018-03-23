@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "dcppc-atl-control", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "dcppc-atl-control", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "DCPP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "C1.1 Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "Idealized Atlantic control", 
-        "experimentID": "dcppC-atl-control", 
-        "minNumberYrsPerSim": "10", 
-        "parentActivityID": [
+        "experiment_id": "dcppC-atl-control", 
+        "min_number_yrs_per_sim": "10", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 208, 
+    "description": "C1.1 Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs", 
     "label": "dcppC-atl-control", 
-    "rawName": "dcppC-atl-control", 
+    "namespace": "ukcp:ukcp18:experiment-id:dcppc-atl-control", 
+    "raw_name": "dcppC-atl-control", 
     "status": "pending", 
-    "uid": "1cf63e5e-840c-4e00-bdb3-8bdcd50e10f1"
+    "uid": "ca82bb24-fea7-4aca-b696-2dba45aef00a"
 }

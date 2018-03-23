@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "hist-resipo", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "hist-resipo", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "GMMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Pacemaker 20th century historical run that includes all forcing as used in CMIP6 Historical Simulation, and the observational historical SST is restored in the tropical lobe of the IPO domain (20degS-20degN, 175degE-75degW)", 
-        "endYear": "2014", 
+        "end_year": "2014", 
         "experiment": "initialized from \"historical\" run year 1870 and SSTs in tropical lobe of the IPO domain (20degS-20degN, 175degE-75degW) restored to AMIP SSTs with historical forcings", 
-        "experimentID": "hist-resIPO", 
-        "minNumberYrsPerSim": "145", 
-        "parentActivityID": [
+        "experiment_id": "hist-resIPO", 
+        "min_number_yrs_per_sim": "145", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "historical"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "1870", 
-        "subExperimentID": [
+        "start_year": "1870", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 74, 
+    "description": "Pacemaker 20th century historical run that includes all forcing as used in CMIP6 Historical Simulation, and the observational historical SST is restored in the tropical lobe of the IPO domain (20degS-20degN, 175degE-75degW)", 
     "label": "hist-resIPO", 
-    "rawName": "hist-resIPO", 
+    "namespace": "ukcp:ukcp18:experiment-id:hist-resipo", 
+    "raw_name": "hist-resIPO", 
     "status": "pending", 
-    "uid": "cf114d60-047d-4eb5-9bba-37185a911d5c"
+    "uid": "6be84702-4573-47b5-9750-b753d9d7d2d7"
 }

@@ -1,18 +1,18 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "fixed-angle", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "fixed-angle",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "_fillValue": "-9999", 
-        "dimensions": "sweep", 
-        "longName": "ray_target_fixed_angle", 
-        "name": "fixed_angle", 
-        "type": "float", 
+        "_fillValue": "-9999",
+        "dimensions": "sweep",
+        "long_name": "ray_target_fixed_angle",
+        "name": "fixed_angle",
+        "type": "float",
         "units": "degrees"
-    }, 
-    "idx": 18, 
-    "label": "fixed_angle", 
-    "rawName": "fixed_angle", 
-    "status": "pending", 
+    },
+    "idx": 18,
+    "label": "fixed_angle",
+    "raw_name": "fixed_angle",
+    "status": "pending",
     "uid": "15d268e0-8792-4579-824d-6155270353ae"
 }

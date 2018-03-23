@@ -1,19 +1,19 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "qc-flag", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "qc-flag",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "dimension": "time", 
-        "flagMeanings": "not_used good_data  suspect_data_no_measurable_ascent_rate suspect_data_horizontal_wind_speed_==_0_m_s-1", 
-        "flagValues": "0b,1b, 2b, 3b", 
-        "longName": "Data Quality flag", 
-        "name": "qc_flag", 
-        "type": "byte", 
+        "dimension": "time",
+        "flagMeanings": "not_used good_data  suspect_data_no_measurable_ascent_rate suspect_data_horizontal_wind_speed_==_0_m_s-1",
+        "flagValues": "0b,1b, 2b, 3b",
+        "long_name": "Data Quality flag",
+        "name": "qc_flag",
+        "type": "byte",
         "units": "1"
-    }, 
-    "idx": 7, 
-    "label": "qc_flag", 
-    "rawName": "qc_flag", 
-    "status": "pending", 
+    },
+    "idx": 7,
+    "label": "qc_flag",
+    "raw_name": "qc_flag",
+    "status": "pending",
     "uid": "61d8dfda-67bd-4b9e-84a4-d93348d500a9"
 }

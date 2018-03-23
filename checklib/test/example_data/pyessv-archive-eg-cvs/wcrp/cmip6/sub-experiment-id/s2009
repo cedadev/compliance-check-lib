@@ -1,0 +1,9 @@
+{
+    "_type": "term", 
+    "canonical_name": "s2009", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "description": "initialized near end of year 2009", 
+    "namespace": "wcrp:cmip6:sub-experiment-id:s2009", 
+    "status": "pending", 
+    "uid": "a485ce53-0604-4ce4-bfea-54fd82e62742"
+}

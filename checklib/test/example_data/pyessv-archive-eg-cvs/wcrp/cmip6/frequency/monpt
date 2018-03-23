@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "monpt", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "monPt", 
+    "namespace": "wcrp:cmip6:frequency:monpt", 
+    "raw_name": "monPt", 
+    "status": "pending", 
+    "uid": "07d02c65-b4f2-4419-86c4-cbb4d9920ee8"
+}

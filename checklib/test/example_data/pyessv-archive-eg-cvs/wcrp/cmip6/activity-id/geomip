@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "geomip", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "GeoMIP", 
+    "namespace": "wcrp:cmip6:activity-id:geomip", 
+    "raw_name": "GeoMIP", 
+    "status": "pending", 
+    "uid": "4fc2f591-b30d-4f6d-8e28-cabbf2a89fa4"
+}

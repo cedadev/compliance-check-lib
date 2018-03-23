@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "day", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 14, 
-    "label": "day", 
-    "rawName": "day", 
+    "_type": "term", 
+    "canonical_name": "day", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:frequency:day", 
     "status": "pending", 
-    "uid": "371eab04-9f8f-49c1-977a-d585c069fe67"
+    "uid": "7c014337-4df3-49d2-acf9-683a3484b5dd"
 }

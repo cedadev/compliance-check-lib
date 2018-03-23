@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "pamip", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "PAMIP", 
+    "namespace": "wcrp:cmip6:activity-id:pamip", 
+    "raw_name": "PAMIP", 
+    "status": "pending", 
+    "uid": "337e7485-6551-46f2-a22e-c62e6d95e736"
+}

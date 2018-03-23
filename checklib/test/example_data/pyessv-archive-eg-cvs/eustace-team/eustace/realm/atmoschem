@@ -1,12 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "atmoschem", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "description": "atmosChem", 
-    "idx": 3, 
+    "_type": "term", 
+    "canonical_name": "atmoschem", 
+    "create_date": "2018-03-22 15:50:19.328077+00:00", 
     "label": "atmosChem", 
-    "rawName": "atmosChem", 
+    "namespace": "eustace-team:eustace:realm:atmoschem", 
+    "raw_name": "atmosChem", 
     "status": "pending", 
-    "uid": "feed0940-c289-4544-9a44-fa14402ea4b7"
+    "uid": "4cc9561c-5c17-4569-9865-ec6589bf93a3"
 }

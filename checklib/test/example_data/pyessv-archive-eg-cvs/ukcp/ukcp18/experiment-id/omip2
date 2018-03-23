@@ -1,35 +1,33 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "omip2", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "omip2", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "OMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Global ocean - sea-ice coupled experiment forced with the JRA-55do inter-annually varying atmospheric and river data sets for years 1958-2016. Initial ocean tracer fields are based on observations. All Priority=1 OMIP diagnostics are requested for all five cycles of the 59-year forcing to quantify drift. All OMIP diagnostics (Priority=1,2,3) are requested for the 5th cycle", 
-        "endYear": "", 
+        "additional_allowed_model_components": "", 
+        "end_year": "", 
         "experiment": "OMIP experiment forced by JRA-55do atmospheric data set and initialized with observed physical and biogeochemical ocean data", 
-        "experimentID": "omip2", 
-        "minNumberYrsPerSim": "295", 
-        "parentActivityID": [
+        "experiment_id": "omip2", 
+        "min_number_yrs_per_sim": "295", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "OGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "3"
     }, 
-    "idx": 214, 
-    "label": "omip2", 
-    "rawName": "omip2", 
+    "description": "Global ocean - sea-ice coupled experiment forced with the JRA-55do inter-annually varying atmospheric and river data sets for years 1958-2016. Initial ocean tracer fields are based on observations. All Priority=1 OMIP diagnostics are requested for all five cycles of the 59-year forcing to quantify drift. All OMIP diagnostics (Priority=1,2,3) are requested for the 5th cycle", 
+    "namespace": "ukcp:ukcp18:experiment-id:omip2", 
     "status": "pending", 
-    "uid": "c62c686f-57f5-4c2a-8042-ba8f22d65c27"
+    "uid": "de4e30fb-a31a-4ce9-8087-f92445fd7ed0"
 }

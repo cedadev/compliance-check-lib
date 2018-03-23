@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "uk", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 4, 
-    "label": "uk", 
-    "rawName": "uk", 
+    "_type": "term", 
+    "canonical_name": "uk", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:country:uk", 
     "status": "pending", 
-    "uid": "1f4b970a-1e93-4b66-aa8d-92ce079d9e6c"
+    "uid": "020b9285-18f1-4dae-99a9-b26a6fd5846f"
 }

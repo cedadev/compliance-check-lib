@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "sample", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 0, 
-    "label": "sample", 
-    "rawName": "sample", 
+    "_type": "term", 
+    "canonical_name": "sample", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:prob-data-type:sample", 
     "status": "pending", 
-    "uid": "8e3e6ae4-81fd-4b9e-a612-a872d5805ccc"
+    "uid": "adea47de-ce13-46d9-b5c6-94fba8a3d547"
 }

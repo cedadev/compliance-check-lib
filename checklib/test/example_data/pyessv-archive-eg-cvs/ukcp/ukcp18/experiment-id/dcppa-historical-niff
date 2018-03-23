@@ -1,32 +1,31 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "dcppa-historical-niff", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "dcppa-historical-niff", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "DCPP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "A4.2 Hindcasts initialized from historical climate simulations as in DCPP-A2.2, but with no information from the future. First full hindcast year follows start year (e.g., for s1960, first full hindcast year is 1961)", 
-        "endYear": "5 - 10 years after start year", 
+        "end_year": "5 - 10 years after start year", 
         "experiment": "hindcast initialized from historical climate simulation but without using knowledge of subsequent historical forcing", 
-        "experimentID": "dcppA-historical-niff", 
-        "minNumberYrsPerSim": "5", 
-        "parentActivityID": [
+        "experiment_id": "dcppA-historical-niff", 
+        "min_number_yrs_per_sim": "5", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "historical"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "A year in the range 1960-2016", 
-        "subExperimentID": [
+        "start_year": "A year in the range 1960-2016", 
+        "sub_experiment_id": [
             "s1960", 
             "s1961", 
             "s1962", 
@@ -87,9 +86,10 @@
         ], 
         "tier": "4"
     }, 
-    "idx": 1, 
+    "description": "A4.2 Hindcasts initialized from historical climate simulations as in DCPP-A2.2, but with no information from the future. First full hindcast year follows start year (e.g., for s1960, first full hindcast year is 1961)", 
     "label": "dcppA-historical-niff", 
-    "rawName": "dcppA-historical-niff", 
+    "namespace": "ukcp:ukcp18:experiment-id:dcppa-historical-niff", 
+    "raw_name": "dcppA-historical-niff", 
     "status": "pending", 
-    "uid": "8cef1500-7f29-4790-ad49-121ac1cecdbd"
+    "uid": "88c78778-4b40-409a-8ef0-8850d56881cf"
 }

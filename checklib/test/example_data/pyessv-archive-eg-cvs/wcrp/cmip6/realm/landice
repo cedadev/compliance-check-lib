@@ -1,0 +1,11 @@
+{
+    "_type": "term", 
+    "canonical_name": "landice", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "description": "Land Ice", 
+    "label": "landIce", 
+    "namespace": "wcrp:cmip6:realm:landice", 
+    "raw_name": "landIce", 
+    "status": "pending", 
+    "uid": "c97b40ad-24d6-4afc-900b-634c582c39ba"
+}

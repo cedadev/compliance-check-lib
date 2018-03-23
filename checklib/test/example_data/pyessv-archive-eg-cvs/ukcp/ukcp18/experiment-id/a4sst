@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "a4sst", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "a4sst", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "As piSST, but with monthly-varying SSTs taken from years 111-140 of each model's own abrupt4xCO2 experiment instead of from piControl. Sea-ice is unchanged from piSST", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "as piSST but with SSTs from abrupt4xCO2", 
-        "experimentID": "a4SST", 
-        "minNumberYrsPerSim": "30", 
-        "parentActivityID": [
+        "experiment_id": "a4SST", 
+        "min_number_yrs_per_sim": "30", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "abrupt4xCO2"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 206, 
+    "description": "As piSST, but with monthly-varying SSTs taken from years 111-140 of each model's own abrupt4xCO2 experiment instead of from piControl. Sea-ice is unchanged from piSST", 
     "label": "a4SST", 
-    "rawName": "a4SST", 
+    "namespace": "ukcp:ukcp18:experiment-id:a4sst", 
+    "raw_name": "a4SST", 
     "status": "pending", 
-    "uid": "f740e22f-b485-43be-8669-fd910b228d9c"
+    "uid": "c14fb4f4-bbda-435e-8f96-09445d4ba135"
 }

@@ -1,39 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ssp534-over", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ssp534-over", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "ScenarioMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "21st century overshoot scenario relative to SSP5_34. Branches from SS5_85 at 2040 with emissions reduced to zero by 2070 and negative thereafter. This simulation should optionally be extended to year 2300", 
-        "endYear": "2100 or 2300", 
+        "end_year": "2100 or 2300", 
         "experiment": "overshoot of 3.4 W/m**2 branching from ssp585 in 2040", 
-        "experimentID": "ssp534-over", 
-        "minNumberYrsPerSim": "61", 
-        "parentActivityID": [
+        "experiment_id": "ssp534-over", 
+        "min_number_yrs_per_sim": "61", 
+        "parent_activity_id": [
             "ScenarioMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "ssp585"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "2040", 
-        "subExperimentID": [
+        "start_year": "2040", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 228, 
-    "label": "ssp534-over", 
-    "rawName": "ssp534-over", 
+    "description": "21st century overshoot scenario relative to SSP5_34. Branches from SS5_85 at 2040 with emissions reduced to zero by 2070 and negative thereafter. This simulation should optionally be extended to year 2300", 
+    "namespace": "ukcp:ukcp18:experiment-id:ssp534-over", 
     "status": "pending", 
-    "uid": "722450ad-8b5e-472d-a836-783b37f66291"
+    "uid": "583e4cca-a191-4d70-970b-d5b1cdd04f21"
 }

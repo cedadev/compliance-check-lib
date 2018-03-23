@@ -1,11 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ism", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 6, 
+    "_type": "term", 
+    "canonical_name": "ism", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "label": "ISM", 
-    "rawName": "ISM", 
+    "namespace": "ukcp:ukcp18:source-type:ism", 
+    "raw_name": "ISM", 
     "status": "pending", 
-    "uid": "ffb9a399-7b0f-4721-8885-079a9aefb71c"
+    "uid": "6345d785-78fa-479d-9284-455517cf56c6"
 }

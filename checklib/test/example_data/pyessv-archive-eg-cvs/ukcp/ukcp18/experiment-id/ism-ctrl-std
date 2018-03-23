@@ -1,35 +1,33 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ism-ctrl-std", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ism-ctrl-std", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "ISMIP6"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Offline ice sheet control run for the initMIP experiment that explores the uncertainty in sea level due to ice sheet initialization", 
-        "endYear": "", 
+        "additional_allowed_model_components": "", 
+        "end_year": "", 
         "experiment": "offline ice sheet model initMIP control", 
-        "experimentID": "ism-ctrl-std", 
-        "minNumberYrsPerSim": "100", 
-        "parentActivityID": [
+        "experiment_id": "ism-ctrl-std", 
+        "min_number_yrs_per_sim": "100", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "ISM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 189, 
-    "label": "ism-ctrl-std", 
-    "rawName": "ism-ctrl-std", 
+    "description": "Offline ice sheet control run for the initMIP experiment that explores the uncertainty in sea level due to ice sheet initialization", 
+    "namespace": "ukcp:ukcp18:experiment-id:ism-ctrl-std", 
     "status": "pending", 
-    "uid": "0cee5956-2c47-4f5e-8dff-1eb04e020fd9"
+    "uid": "0bf532ab-61ba-469f-ae24-7e44ec78382b"
 }

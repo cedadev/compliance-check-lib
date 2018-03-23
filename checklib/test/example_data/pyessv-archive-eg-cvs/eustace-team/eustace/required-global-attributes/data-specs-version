@@ -1,12 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "data-specs-version", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "description": "data_specs_version", 
-    "idx": 2, 
+    "_type": "term", 
+    "canonical_name": "data-specs-version", 
+    "create_date": "2018-03-22 15:50:19.328077+00:00", 
     "label": "data_specs_version", 
-    "rawName": "data_specs_version", 
+    "namespace": "eustace-team:eustace:required-global-attributes:data-specs-version", 
+    "raw_name": "data_specs_version", 
     "status": "pending", 
-    "uid": "9bb2d788-17fb-4b90-a92a-b19935c4e2aa"
+    "uid": "d510c27f-3c57-48a5-add1-649c18a965f0"
 }

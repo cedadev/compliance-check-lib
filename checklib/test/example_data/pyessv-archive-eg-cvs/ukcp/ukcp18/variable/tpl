@@ -1,11 +1,26 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "tpl", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 28, 
-    "label": "tpl", 
-    "rawName": "tpl", 
+    "_type": "term", 
+    "canonical_name": "tpl", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "label_units": "m", 
+        "long_name": "???", 
+        "plot_label": "Target protection level (m)", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_step": [
+            "use-by date"
+        ], 
+        "units": "m"
+    }, 
+    "description": "Target protection level", 
+    "namespace": "ukcp:ukcp18:variable:tpl", 
     "status": "pending", 
-    "uid": "ba195a01-4613-4fa9-997d-0bd7b7372870"
+    "uid": "ef7f72d0-d37a-4b3d-aa3f-aaed74ad24fb"
 }

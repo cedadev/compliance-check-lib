@@ -1,11 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "bgcm", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 3, 
+    "_type": "term", 
+    "canonical_name": "bgcm", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "label": "BGCM", 
-    "rawName": "BGCM", 
+    "namespace": "ukcp:ukcp18:source-type:bgcm", 
+    "raw_name": "BGCM", 
     "status": "pending", 
-    "uid": "1883ea9e-d3ad-4545-9031-fa3a199e4edb"
+    "uid": "744ddf81-d2f9-4cb0-94b1-5e799bbf7afa"
 }

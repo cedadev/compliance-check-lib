@@ -1,19 +1,19 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "qc-flag-kurtosis-v", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "qc-flag-kurtosis-v",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "dimension": "time", 
-        "flagMeanings": "bad_data good_data  suspect_data", 
-        "flagValues": "0b,1b, 2b", 
-        "longName": "Quality flag: Kurtosis V", 
-        "name": "qc_flag_kurtosis_v", 
-        "type": "byte", 
+        "dimension": "time",
+        "flagMeanings": "bad_data good_data  suspect_data",
+        "flagValues": "0b,1b, 2b",
+        "long_name": "Quality flag: Kurtosis V",
+        "name": "qc_flag_kurtosis_v",
+        "type": "byte",
         "units": "1"
-    }, 
-    "idx": 10, 
-    "label": "qc_flag_kurtosis_v", 
-    "rawName": "qc_flag_kurtosis_v", 
-    "status": "pending", 
+    },
+    "idx": 10,
+    "label": "qc_flag_kurtosis_v",
+    "raw_name": "qc_flag_kurtosis_v",
+    "status": "pending",
     "uid": "28604a6c-26c0-429e-ac16-d2597dbe4419"
 }

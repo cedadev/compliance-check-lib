@@ -1,11 +1,40 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "wsgmax10manom", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 17, 
+    "_type": "term", 
+    "canonical_name": "wsgmax10manom", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "anomaly_type": "absolute_change", 
+        "cmip6_cmor_tables_row_id": [
+            "2037"
+        ], 
+        "cmip6_name": "wsgmax10m", 
+        "cmip6_standard_name": "wind_speed_of_gust", 
+        "label_units": "m s-1", 
+        "level": "10m", 
+        "long_name": "Maximum Wind Speed of Gust at 10m", 
+        "plot_label": "Wind gust anomaly at 10m (m s-1)", 
+        "standard_name": "wind_speed_of_gust", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "max"
+        ], 
+        "time_step": [
+            "3hr"
+        ], 
+        "um_stash": "03463", 
+        "units": "m s-1"
+    }, 
+    "description": "Wind gust", 
     "label": "wsgmax10mAnom", 
-    "rawName": "wsgmax10mAnom", 
+    "namespace": "ukcp:ukcp18:variable:wsgmax10manom", 
+    "raw_name": "wsgmax10mAnom", 
     "status": "pending", 
-    "uid": "1d02dd5c-eb91-45a3-8fab-7ada9d37de7b"
+    "uid": "e1cda838-f09f-4c1a-a7e4-2e52a548f86e"
 }

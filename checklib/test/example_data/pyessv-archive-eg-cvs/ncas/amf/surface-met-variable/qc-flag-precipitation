@@ -1,19 +1,19 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "qc-flag-precipitation", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "qc-flag-precipitation",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "dimension": "time", 
-        "flagMeanings": "not_used good_data  bad_data_rainfall_rate_outside_sensor_operational_range bad_data_accumulated_rain_outside_sensor_operational_range suspect_data_time_stamp_error", 
-        "flagValues": "0b,1b, 2b, 3b, 4b", 
-        "longName": "Data Quality flag: Precipitation", 
-        "name": "qc_flag_precipitation", 
-        "type": "byte", 
+        "dimension": "time",
+        "flagMeanings": "not_used good_data  bad_data_rainfall_rate_outside_sensor_operational_range bad_data_accumulated_rain_outside_sensor_operational_range suspect_data_time_stamp_error",
+        "flagValues": "0b,1b, 2b, 3b, 4b",
+        "long_name": "Data Quality flag: Precipitation",
+        "name": "qc_flag_precipitation",
+        "type": "byte",
         "units": "1"
-    }, 
-    "idx": 1, 
-    "label": "qc_flag_precipitation", 
-    "rawName": "qc_flag_precipitation", 
-    "status": "pending", 
+    },
+    "idx": 1,
+    "label": "qc_flag_precipitation",
+    "raw_name": "qc_flag_precipitation",
+    "status": "pending",
     "uid": "691404a0-78b6-4410-a397-bc735ebe7fcd"
 }

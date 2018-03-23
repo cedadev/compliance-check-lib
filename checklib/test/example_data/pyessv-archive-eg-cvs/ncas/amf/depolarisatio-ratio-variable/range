@@ -1,21 +1,21 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "range", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "range",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "_fillValue": "-1.00E+20", 
-        "coordinates": "latitude longitude", 
-        "dimension": "time, index_ranges", 
-        "longName": "Distance of measurement volume centre point from instrument.", 
-        "name": "range", 
-        "type": "float64", 
-        "units": "m", 
-        "validMax": "<derived from file>", 
-        "validMin": "<derived from file>"
-    }, 
-    "idx": 3, 
-    "label": "range", 
-    "rawName": "range", 
-    "status": "pending", 
+        "_fillValue": "-1.00E+20",
+        "coordinates": "latitude longitude",
+        "dimension": "time, index_ranges",
+        "long_name": "Distance of measurement volume centre point from instrument.",
+        "name": "range",
+        "type": "float64",
+        "units": "m",
+        "valid_max": "<derived from file>",
+        "valid_min": "<derived from file>"
+    },
+    "idx": 3,
+    "label": "range",
+    "raw_name": "range",
+    "status": "pending",
     "uid": "33e73021-8239-4c02-bc7f-282a4683fb96"
 }

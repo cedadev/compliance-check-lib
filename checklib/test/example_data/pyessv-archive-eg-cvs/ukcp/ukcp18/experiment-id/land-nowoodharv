@@ -1,35 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "land-nowoodharv", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "land-nowoodharv", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "LUMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Same as land-hist but with wood harvest maintained at 1850 amounts/areas", 
-        "endYear": "2014", 
+        "additional_allowed_model_components": "", 
+        "end_year": "2014", 
         "experiment": "historical land-only with no wood harvest", 
-        "experimentID": "land-noWoodHarv", 
-        "minNumberYrsPerSim": "165", 
-        "parentActivityID": [
+        "experiment_id": "land-noWoodHarv", 
+        "min_number_yrs_per_sim": "165", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "LAND"
         ], 
-        "startYear": "1850 or 1700", 
-        "subExperimentID": [
+        "start_year": "1850 or 1700", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 219, 
+    "description": "Same as land-hist but with wood harvest maintained at 1850 amounts/areas", 
     "label": "land-noWoodHarv", 
-    "rawName": "land-noWoodHarv", 
+    "namespace": "ukcp:ukcp18:experiment-id:land-nowoodharv", 
+    "raw_name": "land-noWoodHarv", 
     "status": "pending", 
-    "uid": "2ca02094-f8ab-40e9-86c2-1fbbdd8f1190"
+    "uid": "e20c8eea-8757-48a7-b5ce-3f908c644d6f"
 }

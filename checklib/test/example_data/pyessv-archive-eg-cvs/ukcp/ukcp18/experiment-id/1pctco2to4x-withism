@@ -1,40 +1,40 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "1pctco2to4x-withism", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "1pctco2to4x-withism", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "ISMIP6"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Idealized 1%/yr CO2 increase to 4xC02 over 140yrs and kept constant at 4xCO2 for an additional 200 to 400 yrs simulation that includes interactive ice sheets", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "simulation with interactive ice sheet forced by 1 percent per year increase in CO2 to 4xCO2 (subsequently held fixed)", 
-        "experimentID": "1pctCO2to4x-withism", 
-        "minNumberYrsPerSim": "350", 
-        "parentActivityID": [
+        "experiment_id": "1pctCO2to4x-withism", 
+        "min_number_yrs_per_sim": "350", 
+        "parent_activity_id": [
             "ISMIP6"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl-withism"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM", 
             "ISM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 99, 
+    "description": "Idealized 1%/yr CO2 increase to 4xC02 over 140yrs and kept constant at 4xCO2 for an additional 200 to 400 yrs simulation that includes interactive ice sheets", 
     "label": "1pctCO2to4x-withism", 
-    "rawName": "1pctCO2to4x-withism", 
+    "namespace": "ukcp:ukcp18:experiment-id:1pctco2to4x-withism", 
+    "raw_name": "1pctCO2to4x-withism", 
     "status": "pending", 
-    "uid": "15e13c97-4050-405f-afbb-7a02ebc18247"
+    "uid": "d3facac4-de1d-4337-8f88-f7324908d02f"
 }

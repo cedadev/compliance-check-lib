@@ -1,11 +1,36 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "sunanom", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 66, 
+    "_type": "term", 
+    "canonical_name": "sunanom", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "anomaly_type": "absolute_change", 
+        "label_units": "h", 
+        "long_name": "Sunshine hours", 
+        "notes": [
+            "Post-process from total cloud cover for LS2-3"
+        ], 
+        "plot_label": "Sunshine hours anomaly (h)", 
+        "standard_name": "duration_of_sunshine", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "total"
+        ], 
+        "time_step": [
+            "day"
+        ], 
+        "units": "h"
+    }, 
+    "description": "Sunshine hours", 
     "label": "sunAnom", 
-    "rawName": "sunAnom", 
+    "namespace": "ukcp:ukcp18:variable:sunanom", 
+    "raw_name": "sunAnom", 
     "status": "pending", 
-    "uid": "7f968a4e-50ef-47a1-8373-d7c107348623"
+    "uid": "911b81ca-073e-4ba7-afdc-4e7a7412ed21"
 }

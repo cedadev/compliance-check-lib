@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "hist-nolu", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "hist-nolu", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "LUMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Same as CMIP6 historical but with land cover held at 1850, no human activity; concentration driven", 
-        "endYear": "2014", 
+        "end_year": "2014", 
         "experiment": "historical with no land-use change", 
-        "experimentID": "hist-noLu", 
-        "minNumberYrsPerSim": "165", 
-        "parentActivityID": [
+        "experiment_id": "hist-noLu", 
+        "min_number_yrs_per_sim": "165", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "1850", 
-        "subExperimentID": [
+        "start_year": "1850", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 185, 
+    "description": "Same as CMIP6 historical but with land cover held at 1850, no human activity; concentration driven", 
     "label": "hist-noLu", 
-    "rawName": "hist-noLu", 
+    "namespace": "ukcp:ukcp18:experiment-id:hist-nolu", 
+    "raw_name": "hist-noLu", 
     "status": "pending", 
-    "uid": "29bdd513-dba9-46ea-9e6d-70c8694cadcb"
+    "uid": "67295c54-da2f-49ac-9f86-2ba1836f0839"
 }

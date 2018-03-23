@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "amip-4xco2", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "amip-4xco2", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "As CMIP5/CFMIP-2 amip4xCO2 experiment. AMIP experiment where SSTs are held at control values and the CO2 seen by the radiation scheme is quadrupled", 
-        "endYear": "2014", 
+        "end_year": "2014", 
         "experiment": "AMIP SSTs with 4xCO2", 
-        "experimentID": "amip-4xCO2", 
-        "minNumberYrsPerSim": "36", 
-        "parentActivityID": [
+        "experiment_id": "amip-4xCO2", 
+        "min_number_yrs_per_sim": "36", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "1979", 
-        "subExperimentID": [
+        "start_year": "1979", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 126, 
+    "description": "As CMIP5/CFMIP-2 amip4xCO2 experiment. AMIP experiment where SSTs are held at control values and the CO2 seen by the radiation scheme is quadrupled", 
     "label": "amip-4xCO2", 
-    "rawName": "amip-4xCO2", 
+    "namespace": "ukcp:ukcp18:experiment-id:amip-4xco2", 
+    "raw_name": "amip-4xCO2", 
     "status": "pending", 
-    "uid": "793288bf-f784-4e28-a672-25f341c9ec5b"
+    "uid": "a76158fe-8b6d-4b8c-a65f-eb71dde3e9c4"
 }

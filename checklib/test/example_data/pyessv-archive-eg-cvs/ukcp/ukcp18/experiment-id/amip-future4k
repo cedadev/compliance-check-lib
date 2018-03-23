@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "amip-future4k", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "amip-future4k", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "As CMIP5/CFMIP-2 amipFuture experiment. AMIP experiment where SSTs are subject to a composite SST warming pattern derived from coupled models, scaled to an ice-free ocean mean of 4K", 
-        "endYear": "2014", 
+        "end_year": "2014", 
         "experiment": "AMIP with patterned 4K SST increase", 
-        "experimentID": "amip-future4K", 
-        "minNumberYrsPerSim": "36", 
-        "parentActivityID": [
+        "experiment_id": "amip-future4K", 
+        "min_number_yrs_per_sim": "36", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "1979", 
-        "subExperimentID": [
+        "start_year": "1979", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 130, 
+    "description": "As CMIP5/CFMIP-2 amipFuture experiment. AMIP experiment where SSTs are subject to a composite SST warming pattern derived from coupled models, scaled to an ice-free ocean mean of 4K", 
     "label": "amip-future4K", 
-    "rawName": "amip-future4K", 
+    "namespace": "ukcp:ukcp18:experiment-id:amip-future4k", 
+    "raw_name": "amip-future4K", 
     "status": "pending", 
-    "uid": "fa7c952b-fdad-4fa0-a69f-3f000507d6df"
+    "uid": "d6b8c285-7406-4c17-b602-e857f9de1879"
 }

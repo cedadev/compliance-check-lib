@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "csir-csiro", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "data": {
+        "postal_address": "CSIR (Council for Scientific and Industrial Research - Natural Resources and the Environment, Pretoria, 0001, South Africa), CSIRO (Commonwealth Scientific and Industrial Research Organisation and Bureau of Meteorology, Melbourne, Victoria 3208, Australia)"
+    }, 
+    "label": "CSIR-CSIRO", 
+    "namespace": "wcrp:cmip6:institution-id:csir-csiro", 
+    "raw_name": "CSIR-CSIRO", 
+    "status": "pending", 
+    "uid": "b29e8bab-77f9-4efa-9b40-396d331989f8"
+}

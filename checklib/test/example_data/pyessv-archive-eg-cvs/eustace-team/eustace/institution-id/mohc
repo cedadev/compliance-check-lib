@@ -1,14 +1,13 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "mohc", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "mohc", 
+    "create_date": "2018-03-22 15:50:19.328077+00:00", 
     "data": {
-        "postalAddress": "Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK"
+        "postal_address": "Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK"
     }, 
-    "description": "MOHC", 
-    "idx": 3, 
     "label": "MOHC", 
-    "rawName": "MOHC", 
+    "namespace": "eustace-team:eustace:institution-id:mohc", 
+    "raw_name": "MOHC", 
     "status": "pending", 
-    "uid": "e71c7955-e611-4f75-86a7-89b9151a5841"
+    "uid": "014ba903-d2cb-4c3d-8ded-0e9e3cdbf959"
 }

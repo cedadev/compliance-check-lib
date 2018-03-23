@@ -1,37 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "piclim-2xvoc", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "piclim-2xvoc", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "AerChemMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "1850 control with doubled emissions of biogenic VOCs", 
-        "endYear": "", 
+        "additional_allowed_model_components": "", 
+        "end_year": "", 
         "experiment": "pre-industrial climatological SSTs and forcing, but with doubled emissions of biogenic VOCs", 
-        "experimentID": "piClim-2xVOC", 
-        "minNumberYrsPerSim": "30", 
-        "parentActivityID": [
+        "experiment_id": "piClim-2xVOC", 
+        "min_number_yrs_per_sim": "30", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM", 
             "AER", 
             "CHEM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "3"
     }, 
-    "idx": 59, 
+    "description": "1850 control with doubled emissions of biogenic VOCs", 
     "label": "piClim-2xVOC", 
-    "rawName": "piClim-2xVOC", 
+    "namespace": "ukcp:ukcp18:experiment-id:piclim-2xvoc", 
+    "raw_name": "piClim-2xVOC", 
     "status": "pending", 
-    "uid": "90d2bfb6-26bf-4ef2-ac85-006dc92a1579"
+    "uid": "b169ea69-7060-490f-8b20-51d4433a8b15"
 }

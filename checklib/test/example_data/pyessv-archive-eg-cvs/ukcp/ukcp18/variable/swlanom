@@ -1,11 +1,28 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "swlanom", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 68, 
+    "_type": "term", 
+    "canonical_name": "swlanom", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "anomaly_type": "absolute_change", 
+        "label_units": "m", 
+        "long_name": "Sea water level", 
+        "plot_label": "Mean sea level anomaly (m)", 
+        "strand": [
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "mean"
+        ], 
+        "time_step": [
+            "annual"
+        ], 
+        "units": "m"
+    }, 
+    "description": "Mean sea level", 
     "label": "swlAnom", 
-    "rawName": "swlAnom", 
+    "namespace": "ukcp:ukcp18:variable:swlanom", 
+    "raw_name": "swlAnom", 
     "status": "pending", 
-    "uid": "5f366ab0-11f2-42ff-a210-f1fa31c1bce6"
+    "uid": "dce06775-81e6-431c-a516-559a5e7d6bff"
 }

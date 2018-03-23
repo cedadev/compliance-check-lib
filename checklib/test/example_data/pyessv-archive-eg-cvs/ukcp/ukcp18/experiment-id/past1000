@@ -1,39 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "past1000", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "past1000", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "PMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "main forcings: trace gases, volcanoes, solar variability, land use", 
-        "endYear": "1849", 
+        "end_year": "1849", 
         "experiment": "last millennium", 
-        "experimentID": "past1000", 
-        "minNumberYrsPerSim": "1000", 
-        "parentActivityID": [
+        "experiment_id": "past1000", 
+        "min_number_yrs_per_sim": "1000", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "850", 
-        "subExperimentID": [
+        "start_year": "850", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 88, 
-    "label": "past1000", 
-    "rawName": "past1000", 
+    "description": "main forcings: trace gases, volcanoes, solar variability, land use", 
+    "namespace": "ukcp:ukcp18:experiment-id:past1000", 
     "status": "pending", 
-    "uid": "fc27a3af-154d-472f-bd35-21c4be0ac93c"
+    "uid": "8acc3654-19bc-4973-803e-52eef10b2670"
 }

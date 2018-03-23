@@ -1,35 +1,33 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ism-asmb-std", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ism-asmb-std", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "ISMIP6"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Offline ice sheet simulation with synthetic atmospheric dataset to explore the uncertainty in sea level due to ice sheet initialization", 
-        "endYear": "", 
+        "additional_allowed_model_components": "", 
+        "end_year": "", 
         "experiment": "offline ice sheet forced by initMIP synthetic atmospheric experiment", 
-        "experimentID": "ism-asmb-std", 
-        "minNumberYrsPerSim": "100", 
-        "parentActivityID": [
+        "experiment_id": "ism-asmb-std", 
+        "min_number_yrs_per_sim": "100", 
+        "parent_activity_id": [
             "ISMIP6"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "ism-ctrl-std"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "ISM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 47, 
-    "label": "ism-asmb-std", 
-    "rawName": "ism-asmb-std", 
+    "description": "Offline ice sheet simulation with synthetic atmospheric dataset to explore the uncertainty in sea level due to ice sheet initialization", 
+    "namespace": "ukcp:ukcp18:experiment-id:ism-asmb-std", 
     "status": "pending", 
-    "uid": "aa0ac0cd-8a3f-4c98-b206-abc8b3d0dd16"
+    "uid": "b31b2646-ee11-4dd4-9d63-3da0d8ad3ae1"
 }

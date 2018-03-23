@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "aqua-p4k-lwoff", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "aqua-p4k-lwoff", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "As aqua-p4K experiment, but with cloud-radiative effects switched off in the LW radiation code", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "aquaplanet with uniform 4K SST increase and with longwave cloud radiative effects off", 
-        "experimentID": "aqua-p4K-lwoff", 
-        "minNumberYrsPerSim": "10", 
-        "parentActivityID": [
+        "experiment_id": "aqua-p4K-lwoff", 
+        "min_number_yrs_per_sim": "10", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 238, 
+    "description": "As aqua-p4K experiment, but with cloud-radiative effects switched off in the LW radiation code", 
     "label": "aqua-p4K-lwoff", 
-    "rawName": "aqua-p4K-lwoff", 
+    "namespace": "ukcp:ukcp18:experiment-id:aqua-p4k-lwoff", 
+    "raw_name": "aqua-p4K-lwoff", 
     "status": "pending", 
-    "uid": "614964f7-35e2-4c7b-b5b6-d52c817c7ff9"
+    "uid": "560605b1-8b88-4350-953d-74488f395e29"
 }

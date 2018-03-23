@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "rcp26", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 3, 
-    "label": "rcp26", 
-    "rawName": "rcp26", 
+    "_type": "term", 
+    "canonical_name": "rcp26", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:scenario:rcp26", 
     "status": "pending", 
-    "uid": "a2048244-3bd5-4716-bad0-d09cabaf07a6"
+    "uid": "689f0487-5965-4e08-bf08-b4366441d580"
 }

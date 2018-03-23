@@ -1,11 +1,40 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "vas", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 35, 
-    "label": "vas", 
-    "rawName": "vas", 
+    "_type": "term", 
+    "canonical_name": "vas", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "cmip6_cmor_tables_row_id": [
+            "1957", 
+            "1962"
+        ], 
+        "cmip6_name": "vas", 
+        "cmip6_standard_name": "northward_wind", 
+        "label_units": "m s-1", 
+        "level": "10m", 
+        "long_name": "Northward wind component", 
+        "plot_label": "Northward wind at 10m (m s-1)", 
+        "standard_name": "northward_wind", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "instantaneous", 
+            "mean"
+        ], 
+        "time_step": [
+            "3hr", 
+            "day"
+        ], 
+        "um_stash": "30202", 
+        "units": "m s-1"
+    }, 
+    "description": "Northward wind", 
+    "namespace": "ukcp:ukcp18:variable:vas", 
     "status": "pending", 
-    "uid": "4357f3d4-e4d2-4947-8157-157f7fa144bf"
+    "uid": "0dafd37c-442f-4588-bb9c-6ac3848ffbbb"
 }

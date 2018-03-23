@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "amip-lfmip-pobs", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "amip-lfmip-pobs", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "LS3MIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Land-hist land conditions; AMIP SSTs", 
-        "endYear": "2014", 
+        "end_year": "2014", 
         "experiment": "prescribed land (from pseudo-observations) and AMIP SSTs", 
-        "experimentID": "amip-lfmip-pObs", 
-        "minNumberYrsPerSim": "36", 
-        "parentActivityID": [
+        "experiment_id": "amip-lfmip-pObs", 
+        "min_number_yrs_per_sim": "36", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "1979", 
-        "subExperimentID": [
+        "start_year": "1979", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 141, 
+    "description": "Land-hist land conditions; AMIP SSTs", 
     "label": "amip-lfmip-pObs", 
-    "rawName": "amip-lfmip-pObs", 
+    "namespace": "ukcp:ukcp18:experiment-id:amip-lfmip-pobs", 
+    "raw_name": "amip-lfmip-pObs", 
     "status": "pending", 
-    "uid": "5afa09b3-cb67-4f00-8574-ce1502f439b6"
+    "uid": "a809e03f-d6d4-49d4-80da-c67c17048de8"
 }

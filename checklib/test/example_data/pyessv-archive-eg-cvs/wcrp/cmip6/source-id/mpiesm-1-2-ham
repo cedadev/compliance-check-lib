@@ -1,0 +1,59 @@
+{
+    "_type": "term", 
+    "canonical_name": "mpiesm-1-2-ham", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "data": {
+        "activity_participation": [
+            "AerChemMIP", 
+            "CMIP"
+        ], 
+        "cohort": [
+            "Registered"
+        ], 
+        "institution_id": [
+            "HAMMOZ-Consortium"
+        ], 
+        "label_extended": "MPIESM1.2-HAM", 
+        "model_component": {
+            "aerosol": {
+                "description": "HAM2.3", 
+                "nominal_resolution": "250 km"
+            }, 
+            "atmos": {
+                "description": "ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)", 
+                "nominal_resolution": "250 km"
+            }, 
+            "atmosChem": {
+                "description": "sulfur chemistry (unnamed)", 
+                "nominal_resolution": "250 km"
+            }, 
+            "land": {
+                "description": "JSBACH 3.20", 
+                "nominal_resolution": "250 km"
+            }, 
+            "landIce": {
+                "description": "none", 
+                "nominal_resolution": "none"
+            }, 
+            "ocean": {
+                "description": "MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)", 
+                "nominal_resolution": "100 km"
+            }, 
+            "ocnBgchem": {
+                "description": "HAMOCC6", 
+                "nominal_resolution": "100 km"
+            }, 
+            "seaIce": {
+                "description": "unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)", 
+                "nominal_resolution": "100 km"
+            }
+        }, 
+        "release_year": "2017", 
+        "source_id": "MPIESM-1-2-HAM"
+    }, 
+    "label": "MPIESM1.2-HAM", 
+    "namespace": "wcrp:cmip6:source-id:mpiesm-1-2-ham", 
+    "raw_name": "MPIESM-1-2-HAM", 
+    "status": "pending", 
+    "uid": "841f078b-272a-43bb-a76b-970258d97f0f"
+}

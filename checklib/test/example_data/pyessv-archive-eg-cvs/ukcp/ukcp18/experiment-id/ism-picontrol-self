@@ -1,35 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ism-picontrol-self", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ism-picontrol-self", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "ISMIP6"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Pre-industrial control simulation for \"offline\" ice sheets", 
-        "endYear": "", 
+        "additional_allowed_model_components": "", 
+        "end_year": "", 
         "experiment": "offline ice sheet forced by ISM's own AOGCM piControl output", 
-        "experimentID": "ism-piControl-self", 
-        "minNumberYrsPerSim": "500", 
-        "parentActivityID": [
+        "experiment_id": "ism-piControl-self", 
+        "min_number_yrs_per_sim": "500", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "ISM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 15, 
+    "description": "Pre-industrial control simulation for \"offline\" ice sheets", 
     "label": "ism-piControl-self", 
-    "rawName": "ism-piControl-self", 
+    "namespace": "ukcp:ukcp18:experiment-id:ism-picontrol-self", 
+    "raw_name": "ism-piControl-self", 
     "status": "pending", 
-    "uid": "02166ea1-e114-4ac3-b771-da2f55adacbe"
+    "uid": "b5f24e9f-2f82-4b9e-97cf-6141cd8c4dc7"
 }

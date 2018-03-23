@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "5000-km", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "5000 km", 
+    "namespace": "wcrp:cmip6:nominal-resolution:5000-km", 
+    "raw_name": "5000 km", 
+    "status": "pending", 
+    "uid": "d7ccbebe-0bec-4b83-b0a5-da4d16e0a245"
+}

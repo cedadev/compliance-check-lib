@@ -1,41 +1,41 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "dcppc-hindcast-noelchichon", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "dcppc-hindcast-noelchichon", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "DCPP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "C3.2 Effects of volcanoes on decadal prediction and predictability of forced and internal variability components. First full hindcast year is 1982", 
-        "endYear": "5 - 10 years after start year", 
+        "end_year": "5 - 10 years after start year", 
         "experiment": "hindcast but with only background volcanic forcing to be the same as that used in the 2015 forecast", 
-        "experimentID": "dcppC-hindcast-noElChichon", 
-        "minNumberYrsPerSim": "5", 
-        "parentActivityID": [
+        "experiment_id": "dcppC-hindcast-noElChichon", 
+        "min_number_yrs_per_sim": "5", 
+        "parent_activity_id": [
             "no parent", 
             "DCPP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent", 
             "dcppA-assim"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "1981", 
-        "subExperimentID": [
+        "start_year": "1981", 
+        "sub_experiment_id": [
             "s1981"
         ], 
         "tier": "2"
     }, 
-    "idx": 69, 
+    "description": "C3.2 Effects of volcanoes on decadal prediction and predictability of forced and internal variability components. First full hindcast year is 1982", 
     "label": "dcppC-hindcast-noElChichon", 
-    "rawName": "dcppC-hindcast-noElChichon", 
+    "namespace": "ukcp:ukcp18:experiment-id:dcppc-hindcast-noelchichon", 
+    "raw_name": "dcppC-hindcast-noElChichon", 
     "status": "pending", 
-    "uid": "26894e44-2cbb-467c-80ce-999116999ac3"
+    "uid": "baa61aa8-c6a3-40fd-95d9-43c391af763b"
 }

@@ -1,11 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "channel-islands", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 7, 
+    "_type": "term", 
+    "canonical_name": "channel-islands", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "label": "channel_islands", 
-    "rawName": "channel_islands", 
+    "namespace": "ukcp:ukcp18:country:channel-islands", 
+    "raw_name": "channel_islands", 
     "status": "pending", 
-    "uid": "0ef82e9a-663a-4866-97f6-3692a92a3e4c"
+    "uid": "28268b06-8dbc-430c-9525-7595edbaff9d"
 }

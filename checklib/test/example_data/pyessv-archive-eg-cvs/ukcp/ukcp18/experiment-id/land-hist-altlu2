@@ -1,35 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "land-hist-altlu2", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "land-hist-altlu2", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "LUMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Land only simulations", 
-        "endYear": "2014", 
+        "additional_allowed_model_components": "", 
+        "end_year": "2014", 
         "experiment": "historical land-only alternate land use history", 
-        "experimentID": "land-hist-altLu2", 
-        "minNumberYrsPerSim": "165", 
-        "parentActivityID": [
+        "experiment_id": "land-hist-altLu2", 
+        "min_number_yrs_per_sim": "165", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "LAND"
         ], 
-        "startYear": "1850 or 1700", 
-        "subExperimentID": [
+        "start_year": "1850 or 1700", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 113, 
+    "description": "Land only simulations", 
     "label": "land-hist-altLu2", 
-    "rawName": "land-hist-altLu2", 
+    "namespace": "ukcp:ukcp18:experiment-id:land-hist-altlu2", 
+    "raw_name": "land-hist-altLu2", 
     "status": "pending", 
-    "uid": "a0f3ce05-b755-461c-b659-3d6477c755aa"
+    "uid": "133d993d-c30c-47a0-bb3e-4904a9219262"
 }

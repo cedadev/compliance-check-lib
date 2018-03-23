@@ -1,11 +1,31 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "stillwaterreturnlevel", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 65, 
+    "_type": "term", 
+    "canonical_name": "stillwaterreturnlevel", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "label_units": "m", 
+        "long_name": "Still water return level ", 
+        "notes": [
+            "Return level to be plotted against return period. Log scale for return period. How will uncertainty be made available? Separate variable?"
+        ], 
+        "plot_label": "Still water return level (m)", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_step": [
+            "n/a"
+        ], 
+        "units": "m"
+    }, 
+    "description": "Still water return level", 
     "label": "stillWaterReturnLevel", 
-    "rawName": "stillWaterReturnLevel", 
+    "namespace": "ukcp:ukcp18:variable:stillwaterreturnlevel", 
+    "raw_name": "stillWaterReturnLevel", 
     "status": "pending", 
-    "uid": "bd265b92-8a93-444b-9b82-287aba1bc7cf"
+    "uid": "591ba2b7-8906-452b-8767-389553d6a7a3"
 }

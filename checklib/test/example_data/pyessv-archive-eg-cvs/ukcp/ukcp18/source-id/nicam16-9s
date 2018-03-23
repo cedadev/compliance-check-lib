@@ -1,59 +1,58 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "nicam16-9s", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "nicam16-9s", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             ""
         ], 
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "MIROC"
         ], 
-        "label": "NICAM16-9S", 
-        "labelExtended": "NICAM.16 gl09-L38 with NSW6", 
-        "modelComponent": {
+        "label_extended": "NICAM.16 gl09-L38 with NSW6", 
+        "model_component": {
             "aerosol": {
                 "description": "Prescribed MACv2-SP", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmos": {
                 "description": "NICAM.16 (14km icosahedral grid; 2,621,442 grid cells (=10*4^9+2); 38 levels; top level 40 km)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmosChem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "land": {
                 "description": "MATSIRO6 (w/o MOSAIC)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "landIce": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "ocean": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "ocnBgchem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "seaIce": {
                 "description": "Fixed", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }
         }, 
-        "releaseYear": "2017", 
-        "sourceID": "NICAM16-9S"
+        "release_year": "2017", 
+        "source_id": "NICAM16-9S"
     }, 
-    "idx": 28, 
     "label": "NICAM16-9S", 
-    "rawName": "NICAM16-9S", 
+    "namespace": "ukcp:ukcp18:source-id:nicam16-9s", 
+    "raw_name": "NICAM16-9S", 
     "status": "pending", 
-    "uid": "28062ff1-b49c-4d28-b012-1163f9934fc9"
+    "uid": "1db0de39-8b79-44d1-9fef-326fa58469ea"
 }

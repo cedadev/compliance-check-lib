@@ -1,19 +1,19 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "qc-flag-channel-7-failure", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "qc-flag-channel-7-failure",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "byte": "int32", 
-        "dimension": "time", 
-        "flagMeanings": "not_used good_data  bad_data_channel_failure suspect_data_time_stamp_error", 
-        "flagValues": "0b,1b, 2b, 3b", 
-        "longName": "Data Quality flag: Receiver channel 7 failed", 
-        "name": "qc_flag_channel_7_failure", 
+        "byte": "int32",
+        "dimension": "time",
+        "flagMeanings": "not_used good_data  bad_data_channel_failure suspect_data_time_stamp_error",
+        "flagValues": "0b,1b, 2b, 3b",
+        "long_name": "Data Quality flag: Receiver channel 7 failed",
+        "name": "qc_flag_channel_7_failure",
         "units": "1"
-    }, 
-    "idx": 13, 
-    "label": "qc_flag_channel_7_failure", 
-    "rawName": "qc_flag_channel_7_failure", 
-    "status": "pending", 
+    },
+    "idx": 13,
+    "label": "qc_flag_channel_7_failure",
+    "raw_name": "qc_flag_channel_7_failure",
+    "status": "pending",
     "uid": "bca7387b-68c4-498a-a958-809ae0cae7bc"
 }

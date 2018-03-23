@@ -1,59 +1,58 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "iitm-esm", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "iitm-esm", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             ""
         ], 
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "CCCR-IITM"
         ], 
-        "label": "IITM-ESM", 
-        "labelExtended": "IITM-ESM", 
-        "modelComponent": {
+        "label_extended": "IITM-ESM", 
+        "model_component": {
             "aerosol": {
                 "description": "unnamed (prescribed MAC-v2)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmos": {
                 "description": "GFS (192 x 94 T62; 64 levels; top level 0.2 mb)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmosChem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "land": {
                 "description": "NOAH LSM", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "landIce": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "ocean": {
                 "description": "MOM4p1 (tripolar, 360x200; 50 levels; top grid cell 5m)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "ocnBgchem": {
                 "description": "TOPAZ", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "seaIce": {
                 "description": "SIS", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }
         }, 
-        "releaseYear": "2015", 
-        "sourceID": "IITM-ESM"
+        "release_year": "2015", 
+        "source_id": "IITM-ESM"
     }, 
-    "idx": 52, 
     "label": "IITM-ESM", 
-    "rawName": "IITM-ESM", 
+    "namespace": "ukcp:ukcp18:source-id:iitm-esm", 
+    "raw_name": "IITM-ESM", 
     "status": "pending", 
-    "uid": "72896a9c-41e3-44cc-90d8-7f9b36687ddd"
+    "uid": "c0e17f22-c4b4-4b01-bbe8-f865ca6b5556"
 }

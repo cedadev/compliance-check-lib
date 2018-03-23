@@ -1,40 +1,40 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "dcppc-atl-pacemaker", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "dcppc-atl-pacemaker", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "DCPP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "C1.11 Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs", 
-        "endYear": "2014", 
+        "end_year": "2014", 
         "experiment": "pacemaker Atlantic experiment", 
-        "experimentID": "dcppC-atl-pacemaker", 
-        "minNumberYrsPerSim": "65", 
-        "parentActivityID": [
+        "experiment_id": "dcppC-atl-pacemaker", 
+        "min_number_yrs_per_sim": "65", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "historical"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "1910 or 1950", 
-        "subExperimentID": [
+        "start_year": "1910 or 1950", 
+        "sub_experiment_id": [
             "s1910", 
             "s1950"
         ], 
         "tier": "3"
     }, 
-    "idx": 146, 
+    "description": "C1.11 Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs", 
     "label": "dcppC-atl-pacemaker", 
-    "rawName": "dcppC-atl-pacemaker", 
+    "namespace": "ukcp:ukcp18:experiment-id:dcppc-atl-pacemaker", 
+    "raw_name": "dcppC-atl-pacemaker", 
     "status": "pending", 
-    "uid": "89b4c938-002e-40b4-994c-a529879dec07"
+    "uid": "6a0ec029-137a-4c8b-8b5a-b3dc9d1391bc"
 }

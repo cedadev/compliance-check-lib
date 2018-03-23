@@ -1,59 +1,58 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "miroc-es2h", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "miroc-es2h", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             ""
         ], 
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "MIROC"
         ], 
-        "label": "MIROC-ES2H", 
-        "labelExtended": "MIROC-ES2H", 
-        "modelComponent": {
+        "label_extended": "MIROC-ES2H", 
+        "model_component": {
             "aerosol": {
                 "description": "SPRINTARS6.0", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmos": {
                 "description": "CCSR AGCM (T85; 256 x 128 longitude/latitude; 81 levels; top level 0.004 hPa)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmosChem": {
                 "description": "CHASER4.0", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "land": {
                 "description": "MATSIRO6.0+VISIT-e ver.1.0", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "landIce": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "ocean": {
                 "description": "COCO4.9 (tripolar primarily 1deg; 360 x 256 longitude/latitude; 63 levels; top grid cell 0-2 m)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "ocnBgchem": {
                 "description": "OECO ver.2.0; NPZD-type with C/N/P/Fe/O cycles", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "seaIce": {
                 "description": "COCO4.9", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }
         }, 
-        "releaseYear": "2017", 
-        "sourceID": "MIROC-ES2H"
+        "release_year": "2017", 
+        "source_id": "MIROC-ES2H"
     }, 
-    "idx": 56, 
     "label": "MIROC-ES2H", 
-    "rawName": "MIROC-ES2H", 
+    "namespace": "ukcp:ukcp18:source-id:miroc-es2h", 
+    "raw_name": "MIROC-ES2H", 
     "status": "pending", 
-    "uid": "42b28235-0491-4afd-b07c-91f678eb0fb7"
+    "uid": "e19cc68a-680b-4e90-9e17-be26fb4294c8"
 }

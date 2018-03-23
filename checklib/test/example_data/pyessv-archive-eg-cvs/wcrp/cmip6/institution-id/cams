@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "cams", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "data": {
+        "postal_address": "Chinese Academy of Meteorological Sciences, Beijing 100081, China"
+    }, 
+    "label": "CAMS", 
+    "namespace": "wcrp:cmip6:institution-id:cams", 
+    "raw_name": "CAMS", 
+    "status": "pending", 
+    "uid": "dc00eefb-cc98-4d98-8424-f5613d3eb8e1"
+}

@@ -1,34 +1,33 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "dcppa-hindcast", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "dcppa-hindcast", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "DCPP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "A1 (and A2.1, A3.1, and A3.2) Decadal hindcasts begun near the end of each year from 1960 to 2016, or every other year at minimum. First full hindcast year follows start year (e.g., for s1960, first full hindcast year is 1961)", 
-        "endYear": "5 - 10 years after start year", 
+        "end_year": "5 - 10 years after start year", 
         "experiment": "hindcast initialized based on observations and using historical forcing", 
-        "experimentID": "dcppA-hindcast", 
-        "minNumberYrsPerSim": "5", 
-        "parentActivityID": [
+        "experiment_id": "dcppA-hindcast", 
+        "min_number_yrs_per_sim": "5", 
+        "parent_activity_id": [
             "no parent", 
             "DCPP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent", 
             "dcppA-assim"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "a year in the range 1960-2016", 
-        "subExperimentID": [
+        "start_year": "a year in the range 1960-2016", 
+        "sub_experiment_id": [
             "s1960", 
             "s1961", 
             "s1962", 
@@ -89,9 +88,10 @@
         ], 
         "tier": "1"
     }, 
-    "idx": 50, 
+    "description": "A1 (and A2.1, A3.1, and A3.2) Decadal hindcasts begun near the end of each year from 1960 to 2016, or every other year at minimum. First full hindcast year follows start year (e.g., for s1960, first full hindcast year is 1961)", 
     "label": "dcppA-hindcast", 
-    "rawName": "dcppA-hindcast", 
+    "namespace": "ukcp:ukcp18:experiment-id:dcppa-hindcast", 
+    "raw_name": "dcppA-hindcast", 
     "status": "pending", 
-    "uid": "37d8d943-b700-406d-8915-62a1f1d8fb5a"
+    "uid": "b1202c4a-6734-4b1c-88b5-56d3f6af37ef"
 }

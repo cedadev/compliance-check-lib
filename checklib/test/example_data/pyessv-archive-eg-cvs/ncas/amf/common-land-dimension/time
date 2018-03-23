@@ -1,14 +1,14 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "time", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "time",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "length": "<n>", 
+        "length": "<n>",
         "units": "seconds since 1970-01-01 00:00:00"
-    }, 
-    "idx": 0, 
-    "label": "time", 
-    "rawName": "time", 
-    "status": "pending", 
+    },
+    "idx": 0,
+    "label": "time",
+    "raw_name": "time",
+    "status": "pending",
     "uid": "6362a005-8485-4b76-8472-6b44800e01e9"
 }

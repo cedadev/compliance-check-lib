@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "longitude", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "axis": "X", 
+        "bounds_values": "", 
+        "climatology": "", 
+        "formula": "", 
+        "long_name": "longitude", 
+        "must_have_bounds": "yes", 
+        "positive": "", 
+        "standard_name": "longitude", 
+        "stored_direction": "increasing", 
+        "type": "double", 
+        "units": "degrees_east", 
+        "valid_max": "360.0", 
+        "valid_min": "0.0", 
+        "value": ""
+    }, 
+    "namespace": "ukcp:ukcp18:coordinate:longitude", 
+    "status": "pending", 
+    "uid": "ea7fa35a-6542-4819-9a4e-607d633557e5"
+}

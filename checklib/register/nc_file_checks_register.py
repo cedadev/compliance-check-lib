@@ -161,6 +161,7 @@ class MainVariableAttributeCheck(NCFileCheckBase):
 
             expected_value = self.kwargs["attr_value"]
             check = nc_util.check_nc_attribute(variable, attr_name, expected_value)
+
             if check:
                 score += 1
             else:
@@ -175,10 +176,16 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
     """
     All components in the file name must either be set as global attributes in
     the NetCDF file and must be valid terms in the relevant controlled
-    vocabulary, or match the given regular expression(s)
+    vocabulary, or match the given regular expression(s).
+
+    The score is made up of:
+      - 1 for the file extension
+      - 2 per global attribute (exists and is valid)
+      - 1 per file-name component / regular expression (valid)
+      -
     """
     short_name = "Global attributes match file name/vocab"
-    defaults = {"delimiter": "_", "extension": ".nc"}
+    defaults = {"delimiter": "_", "extension": ".nc", "ignore_attr_checks": None}
     message_templates = ["File name does not match global attributes.",
                          "Each global attribute is checked separately."]
     level = "HIGH"
@@ -202,16 +209,30 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
                 not_found.append(key)
 
         if not_found:
-            raise ParameterError("Keyword arguments for Global Attrs Match File "
-                            "Name Check must include: {}.".format(not_found))
+            raise ParameterError("Keyword arguments for check must include: {}.".format(not_found))
 
+        # Sort out order of items to check in file name
         self.kwargs["order"] = self.kwargs["order"].split("~")
-        self.out_of = 0
+
+        # Set self.out_of starting at 1 - for the extension check
+        self.out_of = 1
         for order in self.kwargs["order"]:
             if order.startswith('regex:'):
                 self.out_of += 1
             else:
                 self.out_of += 3
+
+        # Overwrite "ignore_attr_checks" if None
+        if not self.kwargs["ignore_attr_checks"]:
+            self.kwargs["ignore_attr_checks"] = []
+        else:
+            for ignore in self.kwargs["ignore_attr_checks"]:
+                if ignore not in self.kwargs["order"]:
+                    raise ParameterError("Invalid arguments: requested to ignore attribute " 
+                                         "not provided in 'order': {}.".format(ignore))
+                # Decrement out-of because we won't check this attribute
+                self.out_of -= 2
+
 
     def _get_result(self, primary_arg):
         ds = primary_arg
@@ -221,11 +242,12 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
 
         vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
         fname = os.path.basename(ds.filepath())
+
         fn_score, msg = vocabs.check_file_name(fname, keys=self.kwargs["order"],
                                                delimiter=self.kwargs["delimiter"],
                                                extension=self.kwargs["extension"])
         score += fn_score
-        if fn_score < self.out_of / 3:
+        if fn_score < (self.out_of / 3.):
             # a third of the marks are for the file name check
             messages.extend(msg)
 
@@ -233,12 +255,12 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
         items = os.path.splitext(fname)[0].split(self.kwargs["delimiter"])
 
         for i, attr in enumerate(self.kwargs["order"]):
-            if attr.startswith('regex:'):
-                # we do not have the attribute name, so cannot look for it in
-                # the file
+            if attr.startswith('regex:') or attr in self.kwargs["ignore_attr_checks"]:
+                # Case 1: we do not have the attribute name - so cannot check
+                # Case 2: instructed to not perform this check
                 continue
             res, msg = vocabs.check_global_attribute_value(ds, attr, items[i],
-                                                           property="canonical_name")
+                                                           property="raw_name")
             score += res
 
             if res < 2:

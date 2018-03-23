@@ -1,35 +1,33 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "land-future", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "land-future", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "LS3MIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Land only simulations", 
-        "endYear": "2100", 
+        "additional_allowed_model_components": "", 
+        "end_year": "2100", 
         "experiment": "future land-only", 
-        "experimentID": "land-future", 
-        "minNumberYrsPerSim": "86", 
-        "parentActivityID": [
+        "experiment_id": "land-future", 
+        "min_number_yrs_per_sim": "86", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "LAND"
         ], 
-        "startYear": "2015", 
-        "subExperimentID": [
+        "start_year": "2015", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 192, 
-    "label": "land-future", 
-    "rawName": "land-future", 
+    "description": "Land only simulations", 
+    "namespace": "ukcp:ukcp18:experiment-id:land-future", 
     "status": "pending", 
-    "uid": "e2481b33-e10a-4315-9f41-6f55d829790a"
+    "uid": "bcf7220d-ffa2-4c97-84d4-91440646b440"
 }

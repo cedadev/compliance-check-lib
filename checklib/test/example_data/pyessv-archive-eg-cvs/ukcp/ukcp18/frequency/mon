@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "mon", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 10, 
-    "label": "mon", 
-    "rawName": "mon", 
+    "_type": "term", 
+    "canonical_name": "mon", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:frequency:mon", 
     "status": "pending", 
-    "uid": "f1f6362c-c38d-47e6-834e-5ca2218dfc35"
+    "uid": "756e9364-d5b6-4236-aa50-8cbe00fa1646"
 }

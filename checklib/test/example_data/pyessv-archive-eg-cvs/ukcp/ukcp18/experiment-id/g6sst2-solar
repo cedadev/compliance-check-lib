@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "g6sst2-solar", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "g6sst2-solar", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "GeoMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "Time slice at 2100 (G6solar)", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "SSTs from year 2020 of SSP5-8.5; forcings and other prescribed conditions from year 2100 of G6solar", 
-        "experimentID": "G6SST2-solar", 
-        "minNumberYrsPerSim": "10", 
-        "parentActivityID": [
+        "experiment_id": "G6SST2-solar", 
+        "min_number_yrs_per_sim": "10", 
+        "parent_activity_id": [
             "ScenarioMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "ssp585"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 195, 
+    "description": "Time slice at 2100 (G6solar)", 
     "label": "G6SST2-solar", 
-    "rawName": "G6SST2-solar", 
+    "namespace": "ukcp:ukcp18:experiment-id:g6sst2-solar", 
+    "raw_name": "G6SST2-solar", 
     "status": "pending", 
-    "uid": "d7f2fb8c-0a5c-43c9-8825-b3d3c230230d"
+    "uid": "1c3e5343-6e76-4ad6-8a4f-27251db00c77"
 }

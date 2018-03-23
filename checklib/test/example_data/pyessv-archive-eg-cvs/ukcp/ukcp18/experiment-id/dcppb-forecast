@@ -1,34 +1,33 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "dcppb-forecast", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "dcppb-forecast", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "DCPP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "B1 (and B2.1, B2.2) Ongoing decadal forecasts. First full forecast year follows start year (e.g., for s2017, first full forecast year is 2018)", 
-        "endYear": "5 years after start year", 
+        "end_year": "5 years after start year", 
         "experiment": "forecast initialized from observations with forcing from ssp245", 
-        "experimentID": "dcppB-forecast", 
-        "minNumberYrsPerSim": "5", 
-        "parentActivityID": [
+        "experiment_id": "dcppB-forecast", 
+        "min_number_yrs_per_sim": "5", 
+        "parent_activity_id": [
             "no parent", 
             "DCPP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent", 
             "dcppA-assim"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "a year in the range 2017-2029", 
-        "subExperimentID": [
+        "start_year": "a year in the range 2017-2029", 
+        "sub_experiment_id": [
             "s2017", 
             "s2018", 
             "s2019", 
@@ -45,9 +44,10 @@
         ], 
         "tier": "1"
     }, 
-    "idx": 148, 
+    "description": "B1 (and B2.1, B2.2) Ongoing decadal forecasts. First full forecast year follows start year (e.g., for s2017, first full forecast year is 2018)", 
     "label": "dcppB-forecast", 
-    "rawName": "dcppB-forecast", 
+    "namespace": "ukcp:ukcp18:experiment-id:dcppb-forecast", 
+    "raw_name": "dcppB-forecast", 
     "status": "pending", 
-    "uid": "1de89658-da44-47b5-91ab-b45bc89eb144"
+    "uid": "7221659b-c702-44b4-a4e4-e78031970e2d"
 }

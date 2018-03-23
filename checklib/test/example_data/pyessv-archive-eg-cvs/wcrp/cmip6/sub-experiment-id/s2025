@@ -1,0 +1,9 @@
+{
+    "_type": "term", 
+    "canonical_name": "s2025", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "description": "initialized near end of year 2025", 
+    "namespace": "wcrp:cmip6:sub-experiment-id:s2025", 
+    "status": "pending", 
+    "uid": "a0766672-c14a-4497-9271-4631000ba1cf"
+}

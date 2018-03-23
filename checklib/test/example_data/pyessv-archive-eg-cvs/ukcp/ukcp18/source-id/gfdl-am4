@@ -1,59 +1,58 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "gfdl-am4", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "gfdl-am4", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             "CMIP"
         ], 
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "NOAA-GFDL"
         ], 
-        "label": "GFDL-AM4", 
-        "labelExtended": "GFDL-AM4", 
-        "modelComponent": {
+        "label_extended": "GFDL-AM4", 
+        "model_component": {
             "aerosol": {
                 "description": "interactive", 
-                "nominalResolution": "100 km"
+                "nominal_resolution": "100 km"
             }, 
             "atmos": {
                 "description": "GFDL-AM4.0 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 33 levels; top level 1 hPa)", 
-                "nominalResolution": "100 km"
+                "nominal_resolution": "100 km"
             }, 
             "atmosChem": {
                 "description": "fast chemistry, aerosol only", 
-                "nominalResolution": "100 km"
+                "nominal_resolution": "100 km"
             }, 
             "land": {
                 "description": "GFDL-LM4.0", 
-                "nominalResolution": "100 km"
+                "nominal_resolution": "100 km"
             }, 
             "landIce": {
                 "description": "GFDL-LM4.0", 
-                "nominalResolution": "100 km"
+                "nominal_resolution": "100 km"
             }, 
             "ocean": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "ocnBgchem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "seaIce": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }
         }, 
-        "releaseYear": "2017", 
-        "sourceID": "GFDL-AM4"
+        "release_year": "2017", 
+        "source_id": "GFDL-AM4"
     }, 
-    "idx": 25, 
     "label": "GFDL-AM4", 
-    "rawName": "GFDL-AM4", 
+    "namespace": "ukcp:ukcp18:source-id:gfdl-am4", 
+    "raw_name": "GFDL-AM4", 
     "status": "pending", 
-    "uid": "00bb06c2-4e74-4b83-8735-df42a8a34d27"
+    "uid": "955e115d-3a3c-489d-a1e6-1f52cf378632"
 }

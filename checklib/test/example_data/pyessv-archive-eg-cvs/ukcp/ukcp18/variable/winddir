@@ -1,11 +1,29 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "winddir", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 12, 
+    "_type": "term", 
+    "canonical_name": "winddir", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "label_units": "degrees", 
+        "level": "10m", 
+        "long_name": "Direction of wind at 10m", 
+        "plot_label": "Wind direction at 10m (degrees)", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_step": [
+            "day"
+        ], 
+        "units": "degrees"
+    }, 
+    "description": "Wind direction", 
     "label": "windDir", 
-    "rawName": "windDir", 
+    "namespace": "ukcp:ukcp18:variable:winddir", 
+    "raw_name": "windDir", 
     "status": "pending", 
-    "uid": "25ec9f9c-a602-4d33-be33-d9e656269e99"
+    "uid": "0103fe67-8963-44d0-8294-a46e22769375"
 }

@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "mip-era", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "mip_era", 
+    "namespace": "wcrp:cmip6:required-global-attributes:mip-era", 
+    "raw_name": "mip_era", 
+    "status": "pending", 
+    "uid": "c419e278-5b32-44aa-a249-466c455eb7cc"
+}

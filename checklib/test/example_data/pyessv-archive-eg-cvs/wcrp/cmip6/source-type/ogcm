@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "ogcm", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "OGCM", 
+    "namespace": "wcrp:cmip6:source-type:ogcm", 
+    "raw_name": "OGCM", 
+    "status": "pending", 
+    "uid": "63caa982-eb26-4414-a467-1093b36dcd75"
+}

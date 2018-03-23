@@ -1,0 +1,9 @@
+{
+    "_type": "term", 
+    "canonical_name": "s2029", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "description": "initialized near end of year 2029", 
+    "namespace": "wcrp:cmip6:sub-experiment-id:s2029", 
+    "status": "pending", 
+    "uid": "56c6d958-cc1e-4d75-ba90-5bce9410dee9"
+}

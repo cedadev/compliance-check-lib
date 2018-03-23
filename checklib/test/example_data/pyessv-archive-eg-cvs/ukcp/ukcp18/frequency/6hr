@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "6hr", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 8, 
-    "label": "6hr", 
-    "rawName": "6hr", 
+    "_type": "term", 
+    "canonical_name": "6hr", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:frequency:6hr", 
     "status": "pending", 
-    "uid": "9f8f845f-6234-4214-b9b1-6063656054ba"
+    "uid": "1d397b4b-9542-43ff-aa89-0129a07ade16"
 }

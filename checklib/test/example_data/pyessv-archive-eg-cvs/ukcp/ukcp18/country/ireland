@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ireland", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 5, 
-    "label": "ireland", 
-    "rawName": "ireland", 
+    "_type": "term", 
+    "canonical_name": "ireland", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:country:ireland", 
     "status": "pending", 
-    "uid": "396c2208-6627-48a5-ade9-199cdd0dfb19"
+    "uid": "42ed22da-acbb-4748-ae8d-0b29acec7aa4"
 }

@@ -1,0 +1,59 @@
+{
+    "_type": "term", 
+    "canonical_name": "bcc-csm2-hr", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "data": {
+        "activity_participation": [
+            "CMIP", 
+            "HighResMIP"
+        ], 
+        "cohort": [
+            "Registered"
+        ], 
+        "institution_id": [
+            "BCC"
+        ], 
+        "label_extended": "BCC-CSM 2 HR", 
+        "model_component": {
+            "aerosol": {
+                "description": "none", 
+                "nominal_resolution": "none"
+            }, 
+            "atmos": {
+                "description": "BCC_AGCM3_LR (T266; 800 x 400 longitude/latitude; 56 levels; top level 0.1 hPa)", 
+                "nominal_resolution": "50 km"
+            }, 
+            "atmosChem": {
+                "description": "none", 
+                "nominal_resolution": "none"
+            }, 
+            "land": {
+                "description": "BCC_AVIM2", 
+                "nominal_resolution": "50 km"
+            }, 
+            "landIce": {
+                "description": "none", 
+                "nominal_resolution": "none"
+            }, 
+            "ocean": {
+                "description": "MOM4 (1/3 deg 30S-30N, 1/3-1 deg 30-60 N/S, and 1 deg in high latitudes; 360 x 232 longitude/latitude; 40 levels; top grid cell 0-10 m)", 
+                "nominal_resolution": "50 km"
+            }, 
+            "ocnBgchem": {
+                "description": "none", 
+                "nominal_resolution": "none"
+            }, 
+            "seaIce": {
+                "description": "SIS2", 
+                "nominal_resolution": "50 km"
+            }
+        }, 
+        "release_year": "2017", 
+        "source_id": "BCC-CSM2-HR"
+    }, 
+    "label": "BCC-CSM 2 HR", 
+    "namespace": "wcrp:cmip6:source-id:bcc-csm2-hr", 
+    "raw_name": "BCC-CSM2-HR", 
+    "status": "pending", 
+    "uid": "4df3124a-5a7c-4f58-8b29-785f5c7e3ca5"
+}

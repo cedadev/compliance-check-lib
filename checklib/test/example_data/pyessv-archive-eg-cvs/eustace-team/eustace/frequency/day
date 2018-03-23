@@ -1,12 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "day", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "description": "day", 
-    "idx": 10, 
-    "label": "day", 
-    "rawName": "day", 
+    "_type": "term", 
+    "canonical_name": "day", 
+    "create_date": "2018-03-22 15:50:19.328077+00:00", 
+    "namespace": "eustace-team:eustace:frequency:day", 
     "status": "pending", 
-    "uid": "1584644c-8862-44e7-8e18-6846939d9200"
+    "uid": "15e2846e-b564-441b-ba4d-571c89d3e870"
 }

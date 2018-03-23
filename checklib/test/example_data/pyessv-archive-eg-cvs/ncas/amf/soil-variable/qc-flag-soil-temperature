@@ -1,19 +1,19 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "qc-flag-soil-temperature", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "qc-flag-soil-temperature",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "dimension": "time, index", 
-        "flagMeanings": "not_used good_data  bad_data_value_outside_operational_range_(-35C_to_50C) suspect_data_time_stamp_error", 
-        "flagValues": "0b,1b, 2b, 3b", 
-        "longName": "Data Quality flag: Soil Temperature", 
-        "name": "qc_flag_soil_temperature", 
-        "type": "byte", 
+        "dimension": "time, index",
+        "flagMeanings": "not_used good_data  bad_data_value_outside_operational_range_(-35C_to_50C) suspect_data_time_stamp_error",
+        "flagValues": "0b,1b, 2b, 3b",
+        "long_name": "Data Quality flag: Soil Temperature",
+        "name": "qc_flag_soil_temperature",
+        "type": "byte",
         "units": "1"
-    }, 
-    "idx": 5, 
-    "label": "qc_flag_soil_temperature", 
-    "rawName": "qc_flag_soil_temperature", 
-    "status": "pending", 
+    },
+    "idx": 5,
+    "label": "qc_flag_soil_temperature",
+    "raw_name": "qc_flag_soil_temperature",
+    "status": "pending",
     "uid": "6a1bdfb3-1378-46fe-bce4-78a6ac7ff1f5"
 }

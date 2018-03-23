@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "piclim-histghg", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "piclim-histghg", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "RFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "Time-varying forcing by GHGs. SST and sea ice fixed at preindustrial control. Interactive vegetation", 
-        "endYear": "2100", 
+        "end_year": "2100", 
         "experiment": "transient effective radiative forcing by greenhouse gases", 
-        "experimentID": "piClim-histghg", 
-        "minNumberYrsPerSim": "251", 
-        "parentActivityID": [
+        "experiment_id": "piClim-histghg", 
+        "min_number_yrs_per_sim": "251", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "1850", 
-        "subExperimentID": [
+        "start_year": "1850", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 29, 
+    "description": "Time-varying forcing by GHGs. SST and sea ice fixed at preindustrial control. Interactive vegetation", 
     "label": "piClim-histghg", 
-    "rawName": "piClim-histghg", 
+    "namespace": "ukcp:ukcp18:experiment-id:piclim-histghg", 
+    "raw_name": "piClim-histghg", 
     "status": "pending", 
-    "uid": "8b2705d6-a9f5-4e8d-9b42-d20a17bd06ec"
+    "uid": "1c3cf2ed-0efa-440a-95dd-db3ce44dcbe7"
 }

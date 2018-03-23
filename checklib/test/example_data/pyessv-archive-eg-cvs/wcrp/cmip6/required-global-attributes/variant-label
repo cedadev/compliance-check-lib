@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "variant-label", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "variant_label", 
+    "namespace": "wcrp:cmip6:required-global-attributes:variant-label", 
+    "raw_name": "variant_label", 
+    "status": "pending", 
+    "uid": "892eb6fb-352a-4355-84d2-246a7042a010"
+}

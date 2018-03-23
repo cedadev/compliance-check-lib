@@ -1,39 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "faf-water", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "faf-water", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "FAFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "1xCO2 experiment, parallel to piControl, forced over the ocean by surface net freshwater flux anomalies obtained from the CMIP5 ensemble mean of 1pctCO2 experiments at the time of 2xCO2", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "control plus perturbative surface flux of water into ocean", 
-        "experimentID": "faf-water", 
-        "minNumberYrsPerSim": "70", 
-        "parentActivityID": [
+        "experiment_id": "faf-water", 
+        "min_number_yrs_per_sim": "70", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 107, 
-    "label": "faf-water", 
-    "rawName": "faf-water", 
+    "description": "1xCO2 experiment, parallel to piControl, forced over the ocean by surface net freshwater flux anomalies obtained from the CMIP5 ensemble mean of 1pctCO2 experiments at the time of 2xCO2", 
+    "namespace": "ukcp:ukcp18:experiment-id:faf-water", 
     "status": "pending", 
-    "uid": "095150fe-6258-4c9a-8830-8a42412c4d7a"
+    "uid": "86f60222-7481-4383-a2b4-e1ebffa65091"
 }

@@ -1,11 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "aer", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 0, 
+    "_type": "term", 
+    "canonical_name": "aer", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "label": "AER", 
-    "rawName": "AER", 
+    "namespace": "ukcp:ukcp18:source-type:aer", 
+    "raw_name": "AER", 
     "status": "pending", 
-    "uid": "fbff5b3b-2b64-4fe5-bed3-757de6a81a04"
+    "uid": "56a6885c-6cd5-4d45-9e24-b55c80786d4c"
 }

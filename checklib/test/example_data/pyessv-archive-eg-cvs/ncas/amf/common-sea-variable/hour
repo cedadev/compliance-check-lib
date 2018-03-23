@@ -1,16 +1,16 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "hour", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "hour",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "dimension": "time", 
-        "name": "hour", 
-        "type": "int32", 
+        "dimension": "time",
+        "name": "hour",
+        "type": "int32",
         "units": "1"
-    }, 
-    "idx": 1, 
-    "label": "hour", 
-    "rawName": "hour", 
-    "status": "pending", 
+    },
+    "idx": 1,
+    "label": "hour",
+    "raw_name": "hour",
+    "status": "pending",
     "uid": "56703771-f198-436f-967e-a30c265005df"
 }

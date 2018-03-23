@@ -1,12 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "frequency", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "description": "frequency", 
-    "idx": 3, 
-    "label": "frequency", 
-    "rawName": "frequency", 
+    "_type": "term", 
+    "canonical_name": "frequency", 
+    "create_date": "2018-03-22 15:50:19.328077+00:00", 
+    "namespace": "eustace-team:eustace:required-global-attributes:frequency", 
     "status": "pending", 
-    "uid": "fa29e12e-4013-479f-93fc-9c45b5275e7c"
+    "uid": "ea5427a8-d1d6-4431-b5ca-0a34fc0f7a94"
 }

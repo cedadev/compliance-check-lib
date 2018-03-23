@@ -1,19 +1,19 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "day", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "day",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "dimension": "time", 
-        "longName": "Day", 
-        "name": "day", 
-        "type": "int32", 
-        "units": "1", 
-        "validMax": "<derived from file>", 
-        "validMin": "<derived from file>"
-    }, 
-    "idx": 8, 
-    "label": "day", 
-    "rawName": "day", 
-    "status": "pending", 
+        "dimension": "time",
+        "long_name": "Day",
+        "name": "day",
+        "type": "int32",
+        "units": "1",
+        "valid_max": "<derived from file>",
+        "valid_min": "<derived from file>"
+    },
+    "idx": 8,
+    "label": "day",
+    "raw_name": "day",
+    "status": "pending",
     "uid": "ded82a45-0044-4a6b-8f8a-f77b2bf6e6b1"
 }

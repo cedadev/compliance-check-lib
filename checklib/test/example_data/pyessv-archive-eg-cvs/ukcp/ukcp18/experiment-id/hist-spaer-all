@@ -1,35 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "hist-spaer-all", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "hist-spaer-all", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "RFMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Prescribed anthropogenic aerosol optical properties. All forcings", 
-        "endYear": "2014", 
+        "additional_allowed_model_components": "", 
+        "end_year": "2014", 
         "experiment": "historical simulation with specified anthropogenic aerosols", 
-        "experimentID": "hist-spAer-all", 
-        "minNumberYrsPerSim": "165", 
-        "parentActivityID": [
+        "experiment_id": "hist-spAer-all", 
+        "min_number_yrs_per_sim": "165", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "1850", 
-        "subExperimentID": [
+        "start_year": "1850", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 167, 
+    "description": "Prescribed anthropogenic aerosol optical properties. All forcings", 
     "label": "hist-spAer-all", 
-    "rawName": "hist-spAer-all", 
+    "namespace": "ukcp:ukcp18:experiment-id:hist-spaer-all", 
+    "raw_name": "hist-spAer-all", 
     "status": "pending", 
-    "uid": "cb8404fd-de72-4e45-a9a4-9068527a64ab"
+    "uid": "0ab0ae34-c4f2-4783-a2a5-33d079fc6997"
 }

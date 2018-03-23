@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "esubhr", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "Esubhr", 
+    "namespace": "wcrp:cmip6:table-id:esubhr", 
+    "raw_name": "Esubhr", 
+    "status": "pending", 
+    "uid": "3ae2cd76-1da2-4bb2-b271-5f5b2d343030"
+}

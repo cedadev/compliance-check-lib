@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "west-highland", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "label": "west_highland", 
+    "namespace": "ukcp:ukcp18:river-basin:west-highland", 
+    "raw_name": "west_highland", 
+    "status": "pending", 
+    "uid": "3b5b1d04-4113-47c3-8e3b-81bc1012bef6"
+}

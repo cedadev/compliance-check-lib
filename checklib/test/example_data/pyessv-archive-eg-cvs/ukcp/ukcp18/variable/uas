@@ -1,11 +1,40 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "uas", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 5, 
-    "label": "uas", 
-    "rawName": "uas", 
+    "_type": "term", 
+    "canonical_name": "uas", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "cmip6_cmor_tables_row_id": [
+            "1909", 
+            "1914"
+        ], 
+        "cmip6_name": "uas", 
+        "cmip6_standard_name": "eastward_wind", 
+        "label_units": "m s-1", 
+        "level": "10m", 
+        "long_name": "Eastward wind component", 
+        "plot_label": "Eastward wind at 10m (m s-1)", 
+        "standard_name": "eastward_wind", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "instantaneous", 
+            "mean"
+        ], 
+        "time_step": [
+            "3hr", 
+            "day"
+        ], 
+        "um_stash": "30201", 
+        "units": "m s-1"
+    }, 
+    "description": "Eastward wind", 
+    "namespace": "ukcp:ukcp18:variable:uas", 
     "status": "pending", 
-    "uid": "8afa2ae0-3ac1-4113-bc5c-c2b8317fc623"
+    "uid": "54135500-ea77-483f-8bc7-0c78136c9093"
 }

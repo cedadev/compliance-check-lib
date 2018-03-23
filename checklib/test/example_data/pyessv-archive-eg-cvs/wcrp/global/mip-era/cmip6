@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "cmip6", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "CMIP6", 
+    "namespace": "wcrp:global:mip-era:cmip6", 
+    "raw_name": "CMIP6", 
+    "status": "pending", 
+    "uid": "de48c933-5b61-4679-8150-b8aab4b3add2"
+}

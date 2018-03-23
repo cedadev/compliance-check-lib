@@ -1,35 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ism-1pctco2to4x-self", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ism-1pctco2to4x-self", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "ISMIP6"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Idealized 1%/yr CO2 increase to 4xC02 over 140yrs and kept constant at 4xCO2 for an additional 200 to 400 yrs simulation with ice sheets forced \"offline\" with DECK 1pctCO2 using forcing from its own AOGCM", 
-        "endYear": "", 
+        "additional_allowed_model_components": "", 
+        "end_year": "", 
         "experiment": "offline ice sheet model forced by ISM's own AOGCM 1pctCO2to4x output", 
-        "experimentID": "ism-1pctCO2to4x-self", 
-        "minNumberYrsPerSim": "350", 
-        "parentActivityID": [
+        "experiment_id": "ism-1pctCO2to4x-self", 
+        "min_number_yrs_per_sim": "350", 
+        "parent_activity_id": [
             "ISMIP6"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "ism-piControl-self"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "ISM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 13, 
+    "description": "Idealized 1%/yr CO2 increase to 4xC02 over 140yrs and kept constant at 4xCO2 for an additional 200 to 400 yrs simulation with ice sheets forced \"offline\" with DECK 1pctCO2 using forcing from its own AOGCM", 
     "label": "ism-1pctCO2to4x-self", 
-    "rawName": "ism-1pctCO2to4x-self", 
+    "namespace": "ukcp:ukcp18:experiment-id:ism-1pctco2to4x-self", 
+    "raw_name": "ism-1pctCO2to4x-self", 
     "status": "pending", 
-    "uid": "db959409-3708-4489-9474-ea0591c1205e"
+    "uid": "ea1ad9f9-5cd8-4e32-8f58-aca7b5111e5f"
 }

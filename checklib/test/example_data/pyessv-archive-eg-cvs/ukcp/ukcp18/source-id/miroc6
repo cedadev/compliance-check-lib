@@ -1,59 +1,58 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "miroc6", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "miroc6", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             ""
         ], 
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "MIROC"
         ], 
-        "label": "MIROC6", 
-        "labelExtended": "MIROC6", 
-        "modelComponent": {
+        "label_extended": "MIROC6", 
+        "model_component": {
             "aerosol": {
                 "description": "SPRINTARS6.0", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmos": {
                 "description": "CCSR AGCM (T85; 256x128; 81 levels; top level 0.004 hPa)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmosChem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "land": {
                 "description": "MATSIRO6.0", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "landIce": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "ocean": {
                 "description": "COCO4.9 (360x256x63; tripolar primarily 1deg; 63 levels; top grid cell 0-2 m)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "ocnBgchem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "seaIce": {
                 "description": "COCO4.9", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }
         }, 
-        "releaseYear": "2017", 
-        "sourceID": "MIROC6"
+        "release_year": "2017", 
+        "source_id": "MIROC6"
     }, 
-    "idx": 50, 
     "label": "MIROC6", 
-    "rawName": "MIROC6", 
+    "namespace": "ukcp:ukcp18:source-id:miroc6", 
+    "raw_name": "MIROC6", 
     "status": "pending", 
-    "uid": "b2fe4834-074e-4fb9-916a-ededfcc8f373"
+    "uid": "e213ade6-e7e4-458e-826e-c3ad679987c1"
 }

@@ -1,11 +1,33 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ta850", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 72, 
-    "label": "ta850", 
-    "rawName": "ta850", 
+    "_type": "term", 
+    "canonical_name": "ta850", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "cmip6_name": "ta", 
+        "cmip6_standard_name": "air_temperature", 
+        "label_units": "\u00b0c", 
+        "level": "850hPa", 
+        "long_name": "Air Temperature", 
+        "plot_label": "Air temperature at 850hPa (\u00b0c)", 
+        "standard_name": "air_temperature", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "?"
+        ], 
+        "time_step": [
+            "?"
+        ], 
+        "units": "degC"
+    }, 
+    "description": "Air temperature", 
+    "namespace": "ukcp:ukcp18:variable:ta850", 
     "status": "pending", 
-    "uid": "0b534551-213c-4f20-a7f1-7af54042c319"
+    "uid": "85a9e1b3-c390-4597-a7e8-b183d51a6930"
 }

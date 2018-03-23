@@ -1,11 +1,34 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "tasmaxhottestday", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 60, 
+    "_type": "term", 
+    "canonical_name": "tasmaxhottestday", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "label_units": "\u00b0c", 
+        "level": "1.5m", 
+        "long_name": "Maximum air temperature on the hottest day", 
+        "plot_label": "Maximum air temperature on the hottest day at 1.5m (\u00b0c)", 
+        "standard_name": "air temperature", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "mean"
+        ], 
+        "time_step": [
+            "annual"
+        ], 
+        "um_stash": "03236", 
+        "units": "degC"
+    }, 
+    "description": "Maximum air temperature on the hottest day", 
     "label": "tasmaxHottestDay", 
-    "rawName": "tasmaxHottestDay", 
+    "namespace": "ukcp:ukcp18:variable:tasmaxhottestday", 
+    "raw_name": "tasmaxHottestDay", 
     "status": "pending", 
-    "uid": "85d4e82b-59fb-484b-825b-268e24ce1023"
+    "uid": "049cee97-9dac-4836-89d7-82b4a8636f88"
 }

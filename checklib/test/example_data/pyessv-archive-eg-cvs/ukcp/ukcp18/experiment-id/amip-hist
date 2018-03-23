@@ -1,38 +1,36 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "amip-hist", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "amip-hist", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "GMMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "Extended AMIP run that covers 1870-2014. All natural and anthropogenic historical forcings as used in CMIP6 Historical Simulation will be included. AGCM resolution as CMIP6 Historical Simulation. The HadISST data will be used", 
-        "endYear": "2014", 
+        "end_year": "2014", 
         "experiment": "AMIP-style simulation covering the period 1870-2014", 
-        "experimentID": "amip-hist", 
-        "minNumberYrsPerSim": "144", 
-        "parentActivityID": [
+        "experiment_id": "amip-hist", 
+        "min_number_yrs_per_sim": "144", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "1870", 
-        "subExperimentID": [
+        "start_year": "1870", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 9, 
-    "label": "amip-hist", 
-    "rawName": "amip-hist", 
+    "description": "Extended AMIP run that covers 1870-2014. All natural and anthropogenic historical forcings as used in CMIP6 Historical Simulation will be included. AGCM resolution as CMIP6 Historical Simulation. The HadISST data will be used", 
+    "namespace": "ukcp:ukcp18:experiment-id:amip-hist", 
     "status": "pending", 
-    "uid": "24d5fb73-126d-4a6a-bdcd-3334c663fc8c"
+    "uid": "24a5772c-1963-46bc-8cac-719503abacf1"
 }

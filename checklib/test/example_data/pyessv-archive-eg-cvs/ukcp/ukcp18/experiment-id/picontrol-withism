@@ -1,40 +1,40 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "picontrol-withism", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "picontrol-withism", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "ISMIP6"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Pre-industrial control simulation that includes interactive ice sheets", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "preindustrial control with interactive ice sheet", 
-        "experimentID": "piControl-withism", 
-        "minNumberYrsPerSim": "500", 
-        "parentActivityID": [
+        "experiment_id": "piControl-withism", 
+        "min_number_yrs_per_sim": "500", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM", 
             "ISM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 180, 
+    "description": "Pre-industrial control simulation that includes interactive ice sheets", 
     "label": "piControl-withism", 
-    "rawName": "piControl-withism", 
+    "namespace": "ukcp:ukcp18:experiment-id:picontrol-withism", 
+    "raw_name": "piControl-withism", 
     "status": "pending", 
-    "uid": "f9efac38-46d8-48d2-ba37-30b65b5104c8"
+    "uid": "6b62bcbb-6adb-412a-ba4d-77d305ff748a"
 }

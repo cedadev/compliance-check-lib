@@ -1,0 +1,26 @@
+{
+    "_type": "term", 
+    "canonical_name": "projection-y-coordinate", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "axis": "Y", 
+        "bounds_values": "", 
+        "climatology": "", 
+        "formula": "", 
+        "long_name": "Northings", 
+        "must_have_bounds": "yes", 
+        "positive": "", 
+        "standard_name": "projection_y_coordinate", 
+        "stored_direction": "increasing", 
+        "type": "double", 
+        "units": "m", 
+        "valid_max": "", 
+        "valid_min": "", 
+        "value": ""
+    }, 
+    "label": "projection_y_coordinate", 
+    "namespace": "ukcp:ukcp18:coordinate:projection-y-coordinate", 
+    "raw_name": "projection_y_coordinate", 
+    "status": "pending", 
+    "uid": "15d404cd-fef1-40a2-a20d-1f93e8b9b157"
+}

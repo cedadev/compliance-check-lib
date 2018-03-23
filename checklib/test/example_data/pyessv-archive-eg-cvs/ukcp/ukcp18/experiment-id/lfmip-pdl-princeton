@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "lfmip-pdl-princeton", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "lfmip-pdl-princeton", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "LS3MIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Prescribed land conditions 1980-2014 climate with Land-Hist-princeton", 
-        "endYear": "2100", 
+        "end_year": "2100", 
         "experiment": "as LFMIP-pdLC with Land-Hist-princeton", 
-        "experimentID": "lfmip-pdL-princeton", 
-        "minNumberYrsPerSim": "121", 
-        "parentActivityID": [
+        "experiment_id": "lfmip-pdL-princeton", 
+        "min_number_yrs_per_sim": "121", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "historical"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "1980", 
-        "subExperimentID": [
+        "start_year": "1980", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 157, 
+    "description": "Prescribed land conditions 1980-2014 climate with Land-Hist-princeton", 
     "label": "lfmip-pdL-princeton", 
-    "rawName": "lfmip-pdL-princeton", 
+    "namespace": "ukcp:ukcp18:experiment-id:lfmip-pdl-princeton", 
+    "raw_name": "lfmip-pdL-princeton", 
     "status": "pending", 
-    "uid": "280405f1-8efe-4490-b361-63539e4b54eb"
+    "uid": "48b3ea08-5c12-4b29-ad25-f7d29fb163f4"
 }

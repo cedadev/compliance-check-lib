@@ -1,11 +1,36 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "foganom", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 40, 
+    "_type": "term", 
+    "canonical_name": "foganom", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "anomaly_type": "absolute_change", 
+        "label_units": "1", 
+        "long_name": "??", 
+        "notes": [
+            "Intended we'll still do these, but as LS3 they're not a priority at present"
+        ], 
+        "plot_label": "Fog anomaly (1)", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "mean"
+        ], 
+        "time_step": [
+            "day"
+        ], 
+        "um_stash": "03248", 
+        "units": "1"
+    }, 
+    "description": "Fog", 
     "label": "fogAnom", 
-    "rawName": "fogAnom", 
+    "namespace": "ukcp:ukcp18:variable:foganom", 
+    "raw_name": "fogAnom", 
     "status": "pending", 
-    "uid": "27fdda59-479d-479d-a7f2-4a7d02aeac16"
+    "uid": "34408ec4-8d58-438a-84cb-7d030174d87b"
 }

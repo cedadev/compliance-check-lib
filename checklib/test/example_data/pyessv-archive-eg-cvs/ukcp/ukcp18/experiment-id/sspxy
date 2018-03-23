@@ -1,39 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "sspxy", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "sspxy", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "ScenarioMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Future scenario with low radiative forcing by the end of century. Following a forcing pathway below RCP2.6. Specific SSP and 2100 forcing level to be finalized with IAM groups within next few months. Concentration-driven", 
-        "endYear": "2100", 
+        "end_year": "2100", 
         "experiment": "low-end scenario informing 1.5C goal", 
-        "experimentID": "sspxy", 
-        "minNumberYrsPerSim": "86", 
-        "parentActivityID": [
+        "experiment_id": "sspxy", 
+        "min_number_yrs_per_sim": "86", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "historical"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "2015", 
-        "subExperimentID": [
+        "start_year": "2015", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 97, 
-    "label": "sspxy", 
-    "rawName": "sspxy", 
+    "description": "Future scenario with low radiative forcing by the end of century. Following a forcing pathway below RCP2.6. Specific SSP and 2100 forcing level to be finalized with IAM groups within next few months. Concentration-driven", 
+    "namespace": "ukcp:ukcp18:experiment-id:sspxy", 
     "status": "pending", 
-    "uid": "a9af9372-cb21-4122-9f03-0e1ffe5e1f1b"
+    "uid": "61bf1e65-f9ef-4869-b62e-089a70a09106"
 }

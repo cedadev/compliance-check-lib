@@ -1,59 +1,58 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "vresm-1-0", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "vresm-1-0", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             ""
         ], 
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "CSIR-CSIRO"
         ], 
-        "label": "VRESM 1.0", 
-        "labelExtended": "VRESM 1.0 (Variable-resolution Earth System Model 1.0)", 
-        "modelComponent": {
+        "label_extended": "VRESM 1.0 (Variable-resolution Earth System Model 1.0)", 
+        "model_component": {
             "aerosol": {
                 "description": "Rotstayn-1.0", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmos": {
                 "description": "VCAM-1.0 (192 x 192 x 6 C192; 35 levels; top level 35km)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmosChem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "land": {
                 "description": "CABLE v2.2.3", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "landIce": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "ocean": {
                 "description": "VCOM-1.0 (192 x 192 x 6 C192; 35 levels; top grid cell 0-10m)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "ocnBgchem": {
                 "description": "PISCES v3.4socco", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "seaIce": {
                 "description": "CSIR-ICE (visco-plastic)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }
         }, 
-        "releaseYear": "2016", 
-        "sourceID": "VRESM-1-0"
+        "release_year": "2016", 
+        "source_id": "VRESM-1-0"
     }, 
-    "idx": 45, 
-    "label": "VRESM-1-0", 
-    "rawName": "VRESM-1-0", 
+    "label": "VRESM 1.0", 
+    "namespace": "ukcp:ukcp18:source-id:vresm-1-0", 
+    "raw_name": "VRESM-1-0", 
     "status": "pending", 
-    "uid": "b931bc10-0fb9-41ad-9635-fccc441daa95"
+    "uid": "61e94fd8-0ea3-4091-abb8-4ee2cfa1de32"
 }

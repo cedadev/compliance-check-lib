@@ -1,39 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ssp585", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ssp585", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "ScenarioMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Future scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway but with new forcing based on SSP5. Concentration-driven. As a tier 2 option, this simulation should be extended to year 2300", 
-        "endYear": "2100 or 2300", 
+        "end_year": "2100 or 2300", 
         "experiment": "update of RCP8.5 based on SSP5", 
-        "experimentID": "ssp585", 
-        "minNumberYrsPerSim": "86", 
-        "parentActivityID": [
+        "experiment_id": "ssp585", 
+        "min_number_yrs_per_sim": "86", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "historical"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "2015", 
-        "subExperimentID": [
+        "start_year": "2015", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 90, 
-    "label": "ssp585", 
-    "rawName": "ssp585", 
+    "description": "Future scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway but with new forcing based on SSP5. Concentration-driven. As a tier 2 option, this simulation should be extended to year 2300", 
+    "namespace": "ukcp:ukcp18:experiment-id:ssp585", 
     "status": "pending", 
-    "uid": "cc8c594e-366c-4655-8357-bcf146b14320"
+    "uid": "47b105ee-aebc-4041-818d-b6eda67e0ec5"
 }

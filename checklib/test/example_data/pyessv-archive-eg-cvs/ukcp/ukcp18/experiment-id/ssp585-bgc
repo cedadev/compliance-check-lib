@@ -1,39 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ssp585-bgc", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ssp585-bgc", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "C4MIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "Concentration-driven future scenario simulation, biogeochemically-coupled. This simulation should optionally be extended to year 2300", 
-        "endYear": "2100 or 2300", 
+        "end_year": "2100 or 2300", 
         "experiment": "biogeochemically-coupled version of the RCP8.5 based on SSP5", 
-        "experimentID": "ssp585-bgc", 
-        "minNumberYrsPerSim": "85", 
-        "parentActivityID": [
+        "experiment_id": "ssp585-bgc", 
+        "min_number_yrs_per_sim": "85", 
+        "parent_activity_id": [
             "C4MIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "hist-bgc"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM", 
             "BGC"
         ], 
-        "startYear": "2015", 
-        "subExperimentID": [
+        "start_year": "2015", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 215, 
-    "label": "ssp585-bgc", 
-    "rawName": "ssp585-bgc", 
+    "description": "Concentration-driven future scenario simulation, biogeochemically-coupled. This simulation should optionally be extended to year 2300", 
+    "namespace": "ukcp:ukcp18:experiment-id:ssp585-bgc", 
     "status": "pending", 
-    "uid": "b19b5c9f-698f-43ea-acd0-d19bcad04d8e"
+    "uid": "153a54d3-dfe2-4bc4-8fcb-bc0970b022eb"
 }

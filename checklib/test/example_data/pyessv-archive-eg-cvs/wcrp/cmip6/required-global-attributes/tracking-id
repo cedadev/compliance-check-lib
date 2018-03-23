@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "tracking-id", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "tracking_id", 
+    "namespace": "wcrp:cmip6:required-global-attributes:tracking-id", 
+    "raw_name": "tracking_id", 
+    "status": "pending", 
+    "uid": "8d1f2ef4-f2c0-4879-a470-37bfb00a5a80"
+}

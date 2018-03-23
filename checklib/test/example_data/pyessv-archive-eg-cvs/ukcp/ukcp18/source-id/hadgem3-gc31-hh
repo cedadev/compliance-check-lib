@@ -1,59 +1,58 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "hadgem3-gc31-hh", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "hadgem3-gc31-hh", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             ""
         ], 
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "MOHC"
         ], 
-        "label": "HadGEM3-GC31-HH", 
-        "labelExtended": "HadGEM3-GC3.1-N512ORCA12", 
-        "modelComponent": {
+        "label_extended": "HadGEM3-GC3.1-N512ORCA12", 
+        "model_component": {
             "aerosol": {
                 "description": "UKCA-GLOMAP-mode", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmos": {
                 "description": "MetUM-HadGEM3-GA7.1 (1024 x 768 N512; 85 levels; top level 85km)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmosChem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "land": {
                 "description": "JULES-HadGEM3-GL7.1", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "landIce": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "ocean": {
                 "description": "NEMO-HadGEM3-GO6.0 (ORCA12 tripolar primarily 1/12 deg latitude/longitude; 75 levels; top grid cell 0-1m)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "ocnBgchem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "seaIce": {
                 "description": "CICE-HadGEM3-GSI8 (ORCA12 tripolar primarily 1/12 deg latitude/longitude)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }
         }, 
-        "releaseYear": "2016", 
-        "sourceID": "HadGEM3-GC31-HH"
+        "release_year": "2016", 
+        "source_id": "HadGEM3-GC31-HH"
     }, 
-    "idx": 2, 
     "label": "HadGEM3-GC31-HH", 
-    "rawName": "HadGEM3-GC31-HH", 
+    "namespace": "ukcp:ukcp18:source-id:hadgem3-gc31-hh", 
+    "raw_name": "HadGEM3-GC31-HH", 
     "status": "pending", 
-    "uid": "67974f79-1c45-43e9-ba93-5a981a04272d"
+    "uid": "f4ac53b2-0327-467e-8763-86e2e26e2c2c"
 }

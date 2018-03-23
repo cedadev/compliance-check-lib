@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "cccma", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "data": {
+        "postal_address": "Canadian Centre for Climate Modelling and Analysis, Victoria, BC V8P 5C2, Canada"
+    }, 
+    "label": "CCCma", 
+    "namespace": "wcrp:cmip6:institution-id:cccma", 
+    "raw_name": "CCCma", 
+    "status": "pending", 
+    "uid": "b2ffc88f-2b42-4501-b5ec-45f8d420ef52"
+}

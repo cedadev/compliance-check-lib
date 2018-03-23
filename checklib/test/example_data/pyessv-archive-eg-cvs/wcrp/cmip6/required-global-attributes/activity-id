@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "activity-id", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "activity_id", 
+    "namespace": "wcrp:cmip6:required-global-attributes:activity-id", 
+    "raw_name": "activity_id", 
+    "status": "pending", 
+    "uid": "81a1ebc3-27f0-4486-83c5-ac09cae25fe4"
+}

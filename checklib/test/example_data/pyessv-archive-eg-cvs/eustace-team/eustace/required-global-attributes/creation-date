@@ -1,12 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "creation-date", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "description": "creation_date", 
-    "idx": 1, 
+    "_type": "term", 
+    "canonical_name": "creation-date", 
+    "create_date": "2018-03-22 15:50:19.328077+00:00", 
     "label": "creation_date", 
-    "rawName": "creation_date", 
+    "namespace": "eustace-team:eustace:required-global-attributes:creation-date", 
+    "raw_name": "creation_date", 
     "status": "pending", 
-    "uid": "25856e61-4e3c-4d58-81fc-8d9c6d69a9bf"
+    "uid": "21002180-0eda-47fd-8528-a811e1b55b66"
 }

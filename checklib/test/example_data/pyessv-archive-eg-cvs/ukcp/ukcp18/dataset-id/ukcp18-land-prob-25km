@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ukcp18-land-prob-25km", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 0, 
-    "label": "ukcp18-land-prob-25km", 
-    "rawName": "ukcp18-land-prob-25km", 
+    "_type": "term", 
+    "canonical_name": "ukcp18-land-prob-25km", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:dataset-id:ukcp18-land-prob-25km", 
     "status": "pending", 
-    "uid": "c9ca2f3b-f22e-41a6-bd2b-936757e002d4"
+    "uid": "6aa07eda-da7f-490d-a859-919ce78a48b5"
 }

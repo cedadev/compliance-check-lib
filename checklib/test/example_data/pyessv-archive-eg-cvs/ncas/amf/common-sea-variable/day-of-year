@@ -1,19 +1,19 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "day-of-year", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "day-of-year",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "dimension": "time", 
-        "longName": "Day of Year", 
-        "name": "day_of_year", 
-        "type": "float64", 
-        "units": "1", 
-        "validMax": "<derived from file>", 
-        "validMin": "<derived from file>"
-    }, 
-    "idx": 6, 
-    "label": "day_of_year", 
-    "rawName": "day_of_year", 
-    "status": "pending", 
+        "dimension": "time",
+        "long_name": "Day of Year",
+        "name": "day_of_year",
+        "type": "float64",
+        "units": "1",
+        "valid_max": "<derived from file>",
+        "valid_min": "<derived from file>"
+    },
+    "idx": 6,
+    "label": "day_of_year",
+    "raw_name": "day_of_year",
+    "status": "pending",
     "uid": "73a14dc1-3718-403e-841f-a39a9bbfa789"
 }

@@ -1,39 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "volc-cluster-mill", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "volc-cluster-mill", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "VolMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Parallel experiment to volc-cluster-ctrl but with initial conditions taken from last millennium simulation to account for the effects of a more realistic history of past natural forcing. All forcings except volcanic kept constant from year AD 1790 on", 
-        "endYear": "1858", 
+        "end_year": "1858", 
         "experiment": "19th century volcanic cluster initialized from past1000", 
-        "experimentID": "volc-cluster-mill", 
-        "minNumberYrsPerSim": "69", 
-        "parentActivityID": [
+        "experiment_id": "volc-cluster-mill", 
+        "min_number_yrs_per_sim": "69", 
+        "parent_activity_id": [
             "PMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "past1000"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "1790", 
-        "subExperimentID": [
+        "start_year": "1790", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "3"
     }, 
-    "idx": 135, 
-    "label": "volc-cluster-mill", 
-    "rawName": "volc-cluster-mill", 
+    "description": "Parallel experiment to volc-cluster-ctrl but with initial conditions taken from last millennium simulation to account for the effects of a more realistic history of past natural forcing. All forcings except volcanic kept constant from year AD 1790 on", 
+    "namespace": "ukcp:ukcp18:experiment-id:volc-cluster-mill", 
     "status": "pending", 
-    "uid": "dceeb2a6-a18d-4014-9ea1-5e1a0e5cc30f"
+    "uid": "6914c51b-526e-445b-af63-5e4f242182f7"
 }

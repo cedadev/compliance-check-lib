@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "dwd", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "data": {
+        "postal_address": "Deutscher Wetterdienst, Offenbach am Main 63067, Germany"
+    }, 
+    "label": "DWD", 
+    "namespace": "wcrp:cmip6:institution-id:dwd", 
+    "raw_name": "DWD", 
+    "status": "pending", 
+    "uid": "fc3f5ba5-72e5-4bc6-a70f-988572ce7979"
+}

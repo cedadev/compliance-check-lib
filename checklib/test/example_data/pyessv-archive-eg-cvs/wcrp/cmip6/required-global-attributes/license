@@ -1,0 +1,8 @@
+{
+    "_type": "term", 
+    "canonical_name": "license", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "namespace": "wcrp:cmip6:required-global-attributes:license", 
+    "status": "pending", 
+    "uid": "8c70012d-c4a9-450a-baff-c41ddc9bef07"
+}

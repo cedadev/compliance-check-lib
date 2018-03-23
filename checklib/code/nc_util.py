@@ -136,6 +136,9 @@ def check_nc_attribute(variable, attr, expected_value):
     Checks that attribute ``attr`` is in the netCDF4 Variable and the value
     matches the expected value. Returns True for success and False for failure.
 
+    If the attribute is `_FillValue` then use `numpy.isclose()` to do the
+    comparison - to cope with Floating Point errors.
+
     :param variable: netCDF4 Variable instance.
     :param attr: attribute name (string).
     :param expected_value: value that we expect to find (varied type).
@@ -147,7 +150,12 @@ def check_nc_attribute(variable, attr, expected_value):
     if expected_value in KNOWN_IGNORES:
         return True
 
-    if value == expected_value:
+    if attr == "_FillValue":
+        # Check values are close to handle floating point errors
+        if np.isclose(value, expected_value):
+            return True
+
+    elif value == expected_value:
         return True
 
     return False

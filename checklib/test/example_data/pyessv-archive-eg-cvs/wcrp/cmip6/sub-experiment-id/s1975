@@ -1,0 +1,9 @@
+{
+    "_type": "term", 
+    "canonical_name": "s1975", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "description": "initialized near end of year 1975", 
+    "namespace": "wcrp:cmip6:sub-experiment-id:s1975", 
+    "status": "pending", 
+    "uid": "7fcbf92d-9255-4813-b02b-f4279518bfc6"
+}

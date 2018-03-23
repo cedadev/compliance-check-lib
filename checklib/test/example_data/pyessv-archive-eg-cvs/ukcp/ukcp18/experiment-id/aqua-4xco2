@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "aqua-4xco2", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "aqua-4xco2", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "Extended version of CMIP5/CFMIP-2 aqua4xCO2 experiment. Aquaplanet experiment where SSTs are held at control values and the CO2 seen by the radiation scheme is quadrupled", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "aquaplanet with control SST and 4xCO2", 
-        "experimentID": "aqua-4xCO2", 
-        "minNumberYrsPerSim": "10", 
-        "parentActivityID": [
+        "experiment_id": "aqua-4xCO2", 
+        "min_number_yrs_per_sim": "10", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 133, 
+    "description": "Extended version of CMIP5/CFMIP-2 aqua4xCO2 experiment. Aquaplanet experiment where SSTs are held at control values and the CO2 seen by the radiation scheme is quadrupled", 
     "label": "aqua-4xCO2", 
-    "rawName": "aqua-4xCO2", 
+    "namespace": "ukcp:ukcp18:experiment-id:aqua-4xco2", 
+    "raw_name": "aqua-4xCO2", 
     "status": "pending", 
-    "uid": "e72c3020-cf81-4799-a566-65b5e7512dc5"
+    "uid": "2d18e8bf-a11c-407f-a806-37e4a55f2176"
 }

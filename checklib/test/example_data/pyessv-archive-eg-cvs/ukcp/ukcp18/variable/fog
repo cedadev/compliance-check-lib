@@ -1,11 +1,33 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "fog", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 31, 
-    "label": "fog", 
-    "rawName": "fog", 
+    "_type": "term", 
+    "canonical_name": "fog", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "label_units": "1", 
+        "long_name": "??", 
+        "notes": [
+            "Intended we'll still do these, but as LS3 they're not a priority at present"
+        ], 
+        "plot_label": "Fog (1)", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "mean"
+        ], 
+        "time_step": [
+            "day"
+        ], 
+        "um_stash": "03248", 
+        "units": "1"
+    }, 
+    "description": "Fog", 
+    "namespace": "ukcp:ukcp18:variable:fog", 
     "status": "pending", 
-    "uid": "f80d494f-77b0-4360-9cc6-079a2492a9fc"
+    "uid": "4732af6f-0168-480c-9ed3-f88c56fefa60"
 }

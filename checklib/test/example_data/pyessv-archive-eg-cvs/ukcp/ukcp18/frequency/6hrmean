@@ -1,11 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "6hrmean", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 11, 
+    "_type": "term", 
+    "canonical_name": "6hrmean", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "label": "6hrMean", 
-    "rawName": "6hrMean", 
+    "namespace": "ukcp:ukcp18:frequency:6hrmean", 
+    "raw_name": "6hrMean", 
     "status": "pending", 
-    "uid": "494d5911-ff3e-403f-91fb-83c4142936e5"
+    "uid": "2786ea10-326d-453f-b903-f87440208a1e"
 }

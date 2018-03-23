@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "aerhr", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "AERhr", 
+    "namespace": "wcrp:cmip6:table-id:aerhr", 
+    "raw_name": "AERhr", 
+    "status": "pending", 
+    "uid": "a70c6e08-4bc9-47ea-98d3-d353fc3fea65"
+}

@@ -1,12 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "monclim", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "description": "monClim", 
-    "idx": 3, 
+    "_type": "term", 
+    "canonical_name": "monclim", 
+    "create_date": "2018-03-22 15:50:19.328077+00:00", 
     "label": "monClim", 
-    "rawName": "monClim", 
+    "namespace": "eustace-team:eustace:frequency:monclim", 
+    "raw_name": "monClim", 
     "status": "pending", 
-    "uid": "1bd03cbb-a506-46f2-9d44-c22908cdf262"
+    "uid": "8f0dcbbe-d336-4c01-9544-80deb04b6697"
 }

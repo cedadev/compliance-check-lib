@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "hist-co2", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "hist-co2", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "DAMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Historical CO2-only run", 
-        "endYear": "2020", 
+        "end_year": "2020", 
         "experiment": "historical CO2-only run", 
-        "experimentID": "hist-CO2", 
-        "minNumberYrsPerSim": "171", 
-        "parentActivityID": [
+        "experiment_id": "hist-CO2", 
+        "min_number_yrs_per_sim": "171", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "1850", 
-        "subExperimentID": [
+        "start_year": "1850", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "3"
     }, 
-    "idx": 150, 
+    "description": "Historical CO2-only run", 
     "label": "hist-CO2", 
-    "rawName": "hist-CO2", 
+    "namespace": "ukcp:ukcp18:experiment-id:hist-co2", 
+    "raw_name": "hist-CO2", 
     "status": "pending", 
-    "uid": "3f9a9bed-53c2-4ee0-b115-ba58319ae0ce"
+    "uid": "f31d28c1-8a7b-4967-a734-79901c43ce1c"
 }

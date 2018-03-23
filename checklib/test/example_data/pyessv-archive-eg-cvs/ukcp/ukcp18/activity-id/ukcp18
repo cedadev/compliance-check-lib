@@ -1,11 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ukcp18", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 1, 
+    "_type": "term", 
+    "canonical_name": "ukcp18", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "label": "UKCP18", 
-    "rawName": "UKCP18", 
+    "namespace": "ukcp:ukcp18:activity-id:ukcp18", 
+    "raw_name": "UKCP18", 
     "status": "pending", 
-    "uid": "82df5189-78e0-4eb3-a791-ea698906396b"
+    "uid": "e7303657-6238-491a-a75d-1d1c9bd78c24"
 }

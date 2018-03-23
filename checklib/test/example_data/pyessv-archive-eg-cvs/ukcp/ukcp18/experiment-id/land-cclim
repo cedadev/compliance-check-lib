@@ -1,35 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "land-cclim", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "land-cclim", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "LUMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Same as land-hist except with climate held constant", 
-        "endYear": "2014", 
+        "additional_allowed_model_components": "", 
+        "end_year": "2014", 
         "experiment": "historical land-only constant climate", 
-        "experimentID": "land-cClim", 
-        "minNumberYrsPerSim": "165", 
-        "parentActivityID": [
+        "experiment_id": "land-cClim", 
+        "min_number_yrs_per_sim": "165", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "LAND"
         ], 
-        "startYear": "1850 or 1700", 
-        "subExperimentID": [
+        "start_year": "1850 or 1700", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 119, 
+    "description": "Same as land-hist except with climate held constant", 
     "label": "land-cClim", 
-    "rawName": "land-cClim", 
+    "namespace": "ukcp:ukcp18:experiment-id:land-cclim", 
+    "raw_name": "land-cClim", 
     "status": "pending", 
-    "uid": "433a0f4e-8b6c-49bf-bfd2-3c84442cef04"
+    "uid": "274b893c-a61a-4b3b-87f3-e266cff2caf3"
 }

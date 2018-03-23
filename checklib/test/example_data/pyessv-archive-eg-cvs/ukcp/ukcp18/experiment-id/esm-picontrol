@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "esm-picontrol", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "esm-picontrol", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "DECK: control (emission-driven)", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "pre-industrial control simulation with CO2 concentration calculated", 
-        "experimentID": "esm-piControl", 
-        "minNumberYrsPerSim": "500", 
-        "parentActivityID": [
+        "experiment_id": "esm-piControl", 
+        "min_number_yrs_per_sim": "500", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "esm-piControl-spinup"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM", 
             "BGC"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 117, 
+    "description": "DECK: control (emission-driven)", 
     "label": "esm-piControl", 
-    "rawName": "esm-piControl", 
+    "namespace": "ukcp:ukcp18:experiment-id:esm-picontrol", 
+    "raw_name": "esm-piControl", 
     "status": "pending", 
-    "uid": "485a7edc-4f96-4a5a-baf6-e33210dc0e67"
+    "uid": "96cc1e7d-658d-41a8-851f-8b6dd29f53f6"
 }

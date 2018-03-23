@@ -1,17 +1,17 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "eastward-wind-rotated-to-run", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "eastward-wind-rotated-to-run",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "dimension": "time, index", 
-        "longName": "Eastward Wind Component (U rotated to run)", 
-        "name": "eastward_wind_rotated_to_run", 
-        "type": "float64", 
+        "dimension": "time, index",
+        "long_name": "Eastward Wind Component (U rotated to run)",
+        "name": "eastward_wind_rotated_to_run",
+        "type": "float64",
         "units": "m s-1"
-    }, 
-    "idx": 8, 
-    "label": "eastward_wind_rotated_to_run", 
-    "rawName": "eastward_wind_rotated_to_run", 
-    "status": "pending", 
+    },
+    "idx": 8,
+    "label": "eastward_wind_rotated_to_run",
+    "raw_name": "eastward_wind_rotated_to_run",
+    "status": "pending",
     "uid": "15cb6fd7-3f4f-4d30-8636-d7fe0b478495"
 }

@@ -1,11 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "rsds", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 2, 
-    "label": "rsds", 
-    "rawName": "rsds", 
+    "_type": "term", 
+    "canonical_name": "rsds", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "cmip6_cmor_tables_row_id": [
+            "1371"
+        ], 
+        "cmip6_name": "rsds", 
+        "cmip6_standard_name": "surface_downwelling_shortwave_flux_in_air", 
+        "label_units": "W m-2", 
+        "long_name": "Downward surface shortwave flux", 
+        "notes": [
+            "Glen's, rsds, standard name: surface downwelling short wave flux in air, long name: surface downwelling short wave radiation, STASH:01235 LBPROC 128"
+        ], 
+        "plot_label": "Total downward shortwave flux (W m-2)", 
+        "standard_name": "surface_downwelling_shortwave_flux_in_air", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "mean"
+        ], 
+        "time_step": [
+            "mon"
+        ], 
+        "um_stash": "01235", 
+        "units": "W m-2"
+    }, 
+    "description": "Total downward shortwave flux", 
+    "namespace": "ukcp:ukcp18:variable:rsds", 
     "status": "pending", 
-    "uid": "52ba112b-d4e4-45b3-b5d3-88c712d4c9a9"
+    "uid": "93b2f44b-fd7d-42c1-ae97-b783eb16eb92"
 }

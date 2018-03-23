@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "6hrpt", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "6hrPt", 
+    "namespace": "wcrp:cmip6:frequency:6hrpt", 
+    "raw_name": "6hrPt", 
+    "status": "pending", 
+    "uid": "3d2b68c1-3c22-44c1-bd9c-9a57f8586e11"
+}

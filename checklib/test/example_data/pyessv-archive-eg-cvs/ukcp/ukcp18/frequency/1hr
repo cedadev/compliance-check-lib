@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "1hr", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 0, 
-    "label": "1hr", 
-    "rawName": "1hr", 
+    "_type": "term", 
+    "canonical_name": "1hr", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:frequency:1hr", 
     "status": "pending", 
-    "uid": "d36780dd-09d5-4e1b-a20b-57f504a2a607"
+    "uid": "ec741e79-86df-47fa-ae4b-200bc7e20bbc"
 }

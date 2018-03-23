@@ -1,9 +1,9 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "besm-2-7", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "besm-2-7", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             "CMIP", 
             "DCPP", 
             "HighResMIP", 
@@ -12,51 +12,50 @@
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "INPE"
         ], 
-        "label": "BESM 2.7", 
-        "labelExtended": "BESM 2.7", 
-        "modelComponent": {
+        "label_extended": "BESM 2.7", 
+        "model_component": {
             "aerosol": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "atmos": {
                 "description": "BAM (v1.0, T062L28; 192 x 96 longitude/latitude; 28 levels; top level 3 hPa)", 
-                "nominalResolution": "250 km"
+                "nominal_resolution": "250 km"
             }, 
             "atmosChem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "land": {
                 "description": "SSiB 2.0", 
-                "nominalResolution": "250 km"
+                "nominal_resolution": "250 km"
             }, 
             "landIce": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "ocean": {
                 "description": "MOM-5 (MOM5, tripolar primarily 1 deg, 1/4 deg between 10S-10N; 360 x 300 longitude/latitude; 50 levels; top grid cell 0-10 m)", 
-                "nominalResolution": "100 km"
+                "nominal_resolution": "100 km"
             }, 
             "ocnBgchem": {
                 "description": "TOPAZ 2.0", 
-                "nominalResolution": "100 km"
+                "nominal_resolution": "100 km"
             }, 
             "seaIce": {
                 "description": "SIS 1.0", 
-                "nominalResolution": "100 km"
+                "nominal_resolution": "100 km"
             }
         }, 
-        "releaseYear": "2017", 
-        "sourceID": "BESM-2-7"
+        "release_year": "2017", 
+        "source_id": "BESM-2-7"
     }, 
-    "idx": 16, 
-    "label": "BESM-2-7", 
-    "rawName": "BESM-2-7", 
+    "label": "BESM 2.7", 
+    "namespace": "ukcp:ukcp18:source-id:besm-2-7", 
+    "raw_name": "BESM-2-7", 
     "status": "pending", 
-    "uid": "38434486-4b90-47e3-9f3b-db01ee051224"
+    "uid": "2b852850-2751-485d-b3d9-2bab26586f5e"
 }

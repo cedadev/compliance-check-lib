@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "west-scotland", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "label": "west_scotland", 
+    "namespace": "ukcp:ukcp18:admin-region:west-scotland", 
+    "raw_name": "west_scotland", 
+    "status": "pending", 
+    "uid": "60d74c3b-6426-4874-9201-38ce33c71e4a"
+}

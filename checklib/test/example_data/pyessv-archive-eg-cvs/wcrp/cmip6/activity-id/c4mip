@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "c4mip", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "C4MIP", 
+    "namespace": "wcrp:cmip6:activity-id:c4mip", 
+    "raw_name": "C4MIP", 
+    "status": "pending", 
+    "uid": "5c1d78fe-4262-4380-8d6a-d6a3a4e8b662"
+}

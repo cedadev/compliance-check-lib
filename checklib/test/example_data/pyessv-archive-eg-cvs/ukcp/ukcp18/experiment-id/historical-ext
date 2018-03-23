@@ -1,39 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "historical-ext", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "historical-ext", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Extension beyond 2014 of the CMIP6 historical", 
-        "endYear": "present", 
+        "end_year": "present", 
         "experiment": "post-2014 all-forcing simulation", 
-        "experimentID": "historical-ext", 
-        "minNumberYrsPerSim": "1", 
-        "parentActivityID": [
+        "experiment_id": "historical-ext", 
+        "min_number_yrs_per_sim": "1", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "historical"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "2015", 
-        "subExperimentID": [
+        "start_year": "2015", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 210, 
-    "label": "historical-ext", 
-    "rawName": "historical-ext", 
+    "description": "Extension beyond 2014 of the CMIP6 historical", 
+    "namespace": "ukcp:ukcp18:experiment-id:historical-ext", 
     "status": "pending", 
-    "uid": "c4dd0561-5e3f-4c50-a9fd-0960859c8418"
+    "uid": "c9b72594-1ec8-4a45-8e03-3a41541fe94f"
 }

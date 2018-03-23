@@ -1,0 +1,25 @@
+{
+    "_type": "term", 
+    "canonical_name": "sample", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "axis": "", 
+        "bounds_values": "", 
+        "climatology": "", 
+        "formula": "", 
+        "length": 2500, 
+        "long_name": "Sample", 
+        "must_have_bounds": "no", 
+        "positive": "", 
+        "standard_name": "", 
+        "stored_direction": "increasing", 
+        "type": "integer", 
+        "units": "-", 
+        "valid_max": "", 
+        "valid_min": "", 
+        "value": ""
+    }, 
+    "namespace": "ukcp:ukcp18:coordinate:sample", 
+    "status": "pending", 
+    "uid": "b0f419f4-8a81-45e3-b44b-44059e2b9b85"
+}

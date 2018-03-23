@@ -1,19 +1,19 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "qc-flag-radiation", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "qc-flag-radiation",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "dimension": "time", 
-        "flagMeanings": "not_used good_data  bad_data_longwave_radiation_outside_sensor_operational_range bad_data_shortwave_radiation_outside_sensor_operational_range suspect_data_time_stamp_error", 
-        "flagValues": "0b,1b, 2b, 3b, 4b", 
-        "longName": "Data Quality flag: Radiation", 
-        "name": "qc_flag_radiation", 
-        "type": "byte", 
+        "dimension": "time",
+        "flagMeanings": "not_used good_data  bad_data_longwave_radiation_outside_sensor_operational_range bad_data_shortwave_radiation_outside_sensor_operational_range suspect_data_time_stamp_error",
+        "flagValues": "0b,1b, 2b, 3b, 4b",
+        "long_name": "Data Quality flag: Radiation",
+        "name": "qc_flag_radiation",
+        "type": "byte",
         "units": "1"
-    }, 
-    "idx": 2, 
-    "label": "qc_flag_radiation", 
-    "rawName": "qc_flag_radiation", 
-    "status": "pending", 
+    },
+    "idx": 2,
+    "label": "qc_flag_radiation",
+    "raw_name": "qc_flag_radiation",
+    "status": "pending",
     "uid": "8d59f49e-1047-4fa0-b218-a44d1990d5c8"
 }

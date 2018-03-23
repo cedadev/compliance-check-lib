@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "pisst-pxk", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "pisst-pxk", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "Same as piSST, but with a spatially and temporally uniform SST anomaly applied on top of the monthly-varying piSST SSTs. The magnitude of the uniform increase is taken from each model's global, climatological annual mean SST change between abrupt4xCO2 minus piControl (using the mean of years 111-140 of abrupt4xCO2, and the parallel 30-year section of piControl)", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "as piSST with uniform SST increase with magnitude based on abrupt4xCO2 response", 
-        "experimentID": "piSST-pxK", 
-        "minNumberYrsPerSim": "20", 
-        "parentActivityID": [
+        "experiment_id": "piSST-pxK", 
+        "min_number_yrs_per_sim": "20", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 124, 
+    "description": "Same as piSST, but with a spatially and temporally uniform SST anomaly applied on top of the monthly-varying piSST SSTs. The magnitude of the uniform increase is taken from each model's global, climatological annual mean SST change between abrupt4xCO2 minus piControl (using the mean of years 111-140 of abrupt4xCO2, and the parallel 30-year section of piControl)", 
     "label": "piSST-pxK", 
-    "rawName": "piSST-pxK", 
+    "namespace": "ukcp:ukcp18:experiment-id:pisst-pxk", 
+    "raw_name": "piSST-pxK", 
     "status": "pending", 
-    "uid": "22f37e53-35d2-4d15-add7-3567e66d6cc8"
+    "uid": "eb07768f-d27a-49fb-a454-c9587d08434e"
 }

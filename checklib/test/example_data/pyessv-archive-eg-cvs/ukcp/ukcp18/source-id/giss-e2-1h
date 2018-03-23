@@ -1,59 +1,58 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "giss-e2-1h", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "giss-e2-1h", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             ""
         ], 
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "NASA-GISS"
         ], 
-        "label": "GISS-E2.1H", 
-        "labelExtended": "GISS-E2.1H", 
-        "modelComponent": {
+        "label_extended": "GISS-E2.1H", 
+        "model_component": {
             "aerosol": {
                 "description": "varies with physics-version (p==1 none, p==3 OMA, p==4 TOMAS, p==5 MATRIX)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmos": {
                 "description": "GISS-E2.1 (90 x 144 2x2.5; 40 levels; top level 0.1hPa)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "atmosChem": {
                 "description": "varies with physics-version (p==1 Non-interactive, p>1 GPUCCINI)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "land": {
                 "description": "GISS LSM", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "landIce": {
                 "description": "Fixed", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "ocean": {
                 "description": "HYCOM Ocean (tripolar grid; ~1 deg latitude/longitude; 26 levels; top grid cell 0-10m)", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }, 
             "ocnBgchem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "seaIce": {
                 "description": "GISS SI", 
-                "nominalResolution": ""
+                "nominal_resolution": ""
             }
         }, 
-        "releaseYear": "2016", 
-        "sourceID": "GISS-E2-1H"
+        "release_year": "2016", 
+        "source_id": "GISS-E2-1H"
     }, 
-    "idx": 6, 
-    "label": "GISS-E2-1H", 
-    "rawName": "GISS-E2-1H", 
+    "label": "GISS-E2.1H", 
+    "namespace": "ukcp:ukcp18:source-id:giss-e2-1h", 
+    "raw_name": "GISS-E2-1H", 
     "status": "pending", 
-    "uid": "3ae63ac1-20ad-4277-b8d4-e9dffbb1022e"
+    "uid": "b988b11c-a031-4e25-92e2-f549f9d1b945"
 }

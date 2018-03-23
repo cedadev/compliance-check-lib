@@ -1,14 +1,14 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "qc-flag-wind-component-northward", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "qc-flag-wind-component-northward",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "name": "qc_flag_wind_component_northward", 
+        "name": "qc_flag_wind_component_northward",
         "type": "byte"
-    }, 
-    "idx": 14, 
-    "label": "qc_flag_wind_component_northward", 
-    "rawName": "qc_flag_wind_component_northward", 
-    "status": "pending", 
+    },
+    "idx": 14,
+    "label": "qc_flag_wind_component_northward",
+    "raw_name": "qc_flag_wind_component_northward",
+    "status": "pending",
     "uid": "dc655716-0690-440e-b541-02dcd0a205c0"
 }

@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "pcmdi", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "data": {
+        "postal_address": "Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, CA 94550, USA"
+    }, 
+    "label": "PCMDI", 
+    "namespace": "wcrp:cmip6:institution-id:pcmdi", 
+    "raw_name": "PCMDI", 
+    "status": "pending", 
+    "uid": "6e872a06-d2c9-448d-b5e1-9f049ebc62c6"
+}

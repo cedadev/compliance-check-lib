@@ -1,11 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "1hrclimmon", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 6, 
+    "_type": "term", 
+    "canonical_name": "1hrclimmon", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "label": "1hrClimMon", 
-    "rawName": "1hrClimMon", 
+    "namespace": "ukcp:ukcp18:frequency:1hrclimmon", 
+    "raw_name": "1hrClimMon", 
     "status": "pending", 
-    "uid": "2dc021e0-15dd-4192-8a0c-11735251f7a5"
+    "uid": "26d70ecd-60f6-4e60-95c9-defdf0deb4eb"
 }

@@ -1,11 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "se", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 15, 
-    "label": "se", 
-    "rawName": "se", 
+    "_type": "term", 
+    "canonical_name": "se", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "label_units": "mm/day", 
+        "level": "Surface", 
+        "long_name": "Surface evaporation", 
+        "notes": [
+            "evspsbl"
+        ], 
+        "plot_label": "Surface evaporation at Surface (mm/day)", 
+        "standard_name": "surface_upward_water_flux", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "mean"
+        ], 
+        "time_step": [
+            "day"
+        ], 
+        "um_stash": "03223", 
+        "units": "mm/day"
+    }, 
+    "description": "Surface evaporation", 
+    "namespace": "ukcp:ukcp18:variable:se", 
     "status": "pending", 
-    "uid": "56e251c8-b32e-4d78-afbf-707ba06968c7"
+    "uid": "311886ef-17db-4de9-95fd-8ad9035f0428"
 }

@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "piclim-ghg", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "piclim-ghg", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "RFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "As in RFMIP-ERF-PI-Cntrl but with present-day greenhouse gases", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "effective radiative forcing by present-day greenhouse gases", 
-        "experimentID": "piClim-ghg", 
-        "minNumberYrsPerSim": "30", 
-        "parentActivityID": [
+        "experiment_id": "piClim-ghg", 
+        "min_number_yrs_per_sim": "30", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 53, 
+    "description": "As in RFMIP-ERF-PI-Cntrl but with present-day greenhouse gases", 
     "label": "piClim-ghg", 
-    "rawName": "piClim-ghg", 
+    "namespace": "ukcp:ukcp18:experiment-id:piclim-ghg", 
+    "raw_name": "piClim-ghg", 
     "status": "pending", 
-    "uid": "a88116df-80dd-44ee-94eb-7b0882c57c9b"
+    "uid": "0d52dfcc-57c6-4af9-9725-e3c605f89fd2"
 }

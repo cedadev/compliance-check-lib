@@ -1,37 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "highressst-p4k", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "highressst-p4k", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "HighResMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER"
         ], 
-        "description": "Similar to CFMIP amip-p4K, add a uniform warming of 4K to highresSST-present SSTs and run the experiment parallel to highresSST-present", 
-        "endYear": "2014", 
+        "end_year": "2014", 
         "experiment": "uniform 4K warming of highresSST-present SST", 
-        "experimentID": "highresSST-p4K", 
-        "minNumberYrsPerSim": "36", 
-        "parentActivityID": [
+        "experiment_id": "highresSST-p4K", 
+        "min_number_yrs_per_sim": "36", 
+        "parent_activity_id": [
             "HighResMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "highresSST-present"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "1979", 
-        "subExperimentID": [
+        "start_year": "1979", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "3"
     }, 
-    "idx": 201, 
+    "description": "Similar to CFMIP amip-p4K, add a uniform warming of 4K to highresSST-present SSTs and run the experiment parallel to highresSST-present", 
     "label": "highresSST-p4K", 
-    "rawName": "highresSST-p4K", 
+    "namespace": "ukcp:ukcp18:experiment-id:highressst-p4k", 
+    "raw_name": "highresSST-p4K", 
     "status": "pending", 
-    "uid": "e8514d5a-f541-4e48-9ebd-63d5178e9ecd"
+    "uid": "a603c6b9-91cd-4708-a71c-23c2686cc515"
 }

@@ -1,39 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ssp245-nat", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ssp245-nat", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "DAMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Extension of natural-only run under SSP2-4.5", 
-        "endYear": "2100", 
+        "end_year": "2100", 
         "experiment": "natural-only SSP2-4.5 run", 
-        "experimentID": "ssp245-nat", 
-        "minNumberYrsPerSim": "80", 
-        "parentActivityID": [
+        "experiment_id": "ssp245-nat", 
+        "min_number_yrs_per_sim": "80", 
+        "parent_activity_id": [
             "DAMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "hist-nat"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "2021", 
-        "subExperimentID": [
+        "start_year": "2021", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "3"
     }, 
-    "idx": 80, 
-    "label": "ssp245-nat", 
-    "rawName": "ssp245-nat", 
+    "description": "Extension of natural-only run under SSP2-4.5", 
+    "namespace": "ukcp:ukcp18:experiment-id:ssp245-nat", 
     "status": "pending", 
-    "uid": "877af0a0-82cc-4bd4-8143-49328b1cd906"
+    "uid": "6a6fa135-2b5b-4697-a3bf-05ad694ce4e4"
 }

@@ -1,35 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "piclim-spaer-histaer", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "piclim-spaer-histaer", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "RFMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Prescribed anthropogenic aerosol optical properties. Aerosol and ozone forcings", 
-        "endYear": "2014", 
+        "additional_allowed_model_components": "", 
+        "end_year": "2014", 
         "experiment": "transient effective radiative forcing with specified anthropogenic aerosol optical properties, aerosol forcing", 
-        "experimentID": "piClim-spAer-histaer", 
-        "minNumberYrsPerSim": "165", 
-        "parentActivityID": [
+        "experiment_id": "piClim-spAer-histaer", 
+        "min_number_yrs_per_sim": "165", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "1850", 
-        "subExperimentID": [
+        "start_year": "1850", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 232, 
+    "description": "Prescribed anthropogenic aerosol optical properties. Aerosol and ozone forcings", 
     "label": "piClim-spAer-histaer", 
-    "rawName": "piClim-spAer-histaer", 
+    "namespace": "ukcp:ukcp18:experiment-id:piclim-spaer-histaer", 
+    "raw_name": "piClim-spAer-histaer", 
     "status": "pending", 
-    "uid": "8775be16-30c5-47c8-aecd-cff79bc43618"
+    "uid": "d98e365f-8d45-407b-9de6-39d3ca18e190"
 }

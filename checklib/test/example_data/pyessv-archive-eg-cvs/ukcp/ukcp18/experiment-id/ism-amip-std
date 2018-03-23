@@ -1,35 +1,33 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ism-amip-std", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "ism-amip-std", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "ISMIP6"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Offline ice sheet evolution for the last few decades forced by amip", 
-        "endYear": "2014", 
+        "additional_allowed_model_components": "", 
+        "end_year": "2014", 
         "experiment": "offline ice sheet forced by ISMIP6-specified AGCM AMIP output", 
-        "experimentID": "ism-amip-std", 
-        "minNumberYrsPerSim": "36", 
-        "parentActivityID": [
+        "experiment_id": "ism-amip-std", 
+        "min_number_yrs_per_sim": "36", 
+        "parent_activity_id": [
             "ISMIP6"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "ism-ctrl-std"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "ISM"
         ], 
-        "startYear": "1979", 
-        "subExperimentID": [
+        "start_year": "1979", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "3"
     }, 
-    "idx": 61, 
-    "label": "ism-amip-std", 
-    "rawName": "ism-amip-std", 
+    "description": "Offline ice sheet evolution for the last few decades forced by amip", 
+    "namespace": "ukcp:ukcp18:experiment-id:ism-amip-std", 
     "status": "pending", 
-    "uid": "7d8d839d-c141-41b5-8408-4cc5ea81d5b0"
+    "uid": "54a79d7a-48fe-4281-b414-2fb2df72b0d6"
 }

@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "piclim-lu", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "piclim-lu", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "RFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "As in RFMIP-ERF-PI-Cntrl but with present-day land use", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "effective radiative forcing by present-day land use", 
-        "experimentID": "piClim-lu", 
-        "minNumberYrsPerSim": "30", 
-        "parentActivityID": [
+        "experiment_id": "piClim-lu", 
+        "min_number_yrs_per_sim": "30", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 159, 
+    "description": "As in RFMIP-ERF-PI-Cntrl but with present-day land use", 
     "label": "piClim-lu", 
-    "rawName": "piClim-lu", 
+    "namespace": "ukcp:ukcp18:experiment-id:piclim-lu", 
+    "raw_name": "piClim-lu", 
     "status": "pending", 
-    "uid": "195bfaa2-3495-4faa-be28-d6e35c4f6667"
+    "uid": "d352232f-5a77-4ff1-a6d9-13aacf89bb03"
 }

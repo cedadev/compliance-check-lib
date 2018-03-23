@@ -1,11 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "chem", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 4, 
+    "_type": "term", 
+    "canonical_name": "chem", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "label": "CHEM", 
-    "rawName": "CHEM", 
+    "namespace": "ukcp:ukcp18:source-type:chem", 
+    "raw_name": "CHEM", 
     "status": "pending", 
-    "uid": "06051464-db85-4052-99c8-2e47bc0ae656"
+    "uid": "815f774f-e17d-45a4-80f1-7a4dc07317b8"
 }

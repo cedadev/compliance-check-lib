@@ -1,14 +1,14 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "latitude", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "latitude",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "length": 1, 
+        "length": 1,
         "units": "degrees_north"
-    }, 
-    "idx": 1, 
-    "label": "latitude", 
-    "rawName": "latitude", 
-    "status": "pending", 
+    },
+    "idx": 1,
+    "label": "latitude",
+    "raw_name": "latitude",
+    "status": "pending",
     "uid": "6eb69e63-b6b4-4cc3-a2e5-17bfccb403f9"
 }

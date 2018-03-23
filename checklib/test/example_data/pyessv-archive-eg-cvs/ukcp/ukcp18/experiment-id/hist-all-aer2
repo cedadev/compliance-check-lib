@@ -1,39 +1,37 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "hist-all-aer2", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "hist-all-aer2", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "DAMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "Historical ALL forcing run with alternate estimates of aerosol concentrations/emissions", 
-        "endYear": "2020", 
+        "end_year": "2020", 
         "experiment": "historical ALL-forcing run with alternate estimates of aerosol forcing", 
-        "experimentID": "hist-all-aer2", 
-        "minNumberYrsPerSim": "171", 
-        "parentActivityID": [
+        "experiment_id": "hist-all-aer2", 
+        "min_number_yrs_per_sim": "171", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "1850", 
-        "subExperimentID": [
+        "start_year": "1850", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "3"
     }, 
-    "idx": 34, 
-    "label": "hist-all-aer2", 
-    "rawName": "hist-all-aer2", 
+    "description": "Historical ALL forcing run with alternate estimates of aerosol concentrations/emissions", 
+    "namespace": "ukcp:ukcp18:experiment-id:hist-all-aer2", 
     "status": "pending", 
-    "uid": "dd9e5f51-4026-4256-9a87-328b2ba132e1"
+    "uid": "0590e551-ffb3-46b0-a50f-290c185c0fb5"
 }

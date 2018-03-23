@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "yrpt", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "yrPt", 
+    "namespace": "wcrp:cmip6:frequency:yrpt", 
+    "raw_name": "yrPt", 
+    "status": "pending", 
+    "uid": "4241be4e-e01f-4cd9-b26a-dc5e2f1c8a4e"
+}

@@ -1,12 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "1hr", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "description": "1hr", 
-    "idx": 0, 
-    "label": "1hr", 
-    "rawName": "1hr", 
+    "_type": "term", 
+    "canonical_name": "1hr", 
+    "create_date": "2018-03-22 15:50:19.328077+00:00", 
+    "namespace": "eustace-team:eustace:frequency:1hr", 
     "status": "pending", 
-    "uid": "2a3b5750-a56c-4973-8e0b-3c94b4852a49"
+    "uid": "311c10e4-356f-4cbb-a1b6-cb75555ce0e6"
 }

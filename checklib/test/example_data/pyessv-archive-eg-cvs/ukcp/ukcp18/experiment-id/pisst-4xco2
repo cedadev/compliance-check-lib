@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "pisst-4xco2", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "pisst-4xco2", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CFMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM"
         ], 
-        "description": "Same as piSST but CO2 is quadrupled. The increase in CO2 is seen by both the radiation scheme and vegetation", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "as piSST with radiation and vegetation seeing 4xCO2", 
-        "experimentID": "piSST-4xCO2", 
-        "minNumberYrsPerSim": "30", 
-        "parentActivityID": [
+        "experiment_id": "piSST-4xCO2", 
+        "min_number_yrs_per_sim": "30", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 35, 
+    "description": "Same as piSST but CO2 is quadrupled. The increase in CO2 is seen by both the radiation scheme and vegetation", 
     "label": "piSST-4xCO2", 
-    "rawName": "piSST-4xCO2", 
+    "namespace": "ukcp:ukcp18:experiment-id:pisst-4xco2", 
+    "raw_name": "piSST-4xCO2", 
     "status": "pending", 
-    "uid": "a06ca6ac-844e-49fc-a14d-5a227c6ef9ca"
+    "uid": "400ad99b-be2d-48b4-8a07-4bda93b55f45"
 }

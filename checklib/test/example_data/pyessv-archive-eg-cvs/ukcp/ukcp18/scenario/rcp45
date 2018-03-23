@@ -1,11 +1,8 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "rcp45", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 1, 
-    "label": "rcp45", 
-    "rawName": "rcp45", 
+    "_type": "term", 
+    "canonical_name": "rcp45", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "namespace": "ukcp:ukcp18:scenario:rcp45", 
     "status": "pending", 
-    "uid": "e82ef569-6128-46d1-9879-d1f6f21c51cf"
+    "uid": "3724ab2a-6b18-4495-b326-ff4c89ff124f"
 }

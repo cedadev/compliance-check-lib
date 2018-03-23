@@ -1,11 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "ogcm", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 8, 
+    "_type": "term", 
+    "canonical_name": "ogcm", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "label": "OGCM", 
-    "rawName": "OGCM", 
+    "namespace": "ukcp:ukcp18:source-type:ogcm", 
+    "raw_name": "OGCM", 
     "status": "pending", 
-    "uid": "1e49e406-1f78-45b2-bb00-88fc4edb9b7d"
+    "uid": "e5a06a84-e44b-4b74-9c67-82d2a32b20c3"
 }

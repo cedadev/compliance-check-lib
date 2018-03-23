@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "picontrol", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "picontrol", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "DECK: control", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "pre-industrial control", 
-        "experimentID": "piControl", 
-        "minNumberYrsPerSim": "500", 
-        "parentActivityID": [
+        "experiment_id": "piControl", 
+        "min_number_yrs_per_sim": "500", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl-spinup"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "1"
     }, 
-    "idx": 116, 
+    "description": "DECK: control", 
     "label": "piControl", 
-    "rawName": "piControl", 
+    "namespace": "ukcp:ukcp18:experiment-id:picontrol", 
+    "raw_name": "piControl", 
     "status": "pending", 
-    "uid": "af4a5942-8cb3-4dda-8fa5-6eb9012d8598"
+    "uid": "080c59df-7329-4851-ad5e-a252a4894e78"
 }

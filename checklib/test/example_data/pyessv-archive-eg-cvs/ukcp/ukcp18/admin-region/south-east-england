@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "south-east-england", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "label": "south_east_england", 
+    "namespace": "ukcp:ukcp18:admin-region:south-east-england", 
+    "raw_name": "south_east_england", 
+    "status": "pending", 
+    "uid": "f0bdf142-15cf-4b0d-a007-3d7ba0f27f7d"
+}

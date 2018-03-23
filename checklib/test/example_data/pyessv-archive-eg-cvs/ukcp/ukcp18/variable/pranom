@@ -1,11 +1,48 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "pranom", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 50, 
+    "_type": "term", 
+    "canonical_name": "pranom", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "anomaly_type": "absolute_change", 
+        "cmip6_cmor_tables_row_id": [
+            "1164", 
+            "1166", 
+            "1169"
+        ], 
+        "cmip6_name": "pr", 
+        "cmip6_standard_name": "precipitation_flux", 
+        "label_units": "%", 
+        "long_name": "Precipitation rate", 
+        "notes": [
+            "Precip mass flux (kg/m\u00b2/s, STASH 05216) is numerically equivalent to precip volume flux (mm\u00b3/mm\u00b2/s = mm/s), assuming constant water density of 1000 kg/m\u00b3.", 
+            "Use WPS for LS1-3"
+        ], 
+        "plot_label": "Precipitation rate anomaly (%)", 
+        "standard_name": "lwe_precipitation_rate", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "LTA", 
+            "mean"
+        ], 
+        "time_step": [
+            "1hr", 
+            "day", 
+            "mon"
+        ], 
+        "um_stash": "05216", 
+        "units": "%"
+    }, 
+    "description": "Precipitation rate", 
     "label": "prAnom", 
-    "rawName": "prAnom", 
+    "namespace": "ukcp:ukcp18:variable:pranom", 
+    "raw_name": "prAnom", 
     "status": "pending", 
-    "uid": "6455cd22-a01e-4046-8c4f-8e660114f1d6"
+    "uid": "e7a135ea-5118-4806-bef0-d226f076a8e6"
 }

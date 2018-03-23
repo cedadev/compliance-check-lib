@@ -1,0 +1,10 @@
+{
+    "_type": "term", 
+    "canonical_name": "viacsab", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "label": "VIACSAB", 
+    "namespace": "wcrp:cmip6:activity-id:viacsab", 
+    "raw_name": "VIACSAB", 
+    "status": "pending", 
+    "uid": "f35a6533-818a-4467-8b7e-378ed42c1477"
+}

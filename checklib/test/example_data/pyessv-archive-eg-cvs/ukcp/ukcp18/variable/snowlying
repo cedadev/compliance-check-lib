@@ -1,11 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "snowlying", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 59, 
+    "_type": "term", 
+    "canonical_name": "snowlying", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "label_units": "mm", 
+        "long_name": "Depth of snow lying on the ground", 
+        "notes": [
+            "Availability TBC"
+        ], 
+        "plot_label": "Snow lying (mm)", 
+        "standard_name": "surface_snow_binary_mask", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "LTA"
+        ], 
+        "time_step": [
+            "mon"
+        ], 
+        "units": "mm"
+    }, 
+    "description": "Snow lying", 
     "label": "snowLying", 
-    "rawName": "snowLying", 
+    "namespace": "ukcp:ukcp18:variable:snowlying", 
+    "raw_name": "snowLying", 
     "status": "pending", 
-    "uid": "9beb7739-b1ef-4a30-88c1-1f2f384e5b99"
+    "uid": "7e81e2d5-2953-470c-9837-d6bd1612e396"
 }

@@ -16,34 +16,28 @@ from netCDF4 import Dataset
 
 
 def test_get_value_string_lookup_success_1():
-    x = ESSVocabs('ncas', 'amf')
-    resp = x.get_value('common-land-variable:day-of-year')
-    assert(resp == 'day_of_year')
+    x = ESSVocabs('ukcp', 'ukcp18')
+    resp = x.get_value('variable:tasAnom')
+    assert(resp == 'tasAnom')
 
     # Check full term path works
-    resp = x.get_value('ncas:amf:common-land-variable:day-of-year')
-    assert(resp == 'day_of_year')
-
-
-def test_get_value_string_lookup_failure_1():
-    x = ESSVocabs('ncas', 'amf')
-
-    try:
-        x.get_value('common-land-variable:day-of-year')
-    except Exception, err:
-        assert(str(err) == "Could not get value of term based on lookup: 'common-land-variable:day-of-year'.")
+    resp = x.get_value('ukcp:ukcp18:variable:tasAnom')
+    assert(resp == 'tasAnom')
 
 
 def test_get_value_string_lookup_data_success_2():
-    x = ESSVocabs('ncas', 'amf')
-    resp = x.get_value('common-land-variable:time', property='data')
-    assert(resp['units'] == 'seconds since 1970-01-01 00:00:00')
+    x = ESSVocabs('ukcp', 'ukcp18')
+    resp = x.get_value('coordinate:time', property='data')
 
-
-def test_get_value_string_lookup_amf_complex_success():
-    x = ESSVocabs('ncas', 'amf')
-    resp = x.get_value('common-land-variable:time', 'data')
     assert("units" in resp)
+    assert(resp['units'] == 'days since 1970-01-01 00:00:00')
 
-    resp = x.get_value('common-land-dimension:time', 'data')
-    assert("units" in resp)
+
+def test_get_value_string_lookup_failure_1():
+    x = ESSVocabs('ukcp', 'ukcp18')
+    lookup = 'domain:dog'
+    try:
+        x.get_value(lookup)
+    except Exception, err:
+        assert(str(err) == "Could not get value of term based on lookup: '{}'.".format(lookup))
+

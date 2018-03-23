@@ -1,11 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "agcm", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 1, 
+    "_type": "term", 
+    "canonical_name": "agcm", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "label": "AGCM", 
-    "rawName": "AGCM", 
+    "namespace": "ukcp:ukcp18:source-type:agcm", 
+    "raw_name": "AGCM", 
     "status": "pending", 
-    "uid": "83b31de6-d258-4681-b53f-942f09982d10"
+    "uid": "c5bdceb4-d0f6-4f17-ab7e-2ad4a653c033"
 }

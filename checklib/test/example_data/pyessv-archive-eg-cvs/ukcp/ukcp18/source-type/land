@@ -1,11 +1,10 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "land", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 7, 
+    "_type": "term", 
+    "canonical_name": "land", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "label": "LAND", 
-    "rawName": "LAND", 
+    "namespace": "ukcp:ukcp18:source-type:land", 
+    "raw_name": "LAND", 
     "status": "pending", 
-    "uid": "c84c3b82-3367-4f0e-a30d-b2e83392af75"
+    "uid": "5480ffdb-7074-4557-91ac-3e63af400ae0"
 }

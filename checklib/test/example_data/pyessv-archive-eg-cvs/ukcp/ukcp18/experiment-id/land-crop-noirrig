@@ -1,35 +1,35 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "land-crop-noirrig", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "land-crop-noirrig", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "LUMIP"
         ], 
-        "additionalAllowedModelComponents": "", 
-        "description": "Same as land-hist but with irrigated area held at 1850 levels", 
-        "endYear": "2014", 
+        "additional_allowed_model_components": "", 
+        "end_year": "2014", 
         "experiment": "historical land-only with no irrigation", 
-        "experimentID": "land-crop-noIrrig", 
-        "minNumberYrsPerSim": "165", 
-        "parentActivityID": [
+        "experiment_id": "land-crop-noIrrig", 
+        "min_number_yrs_per_sim": "165", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "LAND"
         ], 
-        "startYear": "1850 or 1700", 
-        "subExperimentID": [
+        "start_year": "1850 or 1700", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 89, 
+    "description": "Same as land-hist but with irrigated area held at 1850 levels", 
     "label": "land-crop-noIrrig", 
-    "rawName": "land-crop-noIrrig", 
+    "namespace": "ukcp:ukcp18:experiment-id:land-crop-noirrig", 
+    "raw_name": "land-crop-noIrrig", 
     "status": "pending", 
-    "uid": "b04a1a0c-6549-4fe6-9ad1-3d26c9665588"
+    "uid": "66a6756b-9efd-43a2-b3b7-cea222b73a07"
 }

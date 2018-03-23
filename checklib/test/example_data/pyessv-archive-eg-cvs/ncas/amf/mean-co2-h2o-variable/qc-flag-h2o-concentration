@@ -1,19 +1,19 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "qc-flag-h2o-concentration", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "qc-flag-h2o-concentration",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "dimension": "time", 
-        "flagMeanings": "not_used good_data  bad_data_value_outside_operational_range_(0_to_60_mmol_mol-1) suspect_data_measured_concentration_=_0 suspect_data_time_stamp_error", 
-        "flagValues": "0b,1b, 2b, 3b,4b", 
-        "longName": "Data Quality flag: H2O concentration", 
-        "name": "qc_flag_h2o_concentration", 
-        "type": "byte", 
+        "dimension": "time",
+        "flagMeanings": "not_used good_data  bad_data_value_outside_operational_range_(0_to_60_mmol_mol-1) suspect_data_measured_concentration_=_0 suspect_data_time_stamp_error",
+        "flagValues": "0b,1b, 2b, 3b,4b",
+        "long_name": "Data Quality flag: H2O concentration",
+        "name": "qc_flag_h2o_concentration",
+        "type": "byte",
         "units": "1"
-    }, 
-    "idx": 1, 
-    "label": "qc_flag_h2o_concentration", 
-    "rawName": "qc_flag_h2o_concentration", 
-    "status": "pending", 
+    },
+    "idx": 1,
+    "label": "qc_flag_h2o_concentration",
+    "raw_name": "qc_flag_h2o_concentration",
+    "status": "pending",
     "uid": "f8691f35-45f0-4783-9426-9a18604046e4"
 }

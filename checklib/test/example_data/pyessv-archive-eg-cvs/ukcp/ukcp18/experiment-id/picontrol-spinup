@@ -1,39 +1,39 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "picontrol-spinup", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "picontrol-spinup", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "CMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "AER", 
             "CHEM", 
             "BGC"
         ], 
-        "description": "DECK: spin-up portion of the control", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "pre-industrial control (spin-up)", 
-        "experimentID": "piControl-spinup", 
-        "minNumberYrsPerSim": "100", 
-        "parentActivityID": [
+        "experiment_id": "piControl-spinup", 
+        "min_number_yrs_per_sim": "100", 
+        "parent_activity_id": [
             "no parent"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "no parent"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AOGCM"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "2"
     }, 
-    "idx": 142, 
+    "description": "DECK: spin-up portion of the control", 
     "label": "piControl-spinup", 
-    "rawName": "piControl-spinup", 
+    "namespace": "ukcp:ukcp18:experiment-id:picontrol-spinup", 
+    "raw_name": "piControl-spinup", 
     "status": "pending", 
-    "uid": "ede147e5-b1ae-465b-8a99-91a713abaf41"
+    "uid": "aa41a7c4-7a52-414b-98ca-a14cc84fb04d"
 }

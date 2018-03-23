@@ -1,60 +1,59 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "cmcc-cm2-hr4", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "cmcc-cm2-hr4", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityParticipation": [
+        "activity_participation": [
             "CMIP", 
             "HighResMIP"
         ], 
         "cohort": [
             "Registered"
         ], 
-        "institutionID": [
+        "institution_id": [
             "CMCC"
         ], 
-        "label": "CMCC-CM2-HR4", 
-        "labelExtended": "CMCC-CM2-HR4", 
-        "modelComponent": {
+        "label_extended": "CMCC-CM2-HR4", 
+        "model_component": {
             "aerosol": {
                 "description": "prescribed MACv2-SP", 
-                "nominalResolution": "100 km"
+                "nominal_resolution": "100 km"
             }, 
             "atmos": {
                 "description": "CAM4 (1deg; 288 x 192 longitude/latitude; 26 levels; top at ~2 hPa)", 
-                "nominalResolution": "100 km"
+                "nominal_resolution": "100 km"
             }, 
             "atmosChem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "land": {
                 "description": "CLM4.5 (SP mode)", 
-                "nominalResolution": "100 km"
+                "nominal_resolution": "100 km"
             }, 
             "landIce": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "ocean": {
                 "description": "NEMO3.6 (ORCA0.25 1/4 deg from the Equator degrading at the poles; 1442 x 1051 longitude/latitude; 50 vertical levels; top grid cell 0-1 m)", 
-                "nominalResolution": "25 km"
+                "nominal_resolution": "25 km"
             }, 
             "ocnBgchem": {
                 "description": "none", 
-                "nominalResolution": "none"
+                "nominal_resolution": "none"
             }, 
             "seaIce": {
                 "description": "CICE4.0", 
-                "nominalResolution": "25 km"
+                "nominal_resolution": "25 km"
             }
         }, 
-        "releaseYear": "2016", 
-        "sourceID": "CMCC-CM2-HR4"
+        "release_year": "2016", 
+        "source_id": "CMCC-CM2-HR4"
     }, 
-    "idx": 13, 
     "label": "CMCC-CM2-HR4", 
-    "rawName": "CMCC-CM2-HR4", 
+    "namespace": "ukcp:ukcp18:source-id:cmcc-cm2-hr4", 
+    "raw_name": "CMCC-CM2-HR4", 
     "status": "pending", 
-    "uid": "a7d533b5-192b-4c17-a02c-ba9c61307799"
+    "uid": "f3e453a7-7e90-42d5-95cf-59ab408234f6"
 }

@@ -1,11 +1,25 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "swl", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 53, 
-    "label": "swl", 
-    "rawName": "swl", 
+    "_type": "term", 
+    "canonical_name": "swl", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "label_units": "m", 
+        "long_name": "Sea water level", 
+        "plot_label": "Mean sea level (m)", 
+        "strand": [
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "mean"
+        ], 
+        "time_step": [
+            "annual"
+        ], 
+        "units": "m"
+    }, 
+    "description": "Mean sea level", 
+    "namespace": "ukcp:ukcp18:variable:swl", 
     "status": "pending", 
-    "uid": "e61c72bb-fa45-407a-84c5-de157ab6a2e2"
+    "uid": "a41b3db3-3986-4a63-a4f3-48630973594d"
 }

@@ -1,19 +1,19 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "qc-flag-skew-v", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "qc-flag-skew-v",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "dimension": "time", 
-        "flagMeanings": "bad_data good_data  suspect_data", 
-        "flagValues": "0b,1b, 2b", 
-        "longName": "Quality flag: Skew V", 
-        "name": "qc_flag_skew_v", 
-        "type": "byte", 
+        "dimension": "time",
+        "flagMeanings": "bad_data good_data  suspect_data",
+        "flagValues": "0b,1b, 2b",
+        "long_name": "Quality flag: Skew V",
+        "name": "qc_flag_skew_v",
+        "type": "byte",
         "units": "1"
-    }, 
-    "idx": 7, 
-    "label": "qc_flag_skew_v", 
-    "rawName": "qc_flag_skew_v", 
-    "status": "pending", 
+    },
+    "idx": 7,
+    "label": "qc_flag_skew_v",
+    "raw_name": "qc_flag_skew_v",
+    "status": "pending",
     "uid": "18dca965-9aa0-40ac-8c12-81cd8f2314fe"
 }

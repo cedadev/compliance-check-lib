@@ -1,38 +1,38 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "piclim-so2", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
+    "_type": "term", 
+    "canonical_name": "piclim-so2", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
     "data": {
-        "activityID": [
+        "activity_id": [
             "AerChemMIP"
         ], 
-        "additionalAllowedModelComponents": [
+        "additional_allowed_model_components": [
             "CHEM"
         ], 
-        "description": "Perturbation from 1850 control using 2014 SO2 emissions", 
-        "endYear": "", 
+        "end_year": "", 
         "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 SO2 emissions", 
-        "experimentID": "piClim-SO2", 
-        "minNumberYrsPerSim": "30", 
-        "parentActivityID": [
+        "experiment_id": "piClim-SO2", 
+        "min_number_yrs_per_sim": "30", 
+        "parent_activity_id": [
             "CMIP"
         ], 
-        "parentExperimentID": [
+        "parent_experiment_id": [
             "piControl"
         ], 
-        "requiredModelComponents": [
+        "required_model_components": [
             "AGCM", 
             "AER"
         ], 
-        "startYear": "", 
-        "subExperimentID": [
+        "start_year": "", 
+        "sub_experiment_id": [
             "none"
         ], 
         "tier": "3"
     }, 
-    "idx": 85, 
+    "description": "Perturbation from 1850 control using 2014 SO2 emissions", 
     "label": "piClim-SO2", 
-    "rawName": "piClim-SO2", 
+    "namespace": "ukcp:ukcp18:experiment-id:piclim-so2", 
+    "raw_name": "piClim-SO2", 
     "status": "pending", 
-    "uid": "92f944a3-30e0-43f0-9524-3f34f88761bb"
+    "uid": "d88dc57c-9e2e-4ece-8a7f-069f769f50f2"
 }

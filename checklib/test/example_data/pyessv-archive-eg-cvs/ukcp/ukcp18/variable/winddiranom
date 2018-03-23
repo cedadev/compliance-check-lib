@@ -1,11 +1,30 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "winddiranom", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 67, 
+    "_type": "term", 
+    "canonical_name": "winddiranom", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "anomaly_type": "absolute_change", 
+        "label_units": "degrees", 
+        "level": "10m", 
+        "long_name": "Direction of wind at 10m", 
+        "plot_label": "Wind direction anomaly at 10m (degrees)", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_step": [
+            "day"
+        ], 
+        "units": "degrees"
+    }, 
+    "description": "Wind direction", 
     "label": "windDirAnom", 
-    "rawName": "windDirAnom", 
+    "namespace": "ukcp:ukcp18:variable:winddiranom", 
+    "raw_name": "windDirAnom", 
     "status": "pending", 
-    "uid": "75da8755-92a7-49ac-bb94-3bfc65beb1c2"
+    "uid": "da6602e9-9587-4b06-ac30-b12f632d975a"
 }

@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "uhh", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "data": {
+        "postal_address": "Universitat Hamburg, Hamburg 20148, Germany"
+    }, 
+    "label": "UHH", 
+    "namespace": "wcrp:cmip6:institution-id:uhh", 
+    "raw_name": "UHH", 
+    "status": "pending", 
+    "uid": "f86c037b-6b3f-4365-a17d-50c32a8de356"
+}

@@ -1,0 +1,9 @@
+{
+    "_type": "term", 
+    "canonical_name": "s1982", 
+    "create_date": "2017-06-21 00:00:00+00:00", 
+    "description": "initialized near end of year 1982", 
+    "namespace": "wcrp:cmip6:sub-experiment-id:s1982", 
+    "status": "pending", 
+    "uid": "97f60094-47db-4e88-bb9b-82173d23187a"
+}

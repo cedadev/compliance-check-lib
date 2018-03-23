@@ -1,11 +1,45 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "hussanom", 
-    "createDate": "2017-05-31 00:00:00+00:00", 
-    "data": {}, 
-    "idx": 52, 
+    "_type": "term", 
+    "canonical_name": "hussanom", 
+    "create_date": "2018-03-22 15:45:36.922170+00:00", 
+    "data": {
+        "anomaly_type": "absolute_change", 
+        "cmip6_cmor_tables_row_id": [
+            "704", 
+            "705", 
+            "707"
+        ], 
+        "cmip6_name": "huss", 
+        "cmip6_standard_name": "specific_humidity", 
+        "label_units": "%", 
+        "level": "1.5m", 
+        "long_name": "Specific humidity", 
+        "plot_label": "Specific humidity anomaly at 1.5m (%)", 
+        "standard_name": "specific_humidity", 
+        "strand": [
+            "land strand 1", 
+            "land strand 2", 
+            "land strand 3 12km", 
+            "land strand 3 2km", 
+            "marine", 
+            "observations"
+        ], 
+        "time_averaging": [
+            "instantaneous", 
+            "mean"
+        ], 
+        "time_step": [
+            "3hr", 
+            "day", 
+            "mon"
+        ], 
+        "um_stash": "03237", 
+        "units": "%"
+    }, 
+    "description": "Specific humidity", 
     "label": "hussAnom", 
-    "rawName": "hussAnom", 
+    "namespace": "ukcp:ukcp18:variable:hussanom", 
+    "raw_name": "hussAnom", 
     "status": "pending", 
-    "uid": "1549ac09-dbea-455b-8683-89220410ec46"
+    "uid": "e23895f6-7660-411e-b93a-525e001fb594"
 }

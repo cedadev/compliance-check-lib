@@ -1,16 +1,16 @@
 {
-    "_type": "pyessv._model.term", 
-    "canonicalName": "volume-number", 
-    "createDate": "2018-03-09 00:00:00+00:00", 
+    "_type": "term",
+    "canonical_name": "volume-number",
+    "create_date": "2018-03-09 00:00:00+00:00",
     "data": {
-        "_fillValue": "-9999", 
-        "longName": "data_volume_index_number", 
-        "name": "volume_number", 
+        "_fillValue": "-9999",
+        "long_name": "data_volume_index_number",
+        "name": "volume_number",
         "type": "int"
-    }, 
-    "idx": 20, 
-    "label": "volume_number", 
-    "rawName": "volume_number", 
-    "status": "pending", 
+    },
+    "idx": 20,
+    "label": "volume_number",
+    "raw_name": "volume_number",
+    "status": "pending",
     "uid": "c7ecd8ff-04f0-4c42-ba09-72e50ccc8ce1"
 }
