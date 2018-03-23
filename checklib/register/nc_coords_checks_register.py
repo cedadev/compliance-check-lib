@@ -46,7 +46,7 @@ class NCCoordVarHasBoundsCheck(_NCCoordVarCheckBase):
 
         # Check the variable exists first
         if var_id not in ds.variables:
-            messages = self.get_messages()[score]
+            messages = [self.get_messages()[score]]
             return Result(self.level, (score, self.out_of),
                           self.get_short_name(), messages)
 
@@ -84,7 +84,7 @@ class NCCoordVarHasValuesInVocabCheck(_NCCoordVarCheckBase):
 
         # Check the variable exists first
         if var_id not in ds.variables:
-            messages = self.get_messages()[score]
+            messages = [self.get_messages()[score]]
             return Result(self.level, (score, self.out_of),
                           self.get_short_name(), messages)
 
@@ -121,6 +121,7 @@ class NCCoordVarHasLengthInVocabCheck(_NCCoordVarCheckBase):
     level = "HIGH"
 
     def _get_result(self, primary_arg):
+
         ds = primary_arg
         var_id = self.kwargs["var_id"]
 
@@ -129,7 +130,7 @@ class NCCoordVarHasLengthInVocabCheck(_NCCoordVarCheckBase):
 
         # Check the variable exists first
         if var_id not in ds.variables:
-            messages = self.get_messages()[score]
+            messages = [self.get_messages()[score]]
             return Result(self.level, (score, self.out_of),
                           self.get_short_name(), messages)
 
