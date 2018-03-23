@@ -389,7 +389,7 @@ def test_NCVariableMetadataCheck_partial_success_1():
 def test_NCVariableMetadataCheck_success_1():
     x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "common-land-variable"},
                                 vocabulary_ref="ncas:amf")
-    fpath = 'checklib/test/example_data/nc_file_checks_data/ncas-amf/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'
+    fpath = 'checklib/test/example_data/nc_file_checks_data/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'
     resp = x(Dataset(fpath))
     assert (resp.value == (13, 21)), resp.msgs
 
