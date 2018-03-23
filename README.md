@@ -21,3 +21,15 @@ cp -r checklib/test/example_data/pyessv-archive-eg-cvs ~/.esdoc/pyessv-archive
 
 pytest
 ```
+
+## Importing the checks
+
+You can get to all checks with.
+
+```
+from checklib.checks import *
+
+print(dir())
+
+print ALL_CHECKS
+```
