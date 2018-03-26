@@ -58,11 +58,13 @@ class FileNameStructureCheck(FileCheckBase):
     message_templates = [
         "File name does not follow required format of '{delimiter}' delimiters and '{extension}' extension."]
     level = "HIGH"
+    _ALLOWED_CHARACTERS = '[A-Za-z0-9\-\.]'
 
     def _get_result(self, primary_arg):
         fpath = os.path.basename(primary_arg)
-        regex = re.compile("[^{delimiter}](\w+{delimiter})+\w+({delimiter}\w+)?\{extension}".format(**self.kwargs))
-
+        self.kwargs["AC"] = self._ALLOWED_CHARACTERS
+        regex = re.compile("{AC}+({delimiter}{AC}+)+\{extension}".format(**self.kwargs))
+        
         success = regex.match(fpath)
         messages = []
 
