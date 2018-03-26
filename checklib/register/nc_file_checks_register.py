@@ -227,7 +227,7 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
             self.kwargs["ignore_attr_checks"] = []
         else:
             for ignore in self.kwargs["ignore_attr_checks"]:
-                print ignore, self.kwargs['order']
+
                 if ignore not in self.kwargs["order"]:
                     raise ParameterError("Invalid arguments: requested to ignore attribute " 
                                          "not provided in 'order': {}.".format(ignore))
