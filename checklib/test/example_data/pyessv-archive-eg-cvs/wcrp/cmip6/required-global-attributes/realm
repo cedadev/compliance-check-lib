@@ -1,8 +1,0 @@
-{
-    "_type": "term", 
-    "canonical_name": "realm", 
-    "create_date": "2017-06-21 00:00:00+00:00", 
-    "namespace": "wcrp:cmip6:required-global-attributes:realm", 
-    "status": "pending", 
-    "uid": "5c936133-7b1c-4cd7-8c34-595623ad3d3a"
-}

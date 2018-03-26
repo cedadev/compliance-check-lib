@@ -1,9 +1,0 @@
-{
-    "_type": "term", 
-    "canonical_name": "land", 
-    "create_date": "2017-06-21 00:00:00+00:00", 
-    "description": "Land Surface", 
-    "namespace": "wcrp:cmip6:realm:land", 
-    "status": "pending", 
-    "uid": "93c68fc1-a422-4936-a6a5-368c242b441e"
-}

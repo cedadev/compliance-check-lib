@@ -1,9 +1,0 @@
-{
-    "_type": "term", 
-    "canonical_name": "s2002", 
-    "create_date": "2017-06-21 00:00:00+00:00", 
-    "description": "initialized near end of year 2002", 
-    "namespace": "wcrp:cmip6:sub-experiment-id:s2002", 
-    "status": "pending", 
-    "uid": "0bcc508f-8930-41d4-858a-205f5e615f12"
-}
