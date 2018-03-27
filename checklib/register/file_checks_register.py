@@ -64,7 +64,7 @@ class FileNameStructureCheck(FileCheckBase):
         fpath = os.path.basename(primary_arg)
         self.kwargs["AC"] = self._ALLOWED_CHARACTERS
         regex = re.compile("{AC}+({delimiter}{AC}+)+\{extension}".format(**self.kwargs))
-        
+
         success = regex.match(fpath)
         messages = []
 
