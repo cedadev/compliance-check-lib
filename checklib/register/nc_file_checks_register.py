@@ -37,10 +37,7 @@ class GlobalAttrRegexCheck(NCFileCheckBase):
     level = "HIGH"
 
     def _setup(self):
-#        "Checks that both args are provided and fixes double-escape in regex string"
-#        if "attribute" not in self.kwargs or "regex" not in self.kwargs:
-#            raise ParameterError("Keyword arguments for Global Attribute Regex Check must include ('attribute', 'regex').")
-
+        "Modifies regex to include backslashes - required to work."
         self.kwargs["regex"] = self.kwargs["regex"].replace("\\\\", "\\")
 
     def _get_result(self, primary_arg):
@@ -62,14 +59,10 @@ class GlobalAttrVocabCheck(NCFileCheckBase):
     """
     short_name = "Global attribute: {attribute}"
     defaults = {"vocab_lookup": "canonical_name"}
+    required_args = ['attribute']
     message_templates = ["Required '{attribute}' global attribute is not present.",
                          "Required '{attribute}' global attribute value is invalid."]
     level = "HIGH"
-
-    def _setup(self):
-        "Checks that required args are provided"
-        if "attribute" not in self.kwargs:
-            raise ParameterError("Keyword arguments for Global Attribute Vocab Check must include ('attribute').")
 
 
     def _get_result(self, primary_arg):
@@ -118,21 +111,13 @@ class MainVariableAttributeCheck(NCFileCheckBase):
     """
     short_name = "Main variable attribute"
     defaults = {}
+    required_args = ["attr_name", "attr_value"]
     message_templates = ["Cannot identify main variable to examine attributes",
                          "Required variable attribute '{attr_name}' is not present for variable: '{attr_value}'.",
                          "Required variable attribute '{attr_name}' has incorrect value '{attr_value}' for main "
                          "variable."
                          ]
     level = "HIGH"
-
-
-    def _setup(self):
-        "Checks that required arguments have been provided."
-        required_args = ("attr_name", "attr_value")
-        for arg in required_args:
-            if arg not in self.kwargs:
-                raise ParameterError("Keyword arguments for NC Variable Metadata Check must "
-                                     "contain: '{}'.".format(arg))
 
 
     def _get_result(self, primary_arg):
@@ -187,6 +172,7 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
     """
     short_name = "Global attributes match file name/vocab"
     defaults = {"delimiter": "_", "extension": ".nc", "ignore_attr_checks": None}
+    required_args = ["order"]
     message_templates = ["File name does not match global attributes.",
                          "Each global attribute is checked separately."]
     level = "HIGH"
@@ -204,14 +190,6 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
         components of the file name against. Regex should start with
         'regex:' followed by the regex.
         """
-        not_found = []
-        for key in ("delimiter", "extension", "order"):
-            if key not in self.kwargs:
-                not_found.append(key)
-
-        if not_found:
-            raise ParameterError("Keyword arguments for check must include: {}.".format(not_found))
-
         # Sort out order of items to check in file name
         self.kwargs["order"] = self.kwargs["order"].split("~")
 
@@ -339,12 +317,6 @@ class _VariableTypeCheckBase(NCFileCheckBase):
     defaults = {}
     level = "HIGH"
 
-    def _check_kwargs(self, req_args):
-        "Checks required keyword args are present."
-
-        for kwarg in req_args:
-            if kwarg not in self.kwargs:
-                raise ParameterError("Keyword arguments for Variable Type Check must include ('{0}').".format(kwarg))
 
     def _package_result(self, success):
         "Package up result depending on success (boolean)."
@@ -366,11 +338,7 @@ class VariableTypeCheck(_VariableTypeCheckBase):
     """
     short_name = "Variable data type: {var_id}"
     message_templates = ["The variable {var_id} was not of the required type: {dtype}"]
-
-    def _setup(self):
-        "Checks that required args are provided"
-        req_args = ("var_id", "dtype")
-        self._check_kwargs(req_args)
+    required_args = ["var_id", "dtype"]
 
     def _get_result(self, primary_arg):
         ds = primary_arg
@@ -384,11 +352,8 @@ class MainVariableTypeCheck(_VariableTypeCheckBase):
     """
     short_name = "Main variable data type"
     message_templates = ["Main variable was not of the required type: {dtype}"]
+    required_args = ["dtype"]
 
-    def _setup(self):
-        "Checks that required args are provided"
-        req_args = ("dtype",)
-        self._check_kwargs(req_args)
 
     def _get_result(self, primary_arg):
         ds = primary_arg
@@ -396,27 +361,14 @@ class MainVariableTypeCheck(_VariableTypeCheckBase):
         return self._package_result(success)
 
 
-class NCVariableMetadataCheck(NCFileCheckBase):
+class _NCVariableMetadataCheckBase(NCFileCheckBase):
     """
-    The variable '{var_id}' must exist in the file with the attributes defined in the
-    controlled vocabulary specified.
+    Base class for checking metadata (attributes) of netCDF4 Variables by
+    looking up expected values in controlled vocabulary specified.
     """
-    short_name = "Variable metadata: {var_id}"
-    defaults = {"ignores": None}
-    required_args = ["var_id", "pyessv_namespace"]
-    message_templates = ["Variable '{var_id}' not found in the file so cannot perform other checks.",
-                         "Each variable attribute is checked separately."]
-
-    level = "HIGH"
 
     def _get_var_id(self, ds):
-        """
-        Returns `var_id` as required by check - from user input in `self.kwargs`.
-
-        :param ds: netCDF4 Dataset object
-        :return: var_id [String]
-        """
-        return self.kwargs["var_id"]
+        raise NotImplementedError
 
 
     def _get_result(self, primary_arg):
@@ -476,7 +428,30 @@ class NCVariableMetadataCheck(NCFileCheckBase):
                       self.get_short_name(), messages)
 
 
-class NCMainVariableMetadataCheck(NCVariableMetadataCheck):
+class NCVariableMetadataCheck(_NCVariableMetadataCheckBase):
+    """
+    The variable '{var_id}' must exist in the file with the attributes defined in the
+    controlled vocabulary specified.
+    """
+    short_name = "Variable metadata: {var_id}"
+    defaults = {"ignores": None}
+    required_args = ["var_id", "pyessv_namespace"]
+    message_templates = ["Variable '{var_id}' not found in the file so cannot perform other checks.",
+                         "Each variable attribute is checked separately."]
+
+    level = "HIGH"
+
+    def _get_var_id(self, ds):
+        """
+        Returns `var_id` as required by check - from user input in `self.kwargs`.
+
+        :param ds: netCDF4 Dataset object
+        :return: var_id [String]
+        """
+        return self.kwargs["var_id"]
+
+
+class NCMainVariableMetadataCheck(_NCVariableMetadataCheckBase):
     """
     The main variable must exist in the file with the attributes defined in the
     controlled vocabulary specified.
@@ -511,14 +486,10 @@ class NetCDFFormatCheck(NCFileCheckBase):
     """
     short_name = "NetCDF sub-format: {format}"
     defaults = {}
+    required_args = ["format"]
     message_templates = ["The NetCDF sub-format must be: {format}."]
 
     level = "HIGH"
-
-    def _setup(self):
-        "Checks that the `format` argument has been provided."
-        if "format" not in self.kwargs:
-            raise ParameterError("Keyword argument 'format' is required for NetCDF Format Check.")
 
 
     def _get_result(self, primary_arg):
@@ -544,20 +515,13 @@ class NetCDFDimensionCheck(NCFileCheckBase):
     """
     short_name = "NetCDF dimension: {dim_id}"
     defaults = {}
+    required_args = ["dim_id", "pyessv_namespace"]
     message_templates = ["Dimension not found: {dim_id}.",
                          "Dimension '{dim_id}' does not have required length",
                          "Coordinate variable for dimension not found: {dim_id}.",
                          "Coordinate variable for dimension '{dim_id}' does not have expected properties."]
 
     level = "HIGH"
-
-    def _setup(self):
-        "Checks that the required arguments have been provided."
-        if "dim_id" not in self.kwargs:
-            raise ParameterError("Keyword argument 'dim_id' is required for NetCDF Dimension Check.")
-
-        if "pyessv_namespace" not in self.kwargs:
-            raise ParameterError("Keyword argument 'pyessv_namespace' is required for NetCDF Dimension Check.")
 
 
     def _get_result(self, primary_arg):

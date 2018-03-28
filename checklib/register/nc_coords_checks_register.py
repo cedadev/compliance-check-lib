@@ -17,22 +17,13 @@ from checklib.cvs.ess_vocabs import ESSVocabs
 from checklib.code.errors import FileError, ParameterError
 
 
-class _NCCoordVarCheckBase(NCFileCheckBase):
-
-    def _setup(self):
-        "Checks that required arguments have been provided."
-        required_args = ("var_id",)
-        for arg in required_args:
-            if arg not in self.kwargs:
-                raise ParameterError("Keyword arguments must contain: '{}'.".format(arg))
-
-
-class NCCoordVarHasBoundsCheck(_NCCoordVarCheckBase):
+class NCCoordVarHasBoundsCheck(NCFileCheckBase):
     """
     The coordinate variable '{var_id}' must exist in the file with a valid bounds variable.
     """
     short_name = "Coord Var has bounds: {var_id}"
     defaults = {}
+    required_args = ["var_id"]
     message_templates = ["Variable '{var_id}' not found in the file so cannot perform other checks.",
                          "A valid 'bounds' variable does not exist for variable '{var_id}'."]
     level = "HIGH"
@@ -64,13 +55,14 @@ class NCCoordVarHasBoundsCheck(_NCCoordVarCheckBase):
                       self.get_short_name(), messages)
 
 
-class NCCoordVarHasValuesInVocabCheck(_NCCoordVarCheckBase):
+class NCCoordVarHasValuesInVocabCheck(NCFileCheckBase):
     """
     The coordinate variable '{var_id}' must exist in the file with values matching those
     defined in the relevant controlled vocabulary.
     """
     short_name = "Coord Var has expected values: {var_id}"
     defaults = {}
+    required_args = ["var_id"]
     message_templates = ["Variable '{var_id}' not found in the file so cannot perform other checks.",
                          "Values for variable '{var_id}' do not match those specified in controlled vocabulary."]
     level = "HIGH"
@@ -109,13 +101,14 @@ class NCCoordVarHasValuesInVocabCheck(_NCCoordVarCheckBase):
                       self.get_short_name(), messages)
 
 
-class NCCoordVarHasLengthInVocabCheck(_NCCoordVarCheckBase):
+class NCCoordVarHasLengthInVocabCheck(NCFileCheckBase):
     """
     The coordinate variable '{var_id}' must exist in the file with length matching that
     defined in the relevant controlled vocabulary.
     """
     short_name = "Coord Var has expected length: {var_id}"
     defaults = {}
+    required_args = ["var_id"]
     message_templates = ["Variable '{var_id}' not found in the file so cannot perform other checks.",
                          "Length of variable '{var_id}' does not match that specified in controlled vocabulary."]
     level = "HIGH"

@@ -9,6 +9,9 @@ class CallableCheckBase(object):
     short_name = ""
     primary_arg_type = None
     defaults = {}
+
+    # NOTE: `required_args` only needs to include arguments that required but
+    #                       are NOT set in `defaults`
     required_args = []
     message_templates = []
     level = "HIGH"
