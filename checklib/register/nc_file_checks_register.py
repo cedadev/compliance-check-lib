@@ -401,7 +401,7 @@ class NCVariableMetadataCheck(NCFileCheckBase):
     controlled vocabulary specified.
     """
     short_name = "Variable metadata: {var_id}"
-    defaults = {}
+    defaults = {"ignores": None}
     message_templates = ["Variable '{var_id}' not found in the file so cannot perform other checks.",
                          "Each variable attribute is checked separately."]
 
@@ -440,6 +440,20 @@ class NCVariableMetadataCheck(NCFileCheckBase):
 
         # Check the variable attributes one-by-one
         for attr, expected_value in expected_attr_dict.items():
+
+            # Check items to ignore
+            ignores = self.kwargs["ignores"]
+
+            if ignores and attr in ignores:
+                self.out_of -= 2
+                continue
+
+            KNOWN_IGNORE_VALUES = ("<derived from file>",)
+
+            if expected_value in KNOWN_IGNORE_VALUES:
+                self.out_of -= 2
+                continue
+
             if attr not in variable.ncattrs():
                 messages.append("Required variable attribute '{}' is not present for "
                                 "variable: '{}'.".format(attr, var_id))
@@ -450,8 +464,8 @@ class NCVariableMetadataCheck(NCFileCheckBase):
                 if check:
                     score += 1
                 else:
-                    messages.append("Required variable attribute '{}' has incorrect value ('{}') "
-                                    "for variable: '{}'. Value should be: '{}'.".format(attr,
+                    messages.append(u"Required variable attribute '{}' has incorrect value ('{}') "
+                                    u"for variable: '{}'. Value should be: '{}'.".format(attr,
                                                                                         getattr(variable, attr), var_id,
                                                                                         expected_value))
 

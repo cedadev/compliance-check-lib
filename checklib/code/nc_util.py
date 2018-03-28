@@ -145,10 +145,6 @@ def check_nc_attribute(variable, attr, expected_value):
     :return: boolean.
     """
     value = getattr(variable, attr)
-    KNOWN_IGNORES = ("<derived from file>",)
-
-    if expected_value in KNOWN_IGNORES:
-        return True
 
     if attr == "_FillValue":
         # Check values are close to handle floating point errors

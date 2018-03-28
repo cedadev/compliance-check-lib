@@ -383,7 +383,7 @@ def test_NCVariableMetadataCheck_partial_success_1():
     x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "common-land-variable"},
                                 vocabulary_ref="ncas:amf")
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
-    assert(resp.value == (7, 21)), resp.msgs
+    assert(resp.value == (7, 17)), resp.msgs
 
 
 def test_NCVariableMetadataCheck_success_1():
@@ -391,7 +391,19 @@ def test_NCVariableMetadataCheck_success_1():
                                 vocabulary_ref="ncas:amf")
     fpath = 'checklib/test/example_data/nc_file_checks_data/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'
     resp = x(Dataset(fpath))
-    assert (resp.value == (13, 21)), resp.msgs
+    assert (resp.value == (9, 17)), resp.msgs
+
+
+def test_NCVariableMetadataCheck_success_2():
+    x = NCVariableMetadataCheck(kwargs={"var_id": "tasAnom",
+                                        "pyessv_namespace": "variable",
+                                        "ignores": ("cmip6_cmor_tables_row_id", "cmip6_name",
+                                                  "cmip6_standard_name", "notes", "strand",
+                                                  "time_averaging", "time_step", "um_stash")},
+                                vocabulary_ref="ukcp:ukcp18")
+    fpath = 'checklib/test/example_data/tasAnom_rcp85_land-prob_uk_25km_cdf_mon_20001201-20011130.nc'
+    resp = x(Dataset(fpath))
+    assert (resp.value == (8, 17)), resp.msgs
 
 
 def test_NCVariableMetadataCheck_fail_1():
