@@ -9,12 +9,16 @@ class CallableCheckBase(object):
     short_name = ""
     primary_arg_type = None
     defaults = {}
+    required_args = []
     message_templates = []
     level = "HIGH"
 
     def __init__(self, kwargs, messages=None, level="HIGH", vocabulary_ref=None):
         self.kwargs = self.defaults.copy()
         self.kwargs.update(kwargs)
+
+        self._check_required_args()
+
         self._define_messages(messages)
         self.out_of = len(self.messages)
         self.level = getattr(BaseCheck, level)
@@ -25,6 +29,24 @@ class CallableCheckBase(object):
     def _setup(self):
         "Child classes can override this to perform validation or modification of arguments."
         pass
+
+    def _check_required_args(self):
+        """
+        Checks required arguments exist else returns an exception.
+
+        :return:
+        """
+        missing_args = []
+
+        for arg in self.required_args:
+            if arg not in self.kwargs:
+                missing_args.append(arg)
+
+        if missing_args:
+            cls = self.__class__.__name__
+            raise ParameterError("Keyword arguments for '{}' must "
+                                 "contain: {}.".format(cls, str(missing_args)))
+
 
     def _define_messages(self, messages=None):
         if messages:

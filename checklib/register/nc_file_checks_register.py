@@ -31,14 +31,15 @@ class GlobalAttrRegexCheck(NCFileCheckBase):
     """
     short_name = "Global attribute: {attribute}"
     defaults = {}
+    required_args = ['attribute', 'regex']
     message_templates = ["Required '{attribute}' global attribute is not present.",
                          "Required '{attribute}' global attribute value is invalid."]
     level = "HIGH"
 
     def _setup(self):
-        "Checks that both args are provided and fixes double-escape in regex string"
-        if "attribute" not in self.kwargs or "regex" not in self.kwargs:
-            raise ParameterError("Keyword arguments for Global Attribute Regex Check must include ('attribute', 'regex').")
+#        "Checks that both args are provided and fixes double-escape in regex string"
+#        if "attribute" not in self.kwargs or "regex" not in self.kwargs:
+#            raise ParameterError("Keyword arguments for Global Attribute Regex Check must include ('attribute', 'regex').")
 
         self.kwargs["regex"] = self.kwargs["regex"].replace("\\\\", "\\")
 
@@ -402,37 +403,39 @@ class NCVariableMetadataCheck(NCFileCheckBase):
     """
     short_name = "Variable metadata: {var_id}"
     defaults = {"ignores": None}
+    required_args = ["var_id", "pyessv_namespace"]
     message_templates = ["Variable '{var_id}' not found in the file so cannot perform other checks.",
                          "Each variable attribute is checked separately."]
 
     level = "HIGH"
 
-    def _setup(self):
-        "Checks that required arguments have been provided."
-        required_args = ("var_id", "pyessv_namespace")
-        for arg in required_args:
-            if arg not in self.kwargs:
-                raise ParameterError("Keyword arguments for NC Variable Metadata Check must "
-                                     "contain: '{}'.".format(arg))
+    def _get_var_id(self, ds):
+        """
+        Returns `var_id` as required by check - from user input in `self.kwargs`.
+
+        :param ds: netCDF4 Dataset object
+        :return: var_id [String]
+        """
+        return self.kwargs["var_id"]
 
 
     def _get_result(self, primary_arg):
         ds = primary_arg
-        var_id = self.kwargs["var_id"]
+        score = 0
+        var_id = self._get_var_id(ds)
 
-        # First, work out the overall 'out of' value based on number of attributes
+        # Check the variable first (will match if `var_id` is None from previous call)
+        if var_id not in ds.variables:
+            messages = self.get_messages()[:1]
+            return Result(self.level, (score, self.out_of),
+                          self.get_short_name(), messages)
+
+        # Work out the overall 'out of' value based on number of attributes
         vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
         lookup = ":".join([self.kwargs["pyessv_namespace"], var_id])
         expected_attr_dict = vocabs.get_value(lookup, "data")
 
         self.out_of = 1 + len(expected_attr_dict) * 2
-        score = 0
-
-        # Check the variable first
-        if var_id not in ds.variables:
-            messages = self.get_messages()[:1]
-            return Result(self.level, (score, self.out_of),
-                          self.get_short_name(), messages)
 
         score += 1
         variable = ds.variables[var_id]
@@ -471,6 +474,35 @@ class NCVariableMetadataCheck(NCFileCheckBase):
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
+
+
+class NCMainVariableMetadataCheck(NCVariableMetadataCheck):
+    """
+    The main variable must exist in the file with the attributes defined in the
+    controlled vocabulary specified.
+    """
+    short_name = "Main variable metadata"
+    defaults = {"ignores": None}
+    required_args = ("pyessv_namespace",)
+    message_templates = ["Main variable not found in the file so cannot perform other checks.",
+                         "Each variable attribute is checked separately."]
+    level = "HIGH"
+
+
+    def _get_var_id(self, ds):
+        """
+        Returns `var_id` as required by check - from user input in `self.kwargs`
+        or None if cannot identify main variable.
+
+        :param ds: netCDF4 Dataset object
+        :return: var_id [String] or None
+        """
+        try:
+            variable = nc_util.get_main_variable(ds)
+        except:
+            return None
+
+        return variable.name
 
 
 class NetCDFFormatCheck(NCFileCheckBase):

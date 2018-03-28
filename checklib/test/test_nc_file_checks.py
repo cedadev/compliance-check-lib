@@ -13,6 +13,27 @@ from checklib.code.errors import ParameterError
 from checklib.register.nc_file_checks_register import *
 
 
+def test_required_args_argument_fail_1():
+    req_args = ['attribute', 'regex']
+    try:
+        GlobalAttrRegexCheck(kwargs={})
+    except Exception as ex:
+        assert(type(ex) == ParameterError), 'Expecting ParameterError, but got {}'.format(type(ex))
+        assert(str(ex) == "Keyword arguments for 'GlobalAttrRegexCheck' must contain: {}.".format(str(req_args)))
+    else:
+        assert(False), "Expecting ParameterError, but no exception raised"
+
+def test_required_args_argument_fail_2():
+    req_args = ['attribute', 'regex']
+    try:
+        GlobalAttrRegexCheck(kwargs={'attribute': 'test'})
+    except Exception as ex:
+        assert(type(ex) == ParameterError), 'Expecting ParameterError, but got {}'.format(type(ex))
+        assert(str(ex) == "Keyword arguments for 'GlobalAttrRegexCheck' must contain: ['regex'].")
+    else:
+        assert(False), "Expecting ParameterError, but no exception raised"
+
+
 def test_GlobalAttrRegexCheck_success_1():
     x = GlobalAttrRegexCheck(kwargs={"attribute": "Conventions", "regex": "CF-\d+\.\d+"})
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
@@ -21,7 +42,7 @@ def test_GlobalAttrRegexCheck_success_1():
 
 def test_GlobalAttrRegexCheck_success_2():
     x = GlobalAttrRegexCheck(kwargs={"attribute": "source", "regex": ".{4,}"})
-    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
+    resp = x(Dataset('checklib/test/example_data/tasAnom_rcp85_land-prob_uk_25km_cdf_mon_20001201-20011130.nc'))
     assert (resp.value == (2, 2))
 
 
@@ -410,7 +431,7 @@ def test_NCVariableMetadataCheck_fail_1():
     x = NCVariableMetadataCheck(kwargs={"var_id": "day", "pyessv_namespace": "common-land-variable"},
                                 vocabulary_ref="ncas:amf")
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
-    assert(resp.value == (0, 15)), resp.msgs
+    assert(resp.value == (0, 2)), resp.msgs
     assert(resp.msgs == ["Variable 'day' not found in the file so cannot perform other checks."])
 
 
@@ -421,6 +442,17 @@ def test_NCVariableMetadataCheck_fail_2():
         x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     except Exception, err:
         assert(str(err) == "Could not get value of term based on lookup: 'common-land-dimension:a-dog?'.")
+
+
+def test_NCMainVariableMetadataCheck_success_1():
+    x = NCMainVariableMetadataCheck(kwargs={"pyessv_namespace": "variable",
+                                        "ignores": ("cmip6_cmor_tables_row_id", "cmip6_name",
+                                                  "cmip6_standard_name", "notes", "strand",
+                                                  "time_averaging", "time_step", "um_stash")},
+                                vocabulary_ref="ukcp:ukcp18")
+    fpath = 'checklib/test/example_data/tasAnom_rcp85_land-prob_uk_25km_cdf_mon_20001201-20011130.nc'
+    resp = x(Dataset(fpath))
+    assert (resp.value == (8, 17)), resp.msgs
 
 
 def test_NetCDFFormatCheck_success():
