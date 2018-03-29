@@ -106,7 +106,7 @@ class ESSVocabs(object):
                 colln, item = term.split(":")[-2:]
                 term = [v for v in self._cvs[colln] if item in (v.canonical_name, v.label)][0]
             except:
-                raise Exception("Could not get value of term based on lookup: '{}'.".format(term))
+                raise Exception("Could not get value of term based on vocabulary lookup: '{}'.".format(term))
 
         # Do vocabulary look-up
         value = getattr(term, property, None)

@@ -41,7 +41,7 @@ def test_get_value_string_lookup_failure_1():
     try:
         x.get_value(lookup)
     except Exception, err:
-        assert(str(err) == "Could not get value of term based on lookup: '{}'.".format(lookup))
+        assert(str(err) == "Could not get value of term based on vocabulary lookup: '{}'.".format(lookup))
 
 
 def test_get_terms():

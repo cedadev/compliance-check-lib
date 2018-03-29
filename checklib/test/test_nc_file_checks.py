@@ -441,7 +441,7 @@ def test_NCVariableMetadataCheck_fail_2():
     try:
         x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     except Exception, err:
-        assert(str(err) == "Could not get value of term based on lookup: 'common-land-dimension:a-dog?'.")
+        assert(str(err) == "Could not get value of term based on vocabulary lookup: 'common-land-dimension:a-dog?'.")
 
 
 def test_NCMainVariableMetadataCheck_success_1():

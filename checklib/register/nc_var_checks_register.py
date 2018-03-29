@@ -33,18 +33,22 @@ class NCArrayMatchesVocabTermsCheck(NCFileCheckBase):
         ds = primary_arg
         score = 0
         self.out_of = 1
-
-        vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
-        array = ds[self.kwargs["var_id"]][:]
-        result = vocabs.check_array_matches_terms(array, self.kwargs["pyessv_namespace"])
-
-        if result:
-            score += 1
-
         messages = []
 
-        if score < self.out_of:
-            messages.append(self.get_messages()[score])
+        vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
+
+        var_id = self.kwargs["var_id"]
+        if var_id in ds.variables:
+            array = ds[var_id][:]
+            result = vocabs.check_array_matches_terms(array, self.kwargs["pyessv_namespace"])
+
+            if result:
+                score += 1
+            else:
+                messages.append(self.get_messages()[score])
+
+        else:
+            messages.append("Variable '{}' not found in the file so cannot perform other checks.".format(var_id))
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
