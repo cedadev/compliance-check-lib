@@ -11,6 +11,8 @@ Unit tests for the contents of the checklib.cvs.ess_vocabs module.
 import os
 os.environ['PYESSV_ARCHIVE_HOME'] = 'cc-vocab-cache/pyessv-archive-eg-cvs'
 
+import pyessv
+import pytest
 from checklib.cvs.ess_vocabs import *
 from netCDF4 import Dataset
 
@@ -41,3 +43,23 @@ def test_get_value_string_lookup_failure_1():
     except Exception, err:
         assert(str(err) == "Could not get value of term based on lookup: '{}'.".format(lookup))
 
+
+def test_get_terms():
+    x = ESSVocabs('ukcp', 'ukcp18')
+    collection = 'river_basin'
+    terms = x.get_terms(collection)
+
+    assert(str(terms[-1]) == 'ukcp:ukcp18:river-basin:west-wales')
+    assert(isinstance(terms[-1], pyessv._model.term.Term))
+
+    # Check alphabetical
+    terms_strings = [str(term) for term in terms]
+    alpha_terms_strings = sorted(terms_strings)
+    assert(terms_strings == alpha_terms_strings)
+
+
+def test_get_terms_fail():
+    x = ESSVocabs('ukcp', 'ukcp18')
+    collection = 'RUBBISH'
+    with pytest.raises(Exception):
+        x.get_terms(collection)

@@ -139,6 +139,48 @@ class ESSVocabs(object):
             
         return 2
 
+
+    def get_terms(self, collection):
+        """
+        Returns all terms (in alphabetical order) for a given collection.
+        Raises an exception if no terms found.
+
+        :param collection: vocabulary collection ID/lookup
+        :return: list of terms [of type: pyessv._model.term.Term]
+        """
+        lookup = self._get_lookup_id(collection)
+        terms = [term for term in self._cvs[lookup]]
+
+        if not terms:
+            raise Exception("Could not find vocabulary terms for: '{}'".format(collection))
+        return terms
+
+
+    def check_array_matches_terms(self, array, collection, prop="raw_name"):
+        """
+        Checks that the values in `array` match those in the vocabulary collection
+        with each term being matched by its property specified by `prop`.
+
+        :param array: array/list of strings
+        :param collection: vocabulary collection ID/lookup
+        :param prop: property of term to compare with item in array
+        :return: boolean
+        """
+        try:
+            terms = self.get_terms(collection)
+        except:
+            return False
+
+        term_values = [getattr(term, prop) for term in terms]
+
+        for i, item in enumerate(term_values):
+            # Convert character array to string for each element
+            if item != "".join(array[i]):
+                return False
+
+        return True
+
+
     def check_global_attribute_value(self, ds, attr, value, property="label"):
         """
         Checks that global attribute `attr` is in allowed values (from CV) and
@@ -174,6 +216,7 @@ class ESSVocabs(object):
             score = 1
 
         return score, messages
+
 
     def check_file_name(self, filename, keys=None, delimiter="_", extension=".nc"):
         """
