@@ -377,7 +377,7 @@ def test_VariableExistsInFileCheck_fail():
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (0, 1)), resp.msgs
 
-     
+
 # Check variable is within valid bounds - SUCCESS
 def test_VariableRangeCheck_success():
     x = VariableRangeCheck(kwargs={"var_id": "tas", "minimum": 200, "maximum": 330.})
@@ -401,14 +401,14 @@ def test_VariableRangeCheck_fail_2():
 
 
 def test_NCVariableMetadataCheck_partial_success_1():
-    x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "common-land-variable"},
+    x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "product-common-variable-land"},
                                 vocabulary_ref="ncas:amf")
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (7, 17)), resp.msgs
 
 
 def test_NCVariableMetadataCheck_success_1():
-    x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "common-land-variable"},
+    x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "product-common-variable-land"},
                                 vocabulary_ref="ncas:amf")
     fpath = 'checklib/test/example_data/nc_file_checks_data/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'
     resp = x(Dataset(fpath))
@@ -428,7 +428,7 @@ def test_NCVariableMetadataCheck_success_2():
 
 
 def test_NCVariableMetadataCheck_fail_1():
-    x = NCVariableMetadataCheck(kwargs={"var_id": "day", "pyessv_namespace": "common-land-variable"},
+    x = NCVariableMetadataCheck(kwargs={"var_id": "day", "pyessv_namespace": "product-common-variable-land"},
                                 vocabulary_ref="ncas:amf")
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (0, 2)), resp.msgs
@@ -436,12 +436,12 @@ def test_NCVariableMetadataCheck_fail_1():
 
 
 def test_NCVariableMetadataCheck_fail_2():
-    x = NCVariableMetadataCheck(kwargs={"var_id": "a-dog?", "pyessv_namespace": "common-land-dimension"},
+    x = NCVariableMetadataCheck(kwargs={"var_id": "a-dog?", "pyessv_namespace": "product-common-dimension-land"},
                              vocabulary_ref="ncas:amf")
     try:
         x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
     except Exception, err:
-        assert(str(err) == "Could not get value of term based on vocabulary lookup: 'common-land-dimension:a-dog?'.")
+        assert(str(err) == "Could not get value of term based on vocabulary lookup: 'product-common-dimension-land:a-dog?'.")
 
 
 def test_NCMainVariableMetadataCheck_success_1():
@@ -471,7 +471,7 @@ def test_NetCDFFormatCheck_fail():
 
 def test_NetCDFDimensionCheck_success_1():
     ncfile = "checklib/test/example_data/nc_file_checks_data/amf_eg_data_1.nc"
-    x = NetCDFDimensionCheck(kwargs={"dim_id": "latitude", "pyessv_namespace": "common-land-dimension"},
+    x = NetCDFDimensionCheck(kwargs={"dim_id": "latitude", "pyessv_namespace": "product-common-dimension-land"},
                              vocabulary_ref="ncas:amf")
     resp = x(Dataset(ncfile))
     assert(resp.value == (5, 5))
@@ -488,7 +488,7 @@ def test_NetCDFDimensionCheck_fail():
 
     # Test for dimension is wrong length
     ncfile = "checklib/test/example_data/nc_file_checks_data/amf_eg_data_bad.nc"
-    x = NetCDFDimensionCheck(kwargs={"dim_id": "latitude", "pyessv_namespace": "common-land-dimension"},
+    x = NetCDFDimensionCheck(kwargs={"dim_id": "latitude", "pyessv_namespace": "product-common-dimension-land"},
                              vocabulary_ref="ncas:amf")
     resp = x(Dataset(ncfile))
 
@@ -497,7 +497,7 @@ def test_NetCDFDimensionCheck_fail():
 
     # Test for dimension has wrong properties
     ncfile = "checklib/test/example_data/nc_file_checks_data/amf_eg_data_bad.nc"
-    x = NetCDFDimensionCheck(kwargs={"dim_id": "longitude", "pyessv_namespace": "common-land-dimension"},
+    x = NetCDFDimensionCheck(kwargs={"dim_id": "longitude", "pyessv_namespace": "product-common-dimension-land"},
                              vocabulary_ref="ncas:amf")
     resp = x(Dataset(ncfile))
     assert(resp.value == (4, 5))
