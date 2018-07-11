@@ -208,7 +208,7 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
             for ignore in self.kwargs["ignore_attr_checks"]:
 
                 if ignore not in self.kwargs["order"]:
-                    raise ParameterError("Invalid arguments: requested to ignore attribute " 
+                    raise ParameterError("Invalid arguments: requested to ignore attribute "
                                          "not provided in 'order': {}.".format(ignore))
                 # Decrement `out_of` because we won't check this attribute
                 self.out_of -= 2
@@ -248,7 +248,7 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
-                      
+
 
 class VariableExistsInFileCheck(NCFileCheckBase):
     """
@@ -266,7 +266,7 @@ class VariableExistsInFileCheck(NCFileCheckBase):
         score = 0
         if nc_util.is_variable_in_dataset(ds, self.kwargs["var_id"]):
             score = 1
-            
+
         messages = []
 
         if score < self.out_of:
@@ -274,8 +274,8 @@ class VariableExistsInFileCheck(NCFileCheckBase):
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
-                      
-                      
+
+
 class VariableRangeCheck(NCFileCheckBase):
     """
     The variable {var_id} must have values in the range {minimum}
@@ -299,8 +299,8 @@ class VariableRangeCheck(NCFileCheckBase):
             score = 1
 
         if nc_util.variable_is_within_valid_bounds(ds, var_id, mn, mx):
-            score += 1      
-            
+            score += 1
+
         messages = []
 
         if score < self.out_of:
