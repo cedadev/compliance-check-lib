@@ -90,3 +90,30 @@ class FileNameStructureCheck(FileCheckBase):
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
 
+
+class FileNameRegexCheck(FileCheckBase):
+    """
+    File name must match regex '{regex}'
+    """
+    short_name = "File name regex check"
+    message_templates = ["File name did not match regex '{regex}'"]
+    required_parameters = {"regex": str}
+
+    def _setup(self):
+        """
+        Fix backslashes in regex
+        """
+        self.kwargs["regex"] = self.kwargs["regex"].replace("\\\\", "\\")
+
+    def _get_result(self, primary_arg):
+        fpath = os.path.basename(self._get_filepath(primary_arg))
+        messages = []
+        if re.match(self.kwargs["regex"], fpath):
+            score = self.out_of
+        else:
+            print("Failed to match {} against regex {}".format(fpath, self.kwargs["regex"]))
+            score = 0
+            messages.append(self.get_messages()[score])
+        return Result(self.level, (score, self.out_of),
+                      self.get_short_name(), messages)
+

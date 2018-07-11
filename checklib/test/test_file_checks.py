@@ -67,3 +67,25 @@ def test_FileNameStructureCheck_fail_1():
         resp = x(fpath)
         assert(resp.value == (0, 1))
 
+def test_FileNameRegexCheck_success():
+    good = [
+        ("checklib/test/example_data/file_checks_data/good_file.nc", "[a-z]+_[a-z]+\.nc"),
+        ("checklib/test/example_data/file_checks_data/seaLevelAnom_marine-sim_rcp85_annual_2007-2100.nc",
+         "[a-zA-Z0-9\-_]+\d{4,4}-\d{4,4}\.nc")
+    ]
+
+    for fpath, regex in good:
+        x = FileNameRegexCheck({"regex": regex})
+        resp = x(fpath)
+        assert resp.value == (1, 1)
+
+def test_FileNameRegexCheck_fail():
+    bad = [
+        ("checklib/test/example_data/file_checks_data/good_file.nc",
+         "[a-zA-Z0-9\-_]+\d{4,4}-\d{4,4}\.nc"),
+    ]
+
+    for fpath, regex in bad:
+        x = FileNameRegexCheck({"regex": regex})
+        resp = x(fpath)
+        assert resp.value == (0, 1)
