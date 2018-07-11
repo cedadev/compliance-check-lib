@@ -7,7 +7,6 @@ class CallableCheckBase(object):
 
     # Define empty values for required arguments
     short_name = ""
-    primary_arg_type = None
     defaults = {}
 
     # NOTE: `required_args` only needs to include arguments that required but
