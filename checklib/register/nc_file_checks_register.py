@@ -33,7 +33,8 @@ class GlobalAttrRegexCheck(NCFileCheckBase):
     defaults = {}
     required_args = ['attribute', 'regex']
     message_templates = ["Required '{attribute}' global attribute is not present.",
-                         "Required '{attribute}' global attribute value is invalid."]
+                         "Required '{attribute}' global attribute value does not match "
+                         "regex '{regex}'."]
     level = "HIGH"
 
     def _setup(self):
