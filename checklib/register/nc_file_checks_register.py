@@ -554,7 +554,10 @@ class NetCDFDimensionCheck(NCFileCheckBase):
         if "length" in expected_attr_dict:
             req_length = expected_attr_dict["length"]
 
-            if req_length == ds.dimensions[dim_id].size:
+            # If expected length is <i> or <n> etc then dimension length does
+            # not matter, so give +1 without checking
+            skip_check = req_length.startswith("<") and req_length.endswith(">")
+            if skip_check or req_length == ds.dimensions[dim_id].size:
                 score += 1
             else:
                 messages.append("Dimension '{}' does not have required length: {}.".format(dim_id, req_length))

@@ -477,6 +477,16 @@ def test_NetCDFDimensionCheck_success_1():
     assert(resp.value == (5, 5))
 
 
+def test_NetCDFDimensionCheck_success_2():
+    ncfile = "checklib/test/example_data/nc_file_checks_data/amf_eg_data_1.nc"
+    # Do a check where dimension length is '<n>'
+    x = NetCDFDimensionCheck(kwargs={"dim_id": "latitude", "pyessv_namespace": "product-common-dimension-sea"},
+                             vocabulary_ref="ncas:amf")
+    resp = x(Dataset(ncfile))
+    print(resp)
+    assert(resp.value == (5, 5))
+
+
 def test_NetCDFDimensionCheck_fail():
     # Test for no dimension
     ncfile = "checklib/test/example_data/nc_file_checks_data/simple_nc.nc"
