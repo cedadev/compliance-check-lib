@@ -512,7 +512,7 @@ class NetCDFFormatCheck(NCFileCheckBase):
 
 class NetCDFDimensionCheck(NCFileCheckBase):
     """
-    The file must contain dimension and coordinate variable: {}.
+    The file must contain dimension and coordinate variable: {dim_id}.
     """
     short_name = "NetCDF dimension: {dim_id}"
     defaults = {}
