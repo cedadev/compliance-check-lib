@@ -103,7 +103,7 @@ def is_variable_in_dataset(ds, var_id):
     Returns True if variable is in the dataset.
 
     :param ds: netCDF4 Dataset object
-    :paran var_id: the variable ID. 
+    :paran var_id: the variable ID.
     :return: boolean
     """
     return var_id in ds.variables
@@ -128,7 +128,7 @@ def variable_is_within_valid_bounds(ds, var_id, minimum, maximum):
     if mn < minimum or mx > maximum:
         return False
 
-    return True 
+    return True
 
 
 def check_nc_attribute(variable, attr, expected_value):

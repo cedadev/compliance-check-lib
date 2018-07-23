@@ -33,7 +33,8 @@ class GlobalAttrRegexCheck(NCFileCheckBase):
     defaults = {}
     required_args = ['attribute', 'regex']
     message_templates = ["Required '{attribute}' global attribute is not present.",
-                         "Required '{attribute}' global attribute value is invalid."]
+                         "Required '{attribute}' global attribute value does not match "
+                         "regex '{regex}'."]
     level = "HIGH"
 
     def _setup(self):
@@ -208,7 +209,7 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
             for ignore in self.kwargs["ignore_attr_checks"]:
 
                 if ignore not in self.kwargs["order"]:
-                    raise ParameterError("Invalid arguments: requested to ignore attribute " 
+                    raise ParameterError("Invalid arguments: requested to ignore attribute "
                                          "not provided in 'order': {}.".format(ignore))
                 # Decrement `out_of` because we won't check this attribute
                 self.out_of -= 2
@@ -248,7 +249,7 @@ class ValidGlobalAttrsMatchFileNameCheck(NCFileCheckBase):
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
-                      
+
 
 class VariableExistsInFileCheck(NCFileCheckBase):
     """
@@ -266,7 +267,7 @@ class VariableExistsInFileCheck(NCFileCheckBase):
         score = 0
         if nc_util.is_variable_in_dataset(ds, self.kwargs["var_id"]):
             score = 1
-            
+
         messages = []
 
         if score < self.out_of:
@@ -274,8 +275,8 @@ class VariableExistsInFileCheck(NCFileCheckBase):
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
-                      
-                      
+
+
 class VariableRangeCheck(NCFileCheckBase):
     """
     The variable {var_id} must have values in the range {minimum}
@@ -299,8 +300,8 @@ class VariableRangeCheck(NCFileCheckBase):
             score = 1
 
         if nc_util.variable_is_within_valid_bounds(ds, var_id, mn, mx):
-            score += 1      
-            
+            score += 1
+
         messages = []
 
         if score < self.out_of:
@@ -511,7 +512,7 @@ class NetCDFFormatCheck(NCFileCheckBase):
 
 class NetCDFDimensionCheck(NCFileCheckBase):
     """
-    The file must contain dimension and coordinate variable: {}.
+    The file must contain dimension and coordinate variable: {dim_id}.
     """
     short_name = "NetCDF dimension: {dim_id}"
     defaults = {}
@@ -553,7 +554,10 @@ class NetCDFDimensionCheck(NCFileCheckBase):
         if "length" in expected_attr_dict:
             req_length = expected_attr_dict["length"]
 
-            if req_length == ds.dimensions[dim_id].size:
+            # If expected length is <i> or <n> etc then dimension length does
+            # not matter, so give +1 without checking
+            skip_check = req_length.startswith("<") and req_length.endswith(">")
+            if skip_check or req_length == ds.dimensions[dim_id].size:
                 score += 1
             else:
                 messages.append("Dimension '{}' does not have required length: {}.".format(dim_id, req_length))

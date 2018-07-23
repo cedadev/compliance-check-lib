@@ -1,5 +1,4 @@
-from compliance_checker.base import BaseCheck
-from compliance_checker.base import Result
+from compliance_checker.base import BaseCheck, Dataset, Result
 from checklib.code.errors import FileError, ParameterError
 
 
@@ -7,14 +6,14 @@ class CallableCheckBase(object):
 
     # Define empty values for required arguments
     short_name = ""
-    primary_arg_type = None
     defaults = {}
 
     # NOTE: `required_args` only needs to include arguments that required but
     #                       are NOT set in `defaults`
     required_args = []
     message_templates = []
-    level = "HIGH"
+    level = BaseCheck.HIGH
+    supported_ds = [Dataset]
 
     def __init__(self, kwargs, messages=None, level="HIGH", vocabulary_ref=None):
         self.kwargs = self.defaults.copy()
@@ -25,7 +24,8 @@ class CallableCheckBase(object):
         self._define_messages(messages)
         self.out_of = len(self.messages)
         self.level = getattr(BaseCheck, level)
-        self.vocabulary_ref = vocabulary_ref
+        # Allow vocab. ref to be given as kwarg or in params dict
+        self.vocabulary_ref = vocabulary_ref or self.kwargs.get("vocabulary_ref", "")
 
         self._setup()
 
@@ -103,4 +103,8 @@ class CallableCheckBase(object):
         raise NotImplementedError
 
     def _check_primary_arg(self, primary_arg):
-        raise NotImplementedError
+        """
+        Child classes can override this to validate arguments before running
+        the check
+        """
+        pass
