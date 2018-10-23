@@ -70,6 +70,12 @@ def test_GlobalAttrRegexCheck_success_6():
     assert (resp.value == (2, 2))
 
 
+def test_GlobalAttrRegexCheck_success_7():
+    x = GlobalAttrRegexCheck(kwargs={"attribute": "history", "regex": "^.{1,}$"})
+    resp = x(Dataset("checklib/test/example_data/nc_file_checks_data/amf_eg_data_1.nc"))
+    assert(resp.value == (2, 2))
+
+
 def test_GlobalAttrRegexCheck_fail_1():
     x = GlobalAttrRegexCheck(kwargs={"attribute": "sausages", "regex": "CF-\d+\.\d+"})
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
