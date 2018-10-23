@@ -77,7 +77,7 @@ def check_global_attr_against_regex(ds, attr, regex):
     """
     if attr not in ds.ncattrs():
         return 0
-    if not re.match("^{}$".format(regex), getattr(ds, attr)):
+    if not re.match("^{}$".format(regex), getattr(ds, attr), re.DOTALL):
         return 1
     # Success
     return 2
