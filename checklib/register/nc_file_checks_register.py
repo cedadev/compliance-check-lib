@@ -12,7 +12,7 @@ from netCDF4 import Dataset
 from compliance_checker.base import Result
 
 from .callable_check_base import CallableCheckBase
-from checklib.code import nc_util
+from checklib.code import nc_util, util
 from checklib.cvs.ess_vocabs import ESSVocabs
 from checklib.code.errors import FileError, ParameterError
 
@@ -512,11 +512,12 @@ class NetCDFFormatCheck(NCFileCheckBase):
 
 class NetCDFDimensionCheck(NCFileCheckBase):
     """
-    The file must contain dimension and coordinate variable: {dim_id}.
+    The file must contain dimension: {dim_id}.
+    Optionally also check details of a coordinate variable related to: {dim_id}.
     """
     short_name = "NetCDF dimension: {dim_id}"
-    defaults = {}
-    required_args = ["dim_id", "pyessv_namespace"]
+    defaults = {"ignore_coord_var_check": False}
+    required_args = ["dim_id", "pyessv_namespace", "ignore_coord_var_check"]
     message_templates = ["Dimension not found: {dim_id}.",
                          "Dimension '{dim_id}' does not have required length",
                          "Coordinate variable for dimension not found: {dim_id}.",
@@ -528,6 +529,7 @@ class NetCDFDimensionCheck(NCFileCheckBase):
     def _get_result(self, primary_arg):
         ds = primary_arg
         dim_id = self.kwargs["dim_id"]
+        ignore_coord_var_check = util._parse_boolean(self.kwargs["ignore_coord_var_check"])
 
         score = 0
         messages = []
@@ -564,8 +566,11 @@ class NetCDFDimensionCheck(NCFileCheckBase):
 
             self.out_of += 1
 
+        # Ignore coordinate variable check if instructed to
+        if ignore_coord_var_check:
+            pass
         # Check coordinate variable exists for dimension
-        if dim_id in ds.variables:
+        elif dim_id in ds.variables:
             score += 1
             self.out_of += 1
 
@@ -593,6 +598,7 @@ class NetCDFDimensionCheck(NCFileCheckBase):
                         messages.append("Required variable attribute '{}' has incorrect value ('{}') "
                                         "for variable: '{}'. Value should be: '{}'.".format(attr,
                                         getattr(variable, attr), dim_id, expected_value))
+        # If coordinate variable not found
         else:
             messages.append("Coordinate variable for dimension not found: {}.".format(dim_id))
             self.out_of += 1
