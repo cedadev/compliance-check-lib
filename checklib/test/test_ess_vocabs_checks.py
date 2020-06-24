@@ -40,7 +40,7 @@ def test_get_value_string_lookup_failure_1():
     lookup = 'domain:dog'
     try:
         x.get_value(lookup)
-    except Exception, err:
+    except Exception as err:
         assert(str(err) == "Could not get value of term based on vocabulary lookup: '{}'.".format(lookup))
 
 
@@ -50,7 +50,7 @@ def test_get_terms():
     terms = x.get_terms(collection)
 
     assert(str(terms[-1]) == 'ukcp:ukcp18:river-basin:west-wales')
-    assert(isinstance(terms[-1], pyessv._model.term.Term))
+    assert(isinstance(terms[-1], pyessv.Term))
 
     # Check alphabetical
     terms_strings = [str(term) for term in terms]

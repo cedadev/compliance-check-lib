@@ -446,7 +446,7 @@ def test_NCVariableMetadataCheck_fail_2():
                              vocabulary_ref="ncas:amf")
     try:
         x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
-    except Exception, err:
+    except Exception as err:
         assert(str(err) == "Could not get value of term based on vocabulary lookup: 'product-common-dimension-land:a-dog?'.")
 
 

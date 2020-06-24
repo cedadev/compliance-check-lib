@@ -26,7 +26,6 @@ if not os.path.isdir(VOCABS_DIR):
 
 # Import library to interact with Controlled Vocabularies
 import pyessv
-import pyessv._model.term
 
 
 def validate_daterange(frequency):
@@ -98,8 +97,8 @@ class ESSVocabs(object):
         else:
             key_chain = []
 
-        # Fix term type: must be instance of pyessv._model.term.Term
-        if not isinstance(term, pyessv._model.term.Term):
+        # Fix term type: must be instance of pyessv.Term
+        if not isinstance(term, pyessv.Term):
               
             try:
                 # Use only the last 2 values (collection, item) to do the lookup
@@ -146,7 +145,7 @@ class ESSVocabs(object):
         Raises an exception if no terms found.
 
         :param collection: vocabulary collection ID/lookup
-        :return: list of terms [of type: pyessv._model.term.Term]
+        :return: list of terms [of type: pyessv.Term]
         """
         lookup = self._get_lookup_id(collection)
         terms = [term for term in self._cvs[lookup]]
