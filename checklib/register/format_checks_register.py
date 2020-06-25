@@ -32,7 +32,7 @@ class NCFileIsReadableCheck(FileCheckBase):
             assert(type(ds.dimensions) == OrderedDict)
             assert(ds.file_format == self.kwargs['file_format'])
             success = True
-        except Exception, err:
+        except Exception as err:
             success = False
 
         messages = []
@@ -67,14 +67,14 @@ class NCFileSoftwareCheck(FileCheckBase):
             cl = iris.load(primary_arg)
             assert(type(cl) in (iris.cube.Cube, iris.cube.CubeList))
             score += 1
-        except Exception, err:
+        except Exception as err:
             pass
 
         try:
             fl = cf.read(primary_arg)
             assert(type(fl) in (cf.field.Field, cf.field.FieldList))
             score += 1
-        except Exception, err:
+        except Exception as err:
             pass
 
         messages = []
