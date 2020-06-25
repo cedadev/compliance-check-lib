@@ -29,7 +29,7 @@ def get_main_variable(ds):
         sizes[ncvar] = dsv[ncvar].size
 
     mx_size = max(sizes.values())
-    if sizes.values().count(mx_size) > 1:
+    if list(sizes.values()).count(mx_size) > 1:
         raise Exception("More than one 'main' variable found in netCDF4 file.")
 
     return [dsv[ncvar] for ncvar, size in sizes.items() if dsv[ncvar].size == mx_size][0]
