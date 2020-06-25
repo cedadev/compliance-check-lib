@@ -28,8 +28,8 @@ class NCFileIsReadableCheck(FileCheckBase):
 
         try:
             ds = Dataset(primary_arg)
-            assert(type(ds.variables) == OrderedDict)
-            assert(type(ds.dimensions) == OrderedDict)
+            assert(type(ds.variables) == dict)
+            assert(type(ds.dimensions) == dict)
             assert(ds.file_format == self.kwargs['file_format'])
             success = True
         except Exception as err:
