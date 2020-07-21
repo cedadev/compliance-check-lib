@@ -1,3 +1,6 @@
+from netCDF4 import Dataset
+
+from compliance_checker import MemoizedDataset
 from compliance_checker.base import BaseCheck, Dataset, Result
 from checklib.code.errors import FileError, ParameterError
 
@@ -13,7 +16,7 @@ class CallableCheckBase(object):
     required_args = []
     message_templates = []
     level = BaseCheck.HIGH
-    supported_ds = [Dataset]
+    supported_ds = {Dataset, MemoizedDataset}
 
     def __init__(self, kwargs, messages=None, level="HIGH", vocabulary_ref=None):
         self.kwargs = self.defaults.copy()
