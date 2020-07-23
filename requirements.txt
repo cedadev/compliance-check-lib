@@ -1,9 +1,3 @@
 compliance-checker
 pyessv
 
-#=========================
-# Testing
-pytest
-iris
-cf-python
-psutil
