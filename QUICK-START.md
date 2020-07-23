@@ -49,7 +49,10 @@ cd ../
 git clone https://github.com/cedadev/compliance-check-lib
 cd compliance-check-lib/
 
-# Install: 
+pip install --editable . --no-deps
+pip install -r requirements.txt
+
+# Install: sub-repository
 git submodule update --init --recursive
 export PYESSV_ARCHIVE_HOME=$PWD/cc-vocab-cache/pyessv-archive-eg-cvs
 
