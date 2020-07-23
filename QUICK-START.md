@@ -16,31 +16,28 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh Miniconda3-latest-Linux-x86_64.sh -p $HOME/miniconda3 -b
 
 rm -f Miniconda3-latest-Linux-x86_64.sh
-export PATH=$HOME/miniconda3/bin:$PATH
-
-conda init bash
 ```
 
 2. Create conda environment: amf-checker-env
 
-!IMPORTANT! Now Log out and log back in (to pick up conda change)!
-
 ```
-conda create --name amf-checker-env
+export PATH=$HOME/miniconda3/bin:$PATH
+conda create --name amf-checker-env -y
+
 conda activate amf-checker-env
-conda install -c conda-forge compliance-checker
+conda install -c conda-forge compliance-checker pip -y
 ```
 
 3. Get the relevant checker packages installed
 
 ```
-WORK_DIR=checker
+WORK_DIR=$PWD/checker
 mkdir -p $WORK_DIR
 
 cd $WORK_DIR/
 
 # Install: cc-yaml
-git clone https://agstephens@github.com/cedadev/cc-yaml
+git clone https://github.com/cedadev/cc-yaml
 cd cc-yaml/
 
 pip install --editable . --no-deps
@@ -49,7 +46,7 @@ pip install -r requirements.txt
 cd ../
 
 # Install: compliance-check-lib
-git clone https://agstephens@github.com/cedadev/compliance-check-lib
+git clone https://github.com/cedadev/compliance-check-lib
 cd compliance-check-lib/
 
 # Install: 
@@ -82,9 +79,11 @@ python -c 'import pyessv; cmip6 = pyessv.WCRP.cmip6; assert isinstance(cmip6, py
 
 5. Add a new YAML file to specify some CV checks 
 
-Create a local file called `my-proj-suite.yml`, with contents:
+Create a local file called `my-proj-suite.yml`:
 
 ```
+# Write a suite of checks in a YAML file
+cat <<EOF > my-proj-suite.yml
 suite_name: "my-proj-suite:1.0"
 
 checks:
@@ -100,12 +99,12 @@ checks:
     parameters: {"attribute": "frequency", "vocab_lookup": "label", "vocabulary_ref": "WCRP:cmip6"}
     check_name: "checklib.register.GlobalAttrVocabCheck"
 
+EOF
 ```
-
 Now run the checker on a sample file with those checks:
 
 ```
-cchecker.py --yaml my-proj-suite.yml --test my-proj-suite:1.0 checklib/test/example_data/nc_file_checks_data/simple_nc.nc
+cchecker.py --yaml my-proj-suite.yml --test my-proj-suite:1.0 compliance-check-lib/checklib/test/example_data/nc_file_checks_data/simple_nc.nc
 ```
 
 NOTE: the final check will check the `frequency` global attribute is in the CMIP6 CVs.
