@@ -1,5 +1,5 @@
-compliance-checker==3.1.1
-pyessv==0.4.5.0
+compliance-checker
+pyessv
 
 #=========================
 # Testing

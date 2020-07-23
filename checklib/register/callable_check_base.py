@@ -1,4 +1,3 @@
-
 from netCDF4 import Dataset
 
 from compliance_checker import MemoizedDataset
