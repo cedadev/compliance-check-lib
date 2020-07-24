@@ -5,5 +5,5 @@ pyessv
 # Testing
 pytest
 iris
-cf-python
+xarray
 psutil

@@ -49,7 +49,7 @@ def test_get_terms():
     collection = 'river_basin'
     terms = x.get_terms(collection)
 
-    assert(str(terms[-1]) == 'ukcp:ukcp18:river-basin:west-wales')
+    assert(str(terms[-1]) == 'ukcp:ukcp18:river-basin:western-wales')
     assert(isinstance(terms[-1], pyessv.Term))
 
     # Check alphabetical

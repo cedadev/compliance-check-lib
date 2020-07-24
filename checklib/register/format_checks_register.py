@@ -49,17 +49,17 @@ class NCFileIsReadableCheck(FileCheckBase):
 
 class NCFileSoftwareCheck(FileCheckBase):
     """
-    Data file is recognised as a valid netCDF file by multiple python packages (iris/cfpython).
+    Data file is recognised as a valid netCDF file by multiple python packages (iris/xarray).
     """
     short_name = "File is netCDF readable by multiple packages"
     defaults = {}
     message_templates = ["File cannot be read by iris.",
-                         "File cannot be read by cfpython."]
+                         "File cannot be read by xarray."]
     level = "HIGH"
 
     def _get_result(self, primary_arg):
         import iris
-        import cf
+        import xarray as xr
 
         score = 0
 
@@ -71,8 +71,8 @@ class NCFileSoftwareCheck(FileCheckBase):
             pass
 
         try:
-            fl = cf.read(primary_arg)
-            assert(type(fl) in (cf.field.Field, cf.field.FieldList))
+            ds = xr.open_dataset(primary_arg)
+            assert(type(ds) in (xr.Dataset, xr.DataArray))
             score += 1
         except Exception as err:
             pass
