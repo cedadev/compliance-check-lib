@@ -418,7 +418,7 @@ def test_NCVariableMetadataCheck_success_1():
                                 vocabulary_ref="ncas:amf")
     fpath = 'checklib/test/example_data/nc_file_checks_data/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'
     resp = x(Dataset(fpath))
-    assert (resp.value == (9, 17)), resp.msgs
+    assert (resp.value == (8, 17)), resp.msgs
 
 
 def test_NCVariableMetadataCheck_success_2():

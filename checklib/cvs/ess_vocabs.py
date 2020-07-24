@@ -172,9 +172,15 @@ class ESSVocabs(object):
 
         term_values = [getattr(term, prop) for term in terms]
 
+        # If not the same length return False
+        if len(array) != len(term_values):
+            return False
+
+        # If any items do not match, return False
         for i, item in enumerate(term_values):
+
             # Convert character array to string for each element
-            if item != "".join(array[i]):
+            if item != ''.join([_.decode('utf-8') for _ in array[i]]):
                 return False
 
         return True

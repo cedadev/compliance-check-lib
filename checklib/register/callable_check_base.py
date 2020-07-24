@@ -99,7 +99,7 @@ class CallableCheckBase(object):
             self._check_primary_arg(primary_arg)
         except FileError as ex:
             return Result(self.level, (0, self.out_of),
-                          self.get_short_name(), ex.message)
+                          self.get_short_name(), ex.args[0])
         return self._get_result(primary_arg)
 
     def _get_result(self, primary_arg):

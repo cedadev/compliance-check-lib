@@ -8,6 +8,7 @@ A register of checks for NetCDF4 Variables.
 
 import os
 from netCDF4 import Dataset
+import numpy.ma
 
 from compliance_checker.base import Result
 
@@ -29,6 +30,13 @@ class NCArrayMatchesVocabTermsCheck(NCFileCheckBase):
                          "collection: '{pyessv_namespace}'"]
     level = "HIGH"
 
+    def _clean_array(self, array):
+        "Returns numpy array if masked array."
+        if isinstance(array, numpy.ma.MaskedArray):
+            return array._data
+
+        return array
+
     def _get_result(self, primary_arg):
         ds = primary_arg
         score = 0
@@ -39,7 +47,7 @@ class NCArrayMatchesVocabTermsCheck(NCFileCheckBase):
 
         var_id = self.kwargs["var_id"]
         if var_id in ds.variables:
-            array = ds[var_id][:]
+            array = self._clean_array(ds[var_id][:])
             result = vocabs.check_array_matches_terms(array, self.kwargs["pyessv_namespace"])
 
             if result:
