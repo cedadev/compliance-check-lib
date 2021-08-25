@@ -109,6 +109,21 @@ def test_GlobalAttrVocabCheck_success_3():
     resp = x(Dataset('checklib/test/example_data/tasAnom_rcp85_land-prob_uk_25km_percentile_mon_20001201-20011130_good_pcs.nc'))
     assert (resp.value == (2, 2))
 
+def test_GlobalAttrVocabCheck_success_4():
+    # Do lookup using single vocab term
+    vocab_term = "ncas-instrument"
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "source", "vocab_term": vocab_term,
+                                     "vocab_lookup": "data:description"}, vocabulary_ref="ncas:amf")
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'))
+    assert (resp.value == (2, 2))
+
+    # Do lookup using multiple vocab terms
+    vocab_term = "ncas-instrument community-instrument"
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "source", "vocab_term": vocab_term,
+                                     "vocab_lookup": "data:description"}, vocabulary_ref="ncas:amf")
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'))
+    assert (resp.value == (2, 2))
+
 
 def test_GlobalAttrVocabCheck_fail_1():
     x = GlobalAttrVocabCheck(kwargs={"attribute": "frequency", "vocab_lookup": "canonical_name"},
@@ -116,6 +131,11 @@ def test_GlobalAttrVocabCheck_fail_1():
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/two_vars_nc.nc'))
     assert (resp.value == (1, 2))
 
+def test_GlobalAttrVocabCheck_fail_2():
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "source", "vocab_term": "ncas-instrument community-instrument",
+                                     "vocab_lookup": "data:description"}, vocabulary_ref="ncas:amf")
+    resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
+    assert (resp.value == (1, 2))
 
 def test_OneMainVariablePerFileCheck_success():
     x = OneMainVariablePerFileCheck(kwargs={})
@@ -410,18 +430,18 @@ def test_NCVariableMetadataCheck_partial_success_1():
     x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "product-common-variable-land"},
                                 vocabulary_ref="ncas:amf")
     resp = x(Dataset('checklib/test/example_data/nc_file_checks_data/simple_nc.nc'))
-    assert(resp.value == (7, 17)), resp.msgs
+    assert(resp.value == (7, 15)), resp.msgs
 
 
-def test_NCVariableMetadataCheck_success_1():
+def test_NCVariableMetadataCheck_partial_success_2():
     x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "product-common-variable-land"},
                                 vocabulary_ref="ncas:amf")
     fpath = 'checklib/test/example_data/nc_file_checks_data/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'
     resp = x(Dataset(fpath))
-    assert (resp.value == (8, 17)), resp.msgs
+    assert (resp.value == (8, 15)), resp.msgs
 
 
-def test_NCVariableMetadataCheck_success_2():
+def test_NCVariableMetadataCheck_partial_success_3():
     x = NCVariableMetadataCheck(kwargs={"var_id": "tasAnom",
                                         "pyessv_namespace": "variable",
                                         "ignores": ("cmip6_cmor_tables_row_id", "cmip6_name",
