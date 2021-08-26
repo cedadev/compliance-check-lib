@@ -13,13 +13,7 @@ Each check is defined within a class that knows about:
 To run the tests:
 
 ```
-# Set up the directory required for working with the ESSV controlled vocabularies
-mkdir -p ~/.esdoc
-
-# Copy the example vocabularies into place
-cp -r checklib/test/example_data/pyessv-archive-eg-cvs ~/.esdoc/pyessv-archive
-
-pytest
+python -m pytest tests
 ```
 
 ## Importing the checks
@@ -31,5 +25,6 @@ from checklib.checks import *
 
 print(dir())
 
-print ALL_CHECKS
+print(ALL_CHECKS)
 ```
+
