@@ -6,12 +6,14 @@ Unit tests for the contents of the checklib.register.format_checks_register modu
 
 """
 
+from tests._common import EG_DATA_DIR
 from checklib.register.format_checks_register import *
 
 TEST_FILES = [
-    'checklib/test/example_data/nc_file_checks_data/temp-max_sres-a1b_ukcp18-land-prob-25km_sample_day_19981201-19991130.nc',
-    'checklib/test/example_data/nc_file_checks_data/simple_nc4.nc'
+    f'{EG_DATA_DIR}/nc_file_checks_data/temp-max_sres-a1b_ukcp18-land-prob-25km_sample_day_19981201-19991130.nc',
+    f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc4.nc'
     ]
+
 
 def test_NCFileIsReadableCheck_NETCDF3_CLASSIC_success():
     x = NCFileIsReadableCheck(kwargs={'file_format': 'NETCDF3_CLASSIC'})
@@ -40,5 +42,6 @@ def test_NCFileSoftwareCheck_success():
 
 def test_NCFileSoftwareCheck_fail():
     x = NCFileSoftwareCheck(kwargs={})
-    resp = x('checklib/test/example_data/nc_file_checks_data/simple_nc.cdl')
+    resp = x(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.cdl')
     assert (resp.value == (0, 2))
+

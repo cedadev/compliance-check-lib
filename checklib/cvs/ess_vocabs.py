@@ -25,7 +25,13 @@ if not os.path.isdir(VOCABS_DIR):
 
 
 # Import library to interact with Controlled Vocabularies
-import pyessv
+#import pyessv
+################### MAKE NOTE OF THIS CHANGE INSIDE CLASS
+
+# Set pyessv as None, then import and set inside the class.
+# This is required because importing the module will attempt to load the vocabs
+# and this is not necessary until the ESSVocabs class is instantiated.
+pyessv = None
 
 
 def validate_daterange(frequency):
@@ -51,6 +57,10 @@ class ESSVocabs(object):
         Instantiates class by setting authority, scope and loading the CVs 
         from local cache.
         """
+        # Import pyessv and set the import in global scope
+        global pyessv
+        import pyessv
+
         self.authority = authority
         self.scope = scope
         self._cache_controlled_vocabularies()
