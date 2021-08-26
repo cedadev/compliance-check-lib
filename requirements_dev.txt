@@ -3,6 +3,7 @@ pyessv
 
 #=========================
 # Testing
+GitPython
 pytest
 iris
 xarray

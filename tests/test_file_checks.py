@@ -7,6 +7,8 @@ Unit tests for the contents of the checklib.register.file_checks_register module
 """
 
 import re
+from tests._common import EG_DATA_DIR
+
 from checklib.register.file_checks_register import *
 
 
@@ -44,10 +46,10 @@ def test_FileNameStructureCheck_regex():
 
 def test_FileNameStructureCheck_success():
     good = [
-        ("checklib/test/example_data/file_checks_data/good_file.nc", {}),
-        ("checklib/test/example_data/file_checks_data/good_file_as_text.txt", {"delimiter": "_",
+        (f"{EG_DATA_DIR}/file_checks_data/good_file.nc", {}),
+        (f"{EG_DATA_DIR}/file_checks_data/good_file_as_text.txt", {"delimiter": "_",
                                                                                "extension": ".txt"}),
-        ("checklib/test/example_data/file_checks_data/seaLevelAnom_marine-sim_rcp85_annual_2007-2100.nc",
+        (f"{EG_DATA_DIR}/file_checks_data/seaLevelAnom_marine-sim_rcp85_annual_2007-2100.nc",
          {"delimiter": "_", "extension": ".nc"})
         ]
 
@@ -58,8 +60,8 @@ def test_FileNameStructureCheck_success():
 
 def test_FileNameStructureCheck_fail_1():
     bad = [
-        ("checklib/test/example_data/file_checks_data/_bad_file1.nc", {}),
-        ("checklib/test/example_data/file_checks_data/bad__file2.nc", {"delimiter": "_",
+        (f"{EG_DATA_DIR}/file_checks_data/_bad_file1.nc", {}),
+        (f"{EG_DATA_DIR}/file_checks_data/bad__file2.nc", {"delimiter": "_",
                                                                       "extension": ".nc"})
     ]
     for fpath, kwargs in bad:
@@ -69,8 +71,8 @@ def test_FileNameStructureCheck_fail_1():
 
 def test_FileNameRegexCheck_success():
     good = [
-        ("checklib/test/example_data/file_checks_data/good_file.nc", "[a-z]+_[a-z]+\.nc"),
-        ("checklib/test/example_data/file_checks_data/seaLevelAnom_marine-sim_rcp85_annual_2007-2100.nc",
+        (f"{EG_DATA_DIR}/file_checks_data/good_file.nc", "[a-z]+_[a-z]+\.nc"),
+        (f"{EG_DATA_DIR}/file_checks_data/seaLevelAnom_marine-sim_rcp85_annual_2007-2100.nc",
          "[a-zA-Z0-9\-_]+\d{4,4}-\d{4,4}\.nc")
     ]
 
@@ -81,7 +83,7 @@ def test_FileNameRegexCheck_success():
 
 def test_FileNameRegexCheck_fail():
     bad = [
-        ("checklib/test/example_data/file_checks_data/good_file.nc",
+        (f"{EG_DATA_DIR}/file_checks_data/good_file.nc",
          "[a-zA-Z0-9\-_]+\d{4,4}-\d{4,4}\.nc"),
     ]
 
@@ -89,3 +91,4 @@ def test_FileNameRegexCheck_fail():
         x = FileNameRegexCheck({"regex": regex})
         resp = x(fpath)
         assert resp.value == (0, 1)
+

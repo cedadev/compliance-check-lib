@@ -24,8 +24,10 @@ if not os.path.isdir(VOCABS_DIR):
                   'will not work. Directory should exist at: {}'.format(VOCABS_DIR))
 
 
-# Import library to interact with Controlled Vocabularies
-import pyessv
+# Set pyessv as None, then import and set inside the class.
+# This is required because importing the module will attempt to load the vocabs
+# and this is not necessary until the ESSVocabs class is instantiated.
+pyessv = None
 
 
 def validate_daterange(frequency):
@@ -51,6 +53,10 @@ class ESSVocabs(object):
         Instantiates class by setting authority, scope and loading the CVs 
         from local cache.
         """
+        # Import pyessv and set the import in global scope
+        global pyessv
+        import pyessv
+
         self.authority = authority
         self.scope = scope
         self._cache_controlled_vocabularies()
@@ -124,7 +130,9 @@ class ESSVocabs(object):
        
         :param ds: NetCDF4 Dataset object
         :param attr: string - name of attribtue to check.
-        :param vocab_term: string (optional) - for defining which CV to use, if the CV library does not have the same name as the global attribute. If using multiple CV libraries separate them using the space character.
+        :param vocab_term: string (optional) - for defining which CV to use, if the CV library 
+               does not have the same name as the global attribute. If using multiple CV 
+               terms separate them using the space character.
         :param property: string property of CV term to check (defaults to 'label')
         :return: Integer (0: not found; 1: found (not recognised); 2: found and recognised.
         """
@@ -133,10 +141,12 @@ class ESSVocabs(object):
            
         nc_attr = ds.getncattr(attr) 
         vocab_lookups = (vocab_term or attr).split()
-        # import pdb; pdb.set_trace()
+
         allowed_values = []
+
         for vocab_lookup in vocab_lookups:
-            allowed_values.extend([self.get_value(term, property) for term in self._cvs[self._get_lookup_id(vocab_lookup)]])
+            allowed_values.extend([self.get_value(term, property) \
+                for term in self._cvs[self._get_lookup_id(vocab_lookup)]])
 
         if nc_attr not in allowed_values:
             return 1
