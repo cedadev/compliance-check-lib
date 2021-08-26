@@ -24,10 +24,6 @@ if not os.path.isdir(VOCABS_DIR):
                   'will not work. Directory should exist at: {}'.format(VOCABS_DIR))
 
 
-# Import library to interact with Controlled Vocabularies
-#import pyessv
-################### MAKE NOTE OF THIS CHANGE INSIDE CLASS
-
 # Set pyessv as None, then import and set inside the class.
 # This is required because importing the module will attempt to load the vocabs
 # and this is not necessary until the ESSVocabs class is instantiated.
@@ -94,16 +90,16 @@ class ESSVocabs(object):
     def get_value(self, term, property="label"):
         """
         Makes the lookup for a given term and matches against the property given.
-        Copes with nested dictionary lookups that are expressed by the "." convention in the value of `attr`.
+        Copes with nested dictionary lookups that are expressed by the ":" convention in the value of `attr`.
 
         :param term: term to lookup (either string as '<collection>:<term>' or pyessv Term instance).
         :param property: property of term to match against (even including sub-dictionary lookups).
         :return: value or None if not found.
         """
         # Delay nested looks up if required
-        if "." in property:
-            property, key_chain = property.split(".", 2)
-            key_chain = key_chain.split(".")
+        if ":" in property:
+            property, key_chain = property.split(":", 2)
+            key_chain = key_chain.split(":")
         else:
             key_chain = []
 
@@ -128,12 +124,15 @@ class ESSVocabs(object):
 
         return value
 
-    def check_global_attribute(self, ds, attr, property="label"):
+    def check_global_attribute(self, ds, attr, vocab_term=None, property="label"):
         """
         Checks that global attribute `attr` is in allowed values (from CV).
        
         :param ds: NetCDF4 Dataset object
         :param attr: string - name of attribtue to check.
+        :param vocab_term: string (optional) - for defining which CV to use, if the CV library 
+               does not have the same name as the global attribute. If using multiple CV 
+               terms separate them using the space character.
         :param property: string property of CV term to check (defaults to 'label')
         :return: Integer (0: not found; 1: found (not recognised); 2: found and recognised.
         """
@@ -141,7 +140,13 @@ class ESSVocabs(object):
             return 0
            
         nc_attr = ds.getncattr(attr) 
-        allowed_values = [self.get_value(term, property) for term in self._cvs[self._get_lookup_id(attr)]]
+        vocab_lookups = (vocab_term or attr).split()
+
+        allowed_values = []
+
+        for vocab_lookup in vocab_lookups:
+            allowed_values.extend([self.get_value(term, property) \
+                for term in self._cvs[self._get_lookup_id(vocab_lookup)]])
 
         if nc_attr not in allowed_values:
             return 1
