@@ -11,7 +11,8 @@ from netCDF4 import Dataset
 import checklib.cvs.ess_vocabs as ess_vocabs
 
 
-def test_get_value_string_lookup_success_1(load_check_test_cvs):
+@pytest.mark.ukcp
+def test_get_value_string_lookup_success_1_ukcp(load_check_test_cvs):
     x = ess_vocabs.ESSVocabs('ukcp', 'ukcp18')
     resp = x.get_value('variable:tasAnom')
     assert(resp == 'tasAnom')
@@ -21,7 +22,8 @@ def test_get_value_string_lookup_success_1(load_check_test_cvs):
     assert(resp == 'tasAnom')
 
 
-def test_get_value_string_lookup_data_success_2(load_check_test_cvs):
+@pytest.mark.ukcp
+def test_get_value_string_lookup_data_success_2_ukcp(load_check_test_cvs):
     x = ess_vocabs.ESSVocabs('ukcp', 'ukcp18')
     resp = x.get_value('coordinate:time', property='data')
 
@@ -29,6 +31,18 @@ def test_get_value_string_lookup_data_success_2(load_check_test_cvs):
     assert(resp['units'] == 'days since 1970-01-01 00:00:00')
 
 
+@pytest.mark.ncas
+def test_get_value_string_lookup_success_3_ncas(load_check_test_cvs):
+    x = ess_vocabs.ESSVocabs('ncas', 'amf')
+    resp = x.get_value('product:dew-point')
+    assert(resp == 'dew-point')
+
+    # Check full term path works
+    resp = x.get_value('ncas:amf:product:dew-point')
+    assert(resp == 'dew-point')
+
+
+@pytest.mark.ukcp
 def test_get_value_string_lookup_failure_1(load_check_test_cvs):
     x = ess_vocabs.ESSVocabs('ukcp', 'ukcp18')
     lookup = 'domain:dog'
@@ -38,6 +52,7 @@ def test_get_value_string_lookup_failure_1(load_check_test_cvs):
         assert(str(err) == "Could not get value of term based on vocabulary lookup: '{}'.".format(lookup))
 
 
+@pytest.mark.ukcp
 def test_get_terms(load_check_test_cvs):
     x = ess_vocabs.ESSVocabs('ukcp', 'ukcp18')
     collection = 'river_basin'
@@ -53,6 +68,7 @@ def test_get_terms(load_check_test_cvs):
     assert(terms_strings == alpha_terms_strings)
 
 
+@pytest.mark.ukcp
 def test_get_terms_fail(load_check_test_cvs):
     x = ess_vocabs.ESSVocabs('ukcp', 'ukcp18')
     collection = 'RUBBISH'

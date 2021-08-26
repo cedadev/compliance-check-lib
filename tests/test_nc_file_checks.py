@@ -6,6 +6,7 @@ Unit tests for the contents of the checklib.register.nc_file_checks_register mod
 
 """
 
+import pytest
 from netCDF4 import Dataset
 
 from tests._common import EG_DATA_DIR
@@ -22,6 +23,7 @@ def test_required_args_argument_fail_1():
         assert(str(ex) == "Keyword arguments for 'GlobalAttrRegexCheck' must contain: {}.".format(str(req_args)))
     else:
         assert(False), "Expecting ParameterError, but no exception raised"
+
 
 def test_required_args_argument_fail_2():
     req_args = ['attribute', 'regex']
@@ -89,6 +91,7 @@ def test_GlobalAttrRegexCheck_fail_2():
     assert(resp.value == (1, 2))
 
 
+@pytest.mark.eustace
 def test_GlobalAttrVocabCheck_success_1(load_check_test_cvs):
     x = GlobalAttrVocabCheck(kwargs={"attribute": "frequency", "vocab_lookup": "canonical_name"},
                              vocabulary_ref="eustace-team:eustace:frequency")
@@ -96,6 +99,7 @@ def test_GlobalAttrVocabCheck_success_1(load_check_test_cvs):
     assert (resp.value == (2, 2))
 
 
+@pytest.mark.eustace
 def test_GlobalAttrVocabCheck_success_2(load_check_test_cvs):
     x = GlobalAttrVocabCheck(kwargs={"attribute": "institution_id", "vocab_lookup": "label"},
                              vocabulary_ref="eustace-team:eustace:institution_id")
@@ -103,13 +107,16 @@ def test_GlobalAttrVocabCheck_success_2(load_check_test_cvs):
     assert (resp.value == (2, 2))
 
 
+@pytest.mark.ukcp
 def test_GlobalAttrVocabCheck_success_3(load_check_test_cvs):
     x = GlobalAttrVocabCheck(kwargs={"attribute": "domain", "vocab_lookup": "canonical_name"},
                              vocabulary_ref="ukcp:ukcp18")
     resp = x(Dataset(f'{EG_DATA_DIR}/tasAnom_rcp85_land-prob_uk_25km_percentile_mon_20001201-20011130_good_pcs.nc'))
     assert (resp.value == (2, 2))
 
-def test_GlobalAttrVocabCheck_success_4():
+
+@pytest.mark.ncas
+def test_GlobalAttrVocabCheck_success_4(load_check_test_cvs):
     # Do lookup using single vocab term
     vocab_term = "ncas-instrument"
     x = GlobalAttrVocabCheck(kwargs={"attribute": "source", "vocab_term": vocab_term,
@@ -125,17 +132,21 @@ def test_GlobalAttrVocabCheck_success_4():
     assert (resp.value == (2, 2))
 
 
+@pytest.mark.eustace
 def test_GlobalAttrVocabCheck_fail_1(load_check_test_cvs):
     x = GlobalAttrVocabCheck(kwargs={"attribute": "frequency", "vocab_lookup": "canonical_name"},
                              vocabulary_ref="eustace-team:eustace")
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/two_vars_nc.nc'))
     assert (resp.value == (1, 2))
 
-def test_GlobalAttrVocabCheck_fail_2():
+
+@pytest.mark.ncas
+def test_GlobalAttrVocabCheck_fail_2(load_check_test_cvs):
     x = GlobalAttrVocabCheck(kwargs={"attribute": "source", "vocab_term": "ncas-instrument community-instrument",
                                      "vocab_lookup": "data:description"}, vocabulary_ref="ncas:amf")
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc'))
     assert (resp.value == (1, 2))
+
 
 def test_OneMainVariablePerFileCheck_success():
     x = OneMainVariablePerFileCheck(kwargs={})
@@ -149,6 +160,7 @@ def test_OneMainVariablePerFileCheck_fail():
     assert(resp.value == (0, 1))
 
 
+@pytest.mark.eustace
 # ValidGlobalAttrsMatchFileNameCheck - SUCCESS
 def test_ValidGlobalAttrsMatchFileNameCheck_success_1(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
@@ -161,6 +173,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_success_1(load_check_test_cvs):
     assert(resp.value == (10, 10)), resp.msgs
 
 
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_success_2(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -171,6 +184,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_success_2(load_check_test_cvs):
     assert(resp.value == (4, 4)), resp.msgs
 
 
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_success_3(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -181,6 +195,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_success_3(load_check_test_cvs):
     assert(resp.value == (4, 4)), resp.msgs
 
 
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_success_4(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -191,6 +206,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_success_4(load_check_test_cvs):
     assert(resp.value == (4, 4)), resp.msgs
 
 
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_success_5(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -202,6 +218,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_success_5(load_check_test_cvs):
     assert(resp.value == (2, 2)), resp.msgs
 
 
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_success_6(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -211,6 +228,8 @@ def test_ValidGlobalAttrsMatchFileNameCheck_success_6(load_check_test_cvs):
     resp = x(ds)
     assert(resp.value == (14, 14)), resp.msgs
 
+
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_success_7(load_check_test_cvs):
     "1 for extension, 8 for fname components, 14 for global attrs = 23 points."
     fn_order = "variable~scenario~collection~domain~resolution~prob_data_type~frequency~" \
@@ -225,6 +244,8 @@ def test_ValidGlobalAttrsMatchFileNameCheck_success_7(load_check_test_cvs):
     resp = x(ds)
     assert(resp.value == (23, 23)), resp.msgs
 
+
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_success_8(load_check_test_cvs):
     """
     1 for extension, 8 for fname components, 12 for global attrs (not checking 'variable')
@@ -248,6 +269,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_success_8(load_check_test_cvs):
 
 # Invalid collection identifier
 # Required 'duff' global attribute is not present.
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_fail_1(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -264,6 +286,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_1(load_check_test_cvs):
 # File name does not match global attributes.
 # Required 'frequency' global attribute value 'day' not equal value from
 # file name 'duff'.
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_fail_2(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -276,6 +299,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_2(load_check_test_cvs):
 
 # Required 'frequency' global attribute value 'year' not equal value from
 # file name 'day'.
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_fail_3(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -288,6 +312,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_3(load_check_test_cvs):
 
 # Required 'frequency' global attribute value 'duff' not equal value from file name 'day'.
 # Required 'frequency' global attribute value 'duff' is invalid.
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_fail_4(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -299,6 +324,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_4(load_check_test_cvs):
 
 
 # Required 'frequency' global attribute is not present.
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_fail_5(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -308,7 +334,9 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_5(load_check_test_cvs):
     resp = x(ds)
     assert(resp.value == (3, 5)), resp.msgs
 
+
 # File name fragment 19981201-19991131 does not match regex ^(?:\\d{2}){2,3}(?:$|-(?:\\d{2}){2,6}$).
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_fail_6(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -321,6 +349,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_6(load_check_test_cvs):
 
 
 # File name fragment 19981201-19991131 does not match regex ^(?:\\d{2}){2,3}(?:$|-(?:\\d{2}){2,6}$).
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_fail_7(load_check_test_cvs):
     fn_order = "variable~scenario~dataset_id~prob_data_type~frequency~regex:^(?:\d{2}){2,6}(?:$|-(?:\d{2}){2,3}$)"
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
@@ -334,6 +363,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_7(load_check_test_cvs):
 
 
 # Object for testing is not a netCDF4 Dataset: missing.nc
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_fail_8(load_check_test_cvs):
     x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
                                                    "extension": ".nc",
@@ -343,6 +373,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_8(load_check_test_cvs):
     assert(resp.value == (0, 2)), resp.msgs
 
 
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_fail_9(load_check_test_cvs):
     try:
         ValidGlobalAttrsMatchFileNameCheck(kwargs={"x": "_",
@@ -355,6 +386,7 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_9(load_check_test_cvs):
         assert(False), "Expecting ParameterError, but no exception raised"
 
 
+@pytest.mark.ukcp
 def test_ValidGlobalAttrsMatchFileNameCheck_fail_10(load_check_test_cvs):
     try:
         x = ValidGlobalAttrsMatchFileNameCheck(kwargs={"delimiter": "_",
@@ -365,11 +397,13 @@ def test_ValidGlobalAttrsMatchFileNameCheck_fail_10(load_check_test_cvs):
     except ParameterError as exc:
         assert(str(exc) == "Invalid arguments: requested to ignore attribute not provided in 'order': FOO.")
 
+
 # MainVariableTypeCheck - SUCCESS
 def test_MainVariableTypeCheck_success_1():
     x = MainVariableTypeCheck(kwargs={"dtype": "float32"})
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (1, 1)), resp.msgs
+
 
 # Main variable is not the required type: float64
 def test_MainVariableTypeCheck_fail_1():
@@ -384,11 +418,13 @@ def test_VariableTypeCheck_success():
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (1, 1)), resp.msgs
 
+
 # Variable Type check: failure
 def test_VariableTypeCheck_failure():
     x = VariableTypeCheck(kwargs={"var_id": "time", "dtype": "int"})
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc'))
     assert(resp.value == (0, 1)), resp.msgs
+
 
 # Check variable exists in NetCDF file - SUCCESS
 def test_VariableExistsInFileCheck_success():
@@ -425,7 +461,7 @@ def test_VariableRangeCheck_fail_2():
     assert(resp.value == (0, 2)), resp.msgs
 
 
-
+@pytest.mark.ncas
 def test_NCVariableMetadataCheck_partial_success_1(load_check_test_cvs):
     x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "product-common-variable-land"},
                                 vocabulary_ref="ncas:amf")
@@ -433,6 +469,7 @@ def test_NCVariableMetadataCheck_partial_success_1(load_check_test_cvs):
     assert(resp.value == (7, 17)), resp.msgs
 
 
+@pytest.mark.ncas
 def test_NCVariableMetadataCheck_partial_success_2():
     x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "product-common-variable-land"},
                                 vocabulary_ref="ncas:amf")
@@ -441,6 +478,7 @@ def test_NCVariableMetadataCheck_partial_success_2():
     assert (resp.value == (8, 17)), resp.msgs
 
 
+@pytest.mark.ukcp
 def test_NCVariableMetadataCheck_partial_success_3():
     x = NCVariableMetadataCheck(kwargs={"var_id": "tasAnom",
                                         "pyessv_namespace": "variable",
@@ -453,6 +491,7 @@ def test_NCVariableMetadataCheck_partial_success_3():
     assert (resp.value == (8, 17)), resp.msgs
 
 
+@pytest.mark.ncas
 def test_NCVariableMetadataCheck_fail_1(load_check_test_cvs):
     x = NCVariableMetadataCheck(kwargs={"var_id": "day", "pyessv_namespace": "product-common-variable-land"},
                                 vocabulary_ref="ncas:amf")
@@ -461,6 +500,7 @@ def test_NCVariableMetadataCheck_fail_1(load_check_test_cvs):
     assert(resp.msgs == ["Variable 'day' not found in the file so cannot perform other checks."])
 
 
+@pytest.mark.ncas
 def test_NCVariableMetadataCheck_fail_2(load_check_test_cvs):
     x = NCVariableMetadataCheck(kwargs={"var_id": "a-dog?", "pyessv_namespace": "product-common-dimension-land"},
                              vocabulary_ref="ncas:amf")
@@ -470,6 +510,7 @@ def test_NCVariableMetadataCheck_fail_2(load_check_test_cvs):
         assert(str(err) == "Could not get value of term based on vocabulary lookup: 'product-common-dimension-land:a-dog?'.")
 
 
+@pytest.mark.ukcp
 def test_NCMainVariableMetadataCheck_success_1(load_check_test_cvs):
     x = NCMainVariableMetadataCheck(kwargs={"pyessv_namespace": "variable",
                                         "ignores": ("cmip6_cmor_tables_row_id", "cmip6_name",
@@ -495,6 +536,7 @@ def test_NetCDFFormatCheck_fail():
     assert(resp.msgs[0] == "The NetCDF sub-format must be: NOTcdf.")
 
 
+@pytest.mark.ncas
 def test_NetCDFDimensionCheck_success_1(load_check_test_cvs):
     ncfile = f"{EG_DATA_DIR}/nc_file_checks_data/amf_eg_data_1.nc"
     x = NetCDFDimensionCheck(kwargs={"dim_id": "latitude", "pyessv_namespace": "product-common-dimension-land"},
@@ -503,6 +545,7 @@ def test_NetCDFDimensionCheck_success_1(load_check_test_cvs):
     assert(resp.value == (5, 5))
 
 
+@pytest.mark.ncas
 def test_NetCDFDimensionCheck_success_2(load_check_test_cvs):
     ncfile = f"{EG_DATA_DIR}/nc_file_checks_data/amf_eg_data_1.nc"
     # Do a check where dimension length is '<n>'
@@ -512,6 +555,8 @@ def test_NetCDFDimensionCheck_success_2(load_check_test_cvs):
     resp = x(Dataset(ncfile))
     assert(resp.value == (5, 5))
 
+
+@pytest.mark.ncas
 def test_NetCDFDimensionCheck_success_3(load_check_test_cvs):
     ncfile = f"{EG_DATA_DIR}/nc_file_checks_data/amf_eg_data_1.nc"
     # Do a check where dimension length is '<n>'
@@ -522,6 +567,7 @@ def test_NetCDFDimensionCheck_success_3(load_check_test_cvs):
     assert(resp.value == (2, 2))
 
 
+@pytest.mark.ncas
 def test_NetCDFDimensionCheck_fail(load_check_test_cvs):
     # Test for no dimension
     ncfile = f"{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc"
@@ -549,11 +595,13 @@ def test_NetCDFDimensionCheck_fail(load_check_test_cvs):
     assert(resp.msgs[0] == "Required variable attribute 'units' has incorrect value ('degree_east') "
            "for variable: 'longitude'. Value should be: 'degrees_east'.")
 
+
 def test_MainVariableAttributeCheck_success_1():
     ncfile = f"{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc"
     x = MainVariableAttributeCheck(kwargs={"attr_name": "long_name", "attr_value": "Seawater Temperature"})
     resp = x(Dataset(ncfile))
     assert(resp.value == (3, 3))
+
 
 def test_MainVariableAttributeCheck_success_2():
     ncfile = f"{EG_DATA_DIR}/tasAnom_rcp85_land-prob_uk_25km_percentile_mon_20001201-20011130_good_pcs.nc"
