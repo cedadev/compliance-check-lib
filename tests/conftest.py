@@ -33,3 +33,4 @@ def load_check_test_cvs():
     # Set the environment variable to point to the directory where 
     # the `pyessv-archive` controlled vocabs are located
     os.environ['PYESSV_ARCHIVE_HOME'] = COMP_CHECK_CV_CACHE_DIR
+
