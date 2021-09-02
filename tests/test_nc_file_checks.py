@@ -466,7 +466,7 @@ def test_NCVariableMetadataCheck_partial_success_1(load_check_test_cvs):
     x = NCVariableMetadataCheck(kwargs={"var_id": "time", "pyessv_namespace": "product-common-variable-land"},
                                 vocabulary_ref="ncas:amf")
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc'))
-    assert(resp.value == (7, 17)), resp.msgs
+    assert(resp.value == (7, 15)), resp.msgs
 
 
 @pytest.mark.ncas
@@ -475,7 +475,7 @@ def test_NCVariableMetadataCheck_partial_success_2():
                                 vocabulary_ref="ncas:amf")
     fpath = f'{EG_DATA_DIR}/nc_file_checks_data/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'
     resp = x(Dataset(fpath))
-    assert (resp.value == (8, 17)), resp.msgs
+    assert (resp.value == (8, 15)), resp.msgs
 
 
 @pytest.mark.ukcp
