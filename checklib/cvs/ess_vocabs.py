@@ -124,7 +124,7 @@ class ESSVocabs(object):
 
         return value
 
-    def check_global_attribute(self, ds, attr, vocab_term=None, property="label"):
+    def check_global_attribute(self, ds, attr, vocab_lookup):
         """
         Checks that global attribute `attr` is in allowed values (from CV).
        
@@ -140,13 +140,14 @@ class ESSVocabs(object):
             return 0
            
         nc_attr = ds.getncattr(attr) 
-        vocab_lookups = (vocab_term or attr).split()
+        vocab_lookups = (vocab_lookup or attr).split()
 
         allowed_values = []
 
         for vocab_lookup in vocab_lookups:
+            this_lookup, property = vocab_lookup.split(":",1)
             allowed_values.extend([self.get_value(term, property) \
-                for term in self._cvs[self._get_lookup_id(vocab_lookup)]])
+                for term in self._cvs[self._get_lookup_id(this_lookup)]])
 
         if nc_attr not in allowed_values:
             return 1
