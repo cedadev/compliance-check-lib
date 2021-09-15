@@ -93,23 +93,23 @@ def test_GlobalAttrRegexCheck_fail_2():
 
 @pytest.mark.eustace
 def test_GlobalAttrVocabCheck_success_1(load_check_test_cvs):
-    x = GlobalAttrVocabCheck(kwargs={"attribute": "frequency", "vocab_lookup": "canonical_name"},
-                             vocabulary_ref="eustace-team:eustace:frequency")
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "frequency", "vocab_lookup": "frequency:canonical_name"},
+                             vocabulary_ref="eustace-team:eustace")
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc'))
     assert (resp.value == (2, 2))
 
 
 @pytest.mark.eustace
 def test_GlobalAttrVocabCheck_success_2(load_check_test_cvs):
-    x = GlobalAttrVocabCheck(kwargs={"attribute": "institution_id", "vocab_lookup": "label"},
-                             vocabulary_ref="eustace-team:eustace:institution_id")
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "institution_id", "vocab_lookup": "institution_id:label"},
+                             vocabulary_ref="eustace-team:eustace")
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc'))
     assert (resp.value == (2, 2))
 
 
 @pytest.mark.ukcp
 def test_GlobalAttrVocabCheck_success_3(load_check_test_cvs):
-    x = GlobalAttrVocabCheck(kwargs={"attribute": "domain", "vocab_lookup": "canonical_name"},
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "domain", "vocab_lookup": "domain:canonical_name"},
                              vocabulary_ref="ukcp:ukcp18")
     resp = x(Dataset(f'{EG_DATA_DIR}/tasAnom_rcp85_land-prob_uk_25km_percentile_mon_20001201-20011130_good_pcs.nc'))
     assert (resp.value == (2, 2))
@@ -118,23 +118,23 @@ def test_GlobalAttrVocabCheck_success_3(load_check_test_cvs):
 @pytest.mark.ncas
 def test_GlobalAttrVocabCheck_success_4(load_check_test_cvs):
     # Do lookup using single vocab term
-    vocab_term = "ncas-instrument"
-    x = GlobalAttrVocabCheck(kwargs={"attribute": "source", "vocab_term": vocab_term,
-                                     "vocab_lookup": "data:description"}, vocabulary_ref="ncas:amf")
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "source", 
+                             "vocab_lookup": "ncas-instrument:data:description"}, 
+                             vocabulary_ref="ncas:amf")
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'))
     assert (resp.value == (2, 2))
 
     # Do lookup using multiple vocab terms
-    vocab_term = "ncas-instrument community-instrument"
-    x = GlobalAttrVocabCheck(kwargs={"attribute": "source", "vocab_term": vocab_term,
-                                     "vocab_lookup": "data:description"}, vocabulary_ref="ncas:amf")
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "source",
+                 "vocab_lookup": "ncas-instrument:data:description community-instrument:data:description"},
+                 vocabulary_ref="ncas:amf")
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/ncas-ceil-1_kumasi_20160701_backscatter_v1.2.nc'))
     assert (resp.value == (2, 2))
 
 
 @pytest.mark.eustace
 def test_GlobalAttrVocabCheck_fail_1(load_check_test_cvs):
-    x = GlobalAttrVocabCheck(kwargs={"attribute": "frequency", "vocab_lookup": "canonical_name"},
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "frequency", "vocab_lookup": "frequency:canonical_name"},
                              vocabulary_ref="eustace-team:eustace")
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/two_vars_nc.nc'))
     assert (resp.value == (1, 2))
@@ -142,8 +142,9 @@ def test_GlobalAttrVocabCheck_fail_1(load_check_test_cvs):
 
 @pytest.mark.ncas
 def test_GlobalAttrVocabCheck_fail_2(load_check_test_cvs):
-    x = GlobalAttrVocabCheck(kwargs={"attribute": "source", "vocab_term": "ncas-instrument community-instrument",
-                                     "vocab_lookup": "data:description"}, vocabulary_ref="ncas:amf")
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "source", 
+            "vocab_lookup": "ncas-instrument:data:description community-instrument:data:description"},
+            vocabulary_ref="ncas:amf")
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc'))
     assert (resp.value == (1, 2))
 
