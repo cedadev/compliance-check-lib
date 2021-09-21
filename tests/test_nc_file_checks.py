@@ -78,6 +78,12 @@ def test_GlobalAttrRegexCheck_success_7():
     assert(resp.value == (2, 2))
 
 
+def test_GlobalAttrRegexCheck_integer():
+    x = GlobalAttrRegexCheck(kwargs={"attribute": "processing_level", "regex": "-?\d+"})
+    resp = x(Dataset(f"{EG_DATA_DIR}/nc_file_checks_data/amf_eg_data_1.nc"))
+    assert(resp.value == (2, 2))
+
+
 def test_GlobalAttrRegexCheck_fail_1():
     x = GlobalAttrRegexCheck(kwargs={"attribute": "sausages", "regex": "CF-\d+\.\d+"})
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc'))
