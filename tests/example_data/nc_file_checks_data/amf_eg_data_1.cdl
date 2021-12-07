@@ -90,6 +90,7 @@ variables:
 		:creator_email = "barbara.brooks@ncas.ac.uk" ;
 		:creator_url = "https://amf.ncas.ac.uk" ;
 		:institution = "National Centre for Atmospheric Science (NCAS)" ;
+		:processing_level = 2 ;
 		:processing_software = "Matlab R2013b using Parse_Ceilometer_v1" ;
 		:processing_software_version = "v1" ;
 		:calibration_sensitivity = "\"Calibrated to manufacturers standard:0.25%, 4.6 m\"" ;

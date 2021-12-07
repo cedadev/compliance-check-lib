@@ -12,11 +12,14 @@ using a local file-system cache of the files.
 
 """
 
-import os, re
+import os, re, site
 from netCDF4 import Dataset
 
 # Check that ESSV directory exists, or give warning
-VOCABS_DIR = os.environ.get('PYESSV_ARCHIVE_HOME', os.path.expanduser('~/.esdoc/pyessv-archive')) 
+PYESSV_ARCHIVE_HOME = 'PYESSV_ARCHIVE_HOME'
+VOCABS_DIR = os.environ.get(PYESSV_ARCHIVE_HOME, 
+    os.path.join(site.getsitepackages()[0], 'amf-pyessv-vocabs'))
+os.environ['PYESSV_ARCHIVE_HOME'] = VOCABS_DIR
 
 if not os.path.isdir(VOCABS_DIR):
     import warnings
