@@ -62,19 +62,22 @@ class GlobalAttrVocabCheck(NCFileCheckBase):
     defaults = {"vocab_lookup": "canonical_name"}
     required_args = ['attribute']
     message_templates = ["Required '{attribute}' global attribute is not present.",
-                         "Required '{attribute}' global attribute value is invalid."]
+                     "Required '{attribute}' global attribute value is invalid. Check the '{vocab_lookup}' vocabularies for the correct value. Value found: "]
     level = "HIGH"
 
 
     def _get_result(self, primary_arg):
         ds = primary_arg
+        attr_value = self.kwargs["attribute"]
         vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
 
-        score = vocabs.check_global_attribute(ds, self.kwargs["attribute"], vocab_lookup=self.kwargs["vocab_lookup"])
+        score = vocabs.check_global_attribute(ds, attr_value, vocab_lookup=self.kwargs["vocab_lookup"])
         messages = []
 
-        if score < self.out_of:
+        if score == 0:
             messages.append(self.get_messages()[score])
+        elif score == 1:
+            messages.append(self.get_messages()[score] + f"'{getattr(ds, attr_value)}'")
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
