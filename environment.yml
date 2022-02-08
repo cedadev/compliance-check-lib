@@ -1,0 +1,12 @@
+name: comp-checker-env
+channels:
+ - conda-forge
+ - defaults
+dependencies:
+ - compliance-checker
+ - pyessv
+ - GitPython
+ - pytest
+ - iris
+ - xarray
+ - psutil
