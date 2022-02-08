@@ -4,9 +4,10 @@ channels:
  - defaults
 dependencies:
  - compliance-checker
- - pyessv
  - GitPython
  - pytest
  - iris
  - xarray
  - psutil
+ - pip:
+   - pyessv
