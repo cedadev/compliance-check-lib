@@ -155,6 +155,17 @@ def test_GlobalAttrVocabCheck_fail_2(load_check_test_cvs):
     assert (resp.value == (1, 2))
 
 
+@pytest.mark.ncas
+def test_GlobalAttrVocabCheck_fail_3(load_check_test_cvs):
+    x = GlobalAttrVocabCheck(kwargs={"attribute": "source", 
+            "vocab_lookup": "ncas-instrument:data:description community-instrument:data:description"},
+            vocabulary_ref="ncas:amf")
+    resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc'))
+    assert (resp.msgs == [f"Required 'source' global attribute value is invalid. "+
+                          "Check the 'ncas-instrument:data:description community-instrument:data:description' "+
+                          "vocabularies for the correct value. Value found: 'Good data from a good place.'"])
+
+
 def test_OneMainVariablePerFileCheck_success():
     x = OneMainVariablePerFileCheck(kwargs={})
     resp = x(Dataset(f'{EG_DATA_DIR}/nc_file_checks_data/simple_nc.nc'))
